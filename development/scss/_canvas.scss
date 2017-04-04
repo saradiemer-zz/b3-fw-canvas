@@ -1,0 +1,292 @@
+#main-content.canvas { margin: 0; width: 100%; }
+
+.canvas-base a {
+	text-decoration: none;
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+}
+
+.table-content {
+	position: relative;
+	display: table;
+}
+
+.table-content.width-100 {
+	position: relative;
+	display: table;
+	@include media-breakpoint-down(md) {
+	width: 100%;
+	}
+}
+
+.vertical-rule-left,
+.vertical-rule-right {
+	float: none;
+	position: absolute;
+	top: 0;
+	display: table-cell;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	width: 15px;
+	height: 100%;
+	border-right: solid 1px $gray-light;
+	background: none;
+		@include media-breakpoint-down(md) { display: none; }
+}
+
+.vertical-rule-left {
+	right: -15px;
+	border: none;
+}
+.vertical-rule-right {
+	left: -15px;
+}
+
+/* PANEL - BEGIN */
+
+.jumbotron.canvas-base {
+	border: 0 none;
+	border-radius: 0;
+}
+
+.canvas-base {
+	margin: 0;
+	padding: 10px 0;
+	background: $white;
+	border: 0 none;
+	border-radius: 0;
+	@include media-breakpoint-down(md) {
+		padding: 0;
+	}
+	@include media-breakpoint-down(sm) {
+		margin: -1px 0 0 0;
+		padding: 10px 0;
+		h1, h2, h3, h4 {
+			font-size: 1.5em;
+			@include media-breakpoint-down(xs) {
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+
+.canvas-content img {
+	margin-top: 0;
+	@include media-breakpoint-down(md) {
+		margin-top: 25px;
+	}
+	@include media-breakpoint-down(xs) {
+		margin-top: 5px;
+	}
+}
+
+.canvas-content h5.label.black {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 1.05em;
+/*
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 1.35em;
+	color: $gray-light;
+*/
+	@include media-breakpoint-down(md) {
+		margin-bottom: 0px;
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: .9em;
+	}
+}
+
+.canvas-content h5.label.black.m-b-20 {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 20px;
+	}
+}
+
+.canvas-content p { margin-bottom: 0; }
+
+.canvas-base .col-md-12,
+.canvas-base .col-md-11,
+.canvas-base .col-md-10,
+.canvas-base .col-md-9,
+.canvas-base .col-md-8,
+.canvas-base .col-md-7,
+.canvas-base .col-md-6,
+.canvas-base .col-md-6,
+.canvas-base .col-md-4,
+.canvas-base .col-md-3,
+.canvas-base .col-md-2 {
+	padding-left: 30px;
+	padding-right: 30px;
+	@include media-breakpoint-down(md) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.canvas-base .container .divider {
+	margin: 0 15px;
+	height: 1px;
+	background: $gray-light;
+	@include media-breakpoint-down(md) {
+		margin: 0;
+	}
+}
+
+.canvas-base .divider-mobile {
+	display: none;
+	@include media-breakpoint-down(md) {
+		display: block;
+		margin: 20px 0 0;
+		padding: 20px 0;
+	}
+	@include media-breakpoint-down(sm) {
+		margin: 10px 0;
+	}
+}
+
+.canvas-base .divider-mobile .container {
+	@include media-breakpoint-down(md) {
+		padding: 0;
+	}
+}
+
+.canvas-base .container .spacer {
+	margin: 0 15px;
+	padding: 0 0 20px 0;
+	height: 1px;
+	background: $white;
+}
+
+.fullbleed {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: url("../images/canvas.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0;
+	overflow: hidden;
+	@include media-breakpoint-down(md) { background-size: 100%; }
+	@include media-breakpoint-down(xs) { background-size: 200%; }
+}
+
+.fullbleed:before {
+	margin: 0;
+	padding: 0;
+	padding-top: 31.3888%;
+	content: "";
+	width: 100%;
+	@include media-breakpoint-down(md) { padding-top: 40.3888%; }
+	@include media-breakpoint-down(xs) { padding-top: 80.6%; }
+}
+
+.fullbleed .partial-overlay {
+	position: absolute;
+	margin-top: -31.3888%;
+	@include media-breakpoint-down(md) { margin-top: -40.3888%; }
+	@include media-breakpoint-down(xs) { margin-top: -80.6%; }
+	width: 100%;
+	height: auto;
+}
+
+.fullbleed .partial-overlay .container {
+	position: relative;
+	height: 600px;
+	@include media-breakpoint-down(sm) {
+		padding: 0;
+		width: 100%;
+		height: 500px
+	}
+}
+
+.fullbleed .partial-overlay .bg-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+	}
+}
+
+.fullbleed .partial-overlay .canvas-content {
+	@include media-breakpoint-down(md) {
+		padding: 20px 0;
+		h3 {
+			margin-top: 5px;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 20px 0;
+	}
+}
+
+.container-fluid.bg-overlay p.body.intro {
+	margin-bottom: 10px;
+}
+
+.partial-overlay .bg-overlay.col-sm-4 {
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+}
+
+.canvas-content {
+	padding: 20px 0;
+	@include media-breakpoint-down(xs) {
+		padding: 10px 0;
+	}
+}
+
+#lead-panel-mobile .canvas-content {
+	@include media-breakpoint-down(sm) {
+		padding: 30px 0;
+	}
+}
+
+%dark-canvas-base {
+	background: $gray ;
+}
+
+.bg-overlay {
+	@include media-breakpoint-up(lg) { display: block; }
+	@include media-breakpoint-down(lg) { display: none; }
+	color: $gray-light; 
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		a.cta {
+			color: $gold;
+		}
+}
+
+.canvas-panel {
+	@include media-breakpoint-up(lg) { display: none; }
+	@include media-breakpoint-down(lg) { display: block; padding-left: 0; padding-right: 0; }
+	color: $gray-light;
+	background: $gray-extra-dark;
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		a.cta {
+			color: $gold;
+			&:hover {
+				color: $gold-light;
+			}
+		}
+}
+
+.bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
+	@include media-breakpoint-down(lg) {
+		font-size: 2em !important;
+	}
+}
+
+/* END - CANVAS */

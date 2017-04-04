@@ -1,0 +1,16 @@
+/* ACCORDION */
+
+#accordion { margin: 20px 0 0; }
+
+#accordion .panel-heading { padding: 10px 0; }
+
+#accordion.panel-group .panel { margin-top: 0; border-bottom: solid 1px $gray-light; border-radius: 0; }
+
+#accordion.panel-group .panel-heading+.panel-collapse>.list-group, 
+#accordion.panel-group .panel-heading+.panel-collapse>.panel-body { border-top: 0; }
+
+#accordion h4.subhead { margin: 0; font-size: .925em; }
+
+#accordion h4.subhead a { width: 98%; color: $gray-extra-dark; }
+
+#accordion .panel-body { margin: 0; padding: 0 0 10px; }

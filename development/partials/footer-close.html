@@ -1,0 +1,37 @@
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+<!--Javascript file smooth-scroll.js -->
+<script type="text/javascript" src="https://www.luc.edu/media/b3/js/smooth-scroll.js">
+</script>
+<!--Javascript file functions.js -->
+<script type="text/javascript" src="https://www.luc.edu/media/b3/js/functions.js">
+</script>
+<script>
+$(window).on('scroll', function() {
+	if ($(window).scrollTop() >= 10) {
+	$('h1.text-muted').fadeIn('slow');
+	} else {
+	$('h1.text-muted').fadeOut('slow');
+	}
+	});
+</script>
+<!-- JS Name:grid-->
+<script>
+	$(function(){
+// See if this is a touch device
+	if ('ontouchstart' in window) {	
+// Set the correct [touchscreen] body class
+	$('body').removeClass('no-touch').addClass('touch');
+// Add the touch toggle to show text when tapped
+	$('div.grid-image').click(function(){
+	$('div.grid-image').not(this).removeClass('touchFocus');
+	$(this).closest('.grid-image').addClass('selected').toggleClass('touchFocus');
+	}
+	);
+	}});
+</script>
+<!-- Custom JS files-->
+<!-- build:customjs -->
+<!-- endbuild -->
