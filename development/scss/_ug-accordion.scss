@@ -1,0 +1,75 @@
+/* INTERIOR-ACCORDION */
+
+#main-content #interior-wrapper #accordion h4.subhead {
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#main-content #interior-wrapper #accordion h4.subhead span.date {
+	margin: 0 0 0 10px;
+	font-family: 'Antenna', sans-serif !important;
+	font-size: 80%;
+	letter-spacing: .015em;
+	color: $white;
+	text-transform: uppercase;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body,
+#accordion .panel-body {
+	margin-top: -25px 0 0 0 !important;
+	padding: 20px 20px 25px;
+	background: #gray-extra-dark;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body p {
+	margin: 0;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body ul {
+	margin: 0px;
+	list-style-position: inside;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body ul li {
+	margin: 15px 0 15px 30px;
+	text-indent: -30px;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body img {
+	margin: 0;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body .caption-box {
+	padding: 5px 10px;
+	margin: 0 0 20px 0;
+	color: $gray;
+	font-family: 'Arial', sans-serif;
+	font-size: .85em;
+	background: $gray-extra-dark;
+}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body .lead-in {
+	font-family: 'Antenna Bold', sans-serif;
+}
+
+#main-content #interior-wrapper #accordion .panel-heading .accordion-toggle:before {
+	/* symbol for open accordions */
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+	color: $gray-extra-dark;
+	-moz-transition: rotate .2s ease;
+	-webkit-transition: rotate .2s ease;
+	-o-transition: rotate .2s ease;
+	transition: rotate .2s ease;
+}
+
+#main-content #interior-wrapper #accordion .panel-heading .accordion-toggle.collapsed:before {
+	/* symbol for open accordions */
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+}
+
+/* END - INTERIOR-ACCORDION */

@@ -1,0 +1,82 @@
+/* INTERIOR-TABS */
+
+#main-content #interior-wrapper #interior-body #content-tabs ul {
+	margin: 30px 0 0 0 !important;
+}
+
+#main-content #interior-wrapper #interior-body #content-tabs .nav-tabs {
+	border-bottom: none;
+}
+
+#main-content #interior-wrapper #interior-body #content-tabs ul li.tab-list-item {
+	float: left;
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+	border-top: solid 1px $gray-dark;
+}
+
+#main-content #interior-wrapper #interior-body #content-tabs #tabs > li.active a {
+	font-family: 'Antenna Black', sans-serif !important;
+	letter-spacing: .075em;
+	color: $gold-extra-dark;
+}
+
+#main-content #interior-wrapper #interior-body #content-tabs #tabs > li.active a,
+#main-content #interior-wrapper #interior-body #content-tabs #my-tab-content.tab-content.col-sm-12 {
+	background: $gold !important;
+}
+
+#main-content #interior-wrapper #interior-body #content-tabs #my-tab-content.tab-content.col-sm-12 {
+	padding: 60px;
+}
+
+#main-content #interior-wrapper #tabs > li a {
+	background: -moz-linear-gradient(top, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $gray 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CE9501', endColorstr='#825E01',GradientType=0 ); /* IE6-9 */
+	border-bottom-color: $gold-extra-dark;
+}
+
+#interior-wrapper ul > li.tab-list-item .body.endnote {
+	border-top: solid 1px darken($gold-dark, 3%);
+}
+
+#interior-wrapper ul > li.tab-list-item .circle,
+#accordion .panel-heading > h4 > a > span.circle {
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 35px;
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 1.125em;
+	color: $white;
+	border-radius: 50%;
+	border: 3px solid $white;
+	background: $gray-extra-dark;
+}
+
+#accordion .panel-heading > h4 > a > span.circle {
+	float: left;
+	margin-top: -8px;
+	margin-right: 6px;
+	font-family: 'Antenna Bold', sans-serif !important;
+	font-size: .725em;
+	background: $gray-extra-dark;
+	border: 3px solid $gold;
+}
+
+#interior-wrapper ul > li.tab-list-item .circle span,
+#accordion .panel-heading > h4 > a > span.circle span {
+	display: table-cell;
+	float: none;
+	margin: 0;
+	padding: 2px 0 0 0;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* END - INTERIOR-TABS */

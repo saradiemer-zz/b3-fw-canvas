@@ -1,0 +1,29 @@
+/* INTERIOR TYPOGRAPHY */
+
+#main-content #interior-wrapper .reverse { color: white !important; }
+
+#main-content #interior-wrapper h3.reverse { margin-bottom: 0 !important; }
+
+#main-content #interior-wrapper #leftColumn h5.category {
+	margin: 0;
+}
+
+#interior-intro .label {
+	font-family: 'Antenna Light', sans-serif !important;
+	margin: 0 0 3px 0;
+}
+
+#interior-intro h1.display {
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 6em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+/* INTERIOR-IMAGES */
+
+#main-content #interior-wrapper #interior-pano-image { float: left; margin: 0; padding: 15px; background: $gray-extra-dark; }
+
+#main-content #interior-wrapper #interior-pano-image img { margin: 0; }
+
+/* END - INTERIOR-TYPOGRAPHY - INTERIOR-IMAGES */
