@@ -42,7 +42,7 @@
 <style>.subnave{display: none;}.homenav{display: block;}</style>
 </head>
 <body>
-<section id="wrapper" class="no-image">	
+<section id="wrapper">	
 
 	<!-- ug-header -->
 <div class="container-fluid ug-header" id="header">
@@ -53,22 +53,30 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="ug-global-nav-wrapper ug-global-nav-wrapper-mobile">
+	<div class="ug-global-search">
+		<span class="glyphicon glyphicon-search"></span>
+	</div>
+	<div class="ug-global-nav">
+		<span class="glyphicon glyphicon-menu-hamburger"></span>
+	</div>
 </div> <!-- header -->
 	<!-- ug-nav-fixed -->
 <nav class="container-fluid" id="ug-nav">
 	<div class="container">
 		<div class="row">
-			<div id="navbar" class="collapse navbar-collapse">
+			<div id="navbar">
 				<ul id="nav" class="nav navbar-nav" role="navigation">
 					<li><a href="/about_loyola.shtml">Freshman</a></li>
 					<li><a href="/academicsresearch.shtml">Transfer</a></li>
 					<li><a href="/admission.shtml">International</a></li>
-					<li><a href="/alumni/">Other applicants</a> 
+					<li><a href="/alumni/">Other<span> applicants</span></a> 
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="ug-global-nav-wrapper">
+	<div class="ug-global-nav-wrapper ug-global-nav-wrapper-desktop">
 		<div class="ug-global-search">
 			<span class="glyphicon glyphicon-search"></span>
 		</div>
@@ -92,10 +100,10 @@
 		</section>
 -->
 <!-- centerColumn - leads on mobile -->
-		<div id="centerColumn" class="col-md-6 module m-t-0 m-b-0 p-t-10 p-b-10">
-			<div id="interior-wrapper-left" class="col-sm-12 bg-white col-padding-add p-t-0">
+		<div id="centerColumn" class="col-md-6">
+			<div id="interior-wrapper-center" class="col-sm-12">
 <!-- navigation object: Get B3 center  - this used to be nav548-->
-				<section id="interior-intro" class="col-sm-12 p-b-0">
+				<section id="interior-intro" class="col-sm-12">
 					<h5 class="label">
 						Interested freshman
 					</h5>
@@ -112,7 +120,7 @@
 		</div>
 <!-- rightColumn - second on mobile -->
 		<div id="rightColumn" class="col-md-3 module">
-			<div class="col-sm-12 bg-white col-padding-add">
+			<div id="interior-wrapper-right" class="col-sm-12">
 <!-- navigation object: Get B3 right_column  - this used to be nav547-->
 				<h1>
 					This is the related content module 
@@ -122,8 +130,8 @@
 			</div>
 		</div>
 <!-- leftColumn - on interior-full hidden on desktop and mobile -->
-		<div id="leftColumn" class="col-md-3 module m-t-0 p-l-0">
-			<div id="content" class="col-sm-12 col-padding-add m-t-10">
+		<div id="leftColumn" class="col-md-3">
+			<div id="interior-wrapper-left"" class="col-sm-12">
 				<h5 class="category">
 					Navigation 
 				</h5>
@@ -148,18 +156,20 @@
 <nav class="container-fluid" id="ug-cta">
 	<div class="container">
 		<div class="row">
-			<div id="navbar" class="col-md-7">
+			<div id="navbar">
 				<ul id="nav" class="nav navbar-nav" role="navigation">
-					<li><a href="###">Visit</a></li>
-					<li><a href="###">Apply</a></li>
-					<li><a href="###">Info</a></li>
-					<li><a href="###">Deposit</a> 
+					<li><a href="###"><span>Come</span> visit</a></li>
+					<li><a href="###">Apply<span> now</span></a></li>
+					<li><a href="###"><span>Get</span> info</a></li>
+					<li><a href="###"><span>Make</span> Deposit</a></li>
+					<!-- <li><a href="###">Check status</a></li> --> 
 				</ul>
 			</div>
-			<div id="ug-social-wrapper" class="col-md-5">
+			<div id="ug-social-wrapper">
 				<ul class="social social-gold" id="social">
 					<li><a target="_blank" href="###" class='icon-fb' target="_self" title="Follow Us on Facebook"></a></li>
 					<li><a target="_blank" href="###" class='icon-fl' target="_self" title="Follow Us on Flickr"></a></li>
+<!--
 					<li><a target="_blank" href="###" class='icon-gg' target="_self" title="Follow Us on Google"></a></li>
 					<li><a target="_blank" href="###" class='icon-ig' target="_self" title="Follow Us on Instagram"></a></li>
 					<li><a target="_blank" href="###" class='icon-li' target="_self" title="Follow Us on LinkedIn"></a></li>
@@ -167,6 +177,7 @@
 					<li><a target="_blank" href="###" class='icon-tw' target="_self" title="Follow Us on Twitter"></a></li>
 					<li><a target="_blank" href="###" class='icon-wp' target="_self" title="Follow Us on Wordpress"></a></li>					
 					<li><a target="_blank" href="###" class='icon-yt' target="_self" title="Follow Us on You Tube"></a></li>
+-->
 				</ul>
 			</div>
 		</div>
@@ -187,8 +198,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<a class="logo-tag" href="http://www.luc.edu"><img class="img-responsive" src="http://www.luc.edu/media/home/images/loyola-logo-tag.png" alt="Loyola University Chicago"></a> 
+			<div id="wordmark-tag-wrapper" class="col-sm-3">
+				<a href="http://www.luc.edu"><img class="img-responsive" id="wordmark-tag" src="http://www.luc.edu/media/home/images/loyola-logo-tag.png" alt="Loyola University Chicago"></a> 
 			</div>
 		</div>
 	</div>
@@ -206,7 +217,6 @@
 <script type="text/javascript" src="https://www.luc.edu/media/b3/js/smooth-scroll.js">
 </script>
 <!--Javascript file functions.js -->
-<script type="text/javascript" src="https://www.luc.edu/media/b3/js/functions.js">
 </script>
 <script>
 $(window).on('scroll', function() {

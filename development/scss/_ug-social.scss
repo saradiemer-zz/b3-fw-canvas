@@ -1,22 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-@media all and ( max-width : 1200px ) {
-
-#ug-social-wrapper {
-	float: left !important;
-	margin: 20px 0 0 0;
-	padding: 0;
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 100%;
-}
-
-#ug-cta ul#social { float: left !important; }
-
-}
-
 /* CSS - SOCIAL */
 
 #social.social-gold {
@@ -26,38 +10,31 @@
 }
 #social.social-gold li {
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 0 0 10px;
 	width: 40px;
 	height: 40px;
 	list-style: outside none none;
+	border: none;
 	border-radius: 20px;
 	background-color: lighten($gray-dark, 5%);
 	overflow: hidden;
 }
-#social.social-gold li:first-child {
-	margin-left: 0 !important;
-	margin-right: 10px;
-}
-#social.social-gold li:last-child {
-	margin-right: 0;
-}
+#social.social-gold li a:hover { background-color: darken($patina, 2%); }
+
 #social.social-gold li a {
 	display: block;
-	margin: 0;
+	margin: 0 !important;
 	padding: 0;
 	width: 40px;
 	height: 40px;
 	text-indent: -9999px;
+	border: none;
 	border-radius: 0;
 	background: url("../images/ug-social-icons@2X.png") no-repeat scroll 0 0 lighten($gray-dark, 5%);
 	background-size: 100%;
 	opacity: .5;
 }
-#ug-cta ul.social.social-gold {
-	float: right;
-	position: relative;
-	right: -10px;
-}
+
 #social.social-gold li a:hover {
 	transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
 	-webkit-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
@@ -69,58 +46,58 @@
 	opacity: 1;
 }
 #social.social-gold li a.icon-fb {
-  background-position: -2px 0;
+  background-position: 0 0;
 }
 #social.social-gold li a.icon-fb:hover {
-  background-position: -2px 0;
+  background-position: 0 0;
 }
 #social.social-gold li a.icon-fl {
-  background-position: -2px 8.85%;
+  background-position: -1px 8.85%;
 }
 #social.social-gold li a.icon-fl:hover {
-  background-position: -2px 8.85%;
+  background-position: -1px 8.85%;
 }
 #social.social-gold li a.icon-gg {
-  background-position: -1px 18%;
+  background-position: 1px 18%;
 }
 #social.social-gold li a.icon-gg:hover {
-  background-position: -1px 18%;
+  background-position: 1px 18%;
 }
 #social.social-gold li a.icon-ig {
-  background-position: -2px 27%;
+  background-position: 0 27%;
 }
 #social.social-gold li a.icon-ig:hover {
-  background-position: -2px 27%;
+  background-position: 0 27%;
 }
 #social.social-gold li a.icon-li {
-  background-position: -1px 36.15%;
+  background-position: 0 36.15%;
 }
 #social.social-gold li a.icon-li:hover {
-  background-position: -1px 36.15%;
+  background-position: 0 36.15%;
 }
 #social.social-gold li a.icon-pi {
-  background-position: -2px 45.25%;
+  background-position: -1px 45.25%;
 }
 #social.social-gold li a.icon-pi:hover {
-  background-position: -2px 45.25%;
+  background-position: -1px 45.25%;
 }
 #social.social-gold li a.icon-tw {
-  background-position: -1px 54.25%;
+  background-position: 0 54.25%;
 }
 #social.social-gold li a.icon-tw:hover {
-  background-position: -1px 54.25%;
+  background-position: 0 54.25%;
 }
 #social.social-gold li a.icon-wp {
-  background-position: -2px 63.5%;
+  background-position: 0 63.65%;
 }
 #social.social-gold li a.icon-wp:hover {
-  background-position: -2px 63.5%;
+  background-position: 0 63.65%;
 }
 #social.social-gold li a.icon-yt {
-  background-position: -1px 72.85%;
+  background-position: 0 72.75%;
 }
 #social.social-gold li a.icon-yt:hover {
-  background-position: -1px 72.85%;
+  background-position: 0 72.75%;
 }
 
 /* END - SOCIAL */

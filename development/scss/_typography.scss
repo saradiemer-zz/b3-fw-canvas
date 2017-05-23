@@ -39,7 +39,7 @@ body { background: $gray-light; }
 /* ===============================================
 COL - ADJUSMENTS - BS ========================= */
 
-.col-sm-12, .col-sm-4, #numbers .col-sm-4 {
+#page-content article .col-sm-12, #page-content article .col-sm-4, #numbers .col-sm-4 {
 	position: relative;
 	padding: 25px 25px;
 	width: 33%;
