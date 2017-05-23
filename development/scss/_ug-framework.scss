@@ -30,8 +30,8 @@ body a { cursor: default !important; }
     display: block !important;
     padding-left: 0;
     padding-right: 0;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
     min-height: 300px;
     height: 100%;
     background-color: transparent;
@@ -40,7 +40,7 @@ body a { cursor: default !important; }
 #main-content #interior-wrapper {
 	margin: 0;
 	padding-bottom: 0 0 30px;
-	background: $gold;
+	background: $gray-extra-light;
 }
 
 /* COLUMNS */
@@ -120,6 +120,7 @@ footer .col-sm-3 { padding-right: 0; }
 	padding-top: 0;
 	padding-bottom: 0;
 	background: $gray-extra-dark;
+	z-index: 10000;
 @include media-breakpoint-down(sm) {
 	padding: 0;
 	.container, .row {
@@ -189,42 +190,55 @@ footer .col-sm-3 { padding-right: 0; }
 
 /* UG FRAMEWORK - GLOBAL NAV - GLOBAL SEARCH */
 
+.ug-global-nav-wrapper:after {
+	position: relative;
+	content: "";
+	padding-left: 120px;
+}
+
 .ug-global-nav-wrapper {
 	position: absolute;
 	top: 0;
-	right: 0;
-	height: 100%;
+	right: 0;	
 }
 
 .ug-global-nav, .ug-global-search {
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 	margin: 0;
-	width: 100%;
+	padding: 25%;
+	width: 52%;
 	height: 100%;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: $patina-dark;
 	background: $patina;
+	@include media-breakpoint-down(md) {
+		font-size: 1.6em;
+	}
 }
 
-.ug-global-nav-wrapper span {
-	display: inline-table;
-	margin: auto auto;
-	width: 50% !important;
-	content: "";
-}
-
-.ug-global-nav-wrapper span:before {
-	margin-right: 25%;
-}
-
-.ug-global-nav-wrapper span:after {
-	margin-right: 25%;
-}
+.ug-global-search { right: 52%; }
 
 .ug-global-search { background: darken($patina, 5%); color: darken($patina-dark, 4%); }
 
+.ug-global-search .glyphicon,
+.ug-global-nav .glyphicon {
+	position: absolute !important;
+	left: 25%;
+	top: 23%;
+	width: 50% !important;
+	height: 50% !important;
+}
+
 .ug-global-nav-wrapper-desktop {
 	@include media-breakpoint-down(md) { display: none; }
+}
+
+.ug-global-nav-wrapper-mobile:after {
+	position: relative;
+	content: "";
+	padding-left: 100px;
 }
 
 .ug-global-nav-wrapper-mobile {
