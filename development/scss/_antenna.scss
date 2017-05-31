@@ -57,4 +57,14 @@ questions: http://www.webtype.com
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Antenna Comp";
+	src: url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-4.svg");
+  src: url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot") format("embedded-opentype"),
+			 url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff"),
+			 url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
 /* END - ANTENNA */
