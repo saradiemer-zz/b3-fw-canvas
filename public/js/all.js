@@ -13,7 +13,6 @@ $(".grid-square").each(function() {
   $(this).html("<p class='grid-square-content'><span class='color-name'>" + name + "</span><span class='hex'>" + hexed + "</span></p>");
 });
 (function() {
-$("#rightColumn").css("display","none");
 $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
 })();
 window.onscroll = function() {myFunction()};
