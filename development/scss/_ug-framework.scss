@@ -9,16 +9,16 @@ body {
 	background-image: url('../images/texture-transparent.png');
 }
 
-body a { cursor: default !important; }
+/*body a { cursor: default !important; }*/
 
 /* WRAPPERS - MAIN CONTENT */
 
 #wrapper {
 	background-color: lighten($gray-dark, 5%);
 	background-image: url('../images/texture-transparent.png');
-	background-repeat: repeat;	
+	background-repeat: repeat;
 	@include media-breakpoint-down(md) {
-		background: $gray-dark;	
+		background: $gray-dark;
 	}
 }
 
@@ -89,7 +89,7 @@ body a { cursor: default !important; }
 }
 
 #header.ug-header.affix {
-@include media-breakpoint-down(sm) {	
+@include media-breakpoint-down(sm) {
     position: fixed;
     left: 0;
     right: 0;
@@ -102,7 +102,7 @@ body a { cursor: default !important; }
 }
 
 .ug-global-nav-wrapper.affix {
-@include media-breakpoint-down(sm) {	
+@include media-breakpoint-down(sm) {
     position: fixed;
     right: 0;
     top: 0;
@@ -181,7 +181,7 @@ footer .col-sm-3 { padding-right: 0; }
 	display: none;
 @include media-breakpoint-down(sm) {
 	display: block;
-}	
+}
 }
 
 #ug-nav #navbar { float: left; width: 100% }
@@ -190,7 +190,7 @@ footer .col-sm-3 { padding-right: 0; }
 	width: 80%;
 @include media-breakpoint-down(sm) {
 	width: 100%;
-}	
+}
 }
 
 #ug-nav {
@@ -296,10 +296,11 @@ footer .col-sm-3 { padding-right: 0; }
 #ug-nav ul li a,
 #ug-cta ul li a,
 #ug-explore li a {
+	cursor:pointer;
 	padding: 20px 25px;
 	border-left: solid 1px $gray-dark;
 	span {
-		@include media-breakpoint-down(md) { display: none; }		
+		@include media-breakpoint-down(md) { display: none; }
 	}
 @include media-breakpoint-down(sm) {
 	padding: 60px 0;
@@ -357,7 +358,7 @@ footer .col-sm-3 { padding-right: 0; }
 .ug-global-nav-wrapper {
 	position: absolute;
 	top: 0;
-	right: 0;	
+	right: 0;
 }
 
 .ug-global-nav, .ug-global-search {
