@@ -2,7 +2,7 @@
 
 span.leadin {
 	display: inline-block;
-	margin: 50px 5px 0 0;
+	margin: 40px 5px 0 0;
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 5em;
 	line-height: 0;
@@ -47,6 +47,7 @@ span.leadin {
 /* TIPS - FAST FIVE */
 
 #ug-tips {
+	float: left;
 	margin: 30px 0 0 ;
 	padding: 30px 0 0 0;
 	border-top: solid 1px darken($gray-light, 5%);
@@ -84,6 +85,9 @@ span.leadin {
 #ug-tips ul > li {
 	position: relative;
 	padding-left: 20px;
+	font-family: 'Antenna', sans-serif;
+	font-size: .85em;
+	line-height: 1.65;
 }
 
 #ug-tips ul > li:before {
@@ -110,9 +114,53 @@ span.leadin {
 }
 
 .ug-tips-list span:before {
-	padding: 0 0 0 13.75%;
+	padding: 0 0 0 20%;
 	font-family: 'Glyphicons Halflings';
-	font-size: 1em;
+	font-size: .85em;
 	content: "\e080";
 	color: $gray-extra-light;
 }
+
+.ug-tips-list span.circle-wrapper {
+	display: block;
+	margin: 0 auto 10px;
+	padding: 0 !important;
+	width: 100%;
+}
+
+.ug-tips-list span.circle-wrapper:before,
+.ug-tips-list span.circle:before { padding: 0; content:""; }
+
+.ug-tips-list span.circle {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	font-family: 'Antenna Black', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	content: "";
+	color: $gray-extra-light;
+	background: $patina;
+	border-radius: 50%;
+}
+
+
+#ug-tips .ug-tips-list > ul.ug-tips-columns li {
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: .75em;
+	line-height: 1.65;
+	text-transform: uppercase;
+	text-align: left;
+	border-left: solid 1px $gray-light;
+}
+
+#ug-tips .ug-tips-list > ul.ug-tips-columns li:before {
+	display: block;
+	content:"";
+}
+
+
