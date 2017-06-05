@@ -4,7 +4,7 @@ body { padding-top: 0; }
 
 body { background-color: $white; }
 
-body a { cursor: default !important; }
+
 
 
 /* PAGE COLUMNS - WRAPPER ==============================
@@ -129,7 +129,7 @@ body a { cursor: default !important; }
 }
 
 #rightColumn .aside-image-panel [class*="col-"],
-#rightColumn #interior-wrapper-right-panel [class*="col-"] { float: none; padding: 0; } 
+#rightColumn #interior-wrapper-right-panel [class*="col-"] { float: none; padding: 0; }
 
 #rightColumn .aside-image-panel img {
 	margin: 0;
@@ -153,7 +153,7 @@ body a { cursor: default !important; }
 }
 
 #header.ug-header.affix {
-@include media-breakpoint-down(sm) {	
+@include media-breakpoint-down(sm) {
     position: fixed;
     left: 0;
     right: 0;
@@ -165,7 +165,18 @@ body a { cursor: default !important; }
     }
 }
 
+<<<<<<< HEAD
 /* WORDMARK */
+=======
+.ug-global-nav-wrapper.affix {
+@include media-breakpoint-down(sm) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10500;
+    }
+}
+>>>>>>> origin/master
 
 #header #wordmark-wrapper { padding-left: 0; }
 
@@ -241,18 +252,30 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 #ug-explore.container-fluid {
 	display: none;
+<<<<<<< HEAD
 	@include media-breakpoint-down(sm) {
 		display: block;
 	}	
+=======
+@include media-breakpoint-down(sm) {
+	display: block;
+}
+>>>>>>> origin/master
 }
 
 #ug-nav #navbar { float: left; width: 100% }
 #ug-cta #navbar, #ug-explore #navbar {
 	float: left;
 	width: 80%;
+<<<<<<< HEAD
 	@include media-breakpoint-down(sm) {
 		width: 100%;
 	}	
+=======
+@include media-breakpoint-down(sm) {
+	width: 100%;
+}
+>>>>>>> origin/master
 }
 
 #ug-nav {
@@ -361,7 +384,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	padding: 20px 25px;
 	border-left: solid 1px $gray-dark;
 	span {
-		@include media-breakpoint-down(md) { display: none; }		
+		@include media-breakpoint-down(md) { display: none; }
 	}
 	@include media-breakpoint-down(sm) {
 		padding: 60px 0;
@@ -430,7 +453,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 .ug-global-nav-wrapper {
 	position: absolute;
 	top: 0;
-	right: 0;	
+	right: 0;
 }
 
 .ug-global-nav, .ug-global-search {
@@ -571,10 +594,21 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     display: table-cell;
     float: none;
     height: 100%;
+<<<<<<< HEAD
 }
 .col-sm-top { vertical-align: top; }
 .col-sm-middle { vertical-align: middle; }
 .col-sm-bottom { vertical-align: bottom; }
+=======
+  }
+  .col-sm-top {
+    vertical-align: top;
+  }
+
+  .col-sm-bottom {
+    vertical-align: bottom;
+  }
+>>>>>>> origin/master
 }
 
 @media (min-width: 992px) {
@@ -605,8 +639,22 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     display: table-cell;
     float: none;
     height: 100%;
+<<<<<<< HEAD
 }
 .col-lg-top { vertical-align: top; }
 .col-lg-middle { vertical-align: middle; }
 .col-lg-bottom { vertical-align: bottom; }
 }
+=======
+  }
+  .col-lg-top {
+    vertical-align: top;
+  }
+  .col-lg-middle {
+    vertical-align: middle;
+  }
+  .col-lg-bottom {
+    vertical-align: bottom;
+  }
+}
+>>>>>>> origin/master
