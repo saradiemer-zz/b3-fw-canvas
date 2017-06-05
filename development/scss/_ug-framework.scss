@@ -165,9 +165,8 @@ body { background-color: $white; }
     }
 }
 
-<<<<<<< HEAD
+
 /* WORDMARK */
-=======
 .ug-global-nav-wrapper.affix {
 @include media-breakpoint-down(sm) {
     position: fixed;
@@ -176,7 +175,6 @@ body { background-color: $white; }
     z-index: 10500;
     }
 }
->>>>>>> origin/master
 
 #header #wordmark-wrapper { padding-left: 0; }
 
@@ -252,30 +250,18 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 #ug-explore.container-fluid {
 	display: none;
-<<<<<<< HEAD
 	@include media-breakpoint-down(sm) {
 		display: block;
-	}	
-=======
-@include media-breakpoint-down(sm) {
-	display: block;
-}
->>>>>>> origin/master
+	}
 }
 
 #ug-nav #navbar { float: left; width: 100% }
 #ug-cta #navbar, #ug-explore #navbar {
 	float: left;
 	width: 80%;
-<<<<<<< HEAD
 	@include media-breakpoint-down(sm) {
-		width: 100%;
-	}	
-=======
-@include media-breakpoint-down(sm) {
 	width: 100%;
-}
->>>>>>> origin/master
+	}
 }
 
 #ug-nav {
@@ -594,31 +580,20 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     display: table-cell;
     float: none;
     height: 100%;
-<<<<<<< HEAD
 }
 .col-sm-top { vertical-align: top; }
 .col-sm-middle { vertical-align: middle; }
 .col-sm-bottom { vertical-align: bottom; }
-=======
-  }
-  .col-sm-top {
-    vertical-align: top;
-  }
-
-  .col-sm-bottom {
-    vertical-align: bottom;
-  }
->>>>>>> origin/master
 }
 
 @media (min-width: 992px) {
-  .row-md-height {
+.row-md-height {
     display: table;
     table-layout: fixed;
     height: 100%;
     width: 100%;
 }
-  .col-md-height {
+.col-md-height {
     display: table-cell;
     float: none;
     height: 100%;
@@ -629,32 +604,18 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 @media (min-width: 1200px) {
-  .row-lg-height {
+.row-lg-height {
     display: table;
     table-layout: fixed;
     height: 100%;
     width: 100%;
 }
-  .col-lg-height {
+.col-lg-height {
     display: table-cell;
     float: none;
     height: 100%;
-<<<<<<< HEAD
 }
 .col-lg-top { vertical-align: top; }
 .col-lg-middle { vertical-align: middle; }
 .col-lg-bottom { vertical-align: bottom; }
 }
-=======
-  }
-  .col-lg-top {
-    vertical-align: top;
-  }
-  .col-lg-middle {
-    vertical-align: middle;
-  }
-  .col-lg-bottom {
-    vertical-align: bottom;
-  }
-}
->>>>>>> origin/master
