@@ -231,7 +231,7 @@ h6.category.light				{ font-size: 	0.975em; letter-spacing: -.02em; }
 /* ===============================================
 HEADERS - DISPLAY ============================= */
 
-h1.display { font-size: 3.5em; letter-spacing: -.005em; }
+h1.display, #interior-intro h2 { font-size: 3.5em; letter-spacing: -.005em; text-transform: uppercase;}
 
 h1.minion.display { font-size: 3.5em; font-weight: lighter; letter-spacing: -.01em; text-transform: none; }
 
@@ -602,7 +602,7 @@ CALENDAR ====================================== */
 .calendar p { font-size: .9em; line-height: 1.6; }
 
 .calendar p.explainer {
-	display: block; 
+	display: block;
 	vertical-align: bottom;
 	margin: 0;
 	padding: 0 0 5px 0;
@@ -728,7 +728,7 @@ input.form-control, textarea.form-control, select.form-control,
 	width: 100%;
 	font-size: .85em;
 	font-weight: 100;
-	height: 30px;       
+	height: 30px;
 	line-height: 1.2em;
 	line-height: 20px\9; /*for IE */
 	letter-spacing: 0.025em;
@@ -761,7 +761,7 @@ textarea.form-control {
 	min-height: 70px;
 	max-width: 100%;
 	font-size: .85em;
-	height: 30px;       
+	height: 30px;
 	line-height: 1.35;
 	line-height: 20px\9; /*for IE */
 	font-weight: 100;
@@ -864,9 +864,9 @@ input[type="file"] { margin: 0 0 0; }
 ::-webkit-input-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* WebKit, Blink, Edge */
 
 :-moz-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; opacity: 1; text-transform: uppercase; } /* Firefox 4 to 18 */
-   
+
 ::-moz-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; opacity: 1; text-transform: uppercase; }  /* Firefox 19+ */
-   
+
 :-ms-input-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* IE 10-11 */
 
 :placeholder-shown { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* Standard */
@@ -966,7 +966,7 @@ td, #page-content td, #page-content td {
 
 .stacktable { width: 100%; }
 
-.st-head-row { padding-top: .85em; } .st-head-row a { color: $gray-light; } 
+.st-head-row { padding-top: .85em; } .st-head-row a { color: $gray-light; }
 
 .st-head-row.st-head-row-main { font-size: 1em; }
 
@@ -1002,15 +1002,15 @@ tr th, #page-content tr th, #page-content table tr th { text-transform: none; }
 .stacktable.large-only { display: none; }
 
 .stacktable.small-only { display: table; }
-	
+
 .st-head-row { background: $gray-extra-dark; }
-	
+
 .st-head-row.st-head-row-main {
 	color: $gray-light;
 	text-transform: uppercase;
 	background: $gray-dark;
 }
-	
+
 }
 
 
