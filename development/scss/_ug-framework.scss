@@ -14,7 +14,9 @@ body a { cursor: default !important; }
 
 #interior-wrapper { padding: 0 15px; }
 
-#interior-wrapper-left, #interior-wrapper-center, #interior-wrapper-right { padding: 30px; }
+#interior-wrapper-left, #interior-wrapper-right { padding: 30px; }
+
+#interior-wrapper-center { padding: 30px 30px 60px; }
 
 
 /* MAIN-CONTENT =========================================
@@ -30,6 +32,9 @@ body a { cursor: default !important; }
     height: 100%;
 	overflow: hidden;
 	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,30%) 50%, lighten($bg-overlay,30%) 100%), url('../images/texture-transparent.png');
+	@include media-breakpoint-down(md) {
+		background: none;
+	}
 	@include media-breakpoint-down(sm) {
 		display: none !important;
 	}
@@ -38,7 +43,12 @@ body a { cursor: default !important; }
 /* PAGE COLUMNS =========================================
 =======================================================*/
 
-#leftColumn, #centerColumn, #rightColumn { padding: 0; }
+#leftColumn, #centerColumn, #rightColumn { padding: 0;
+    @include media-breakpoint-down(md) {
+    	float: left;
+    	display: block;
+    }
+}
 
 #leftColumn { display: none; }
 
@@ -55,10 +65,25 @@ body a { cursor: default !important; }
 /* ASIDE - QUOTES - NUMBERS - ICONS =====================
 =======================================================*/
 
+#rightColumn #interior-wrapper-right { padding:  0; }
+
 #rightColumn[class*="col-"] { padding: 0; }
 
 #rightColumn .aside-caption,
 #rightColumn .aside-quote { padding: 30px; }
+
+#rightColumn .aside-caption {
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+#rightColumn .aside-quote {
+@include media-breakpoint-down(md) {
+		margin-top: 0;
+		padding-top: 0;
+	}	
+}
 
 #rightColumn .aside-caption p.explainer { margin: 0; }
 
@@ -66,6 +91,9 @@ body a { cursor: default !important; }
 	margin: 0;
 	position: relative;
 	overflow: visible;
+    @include media-breakpoint-down(md) {
+    	display: none;
+    }
 }
 
 #rightColumn .aside-image-panel { /* aside image gold panel - extends off right edge */
@@ -79,6 +107,11 @@ body a { cursor: default !important; }
 	line-height: 1.65;
 	letter-spacing: -.015em;
 	text-transform: uppercase;
+	@include media-breakpoint-down(md) {
+		margin-top: 30px !important;
+		padding-top: 30px !important;
+		border-top: solid 1px $gray-light;
+	}
 }
 
 #rightColumn .aside-quote cite p {
@@ -480,60 +513,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 
-
-
-#interior-wrapper-right { padding:  0; }
-
-#rightColumn[class*="col-"] { padding: 0; }
-
-#rightColumn .aside-caption,
-#rightColumn .aside-quote {
-	padding: 30px;
-}
-
-#rightColumn .aside-caption p.explainer { margin: 0; }
-
-#rightColumn .aside-image {
-	margin: 0;
-	position: relevant;
-	overflow: visible;
-}
-
-#rightColumn .aside-image-panel {
-	right: -10000px;
-	width: 400%;
-	background: url('../images/texture-transparent-750.png') $gold;
-}
-
-#rightColumn .aside-quote blockquote {
-	margin: 0 0 5px 0 !important;
-	line-height: 1.65;
-	letter-spacing: -.015em;
-	text-transform: uppercase;
-}
-
-#rightColumn .aside-quote cite p {
-	margin: 10px 0 0 0 !important;
-	font-family: 'Antenna Bold', sans-serif;
-	font-size: .85em;
-	font-style: normal;
-	color: $gray-extra-dark;
-}
-
-#rightColumn .aside-quote cite p.explainer {
-	margin: 0 0 10px 0 !important;
-	font-family: 'Antenna', sans-serif;
-	font-style: italic;
-}
-
-#rightColumn .aside-image-panel [class*="col-"],
-#rightColumn #interior-wrapper-right-panel [class*="col-"] { float: none; padding: 0; } 
-
-#rightColumn .aside-image-panel img {
-	margin: 0;
-}
-
-
 /* END - UG FRAMEWORK */
 
 
@@ -604,12 +583,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     table-layout: fixed;
     height: 100%;
     width: 100%;
-  }
+}
   .col-md-height {
     display: table-cell;
     float: none;
     height: 100%;
-  }
+}
 .col-md-top { vertical-align: top; }
 .col-md-middle { vertical-align: middle; }
 .col-md-bottom { vertical-align: bottom; }
@@ -621,12 +600,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     table-layout: fixed;
     height: 100%;
     width: 100%;
-  }
+}
   .col-lg-height {
     display: table-cell;
     float: none;
     height: 100%;
-  }
+}
 .col-lg-top { vertical-align: top; }
 .col-lg-middle { vertical-align: middle; }
 .col-lg-bottom { vertical-align: bottom; }

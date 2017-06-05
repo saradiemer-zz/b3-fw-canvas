@@ -9,6 +9,6 @@ function rgb2hex(orig){
 $(".grid-square").each(function() {
 	var name = $(this).data("id");
 	var color = $(this).css("background-color");
-	var hexed = (rgb2hex(color))
+	var hexed = (rgb2hex(color));
   $(this).html("<p class='grid-square-content'><span class='color-name'>" + name + "</span><span class='hex'>" + hexed + "</span></p>");
 });
