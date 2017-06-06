@@ -1,10 +1,10 @@
 /*
-This CSS resource incorporates links to font software which is 
-the valuable copyrighted property of WebType LLC, The Font Bureau 
-and/or their suppliers. You may not 
-attempt to copy, install, redistribute, convert, modify or reverse 
-engineer this font software. Please contact WebType with any 
-questions: http://www.webtype.com 
+This CSS resource incorporates links to font software which is
+the valuable copyrighted property of WebType LLC, The Font Bureau
+and/or their suppliers. You may not
+attempt to copy, install, redistribute, convert, modify or reverse
+engineer this font software. Please contact WebType with any
+questions: http://www.webtype.com
 */
 
 @font-face {
@@ -55,6 +55,16 @@ questions: http://www.webtype.com
        url("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-1.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+@font-face {
+  font-family: "Antenna Comp";
+	src: url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-4.svg");
+  src: url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot") format("embedded-opentype"),
+			 url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff"),
+			 url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* END - ANTENNA */

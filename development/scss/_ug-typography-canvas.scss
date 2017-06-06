@@ -1,0 +1,258 @@
+
+/* ===============================================
+FONT-SIZE - RESET ============================= */
+
+a { color: $patina-dark; cursor:pointer;}
+
+a:link {
+	outline: none;
+	outline-offset: 0;
+	cursor:pointer;
+}
+
+a:visited, a:hover, a:focus {
+	outline: none;
+	outline-offset: 0;
+	color: $patina-dark;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+p a, article.content p a {
+	line-height: 1;
+	color: $patina-dark;
+	outline: none;
+	outline-offset: 0;
+	text-decoration: none;
+	background-image: url('<t4 type="media" id="406288" formatter="path/*"/>');
+	background-repeat: no-repeat;
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	cursor:pointer;
+}
+
+p a { font-weight: bold; }
+
+a:hover, article.content p a:hover { color: $patina; cursor:pointer; }
+
+.nav a:visited,
+.nav a:hover,
+.nav a:focus {
+	outline: none;
+	outline-offset: 0;
+	color: $gray-extra-light;
+	text-decoration: none;
+}
+
+
+/* ===============================================
+HEADERS - ORGANIZING LABELS =================== */
+h1.display { font-size:5em; }
+
+h1.pagelayout { font-size: 2.25em;
+text-transform:uppercase; }
+
+h1, h2, h3 {
+	margin: 10px 0;
+	padding: 0;
+	font-family: "Antenna Black", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: .015em;
+	text-transform: uppercase;
+}
+
+h5.label {font-family: "Antenna-Light";}
+
+
+
+/* ===============================================
+NUMBERS ===================================== */
+
+.number { font-family: 'Antenna Comp', sans-serif; margin: 20px 0; }
+
+.number.display { margin: 10px 0 0; }
+
+.number.display p.body { margin: 0 0 20px 0; line-height: 1; }
+
+.number h1.display	{ margin: -12px 0 5px 0; font-size: 800%; letter-spacing: -.02em; }
+	@media (max-width: 600px) { .number h1.display { font-size: 300% } .number.display h1.display { font-size: 200%; } }
+
+.number p.body	{ margin: 0 0 -2px 0; line-height: 1.75; }
+
+/* ===============================================
+TABS ========================================= */
+
+#page-content article.content #content-tabs ul, #content-tabs ul {
+	margin: 10px 0 30px 0 !important;
+	padding: 0 0 4px 0;
+	list-style-type: none !important;
+	list-style-image: none !important;
+}
+
+#tabs > li { list-style-image: none !important; }
+
+
+#tabs > li a {
+	top: 1px;
+	display: inline;
+	padding: 8px 15px 6px;
+	font-family: 'Antenna Light', sans-serif !important;
+	font-size: .825em !important;
+	font-weight: normal;
+	color: $gray-extra-light;
+	text-transform: uppercase;
+	line-height: 1;
+	list-style-type: none !important;
+	list-style-image: none !important;
+	border-color: $gray-light;
+	border-bottom: $white;
+	background: $gray-light;
+	background: -moz-linear-gradient(top, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#888888',GradientType=0 ); /* IE6-9 */
+}
+
+#tabs > li.active a {
+	color: $gray-dark;
+	border-bottom-color: $white;
+	background: $white;
+}
+
+
+/* ===============================================
+CTAS - BUTTON ================================= */
+
+.cta-wrapper {
+	display: inline-block;
+	margin: 10px 0 0 0;
+	padding: 0;
+	width: 100%;
+	background: rgba(0,0,0,0);
+}
+
+button { margin: 0 0 10px 0; }
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+	display: inline-block;
+	width: auto;
+	font-weight: normal;
+	font-style: normal;
+	background-color: $maroon-dark;
+}
+
+p a.cta { font-size: .75em;
+	@include media-breakpoint-down(md) { font-size: .95em; }
+}
+
+ p.small a.cta { font-size: .925em; }
+
+input[type="file"] {
+	margin: 30px 0 0;
+	padding: 10px !important;
+	width: 100%;
+	font-size: .65em;
+	text-transform: uppercase !important;
+	background-color: $gray-extra-light;
+}
+
+.btn.cta, input[type="file"] {
+	margin: 0;
+	padding: 6px 20px 4px 20px;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .825em;
+	font-weight: bold;
+	font-style: normal;
+	color: $patina-dark;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+	background-color: white;
+	background-image: none;
+	border: 3px $patina-dark solid;
+	border-radius: 20px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+.btn.cta:hover, .btn-group.cta:hover,
+.btn.cta:active, .btn-group.cta:active,
+.btn.cta:visited, .btn-group.cta:visited {
+	color: $white;
+	background-color: $patina-dark;
+	cursor: pointer;
+}
+
+.btn-overlay.cta, input[type="file"] {
+	margin: 0;
+	padding: 8px 20px 8px 20px;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .825em;
+	font-weight: bold;
+	font-style: normal;
+	color: $white;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+	background-color: lighten($bg-overlay, 30%);
+	background-image: none;
+	border: 3px $white solid;
+	border-radius: 30px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+.btn-overlay.cta:hover, .btn-group.cta:hover,
+.btn-overlay.cta:active, .btn-group.cta:active,
+.btn-overlay.cta:visited, .btn-group.cta:visited {
+	color: darken($patina, 10%) ;
+	background-color: $white;
+	cursor: pointer;
+}
+
+
+
+/* ===============================================
+CTAS ========================================== */
+
+p a.cta {
+	margin-left: 0;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-weight: bold;
+	letter-spacing: -.025em;
+	text-decoration: none;
+	background: none;
+	background-color: none;
+	background-image: none !important;
+	cursor: pointer;
+	color: $patina-dark;
+}
+
+.cta:hover { background: none; color: $patina;  }
+
+/* ===============================================
+ADJUSTMENT ==================================== */
+
+.col-xs-12.padding-left-right-0,
+.col-sm-12.padding-left-right-0,
+.col-md-12.padding-left-right-0,
+.col-lg-12.padding-left-right-0 { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* ===============================================
+CSS END ======================================= */
