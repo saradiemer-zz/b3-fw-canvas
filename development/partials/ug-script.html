@@ -20,7 +20,7 @@ $(window).on('scroll', function() {
 <script>
 	$(function(){
 // See if this is a touch device
-	if ('ontouchstart' in window) {	
+	if ('ontouchstart' in window) {
 // Set the correct [touchscreen] body class
 	$('body').removeClass('no-touch').addClass('touch');
 // Add the touch toggle to show text when tapped
@@ -34,3 +34,28 @@ $(window).on('scroll', function() {
 <!-- Custom JS files-->
 <!-- build:customjs -->
 <!-- endbuild -->
+<!-- inject:js -->
+<script src="/js/all.js"></script>
+
+	<script src="/js/jquery.simpler-sidebar.min.js"></script>
+	<script>
+$( "document" ).ready( function() {
+	$( "#main-sidebar" ).simplerSidebar( {
+			selectors: {
+			trigger: ".ug-global-nav-wrapper a .glyphicon",
+			quitter: ".close-sb"
+			},
+			zIndex: 10001,
+			top: 117,
+	});
+	$('.search-open').click(function(){
+		 $('#first-menu').removeClass('active');
+			$('#search-input').addClass('active');
+	});
+	$('.side-menu-open').click(function(){
+		 $('#first-menu').addClass('active');
+			$('#search-input').removeClass('active');
+	});
+});
+	</script>
+<!-- endinject -->
