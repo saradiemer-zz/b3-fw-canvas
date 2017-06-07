@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+#main-sidebar h4 {
+	padding:0;
+	margin:0;
+}
+
+#main-sidebar h4 a {
+	font-family: "Antenna Bold", sans-serif;
+	font-size:0.87em;
+	letter-spacing: 0.2px;
+	color:black;
+}
+
+#main-sidebar h4  a:hover,
+#main-sidebar h4  a:active {
+	color:white;
+}
+
+#main-sidebar  ul li {
+	list-style: none;
+    text-transform: uppercase;
+    font-family: "Antenna", sans-serif !important;
+    letter-spacing: 0.2px !important;
+    font-size:0.94em;
+}
+
+
+#main-sidebar li a:hover {
+	color:white;
+}
+
+#main-sidebar {
+	background-color: rgba(254,188,24,0.8);/* (#febc18) */
+	float:right;
+	height:800px; /* |||||||||||||||||||||||||||||| temporary |||||||||||||||||||||||||||||||  */
+}
+
+#main-sidebar div.panel-heading {
+	padding:0;
+	margin:0;
+}
+
+#main-sidebar .panel {
+	background-color: transparent !important;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.panel-group {
+	margin-top: 6em;
+	margin-left: 2em;
+    margin-right: 2em;
+}
+
+#overlay {
+	background-color:rgba(0,0,0,0.7);
+	height:800px; /* ||||||||||||||||||||||||||||||| FPO ||||||||||||||||||||||||||||||  */
+}
+
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top:none;
+}
+
+.panel-body {
+	padding:0;
+}
+
+ul {
+	margin: 0 0 0 1.5em;
+}
+
+#compass {
+	width:25%;
+	margin-bottom: 1em;
+    margin-left: 0.2em;
+}
+
+#fly > div.row {
+	position: absolute;
+    bottom: 50px;
+	width:100%;
+	font-family: "Antenna", sans-serif;
+}
+
+#cta-1, #cta-2, #cta-3 {
+	margin-bottom: 5px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.but-text {
+    margin-left: 45px;
+	color: #5f5f5f;
+	font-size: 1em;
+}
+
+
+
+#cta-1:hover, #cta-2:hover, #cta-3:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
+
+#search-box {
+	position:absolute;
+	top:0;
+	right:70px;
+	width:70px;
+	height:70px;
+	background-color: rgba(255,255,255,0.75);
+}
+
+#close-box {
+	position:absolute;
+	top:0;
+	right:0px;
+	width:70px;
+	height:70px;
+	background-color: rgba(255,255,255,0.75);
+}
+
+#close-box {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.glyphicon.glyphicon-search, .glyphicon.glyphicon-remove-circle {
+    top: 12px;
+    left: 12px;
+	width:100%;
+}
+
+#main-sidebar .ug-search, .ug-close {
+    color: #922247;
+    display: table;
+    float: left;
+    margin: 0;
+	padding: 12%;
+    width: auto;
+    height: auto;
+    font-size: 2em;
+}
