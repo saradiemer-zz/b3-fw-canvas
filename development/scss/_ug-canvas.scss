@@ -173,6 +173,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
+	height: 450px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
@@ -258,7 +259,7 @@
 .bg-overlay {
 	@include media-breakpoint-up(lg) { display: block; }
 	@include media-breakpoint-down(lg) { display: none; }
-	color: $gray-light; 
+	color: $gray-light;
 		h1 {
 			margin: 0 0 5px 0;
 		}
