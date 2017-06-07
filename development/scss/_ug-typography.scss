@@ -41,6 +41,23 @@ span.leadin {
 	font-size: 3.5em;
 }
 
+#ug-body h2.display.process-headline{
+	font-family: 'Antenna Black', sans-serif;
+	font-size: 6em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+#accordion h2.display.process-headline-small {
+	margin: 0;
+	font-family: 'Antenna Black', sans-serif;
+	margin-top: 30px;
+	width: 80%;
+	font-size: 1.65em;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
 /* INTERIOR-IMAGES */
 
 #main-content #interior-wrapper #interior-pano-image { float: left; margin: 0; padding: 15px; background: $gray-extra-dark; }
