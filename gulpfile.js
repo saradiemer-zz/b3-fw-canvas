@@ -17,7 +17,6 @@ var browserSync = require('browser-sync');
 var htmlreplace = require('gulp-html-replace');
 var replace = require('gulp-replace');
 var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
 var requireDir = require('require-dir');
 
 requireDir('./gulp-tasks');
@@ -81,11 +80,8 @@ gulp.task('index', ['useref'], function () {
 });
 
 gulp.task('images', function(){
-  return gulp.src('development/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
+  return gulp.src('development/images/**/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
   .pipe(gulp.dest('public/images'))
 });
 
