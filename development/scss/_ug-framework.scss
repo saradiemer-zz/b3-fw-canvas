@@ -152,6 +152,8 @@ body { background-color: $white; }
 	}
 }
 
+#header { width: 100%; }
+
 #header.ug-header.affix {
 @include media-breakpoint-down(sm) {
     position: fixed;
