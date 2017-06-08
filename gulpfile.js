@@ -16,6 +16,8 @@ var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
 var htmlreplace = require('gulp-html-replace');
 var replace = require('gulp-replace');
+var imagemin = require('gulp-imagemin');
+var cache = require('gulp-cache');
 var requireDir = require('require-dir');
 
 requireDir('./gulp-tasks');
@@ -78,6 +80,15 @@ gulp.task('index', ['useref'], function () {
 	.pipe(gulp.dest(config.publicDir));
 });
 
+gulp.task('images', function(){
+  return gulp.src('development/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  // Caching images that ran through imagemin
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest('public/images'))
+});
+
 gulp.task('html-watch', ['index'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
@@ -97,6 +108,6 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-gulp.task('default', gulpSequence(['serve', 'fonts'], 't4_media', 't4_css', 't4_nav'));
+gulp.task('default', gulpSequence(['serve', 'fonts', 'images'], 't4_media', 't4_css', 't4_nav'));
 
 //END GULP.JS
