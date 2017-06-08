@@ -24,21 +24,40 @@ span.leadin {
 	margin: 0;
 }
 
+h5.label.maroon { font-size: 1em; }
+
 #interior-intro .label {
 	font-family: 'Antenna Light', sans-serif !important;
 	margin: 0 0 3px 0;
 }
 
-#interior-intro h1.display, .ug-body h1.display {
+#interior-intro h1.display, .ug-body h2.display {
 	font-family: 'Antenna Black', sans-serif !important;
 	font-size: 6em;
 	line-height: 1;
 	text-transform: uppercase;
 }
 
-#ug-body h1.display {
+#ug-body h2.display {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 3.5em;
+}
+
+#ug-body h2.display.process-headline{
+	font-family: 'Antenna Black', sans-serif;
+	font-size: 6em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+#accordion h2.display.process-headline-small {
+	margin: 0;
+	font-family: 'Antenna Black', sans-serif;
+	margin-top: 30px;
+	width: 80%;
+	font-size: 1.65em;
+	line-height: 1.35;
+	text-transform: uppercase;
 }
 
 /* INTERIOR-IMAGES */
@@ -173,4 +192,13 @@ span.leadin {
 	content:"";
 }
 
+#ug-tips .ug-tips-label {
+	margin: 10px 0 0;
+	font-family: 'Antenna Black', sans-serif;
+	font-size: .65em;
+	line-height: 1.45;
+	text-transform: uppercase;
+	text-align: center;
+}
 
+#ug-tips .ug-tips-q-and-a p { width: 80%; }
