@@ -35,11 +35,13 @@ body { background: $gray-light; }
 
 .padding-left-right-0 { padding-left: 0 !important; padding-right: 0 !important; }
 
+.spacer-section { border: 1px solid rgba(0, 0, 0, 0.15) }
+
 
 /* ===============================================
 COL - ADJUSMENTS - BS ========================= */
 
-#page-content article .col-sm-12, #page-content article .col-sm-4, #numbers .col-sm-4 {
+.col-sm-12, .col-sm-4, #numbers .col-sm-4 {
 	position: relative;
 	padding: 25px 25px;
 	width: 33%;
@@ -84,7 +86,7 @@ section, article, module, table { font-size: 1rem; }
 /* ===============================================
 GLOBAL========================================= */
 
-.maroon-text { color: $maroon-dark !important; }
+.maroon { color: $maroon-dark !important; background: none !important;}
 
 .reverse { color: $gray-light !important; }
 
@@ -106,17 +108,17 @@ GLOBAL========================================= */
 
 .bg-info, .bg-success, .bg-warning, .bg-danger { background-color: rgba(0,0,0,.1); }
 
-h5.label.maroon { font-size: 2em; }
-
+h5.label.maroon { font-size: 2em; background: none; font-family: "Antenna Black" !important;}
 
 /* ===============================================
 LINKS ========================================= */
 
-a { color: $maroon-dark }
+a { color: $maroon-dark; }
 
 a:link {
 	outline: none;
 	outline-offset: 0;
+	color: $maroon-dark; 
 }
 
 a:visited, a:hover, a:focus {
@@ -155,7 +157,7 @@ a:hover, article.content p a:hover { color: $maroon; }
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
 
-h1.pagelayout { font-size: 2.25em;
+h1.pagelayout { font-size: 10.25em;
 text-transform:uppercase; }
 
 h1, h2, h3 {
@@ -186,7 +188,7 @@ h3.standalone, .accordion h3.standalone,
 h4.subhead,
 h5.label,
 h6.category.bold,
-h6.category.light { font-family: "Antenna Bold", sans-serif !important; }
+h6.category { font-family: "Antenna Bold", sans-serif; }
 
 h1.primary,
 h1.primary-alternate,
@@ -231,7 +233,7 @@ h6.category.light				{ font-size: 	0.975em; letter-spacing: -.02em; }
 /* ===============================================
 HEADERS - DISPLAY ============================= */
 
-h1.display, #interior-intro h2 { font-size: 2.5em; letter-spacing: -.005em; text-transform: uppercase;}
+h1.display { font-size: 3.5em; letter-spacing: -.005em; font-family:"Antenna Bold"; color: $gray-extra-dark; }
 
 h1.minion.display { font-size: 3.5em; font-weight: lighter; letter-spacing: -.01em; text-transform: none; }
 
@@ -287,6 +289,10 @@ h5.display		{ font-size: 150%; }
 
 .number p.body.extra-small { font-size: 60% !important; }
 
+/* ===============================================
+LETTER SPACING ==================================== */
+
+.track-out { font-family: "arial" !important; letter-spacing: .35px !important; text-transform: none; line-height: 135%; color: $gray !important;}
 
 /* ===============================================
 PARAGRAPHS ==================================== */
@@ -602,7 +608,7 @@ CALENDAR ====================================== */
 .calendar p { font-size: .9em; line-height: 1.6; }
 
 .calendar p.explainer {
-	display: block;
+	display: block; 
 	vertical-align: bottom;
 	margin: 0;
 	padding: 0 0 5px 0;
@@ -664,9 +670,9 @@ TABS ========================================= */
 	border-color: $gray-light;
 	border-bottom: $white;
 	background: $gray-light;
-	background: -moz-linear-gradient(top, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, $gray 90%, $gray-dark 95%, $gray-extra-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, $gray-light 90%, $gray 95%, $gray-dark 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $gray-light 90%, $gray 95%, $gray-dark 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $gray-light 90%, $gray 95%, $gray-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#888888',GradientType=0 ); /* IE6-9 */
 }
 
@@ -728,7 +734,7 @@ input.form-control, textarea.form-control, select.form-control,
 	width: 100%;
 	font-size: .85em;
 	font-weight: 100;
-	height: 30px;
+	height: 30px;       
 	line-height: 1.2em;
 	line-height: 20px\9; /*for IE */
 	letter-spacing: 0.025em;
@@ -761,7 +767,7 @@ textarea.form-control {
 	min-height: 70px;
 	max-width: 100%;
 	font-size: .85em;
-	height: 30px;
+	height: 30px;       
 	line-height: 1.35;
 	line-height: 20px\9; /*for IE */
 	font-weight: 100;
@@ -864,9 +870,9 @@ input[type="file"] { margin: 0 0 0; }
 ::-webkit-input-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* WebKit, Blink, Edge */
 
 :-moz-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; opacity: 1; text-transform: uppercase; } /* Firefox 4 to 18 */
-
+   
 ::-moz-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; opacity: 1; text-transform: uppercase; }  /* Firefox 19+ */
-
+   
 :-ms-input-placeholder { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* IE 10-11 */
 
 :placeholder-shown { font-family: "Antenna", "Arial", sans-serif; font-size: .775em; color: $gray-light; text-transform: uppercase; } /* Standard */
@@ -966,7 +972,7 @@ td, #page-content td, #page-content td {
 
 .stacktable { width: 100%; }
 
-.st-head-row { padding-top: .85em; } .st-head-row a { color: $gray-light; }
+.st-head-row { padding-top: .85em; } .st-head-row a { color: $gray-light; } 
 
 .st-head-row.st-head-row-main { font-size: 1em; }
 
@@ -1002,15 +1008,15 @@ tr th, #page-content tr th, #page-content table tr th { text-transform: none; }
 .stacktable.large-only { display: none; }
 
 .stacktable.small-only { display: table; }
-
+	
 .st-head-row { background: $gray-extra-dark; }
-
+	
 .st-head-row.st-head-row-main {
 	color: $gray-light;
 	text-transform: uppercase;
 	background: $gray-dark;
 }
-
+	
 }
 
 
@@ -1200,6 +1206,52 @@ ADJUSTMENT ==================================== */
 .col-sm-12.padding-left-right-0,
 .col-md-12.padding-left-right-0,
 .col-lg-12.padding-left-right-0 { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* ===============================================
+PAGE NAV ==================================== */
+
+
+ul.inline > li, ol.inline > li {
+    display: inline-block;
+	border: 1px solid #fff;
+	margin:0;
+    padding: 0;
+    font-family: 'antenna', 'myriad-pro', 'helvetica', 'arial', sans-serif;
+    font-size: 10px !important;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    background-color: #EEE;
+    transition: all .2s;
+}
+
+
+#page-nav ul.inline { }
+
+#Affix { z-index: 1; background-color:#fff !important; padding-left:10px;}
+
+
+  .affix {
+      top: 0;
+      width: 45%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 90px;
+  }
+  
+.nav a:visited, .nav a:hover, .nav a:focus {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+	color: $maroon-dark;
+}
+
+.navbar-nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.nav>li>a:hover { background-color: $gray-light;}
 
 /* ===============================================
 CSS END ======================================= */
