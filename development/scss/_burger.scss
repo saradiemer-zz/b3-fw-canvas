@@ -69,9 +69,9 @@
 
 .panel-group {
 	margin-top: 2em;
-	margin-left: 2em;
-    margin-right: 2em;
+
 }
+.panel {margin-left: 2em;  margin-right: 2em;}
 
 #overlay {
 	background-color:rgba(0,0,0,0.7);
@@ -123,14 +123,9 @@ ul {
 }
 
 
-#search-box {
-	position:absolute;
-	top:0;
-	right:70px;
-	width:70px;
-	height:70px;
-	background-color: rgba(255,255,255,0.75);
-}
+#search-input input {width:100%;}
+
+.panel-group img {margin-left: 2em}
 
 #close-box {
 	position:absolute;
