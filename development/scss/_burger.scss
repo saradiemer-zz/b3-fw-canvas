@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /* CSS Document */
+#first-menu,
+#search-input {
+	display: none;
+}
 
+#first-menu.active,
+#search-input.active {
+	 display: block;
+ }
+
+.ug-global-search.active{
+	background-color: rgba(254,188,24,0.9);color:black;
+}
+
+.ug-global-nav.active{
+	background-color: rgba(254,188,24,0.9);color:black;
+}
 
 
 #main-sidebar h4 {
