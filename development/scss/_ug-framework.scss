@@ -5,10 +5,10 @@ body { padding-top: 0; }
 body { background-color: $white; }
 
 .development-nav {
-<<<<<<< HEAD
 	padding-top: 30px;
 	padding-bottom: 30px;
-	width: 50%;
+	width: 55%;
+	background: $white;
 }
 
 .development-nav h5 {
@@ -20,54 +20,23 @@ body { background-color: $white; }
 
 .development-nav ul {
 	margin: 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	font-family: 'Antenna', sans-serif;
-	font-size: 1.25em;
-	text-transform: uppercase;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	list-style-type: none;
 }
 
 .development-nav ul li {
 	padding: 5px 0;
 	font-family: 'Antenna', sans-serif;
-=======
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: $white;
-	width: 55%;
-}
-
-.development-nav h5 {
-	font-size: 1.25em;
-	padding: 0 0 10px 0;
-	border-bottom: solid 1px $gray-light;
-}
-
-.development-nav ul {
-	padding: 0;
-}
-
-.development-nav ul li {
-	padding: 3px 0;
-	font-family: 'Antenna', sans-serif;
 	font-size: 1.25em;
 	text-transform: uppercase;
-	list-style-type: none;
->>>>>>> image-process
 }
 
 .development-nav ul li a,
 .development-nav ul li a:visited,
-<<<<<<< HEAD
 .development-nav ul li a:active { color: $patina; }
 
 .development-nav ul li a:hover { color: lighten($patina, 10%); }
-=======
-.development-nav ul li a:active { color: $patina; text-decoration: none; }
-
-.development-nav ul li a:hover { color: lighten($patina,10%); }
->>>>>>> image-process
 
 
 /* PAGE COLUMNS - WRAPPER ==============================
