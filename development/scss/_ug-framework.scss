@@ -8,12 +8,32 @@ body { background-color: $white; }
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: $white;
-	width: 50%;
+	width: 55%;
 }
 
-.development-nav ul li a { color: $patina; }
+.development-nav h5 {
+	font-size: 1.25em;
+	padding: 0 0 10px 0;
+	border-bottom: solid 1px $gray-light;
+}
 
+.development-nav ul {
+	padding: 0;
+}
 
+.development-nav ul li {
+	padding: 3px 0;
+	font-family: 'Antenna', sans-serif;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.development-nav ul li a,
+.development-nav ul li a:visited,
+.development-nav ul li a:active { color: $patina; text-decoration: none; }
+
+.development-nav ul li a:hover { color: lighten($patina,10%); }
 
 
 /* PAGE COLUMNS - WRAPPER ==============================
