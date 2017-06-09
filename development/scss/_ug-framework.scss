@@ -4,7 +4,39 @@ body { padding-top: 0; }
 
 body { background-color: $white; }
 
+.development-nav {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 55%;
+	background: $white;
+}
 
+.development-nav h5 {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	font-size: 1.25em;
+	border-bottom: solid 1px #cccccc;
+}
+
+.development-nav ul {
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	list-style-type: none;
+}
+
+.development-nav ul li {
+	padding: 5px 0;
+	font-family: 'Antenna', sans-serif;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+.development-nav ul li a,
+.development-nav ul li a:visited,
+.development-nav ul li a:active { color: $patina; }
+
+.development-nav ul li a:hover { color: lighten($patina, 10%); }
 
 
 /* PAGE COLUMNS - WRAPPER ==============================

@@ -10,12 +10,16 @@ gulp.task('t4_css', function() {
 	//get styles.css in publicDir
 	gulp.src(config.publicDir + '/css/styles.css')
 	//social-icons
-	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))	
+	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))
 	//background image
-	.pipe(replace('("../images/bg-water.jpg")', '("<t4 type="media" id="372435" formatter="path/*"/>")'))	
+	.pipe(replace('("../images/bg-water.jpg")', '("<t4 type="media" id="372435" formatter="path/*"/>")'))
 	//semi-transparent-pixel
 	.pipe(replace('("<t4 type="media" id="406288" formatter="path/*"/>")', '("<t4 type="media" id="406288" formatter="path/*"/>")'))
-	//ANTENNA FONTS	
+	//texture-transparent-pixel
+	.pipe(replace('("../images/texture-transparent.png")', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
+	//social ICONS
+	.pipe(replace('("../images/ug-social-icons-patina@2X.png")', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
+	//ANTENNA FONTS
 	//antenna regular
 	.pipe(replace('("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg")', '("<t4 type="media" id="309115" formatter="path/*"/>")'))
 	.pipe(replace('("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-2.eot")', '("<t4 type="media" id="309117" formatter="path/*"/>")'))
@@ -41,6 +45,11 @@ gulp.task('t4_css', function() {
 	.pipe(replace('("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-2.eot")', '("<t4 type="media" id="375087" formatter="path/*"/>")'))
 	.pipe(replace('("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-3.woff")', '("<t4 type="media" id="375088" formatter="path/*"/>")'))
 	.pipe(replace('("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-1.ttf")', '("<t4 type="media" id="375086" formatter="path/*"/>")'))
+	//antenna comp
+	.pipe(replace('("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-4.svg")', '("<t4 type="media" id="435721" formatter="path/*"/>")'))
+	.pipe(replace('("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot")', '("<t4 type="media" id="435719" formatter="path/*"/>")'))
+	.pipe(replace('("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff")', '("<t4 type="media" id="435720" formatter="path/*"/>")'))
+	.pipe(replace('("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf")', '("<t4 type="media" id="435718" formatter="path/*"/>")'))
 	//send to /css/styles.css in T4Dir
 	.pipe(gulp.dest(config.T4Dir + '/css'));
 });

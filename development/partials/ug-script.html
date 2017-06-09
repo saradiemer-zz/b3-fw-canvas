@@ -37,12 +37,11 @@ $(window).on('scroll', function() {
 <!-- inject:js -->
 <script src="/js/all.js"></script>
 
-	<script src="/js/jquery.simpler-sidebar.min.js"></script>
 	<script>
 $( "document" ).ready( function() {
 	$( "#main-sidebar" ).simplerSidebar( {
 			selectors: {
-			trigger: ".ug-global-nav-wrapper a .glyphicon",
+			trigger: ".ug-global-nav-wrapper a",
 			quitter: ".close-sb"
 			},
 			sidebar: {
@@ -62,13 +61,19 @@ $( "document" ).ready( function() {
 			top: 175,
 
 	});
-	$('.search-open').click(function(){
+	$('.ug-global-nav-wrapper a .glyphicon-search').click(function(){
 		 $('#first-menu').removeClass('active');
 			$('#search-input').addClass('active');
+			$('.ug-global-search').toggleClass('active');
+			$('#search-icon').toggleClass('glyphicon-remove-circle glyphicon-search');
+
 	});
-	$('.side-menu-open').click(function(){
+	$('.ug-global-nav-wrapper a .glyphicon-menu-hamburger').click(function(){
 		 $('#first-menu').addClass('active');
 			$('#search-input').removeClass('active');
+			$('.ug-global-nav').toggleClass('active');
+			$('#menu-icon').toggleClass('glyphicon-remove-circle glyphicon-menu-hamburger');
+
 	});
 });
 	</script>
