@@ -90,9 +90,15 @@
 	padding: 0;
 }
 
-ul {
+#main-sidebar ul {
 	margin: 0 0 0 1.5em;
 }
+#want-to ul {
+	margin: 0 0 0 0.5em;
+
+}
+#want-to h4{margin-top:1em;}
+#want-to li a {color:rgb(55, 58, 60);font-family: "Antenna Bold", sans-serif !important;font-size:0.85em;line-height: 1.25em;}
 
 #compass {
 	width: 25%;
