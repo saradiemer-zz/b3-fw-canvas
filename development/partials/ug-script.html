@@ -43,7 +43,6 @@ $( "document" ).ready( function() {
     _navOffSet = 175;
     $(".ug-global-nav-wrapper a").click(function(e){
         var offSet = $(e.target).parent().parent().offset();
-        console.log(offSet.top,$(window).scrollTop());
         _navOffSet = offSet.top - $(window).scrollTop();
     });
     
@@ -85,7 +84,6 @@ $( "document" ).ready( function() {
           $('.sb-controls .search-open')
       ];
         if(tmpItems[2].hasClass('glyphicon-remove-circle')){
-            console.log('has remove');
             $('.sb-controls .close-sb').click();
             menuSearchToggleActive = false;
             return;
@@ -106,16 +104,17 @@ $( "document" ).ready( function() {
     };
     
     $('.side-menu-open').click(function(){
-        console.log('smo clicked');
-		toggleMenuSearch(false);
+        toggleMenuSearch(false);
 	});
     $('.search-open').click(function(){
-        console.log('so clicked');
         toggleMenuSearch(true);
     });
     $('.menu-open').click(function(){
-        console.log('mo clicked');
         toggleMenuSearch(false);
+    });
+    
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27 && $('#main-sidebar').data('simplersidebar') == 'opened') $('.sb-controls .close-sb').click();   // esc
     });
 });
 	</script>
