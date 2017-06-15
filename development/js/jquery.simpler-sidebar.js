@@ -140,7 +140,7 @@
 					$mask.fadeIn( duration );
 				},
 				hideMask = function() {
-					$mask.fadeOut( duration );
+					$mask.fadeOut( duration/2 );
 				},
 
 				$trigger = $( cfg.selectors.trigger ),
@@ -202,7 +202,9 @@
 						events.callbacks.animation.open();
 						events.callbacks.animation.both();
 					};
-
+                    console.log('in simpler',_navOffSet);
+                    $sidebar.css('top',_navOffSet + 'px');
+                    $mask.css('top',_navOffSet + 'px');
 					// Define the animation
 					animation[ align ] = 0;
 
@@ -216,13 +218,14 @@
 					var callbacks = function() {
 						events.callbacks.animation.close();
 						events.callbacks.animation.both();
-					};
+					},
+                        durationClose = duration/2;
 
 					// Define the animation
 					animation[ align ] = -$sidebar.width();
 
 					// Apply the animation, the options and the callbacks
-					$sidebar.animate( animation, duration, easing, callbacks );
+					$sidebar.animate( animation, durationClose, easing, callbacks );
 
 					events.on.animation.close();
 					events.on.animation.both();

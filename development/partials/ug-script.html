@@ -39,42 +39,84 @@ $(window).on('scroll', function() {
 
 	<script>
 $( "document" ).ready( function() {
-	$( "#main-sidebar" ).simplerSidebar( {
-			selectors: {
-			trigger: ".ug-global-nav-wrapper a",
-			quitter: ".close-sb"
-			},
-			sidebar: {
-			 width: 400,
-
-	 },
-	 mask: {
-        display: true,
-        css: {
-            backgroundColor: "black",
-            opacity: 0.85,
-            filter: "Alpha(opacity=85)"
+    
+    _navOffSet = 175;
+    $(".ug-global-nav-wrapper a").click(function(e){
+        var offSet = $(e.target).parent().parent().offset();
+        console.log(offSet.top,$(window).scrollTop());
+        _navOffSet = offSet.top - $(window).scrollTop();
+    });
+    
+    $( "#main-sidebar" ).simplerSidebar( {
+        selectors: {
+            trigger: ".ug-global-nav-wrapper a",
+            quitter: ".close-sb"
+        },
+        animation: {
+          duration: 500  
+        },
+        sidebar: {
+            width: 400,
+        },
+        mask: {
+            display: true,
+            css: {
+                backgroundColor: "black",
+                opacity: 0.85,
+                filter: "Alpha(opacity=85)"
+            }
+        },
+        zIndex: 30001
+	});
+    
+    var menuSearchToggleActive = false;
+    function toggleMenuSearch(isSearch){
+        if(menuSearchToggleActive)return;
+        menuSearchToggleActive = true;
+      var tmpItems = isSearch ? [
+          $('#first-menu'),
+          $('#search-input'),
+          $('.sb-controls .search-open'),
+          $('.sb-controls .menu-open')
+      ] : [
+          $('#search-input'),
+          $('#first-menu'),
+          $('.sb-controls .menu-open'),
+          $('.sb-controls .search-open')
+      ];
+        if(tmpItems[2].hasClass('glyphicon-remove-circle')){
+            console.log('has remove');
+            $('.sb-controls .close-sb').click();
+            menuSearchToggleActive = false;
+            return;
         }
-    },
-
-			zIndex: 10001,
-			top: 175,
-
+        tmpItems[0].removeClass('active');
+        tmpItems[1].addClass('active');
+        tmpItems[2].addClass('glyphicon-remove-circle');
+        tmpItems[3].removeClass('glyphicon-remove-circle');
+        if(isSearch){
+            tmpItems[2].removeClass('glyphicon-search');
+            tmpItems[3].addClass('glyphicon-menu-hamburger');
+        }
+        else {
+            tmpItems[2].removeClass('glyphicon-menu-hamburger');
+            tmpItems[3].addClass('glyphicon-search');
+        }
+        menuSearchToggleActive = false;
+    };
+    
+    $('.side-menu-open').click(function(){
+        console.log('smo clicked');
+		toggleMenuSearch(false);
 	});
-	$('.ug-global-nav-wrapper a .glyphicon-search').click(function(){
-		 $('#first-menu').removeClass('active');
-			$('#search-input').addClass('active');
-			$('.ug-global-search').toggleClass('active');
-			$('#search-icon').toggleClass('glyphicon-remove-circle glyphicon-search');
-
-	});
-	$('.ug-global-nav-wrapper a .glyphicon-menu-hamburger').click(function(){
-		 $('#first-menu').addClass('active');
-			$('#search-input').removeClass('active');
-			$('.ug-global-nav').toggleClass('active');
-			$('#menu-icon').toggleClass('glyphicon-remove-circle glyphicon-menu-hamburger');
-
-	});
+    $('.search-open').click(function(){
+        console.log('so clicked');
+        toggleMenuSearch(true);
+    });
+    $('.menu-open').click(function(){
+        console.log('mo clicked');
+        toggleMenuSearch(false);
+    });
 });
 	</script>
 <!-- endinject -->
