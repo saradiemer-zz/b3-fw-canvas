@@ -136,8 +136,7 @@ body { background-color: $white; }
 
 #rightColumn .aside-quote blockquote {
 	margin: 0 0 5px 0 !important;
-	font-family: 'Antenna Light', san-serif;
-	line-height: 1.5;
+	line-height: 1.65;
 	letter-spacing: -.015em;
 	text-transform: uppercase;
 	@include media-breakpoint-down(md) {
