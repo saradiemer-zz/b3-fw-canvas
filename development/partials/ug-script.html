@@ -39,21 +39,21 @@ $(window).on('scroll', function() {
 
 	<script>
 $( "document" ).ready( function() {
-    
+
     _navOffSet = 175;
     $(".ug-global-nav-wrapper a").click(function(e){
         var offSet = $(e.target).parent().parent().offset();
         console.log(offSet.top,$(window).scrollTop());
         _navOffSet = offSet.top - $(window).scrollTop();
     });
-    
+
     $( "#main-sidebar" ).simplerSidebar( {
         selectors: {
             trigger: ".ug-global-nav-wrapper a",
             quitter: ".close-sb"
         },
         animation: {
-          duration: 500  
+          duration: 300  
         },
         sidebar: {
             width: 400,
@@ -68,7 +68,7 @@ $( "document" ).ready( function() {
         },
         zIndex: 30001
 	});
-    
+
     var menuSearchToggleActive = false;
     function toggleMenuSearch(isSearch){
         if(menuSearchToggleActive)return;
@@ -104,7 +104,7 @@ $( "document" ).ready( function() {
         }
         menuSearchToggleActive = false;
     };
-    
+
     $('.side-menu-open').click(function(){
         console.log('smo clicked');
 		toggleMenuSearch(false);

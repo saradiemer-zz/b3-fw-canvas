@@ -114,7 +114,7 @@ body { background-color: $white; }
 @include media-breakpoint-down(md) {
 		margin-top: 0;
 		padding-top: 0;
-	}	
+	}
 }
 
 #rightColumn .aside-caption p.explainer { margin: 0; }
@@ -456,7 +456,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 =======================================================*/
 
 .ug-global-nav-wrapper.affix {
-	@include media-breakpoint-down(sm) {	
+	@include media-breakpoint-down(sm) {
 		position: fixed;
     	right: 0;
     	top: 0;
@@ -464,13 +464,13 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     }
 }
 
-.ug-global-nav-wrapper:after {
+.ug-global-nav-wrapper:after, .sb-controls:after {
 	position: relative;
 	content: "";
 	padding-left: 120px;
 }
 
-.ug-global-nav-wrapper {
+.ug-global-nav-wrapper, .sb-controls {
 	position: absolute;
 	top: 0;
 	right: 0;
