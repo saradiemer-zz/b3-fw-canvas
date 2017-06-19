@@ -54,6 +54,7 @@
 	/* (#febc18) */
 	float: right;
 	position: relative;
+	padding-top: 60px;
 }
 
 #main-sidebar div.panel-heading {
@@ -161,42 +162,4 @@
 
 .panel-group img {
 	margin-left: 2em;
-}
-
-#close-box {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 70px;
-	height: 70px;
-	background-color: rgba(255,255,255,0.75);
-}
-
-#close-box {
-	background-color: rgba(255,255,255,0.6);
-}
-
-.glyphicon.glyphicon-remove-circle,
-.glyphicon.glyphicon-search {
-	top: 12px;
-	left: 12px;
-	width: 100%;
-}
-
-#main-sidebar .ug-search,
-.ug-close {
-	color: #922247;
-	display: table;
-	float: left;
-	margin: 0;
-	padding: 12%;
-	width: auto;
-	height: auto;
-	font-size: 2em;
-}
-
-#side-cta {
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
 }
