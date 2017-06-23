@@ -1,6 +1,6 @@
 @media only screen and (max-width: 580px) {
 
-body { background-color: $white; }
+body { background-color: white; }
 
 #main-content { display: none !important; }
 
@@ -12,7 +12,7 @@ body { background-color: $white; }
 	-webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-	background: $white;
+	background: white;
 }
 
 #ug-cta.container-fluid,
@@ -37,7 +37,7 @@ body { background-color: $white; }
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-color: $white;
+	background-color: white;
 }
 
 #ug-nav.container-fluid {
@@ -65,7 +65,7 @@ body { background-color: $white; }
 #ug-explore li {
 	float: left;
 	border-radius: 3px;
-	background-color: $gray-extra-dark;
+	background-color: black;
 }
 
 #ug-nav ul li a,
