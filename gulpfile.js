@@ -58,6 +58,14 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
+gulp.task('sass-home', function() {
+    return gulp.src(config.devDir + '/scss-home/ug-home-mobile-dev.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
@@ -72,7 +80,7 @@ gulp.task('useref', function() {
 });
 
 gulp.task('index', ['useref'], function () {
-  var target = gulp.src('./development/*.html'); 
+  var target = gulp.src('./development/*.html');
   var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
  	return target.pipe(inject(sources, {ignorePath: 'public'}))
  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
@@ -87,10 +95,11 @@ gulp.task('images', function(){
 
 gulp.task('html-watch', ['index'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
+gulp.task('sass-home-watch', ['sass-home'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
-gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-home', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -101,6 +110,7 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
     // all browsers reload after tasks are complete.
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
+		gulp.watch(config.devDir + '/scss-home/**/*.scss', ['sass-home-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 

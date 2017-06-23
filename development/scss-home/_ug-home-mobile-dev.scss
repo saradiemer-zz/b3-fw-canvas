@@ -1,10 +1,8 @@
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 580px) {
 
 body { background-color: $white; }
 
 #main-content { display: none !important; }
-
-#ug-explore.container-fluid { display: block; }
 
 #ug-nav.container-fluid,
 #ug-cta.container-fluid,
@@ -15,6 +13,13 @@ body { background-color: $white; }
   -moz-box-shadow: none;
   box-shadow: none;
 	background: $white;
+}
+
+#ug-cta.container-fluid,
+#ug-explore.container-fluid {
+	display: block;
+	margin: 0 1% 15px;
+	width: 98%;
 }
 
 #ug-nav.container-fluid .container,
@@ -35,12 +40,25 @@ body { background-color: $white; }
 	background-color: $white;
 }
 
+#ug-nav.container-fluid {
+		top: 0;
+		margin-top: 50px;
+		padding-left: 0;
+		padding-right: 0;
+}
+
 #ug-nav #navbar {
-	padding-top: 70px !important;
+	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#ug-nav ul, #ug-cta ul, #ug-explore ul { margin: 0; }
+#ug-nav #navbar, #footer #ug-cta ul#nav { width: 100%; }
+
+#ug-nav ul, #ug-cta ul, #ug-explore ul {
+	float: left;
+	margin: 0;
+	width: 100%;
+}
 
 #ug-nav ul li,
 #ug-cta ul li,
@@ -69,6 +87,8 @@ body { background-color: $white; }
 	border-bottom: none;
 }
 
+#ug-nav ul li a span { display: none !important; }
+
 #ug-nav ul li {
 	margin: 2%;
 	padding: 8px 2%;
@@ -83,7 +103,7 @@ body { background-color: $white; }
 
 #ug-explore ul li {
 	margin: 1%;
-	padding: 8px 2%;
+	padding: 1px 2%;
 	width: 98%;
 }
 

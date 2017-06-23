@@ -298,6 +298,10 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	}
 }
 
+#ug-nav #navbar {
+	@include media-breakpoint-down(md) { width: 100%; }
+}
+
 #footer #ug-cta ul#nav {
 	@include media-breakpoint-down(md) {
 		float: left;
@@ -321,6 +325,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	text-transform: uppercase;
 	border-left: 2px solid darken($gray, 50%);
 	transition: all .25s;
+	@include media-breakpoint-down(lg) { font-size: 1em; }
 	@include media-breakpoint-down(sm) { font-size: 1em; }
 }
 
