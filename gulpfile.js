@@ -59,11 +59,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('sass-home', function() {
-    return gulp.src(config.devDir + '/scss-home/ug-home-mobile-dev.scss')
+    return gulp.src(config.devDir + '/scss-home/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
 		.pipe(sourcemaps.write()) // Add the map to modified source.
-    .pipe(gulp.dest(config.publicDir + '/css'));
+    .pipe(gulp.dest(config.publicDir + '/css2'));
 });
 
 gulp.task('fonts', function() {
