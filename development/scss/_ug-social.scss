@@ -3,20 +3,26 @@
 
 /* CSS - SOCIAL */
 
-#ug-social-wrapper { 
+#ug-social-wrapper {
+	float: right;
 	@include media-breakpoint-down(sm) {
-	padding: 10px 25px;	
-}
+		padding: 0 15px;
+		width: auto;
+	}
+	@include media-breakpoint-down(xs) {
+		padding: 10px 25px;
+	}
 }
 
 #social.social-gold {
 	float: right !important;
 	margin: 10px 0 0 0;
 	padding: 0;
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(xs) {
 	margin: 0;
+	}
 }
-}
+
 #social.social-gold li {
 	float: left;
 	margin: 0 0 0 10px;
