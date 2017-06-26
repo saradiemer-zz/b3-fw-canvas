@@ -4,6 +4,18 @@ body { background-color: white; }
 
 #main-content { display: none !important; }
 
+#ug-footer-cta-wrapper {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+#ug-footer-address-wrapper {
+	min-height: auto;
+	height: auto;
+}
+
 #ug-nav.container-fluid,
 #ug-cta.container-fluid,
 #ug-explore.container-fluid {

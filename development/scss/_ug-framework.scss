@@ -224,8 +224,6 @@ body { background-color: $white; }
 /* FOOTER ===============================================
 =======================================================*/
 
-footer { position: fixed; bottom: 0; left: 0; right: 0; padding: 0; }
-
 footer .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -253,6 +251,18 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	}
 }
 
+#ug-footer-cta-wrapper {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+#ug-footer-address-wrapper {
+	min-height: 165px;
+	height: 165px;
+	background: $gold;
+}
 
 /* UG-NAV - UG-CTA ======================================
 =======================================================*/
