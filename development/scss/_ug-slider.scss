@@ -39,6 +39,8 @@ B3 - FRAMEWORK - SLIDER - 053017
   z-index: 2;
 }
 
+.carousel-caption { padding:10px;}
+
 #myCarousel.container-fluid {
     padding-right: 0px !important;
     padding-left: 0px !important; }
@@ -64,8 +66,21 @@ B3 - FRAMEWORK - SLIDER - 053017
     color: #fff;
 }
 
-#myCarousel .canvas-content {padding: 0px;}
+#myCarousel-1 .canvas-content {padding: 0px;}
 
+#myCarousel-1 .container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
+
+#myCarousel-1 ol li {
+  display:none; }
+
+#myCarousel-1 .container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
+
+
+#myCarousel .canvas-content {padding: 0px;}
 
 #Slider .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
