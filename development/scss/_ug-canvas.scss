@@ -291,4 +291,15 @@
 }
 
 .icon { width: 70px; margin-bottom:10px; height: 70px; border-radius: 100%; background-color: #C1C1C1;}
+
+/* ADDS PHOTO BACKGROUND */
+#main-content-canvas {
+	background: url(http://www.luc.edu/media/autopublish/bg-water.jpg) no-repeat scroll 0 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow:hidden;
+}
+.container-fluid {padding: 0;}
+
 /* END - CANVAS */
