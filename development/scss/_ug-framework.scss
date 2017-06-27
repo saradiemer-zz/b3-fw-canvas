@@ -224,6 +224,12 @@ body { background-color: $white; }
 /* FOOTER ===============================================
 =======================================================*/
 
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
 footer .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -231,14 +237,11 @@ footer .container-fluid {
   margin-left: auto;
 }
 
-footer .col-sm-9 { padding-left: 0; } /* footer-address wrapper */
+footer .col-sm-12 { padding: 0; } /* footer-address wrapper */
 
 #footer-address {
-  padding: 20px 0 30px;
+  padding: 10px 0;
   background-color: $gold;
-  	@include media-breakpoint-down(sm) {
-			padding: 10px 25px;
-	}
 }
 
 #footer-address .vcard { font-size: .9em; }
@@ -252,15 +255,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 #ug-footer-cta-wrapper {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	z-index: 10000;
+	height: auto;
+	background: $gray-extra-dark;
 }
 
 #ug-footer-address-wrapper {
-	min-height: 165px;
-	height: 165px;
+	height: auto;
 	background: $gold;
 }
 
