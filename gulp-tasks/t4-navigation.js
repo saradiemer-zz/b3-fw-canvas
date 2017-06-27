@@ -23,6 +23,9 @@ gulp.task('t4_nav', function() {
 		'sitemenu': '<t4 type="navigation" id="251"/>',
 		'homefooter': '<t4 type="navigation" id="536"/>',
 		'globalquicklinks': '<t4 type="media" id="77813" formatter="plain/text"/>',
+		'ledephoto': '<t4 type="navigation" id="667"/>',
+		'ledecaption': '<t4 type="navigation" id="668"/>',
+		'rightcolumn': '<t4 type="navigation" id="669"/>',
 		}, {
 		keepUnassigned: false,
 		keepBlockTags: true,
