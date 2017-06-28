@@ -85,37 +85,69 @@ $( "document" ).ready( function() {
           $('.sb-controls .search-open')
       ];
         if(tmpItems[2].hasClass('glyphicon-remove-circle')){
-            console.log('has remove');
             $('.sb-controls .close-sb').click();
             menuSearchToggleActive = false;
             return;
         }
         tmpItems[0].removeClass('active');
         tmpItems[1].addClass('active');
-        tmpItems[2].addClass('glyphicon-remove-circle');
-        tmpItems[3].removeClass('glyphicon-remove-circle');
-        if(isSearch){
-            tmpItems[2].removeClass('glyphicon-search');
-            tmpItems[3].addClass('glyphicon-menu-hamburger');
-        }
-        else {
-            tmpItems[2].removeClass('glyphicon-menu-hamburger');
-            tmpItems[3].addClass('glyphicon-search');
-        }
+//        tmpItems[2].addClass('glyphicon-remove-circle');
+//        tmpItems[3].removeClass('glyphicon-remove-circle');
+//        if(isSearch){
+//            tmpItems[2].removeClass('glyphicon-search');
+//            tmpItems[3].addClass('glyphicon-menu-hamburger');
+//        }
+//        else {
+//            tmpItems[2].removeClass('glyphicon-menu-hamburger');
+//            tmpItems[3].addClass('glyphicon-search');
+//        }
         menuSearchToggleActive = false;
     };
 
     $('.side-menu-open').click(function(){
-        console.log('smo clicked');
-		toggleMenuSearch(false);
+        toggleMenuSearch(false);
 	});
     $('.search-open').click(function(){
-        console.log('so clicked');
         toggleMenuSearch(true);
     });
     $('.menu-open').click(function(){
-        console.log('mo clicked');
         toggleMenuSearch(false);
+    });
+    
+    $('#first-menu .panel a span').click(function(e){
+        e.preventDefault();
+        return false;
+    });
+    
+    var t4Lists = $('#first-menu > ul > li'),
+        panelTemplate = '<div class="panel">' +
+        '<div class="panel-heading">' +
+        '<h4 class="subhead">' +
+        '<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href=""><span></span><i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i></a>' +
+        '</h4>' +
+        '</div>' +
+        '<div class="panel-collapse collapse">' +
+        '<div class="panel-body">' +
+        '</div>' +
+        '</div>' +
+        '</div>',
+        firstMenu = $('#first-menu'),
+        tmpPanel;
+    t4Lists.each(function(i){
+        var item = $(this),
+            subList = $('ul',item);
+        firstMenu.append(panelTemplate);
+        tmpPanel = $('div.panel:last',firstMenu).eq(0);
+        if(subList.length > 0){
+            $('div .panel-body',tmpPanel).append(subList);
+            $('.panel-heading .accordion-toggle',tmpPanel).attr('href','#collapse-' + i);
+            $('.panel-collapse',tmpPanel).attr('id','collapse-' + i);
+        }
+        else {
+            $('.panel-heading .accordion-toggle i',tmpPanel).hide();
+        }
+        $('.panel-heading .subhead',tmpPanel).append(item.html());
+        item.hide();
     });
 });
 	</script>
