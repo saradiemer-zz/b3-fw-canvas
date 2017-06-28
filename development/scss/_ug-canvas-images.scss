@@ -1,0 +1,266 @@
+/*================================================
+B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
+================================================*/
+
+/* NAME: */
+/* LOCATION:  */
+/* PURPOSE: */
+/* EXAMPLE:*/
+
+/*================================================
+================================================*/
+
+/* .partial-overlay surrounds the .bg-overlay that only covers part of the fullbleed image */
+
+.fullbleed .partial-overlay {
+	margin-top: -31.3888%;
+}
+
+@media (max-width: 991px) {
+.fullbleed .partial-overlay {
+	margin-top: -40.3888%;
+}
+}
+
+@media (max-width: 768px) {
+.fullbleed .partial-overlay {
+	margin-top: -50%;
+}
+}
+
+@media (max-width: 543px) {
+.fullbleed .partial-overlay {
+	margin-top: -80.6%;
+}
+}
+
+.fullbleed .partial-overlay .bg-overlay { padding: 30px; }
+
+@media (max-width: 991px) {
+.fullbleed .partial-overlay .bg-overlay {
+	padding: 30px 15px;
+}
+}
+
+/* delete this once we know we don't need it */
+
+/*
+
+.partial-overlay.col-sm-2,
+.partial-overlay.col-sm-3,
+.partial-overlay.col-sm-4,
+.partial-overlay.col-sm-5,
+.partial-overlay.col-sm-6,
+.partial-overlay.col-sm-7,
+.partial-overlay.col-sm-8,
+.partial-overlay.col-sm-9,
+.partial-overlay.col-sm-10,
+.partial-overlay.col-sm-11,
+.partial-overlay.col-sm-12 {
+	padding: 30px;
+	margin-top: 31.3888%;
+}
+
+@media (max-width: 768px) {
+	.partial-overlay.col-sm-2,
+	.partial-overlay.col-sm-3,
+	.partial-overlay.col-sm-4,
+	.partial-overlay.col-sm-5,
+	.partial-overlay.col-sm-6,
+	.partial-overlay.col-sm-7,
+	.partial-overlay.col-sm-8,
+	.partial-overlay.col-sm-9,
+	.partial-overlay.col-sm-10,
+	.partial-overlay.col-sm-11,
+	.partial-overlay.col-sm-12 {
+		margin-top: 50%;
+}
+}
+
+@media (max-width: 543px) {
+	.partial-overlay.col-sm-2,
+	.partial-overlay.col-sm-3,
+	.partial-overlay.col-sm-4,
+	.partial-overlay.col-sm-5,
+	.partial-overlay.col-sm-6,
+	.partial-overlay.col-sm-7,
+	.partial-overlay.col-sm-8,
+	.partial-overlay.col-sm-9,
+	.partial-overlay.col-sm-10,
+	.partial-overlay.col-sm-11,
+	.partial-overlay.col-sm-12 {
+		margin-top: 80.6%;
+}
+}
+
+*/
+
+#about-welcome.fullbleed,
+#about-visit.fullbleed,
+#about-chicago.fullbleed,
+#academics-committed.fullbleed,
+#academics-global.fullbleed,
+#academics-hsd.fullbleed,
+#academics-online.fullbleed,
+#admission-journey.fullbleed,
+#admission-graduate.fullbleed,
+#campus-experience.fullbleed,
+#campus-living.fullbleed,
+#campus-athletics.fullbleed {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url("http://placehold.it/1801x735");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 0 !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 991px) {
+#about-welcome.fullbleed,
+#about-visit.fullbleed,
+#about-chicago.fullbleed,
+#academics-committed.fullbleed,
+#academics-global.fullbleed,
+#academics-hsd.fullbleed,
+#academics-online.fullbleed,
+#admission-journey.fullbleed,
+#admission-graduate.fullbleed,
+#campus-experience.fullbleed,
+#campus-living.fullbleed,
+#campus-athletics.fullbleed {
+	background-size: 150%;
+}
+
+.mobile-divide {
+    display: inline-block;
+	width: 96%;
+	min-height: 1px;
+    border-bottom: solid 1px #d5d5d5;
+    margin-left: 15px;
+	margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+}
+
+@media (max-width: 768px) {
+#about-welcome.fullbleed,
+#about-visit.fullbleed,
+#about-chicago.fullbleed,
+#academics-committed.fullbleed,
+#academics-global.fullbleed,
+#academics-hsd.fullbleed,
+#academics-online.fullbleed,
+#admission-journey.fullbleed,
+#admission-graduate.fullbleed,
+#campus-experience.fullbleed,
+#campus-living.fullbleed,
+#campus-athletics.fullbleed {
+	background-size: 125%;
+}
+}
+
+@media (max-width: 543px)	{
+#about-welcome.fullbleed,
+#about-visit.fullbleed,
+#about-chicago.fullbleed,
+#academics-committed.fullbleed,
+#academics-global.fullbleed,
+#academics-hsd.fullbleed,
+#academics-online.fullbleed,
+#admission-journey.fullbleed,
+#admission-graduate.fullbleed,
+#campus-experience.fullbleed,
+#campus-living.fullbleed,
+#campus-athletics.fullbleed {
+	background-size: 200%;
+}
+}
+
+#about-welcome.fullbleed:before,
+#about-visit.fullbleed:before,
+#about-chicago.fullbleed:before,
+#academics-committed.fullbleed:before,
+#academics-global.fullbleed:before,
+#academics-hsd.fullbleed:before,
+#academics-online.fullbleed:before,
+#admission-journey.fullbleed:before,
+#admission-graduate.fullbleed:before,
+#campus-experience.fullbleed:before,
+#campus-living.fullbleed:before,
+#campus-athletics.fullbleed:before {
+  margin: 0;
+  padding: 0;
+  padding-top: 31.3888%;
+  content: "";
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+#about-welcome.fullbleed:before,
+#about-visit.fullbleed:before,
+#about-chicago.fullbleed:before,
+#academics-committed.fullbleed:before,
+#academics-global.fullbleed:before,
+#academics-hsd.fullbleed:before,
+#academics-online.fullbleed:before,
+#admission-journey.fullbleed:before,
+#admission-graduate.fullbleed:before,
+#campus-experience.fullbleed:before,
+#campus-living.fullbleed:before,
+#campus-athletics.fullbleed:before {
+	padding-top: 40.3888%;
+}
+}
+
+@media (max-width: 768px) {
+#about-welcome.fullbleed:before,
+#about-visit.fullbleed:before,
+#about-chicago.fullbleed:before,
+#academics-committed.fullbleed:before,
+#academics-global.fullbleed:before,
+#academics-hsd.fullbleed:before,
+#academics-online.fullbleed:before,
+#admission-journey.fullbleed:before,
+#admission-graduate.fullbleed:before,
+#campus-experience.fullbleed:before,
+#campus-living.fullbleed:before,
+#campus-athletics.fullbleed:before {
+	padding-top: 50%;
+}
+}
+
+@media (max-width: 543px) {
+#about-welcome.fullbleed:before,
+#about-visit.fullbleed:before,
+#about-chicago.fullbleed:before,
+#academics-committed.fullbleed:before,
+#academics-global.fullbleed:before,
+#academics-hsd.fullbleed:before,
+#academics-online.fullbleed:before,
+#admission-journey.fullbleed:before,
+#admission-graduate.fullbleed:before,
+#campus-experience.fullbleed:before,
+#campus-living.fullbleed:before,
+#campus-athletics.fullbleed:before {
+	padding-top: 80.6%;
+}
+}
+
+#res-life-dining.fullbleed { background: url('/images/res-life/res-life-4.jpg')}
+#about-visit.fullbleed { background: url('/media/lucedu/about/b3/about-lake-motion.jpg'); }
+#about-chicago.fullbleed { background: url('/media/lucedu/about/b3/about-chicago.jpg'); }
+#academics-committed.fullbleed { background: url('/media/lucedu/academics/b3/academics-1800x735.jpg');}
+#academics-global.fullbleed { background: url('/media/lucedu/academics/b3/academics-rome.jpg');}
+#academics-hsd.fullbleed { background: url('/media/lucedu/academics/b3/academics-hsd.jpg');}
+#academics-online.fullbleed { background: url('/media/lucedu/academics/b3/academics-online.jpg');}
+#admission-journey.fullbleed { background: url('/media/lucedu/about/b3/1800x735-admission.jpg');}
+#admission-graduate.fullbleed { background: url('/media/lucedu/about/b3/admission-wtc.jpg');}
+#campus-experience.fullbleed { background: url('/media/lucedu/about/b3/1800x735-campus.jpg');}
+#campus-living.fullbleed { background: url('/media/lucedu/about/b3/campus-reslife.jpg');}
+#campus-athletics.fullbleed { background: url('/media/lucedu/about/b3/campus-athletics.jpg');}
+
+/* END */
