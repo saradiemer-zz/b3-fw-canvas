@@ -173,7 +173,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
-	height: 450px;
+	height: 400px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
@@ -308,6 +308,11 @@ li.res-life {list-style: square; margin: 7px 9px;}
 }
 .container-fluid {padding: 0;}
 
+/*VIDEO EMBED */
+
+.embed-responsive-4by1 {
+	padding-bottom: 25%;
+}
 
 
 /* END - CANVAS */
