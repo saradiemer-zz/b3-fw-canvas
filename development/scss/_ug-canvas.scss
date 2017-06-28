@@ -294,12 +294,14 @@
 
 /* ADDS PHOTO BACKGROUND */
 #main-content-canvas {
-	background: url(http://www.luc.edu/media/autopublish/bg-water.jpg) no-repeat scroll 0 0;
+	background: $bg-overlay;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	overflow:hidden;
 }
 .container-fluid {padding: 0;}
+
+
 
 /* END - CANVAS */
