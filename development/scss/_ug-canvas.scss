@@ -173,7 +173,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
-	height: 450px;
+	height: 400px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
@@ -292,6 +292,12 @@
 
 .icon { width: 70px; margin-bottom:10px; height: 70px; border-radius: 100%; background-color: #C1C1C1;}
 
+.icon-number { width: 20px; margin-bottom:10px; height: 20px; border-radius: 100%; font-size: 1.25em;}
+
+ul.res-life {font-size: .825em; text-transform: none; list-style: square; }
+
+li.res-life {list-style: square; margin: 7px 9px;}
+
 /* ADDS PHOTO BACKGROUND */
 #main-content-canvas {
 	background: $bg-overlay;
@@ -302,6 +308,11 @@
 }
 .container-fluid {padding: 0;}
 
+/*VIDEO EMBED */
+
+.embed-responsive-4by1 {
+	padding-bottom: 25%;
+}
 
 
 /* END - CANVAS */
