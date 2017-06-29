@@ -51,9 +51,10 @@ p.body.explainer { margin: 0 0 10px 0; }
 
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
+
 h1.display {
 	font-family: 'Antenna Black', sans-serif;
-	font-size: 4em;
+	font-size: 5em;
 }
 
 h1.pagelayout { font-size: 2.25em;
@@ -85,10 +86,12 @@ NUMBERS ===================================== */
 
 .number.display p.body { margin: 0 0 20px 0; line-height: 1; }
 
-.number h1.display	{ margin: -12px 0 5px 0; font-size: 800%; letter-spacing: -.02em; }
+.number h1.display	{ margin: -12px 0 -10px 0; font-size: 800%; letter-spacing: -.02em; }
 	@media (max-width: 600px) { .number h1.display { font-size: 300% } .number.display h1.display { font-size: 200%; } }
 
-.number p.body	{ margin: 0 0 -2px 0; line-height: 1.75; }
+.number p.body	{ margin: 0 0 -2px 0; font-size: .925em; }
+
+.number span.antenna-light { font-family: 'Antenna Light', sans-serif !important; }
 
 /* ===============================================
 TABS ========================================= */
@@ -162,7 +165,13 @@ p a.cta { font-size: .75em;
 	@include media-breakpoint-down(md) { font-size: .95em; }
 }
 
- p.small a.cta { font-size: .925em; }
+p.small a.cta { font-size: .925em; }
+
+.container.canvas-content p a.cta {
+	margin-left: 5px;
+	font-size: 1em;
+	@include media-breakpoint-down(md) { font-size: .95em; }
+}
 
 input[type="file"] {
 	margin: 30px 0 0;
