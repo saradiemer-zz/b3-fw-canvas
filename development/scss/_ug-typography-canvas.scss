@@ -35,6 +35,10 @@ p a { font-weight: bold; }
 
 a:hover, article.content p a:hover { color: $patina; cursor:pointer; }
 
+p.body.intro { font-size: 1.5em }
+
+p.body.explainer { margin: 0 0 10px 0; }
+
 .nav a:visited,
 .nav a:hover,
 .nav a:focus {
@@ -47,7 +51,10 @@ a:hover, article.content p a:hover { color: $patina; cursor:pointer; }
 
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
-h1.display { font-size:5em; }
+h1.display {
+	font-family: 'Antenna Black', sans-serif;
+	font-size: 4em;
+}
 
 h1.pagelayout { font-size: 2.25em;
 text-transform:uppercase; }
@@ -63,7 +70,9 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-h5.label {font-family: "Antenna-Light", sans-serif !important;}
+.canvas-content h5.label { font-size: 3em; }
+
+.canvas-content.blockquote-spacing { padding: 30px 0; }
 
 /* ===============================================
 NUMBERS ===================================== */
