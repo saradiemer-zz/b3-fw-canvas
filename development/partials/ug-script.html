@@ -2,34 +2,33 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 </script>
-<!--Javascript file smooth-scroll.js -->
-<script type="text/javascript" src="https://www.luc.edu/media/b3/js/smooth-scroll.js">
+
 </script>
 <!--Javascript file functions.js -->
 </script>
 <script>
-$(window).on('scroll', function() {
-	if ($(window).scrollTop() >= 10) {
-	$('h1.text-muted').fadeIn('slow');
-	} else {
-	$('h1.text-muted').fadeOut('slow');
-	}
+	$(window).on('scroll', function() {
+		if ($(window).scrollTop() >= 10) {
+			$('h1.text-muted').fadeIn('slow');
+		} else {
+			$('h1.text-muted').fadeOut('slow');
+		}
 	});
 </script>
 <!-- JS Name:grid-->
 <script>
-	$(function(){
-// See if this is a touch device
-	if ('ontouchstart' in window) {
-// Set the correct [touchscreen] body class
-	$('body').removeClass('no-touch').addClass('touch');
-// Add the touch toggle to show text when tapped
-	$('div.grid-image').click(function(){
-	$('div.grid-image').not(this).removeClass('touchFocus');
-	$(this).closest('.grid-image').addClass('selected').toggleClass('touchFocus');
-	}
-	);
-	}});
+	$(function() {
+		// See if this is a touch device
+		if ('ontouchstart' in window) {
+			// Set the correct [touchscreen] body class
+			$('body').removeClass('no-touch').addClass('touch');
+			// Add the touch toggle to show text when tapped
+			$('div.grid-image').click(function() {
+				$('div.grid-image').not(this).removeClass('touchFocus');
+				$(this).closest('.grid-image').addClass('selected').toggleClass('touchFocus');
+			});
+		}
+	});
 </script>
 <!-- Custom JS files-->
 <!-- build:customjs -->
@@ -37,118 +36,132 @@ $(window).on('scroll', function() {
 <!-- inject:js -->
 <script src="/js/all.js"></script>
 
-	<script>
-$( "document" ).ready( function() {
+<script>
+	$("document").ready(function() {
 
-    _navOffSet = 175;
-    $(".ug-global-nav-wrapper a").click(function(e){
-        var offSet = $(e.target).parent().parent().offset();
-        console.log(offSet.top,$(window).scrollTop());
-        _navOffSet = offSet.top - $(window).scrollTop();
-    });
+		_navOffSet = 175;
+		$(".ug-global-nav-wrapper a").click(function(e) {
+			var offSet = $(e.target).parent().parent().offset();
+			console.log(offSet.top, $(window).scrollTop());
+			_navOffSet = offSet.top - $(window).scrollTop();
+		});
 
-    $( "#main-sidebar" ).simplerSidebar( {
-        selectors: {
-            trigger: ".ug-global-nav-wrapper a",
-            quitter: ".close-sb"
-        },
-        animation: {
-          duration: 300
-        },
-        sidebar: {
-            width: 400,
-        },
-        mask: {
-            display: true,
-            css: {
-                backgroundColor: "black",
-                opacity: 0.85,
-                filter: "Alpha(opacity=85)"
-            }
-        },
-        zIndex: 30001
+		$("#main-sidebar").simplerSidebar({
+			selectors: {
+				trigger: ".ug-global-nav-wrapper a",
+				quitter: ".close-sb"
+			},
+			animation: {
+				duration: 300
+			},
+			sidebar: {
+				width: 400,
+			},
+			mask: {
+				display: true,
+				css: {
+					backgroundColor: "black",
+					opacity: 0.85,
+					filter: "Alpha(opacity=85)"
+				}
+			},
+			zIndex: 30001
+		});
+
+		var menuSearchToggleActive = false;
+
+		function toggleMenuSearch(isSearch) {
+			if (menuSearchToggleActive) return;
+			menuSearchToggleActive = true;
+			var tmpItems = isSearch ? [
+				$('#first-menu'),
+				$('#search-input'),
+				$('.sb-controls .search-open'),
+				$('.sb-controls .menu-open')
+			] : [
+				$('#search-input'),
+				$('#first-menu'),
+				$('.sb-controls .menu-open'),
+				$('.sb-controls .search-open')
+			];
+			if (tmpItems[2].hasClass('glyphicon-remove-circle')) {
+				$('.sb-controls .close-sb').click();
+				menuSearchToggleActive = false;
+				return;
+			}
+			tmpItems[0].removeClass('active');
+			tmpItems[1].addClass('active');
+			//        tmpItems[2].addClass('glyphicon-remove-circle');
+			//        tmpItems[3].removeClass('glyphicon-remove-circle');
+			//        if(isSearch){
+			//            tmpItems[2].removeClass('glyphicon-search');
+			//            tmpItems[3].addClass('glyphicon-menu-hamburger');
+			//        }
+			//        else {
+			//            tmpItems[2].removeClass('glyphicon-menu-hamburger');
+			//            tmpItems[3].addClass('glyphicon-search');
+			//        }
+			menuSearchToggleActive = false;
+		};
+
+		$('.side-menu-open').click(function() {
+			toggleMenuSearch(false);
+		});
+		$('.search-open').click(function() {
+			toggleMenuSearch(true);
+		});
+		$('.menu-open').click(function() {
+			toggleMenuSearch(false);
+		});
+
+		$('#first-menu .panel a span').click(function(e) {
+			e.preventDefault();
+			return false;
+
+		});
+
+		var t4Lists = $('#first-menu > ul > li'),
+			panelTemplate = '<div class="panel">' +
+			'<div class="panel-heading">' +
+			'<h4 class="subhead">' +
+			'<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href=""><span></span><i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i></a>' +
+			'</h4>' +
+			'</div>' +
+			'<div class="panel-collapse collapse">' +
+			'<div class="panel-body">' +
+			'</div>' +
+			'</div>' +
+			'</div>',
+			firstMenu = $('#first-menu'),
+			tmpPanel;
+		t4Lists.each(function(i) {
+			var item = $(this),
+				subList = $('ul', item);
+			firstMenu.append(panelTemplate);
+			tmpPanel = $('div.panel:last', firstMenu).eq(0);
+			if (subList.length > 0) {
+				$('div .panel-body', tmpPanel).append(subList);
+				$('.panel-heading .accordion-toggle', tmpPanel).attr('href', '#collapse-' + i);
+				$('.panel-collapse', tmpPanel).attr('id', 'collapse-' + i);
+
+
+			} else {
+				$('.panel-heading .accordion-toggle i', tmpPanel).hide();
+				$('.collapse').on('show.bs.collapse', function(e) {
+					// Get clicked element that initiated the collapse...
+					clicked = $(document).find("[href='#" + $(e.target).attr('id') + "']");
+					$(clicked.selector + ' i').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
+				});
+				$('.collapse').on('hide.bs.collapse', function(e) {
+					// Get clicked element that initiated the hide...
+					clicked = $(document).find("[href='#" + $(e.target).attr('id') + "']");
+					$(clicked.selector + ' i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
+				});
+
+			}
+			$('.panel-heading .subhead', tmpPanel).append(item.html());
+			item.hide();
+		});
 	});
-
-    var menuSearchToggleActive = false;
-    function toggleMenuSearch(isSearch){
-        if(menuSearchToggleActive)return;
-        menuSearchToggleActive = true;
-      var tmpItems = isSearch ? [
-          $('#first-menu'),
-          $('#search-input'),
-          $('.sb-controls .search-open'),
-          $('.sb-controls .menu-open')
-      ] : [
-          $('#search-input'),
-          $('#first-menu'),
-          $('.sb-controls .menu-open'),
-          $('.sb-controls .search-open')
-      ];
-        if(tmpItems[2].hasClass('glyphicon-remove-circle')){
-            $('.sb-controls .close-sb').click();
-            menuSearchToggleActive = false;
-            return;
-        }
-        tmpItems[0].removeClass('active');
-        tmpItems[1].addClass('active');
-//        tmpItems[2].addClass('glyphicon-remove-circle');
-//        tmpItems[3].removeClass('glyphicon-remove-circle');
-//        if(isSearch){
-//            tmpItems[2].removeClass('glyphicon-search');
-//            tmpItems[3].addClass('glyphicon-menu-hamburger');
-//        }
-//        else {
-//            tmpItems[2].removeClass('glyphicon-menu-hamburger');
-//            tmpItems[3].addClass('glyphicon-search');
-//        }
-        menuSearchToggleActive = false;
-    };
-
-    $('.side-menu-open').click(function(){
-        toggleMenuSearch(false);
-	});
-    $('.search-open').click(function(){
-        toggleMenuSearch(true);
-    });
-    $('.menu-open').click(function(){
-        toggleMenuSearch(false);
-    });
-    
-    $('#first-menu .panel a span').click(function(e){
-        e.preventDefault();
-        return false;
-    });
-    
-    var t4Lists = $('#first-menu > ul > li'),
-        panelTemplate = '<div class="panel">' +
-        '<div class="panel-heading">' +
-        '<h4 class="subhead">' +
-        '<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href=""><span></span><i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i></a>' +
-        '</h4>' +
-        '</div>' +
-        '<div class="panel-collapse collapse">' +
-        '<div class="panel-body">' +
-        '</div>' +
-        '</div>' +
-        '</div>',
-        firstMenu = $('#first-menu'),
-        tmpPanel;
-    t4Lists.each(function(i){
-        var item = $(this),
-            subList = $('ul',item);
-        firstMenu.append(panelTemplate);
-        tmpPanel = $('div.panel:last',firstMenu).eq(0);
-        if(subList.length > 0){
-            $('div .panel-body',tmpPanel).append(subList);
-            $('.panel-heading .accordion-toggle',tmpPanel).attr('href','#collapse-' + i);
-            $('.panel-collapse',tmpPanel).attr('id','collapse-' + i);
-        }
-        else {
-            $('.panel-heading .accordion-toggle i',tmpPanel).hide();
-        }
-        $('.panel-heading .subhead',tmpPanel).append(item.html());
-        item.hide();
-    });
-});
-	</script>
+</script>
 <!-- endinject -->
