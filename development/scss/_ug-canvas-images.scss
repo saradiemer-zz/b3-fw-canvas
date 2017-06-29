@@ -97,6 +97,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 */
 
+#study-abroad-story.fullbleed,
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
 #res-life-clubs.fullbleed,
@@ -121,6 +122,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 991px) {
+#study-abroad-story.fullbleed,
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
 #res-life-clubs.fullbleed,
@@ -151,6 +153,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 768px) {
+#study-abroad-story.fullbleed,
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
 #res-life-clubs.fullbleed,
@@ -169,6 +172,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 543px)	{
+#study-abroad-story.fullbleed,
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
 #res-life-clubs.fullbleed,
@@ -186,6 +190,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 }
 
+#study-abroad-story.fullbleed:before,
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
 #res-life-clubs.fullbleed:before,
@@ -207,6 +212,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 991px) {
+#study-abroad-story.fullbleed:before,
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
 #res-life-clubs.fullbleed:before,
@@ -225,6 +231,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 768px) {
+#study-abroad-story.fullbleed:before,
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
 #res-life-clubs.fullbleed:before,
@@ -243,6 +250,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 @media (max-width: 543px) {
+#study-abroad-story.fullbleed:before,
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
 #res-life-clubs.fullbleed:before,
@@ -260,6 +268,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 }
 
+#study-abroad-story.fullbleed { background: url('/images/study-abroad/1800x450-story-FPO.jpg'); }
 #res-life-dining.fullbleed { background: url('/images/res-life/res-life-fpo.jpg'); }
 #cost-difference.fullbleed { background: url('/images/cost/cost-story-fpo.jpg') }
 #res-life-clubs.fullbleed { background: url('/images/res-life/res-life-9.jpg'); }
