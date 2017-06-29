@@ -61,10 +61,25 @@ B3 - FRAMEWORK - SLIDER - 053017
     bottom: 0px;
     left: 0px;
     z-index: 10;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
     color: #fff;
 }
+
+.carousel-caption {
+	p.caption {
+		margin: 0;
+		color: $gray-extra-light;
+	}
+	p.caption a {
+		margin: 0 0 0 5px;
+		color: $patina;
+	}
+}
+
+.carousel a:link { color: $gray-extra-light; }
 
 #myCarousel-1 .canvas-content {padding: 0px;}
 
@@ -88,7 +103,7 @@ B3 - FRAMEWORK - SLIDER - 053017
 	margin: auto;
 }
 
- html.wf-museosans-n5-active.wf-museosans-n3-active.wf-museoslab-n5-active.wf-museoslab-n7-active.wf-minionpro-n4-active.wf-myriadpro-n7-active.wf-myriadpro-n4-active.wf-active body div#Slider.container.canvas-content.carousel.slide.carousel-fade div.carousel-inner a.right.carousel-control{ width: 30px; right: 0px; background-image:none; }
+html.wf-museosans-n5-active.wf-museosans-n3-active.wf-museoslab-n5-active.wf-museoslab-n7-active.wf-minionpro-n4-active.wf-myriadpro-n7-active.wf-myriadpro-n4-active.wf-active body div#Slider.container.canvas-content.carousel.slide.carousel-fade div.carousel-inner a.right.carousel-control{ width: 30px; right: 0px; background-image:none; }
 
 html.wf-museosans-n5-active.wf-museosans-n3-active.wf-museoslab-n5-active.wf-museoslab-n7-active.wf-minionpro-n4-active.wf-myriadpro-n7-active.wf-myriadpro-n4-active.wf-active body div#Slider.container.canvas-content.carousel.slide.carousel-fade div.carousel-inner a.left.carousel-control { width: 30px; left: 0px; background-image:none; }
 
