@@ -107,8 +107,6 @@
 	}
 }
 
-.canvas-content p { margin-bottom: 0; }
-
 .canvas-base .col-md-12,
 .canvas-base .col-md-11,
 .canvas-base .col-md-10,
@@ -217,6 +215,16 @@
 	}
 }
 
+.fullbleed .partial-overlay .bg-overlay-dark {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+	}
+}
+
 .fullbleed .partial-overlay .canvas-content {
 	@include media-breakpoint-down(md) {
 		padding: 20px 0;
@@ -233,7 +241,17 @@
 	margin-bottom: 10px;
 }
 
+.container-fluid.bg-overlay-dark p.body.intro {
+	margin-bottom: 10px;
+}
+
 .partial-overlay .bg-overlay.col-sm-4 {
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+}
+
+.partial-overlay .bg-overla-dark.col-sm-4 {
 	@include media-breakpoint-down(sm) {
 		width: 100%;
 	}
@@ -268,6 +286,18 @@
 		}
 }
 
+.bg-overlay-dark {
+	@include media-breakpoint-up(lg) { display: block; }
+	@include media-breakpoint-down(lg) { display: none; }
+	color: $gray-light;
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		a.cta {
+			color: $gold;
+		}
+}
+
 .canvas-panel {
 	@include media-breakpoint-up(lg) { display: none; }
 	@include media-breakpoint-down(lg) { display: block; padding-left: 0; padding-right: 0; }
@@ -285,6 +315,12 @@
 }
 
 .bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
+	@include media-breakpoint-down(lg) {
+		font-size: 2em !important;
+	}
+}
+
+.bg-overlay-dark h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
 		font-size: 2em !important;
 	}
@@ -313,6 +349,5 @@ li.res-life {list-style: square; margin: 7px 9px;}
 .embed-responsive-4by1 {
 	padding-bottom: 25%;
 }
-
 
 /* END - CANVAS */
