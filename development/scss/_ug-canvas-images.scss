@@ -36,6 +36,8 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 .fullbleed .partial-overlay .bg-overlay { padding: 30px; }
 
+.fullbleed .partial-overlay .bg-overlay-dark { padding: 30px; }
+
 @media (max-width: 991px) {
 .fullbleed .partial-overlay .bg-overlay {
 	padding: 30px 15px;
@@ -97,7 +99,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
-#about-visit.fullbleed,
+#res-life-clubs.fullbleed,
 #about-chicago.fullbleed,
 #academics-committed.fullbleed,
 #academics-global.fullbleed,
@@ -121,7 +123,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 991px) {
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
-#about-visit.fullbleed,
+#res-life-clubs.fullbleed,
 #about-chicago.fullbleed,
 #academics-committed.fullbleed,
 #academics-global.fullbleed,
@@ -151,7 +153,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 768px) {
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
-#about-visit.fullbleed,
+#res-life-clubs.fullbleed,
 #about-chicago.fullbleed,
 #academics-committed.fullbleed,
 #academics-global.fullbleed,
@@ -169,7 +171,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 543px)	{
 #res-life-dining.fullbleed,
 #cost-difference.fullbleed,
-#about-visit.fullbleed,
+#res-life-clubs.fullbleed,
 #about-chicago.fullbleed,
 #academics-committed.fullbleed,
 #academics-global.fullbleed,
@@ -186,7 +188,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
-#about-visit.fullbleed:before,
+#res-life-clubs.fullbleed:before,
 #about-chicago.fullbleed:before,
 #academics-committed.fullbleed:before,
 #academics-global.fullbleed:before,
@@ -207,7 +209,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 991px) {
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
-#about-visit.fullbleed:before,
+#res-life-clubs.fullbleed:before,
 #about-chicago.fullbleed:before,
 #academics-committed.fullbleed:before,
 #academics-global.fullbleed:before,
@@ -225,7 +227,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 768px) {
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
-#about-visit.fullbleed:before,
+#res-life-clubs.fullbleed:before,
 #about-chicago.fullbleed:before,
 #academics-committed.fullbleed:before,
 #academics-global.fullbleed:before,
@@ -243,7 +245,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 @media (max-width: 543px) {
 #res-life-dining.fullbleed:before,
 #cost-difference.fullbleed:before,
-#about-visit.fullbleed:before,
+#res-life-clubs.fullbleed:before,
 #about-chicago.fullbleed:before,
 #academics-committed.fullbleed:before,
 #academics-global.fullbleed:before,
@@ -258,7 +260,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 }
 
-#res-life-dining.fullbleed { background: url('/images/res-life/res-life-4.jpg'); }
+#res-life-dining.fullbleed { background: url('/images/res-life/res-life-fpo.jpg'); }
 #cost-difference.fullbleed { background: url('/images/cost/cost-story-fpo.jpg') }
 #res-life-clubs.fullbleed { background: url('/images/res-life/res-life-9.jpg'); }
 #academics-committed.fullbleed { background: url('/media/lucedu/academics/b3/academics-1800x735.jpg'); }
