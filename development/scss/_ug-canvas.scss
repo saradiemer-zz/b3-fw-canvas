@@ -277,7 +277,7 @@
 .bg-overlay {
 	@include media-breakpoint-up(lg) { display: block; }
 	@include media-breakpoint-down(lg) { display: none; }
-	color: $bg-overlay;
+	color: $gray-light;
 		h1 {
 			margin: 0 0 5px 0;
 		}
@@ -289,7 +289,7 @@
 .bg-overlay-dark {
 	@include media-breakpoint-up(lg) { display: block; }
 	@include media-breakpoint-down(lg) { display: none; }
-	color: $bg-overlay-dark;
+	color: $gray-light;
 		h1 {
 			margin: 0 0 5px 0;
 		}
