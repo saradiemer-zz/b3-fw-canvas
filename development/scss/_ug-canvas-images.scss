@@ -36,6 +36,8 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 .fullbleed .partial-overlay .bg-overlay { padding: 30px; }
 
+.fullbleed .partial-overlay .bg-overlay-dark { padding: 30px; }
+
 @media (max-width: 991px) {
 .fullbleed .partial-overlay .bg-overlay {
 	padding: 30px 15px;
@@ -258,9 +260,9 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 }
 
-#res-life-dining.fullbleed { background: url('/images/res-life/res-life-7.jpg'); }
+#res-life-dining.fullbleed { background: url('/images/res-life/res-life-fpo.jpg'); }
 #cost-difference.fullbleed { background: url('/images/cost/cost-story-fpo.jpg') }
-#res-life-clubs.fullbleed { background: url('/images/res-life/res-life-10.jpg'); }
+#res-life-clubs.fullbleed { background: url('/images/res-life/res-life-9.jpg'); }
 #academics-committed.fullbleed { background: url('/media/lucedu/academics/b3/academics-1800x735.jpg'); }
 #academics-global.fullbleed { background: url('/media/lucedu/academics/b3/academics-rome.jpg');}
 #academics-hsd.fullbleed { background: url('/media/lucedu/academics/b3/academics-hsd.jpg');}
