@@ -138,3 +138,40 @@ body {background-color: #fff; }
 html.wf-museosans-n5-active.wf-museosans-n3-active.wf-museoslab-n5-active.wf-museoslab-n7-active.wf-minionpro-n4-active.wf-myriadpro-n7-active.wf-myriadpro-n4-active.wf-active body div#Slider-Mobile.container.canvas-content.carousel.slide.carousel-fade div.container.carousel-inner a.left.carousel-control span.glyphicon.glyphicon-chevron-left { color: #888;}
 
 html.wf-museosans-n5-active.wf-museosans-n3-active.wf-museoslab-n5-active.wf-museoslab-n7-active.wf-minionpro-n4-active.wf-myriadpro-n7-active.wf-myriadpro-n4-active.wf-active body div#Slider-Mobile.container.canvas-content.carousel.slide.carousel-fade div.container.carousel-inner a.right.carousel-control span.glyphicon.glyphicon-chevron-right { color: #888;}
+
+/* carousel cross fade */
+/* we'll keep looking - works for now */
+
+.carousel-fade {
+	.carousel-inner {
+		.item {
+			transition-property: opacity;
+      }
+			.item,
+			.active.left,
+			.active.right {
+				opacity: 0;
+      }
+			.active,
+      .next.left,
+      .prev.right {
+        opacity: 1;
+      }
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
