@@ -171,7 +171,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
-	height: 400px;
+	height: 450px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
@@ -263,6 +263,8 @@
 		padding: 10px 0;
 	}
 }
+
+.partial-overlay .bg-overlay .canvas-content { padding: 10px 0; }
 
 #lead-panel-mobile .canvas-content {
 	@include media-breakpoint-down(sm) {
