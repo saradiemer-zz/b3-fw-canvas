@@ -63,7 +63,7 @@ body { background-color: $white; }
     min-height: 300px;
     height: 100%;
 	overflow: hidden;
-	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,30%) 50%, lighten($bg-overlay,30%) 100%), url('../images/texture-transparent.png');
+	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/texture-transparent.png');
 	@include media-breakpoint-down(md) {
 		background: none;
 	}
@@ -99,7 +99,13 @@ body { background-color: $white; }
 #rightColumn[class*="col-"] { padding: 0; }
 
 #rightColumn .aside-caption,
-#rightColumn .aside-quote { padding: 30px; }
+#rightColumn .aside-quote,
+#rightColumn .aside-number {
+	box-sizing: border-box;
+	padding: 30px;
+	max-width: 100%;
+	width: 100%;
+}
 
 #rightColumn .aside-caption {
 	@include media-breakpoint-down(md) {
@@ -163,6 +169,8 @@ body { background-color: $white; }
 #rightColumn .aside-image-panel img {
 	margin: 0;
 }
+
+#rightColumn .aside-number { margin: 0; }
 
 
 /* HEADER ===============================================
