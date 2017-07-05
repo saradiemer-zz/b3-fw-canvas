@@ -42,6 +42,13 @@ gulp.task('minify', function(){
     .pipe(rename('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.publicDir + '/js'));
+
+});
+
+gulp.task('minify-css', function() {
+    return gulp.src('./public/css/styles.css')
+        .pipe(cssnano())
+        .pipe(gulp.dest('./public/css/min/'));
 });
 
 gulp.task('fileinclude', function() {
@@ -114,6 +121,6 @@ gulp.task('serve', ['lint', 'sass', 'sass-home', 'index', 'minify'], function ()
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-gulp.task('default', gulpSequence(['serve', 'fonts', 'images'], 't4_media', 't4_css', 't4_nav'));
+gulp.task('default', gulpSequence(['serve', 'fonts', 'minify-css', 'images'], 't4_media', 't4_css', 't4_nav'));
 
 //END GULP.JS

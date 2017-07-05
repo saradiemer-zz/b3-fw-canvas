@@ -349,6 +349,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 #ug-nav ul li, #ug-cta ul li, #ug-explore ul li { float: left; margin: 0; width: auto; }
 
+#ug-cta ul {float: left;
+    margin: 0;padding: 0;
+
+    list-style: none;}
+
 #ug-nav ul li a,
 #ug-cta ul li a,
 #ug-explore li a {
