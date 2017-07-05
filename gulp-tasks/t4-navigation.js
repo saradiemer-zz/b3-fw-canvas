@@ -27,6 +27,7 @@ gulp.task('t4_nav', function() {
 		'ledecaption': '<t4 type="navigation" id="668"/>',
 		'rightcolumn': '<t4 type="navigation" id="669"/>',
 		'sidemainnav': '<t4 type="navigation" id="670"/>',
+		'headernav': '<t4 type="navigation" id="674"/>',
 		}, {
 		keepUnassigned: false,
 		keepBlockTags: true,
