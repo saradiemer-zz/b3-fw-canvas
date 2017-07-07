@@ -55,14 +55,15 @@ body { background-color: $white; }
 =======================================================*/
 
 #main-content {
-    display: block !important;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    min-height: 300px;
-    height: 100%;
-	overflow: hidden;
+  display: block !important;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 300px;
+  height: 100%;
+	overflow: auto;
+	margin: 0 auto 100px auto;
 	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/texture-transparent.png');
 	@include media-breakpoint-down(md) {
 		background: none;
@@ -73,10 +74,10 @@ body { background-color: $white; }
 =======================================================*/
 
 #leftColumn, #centerColumn, #rightColumn { padding: 0;
-    @include media-breakpoint-down(md) {
-    	float: left;
-    	display: block;
-    }
+  @include media-breakpoint-down(md) {
+  	float: left;
+  	display: block;
+  }
 }
 
 #leftColumn { display: none; }
