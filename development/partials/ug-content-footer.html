@@ -4,7 +4,7 @@
   <h3 class="standalone">Learning Curve</h3>
   <div class="col-md-1">
     <div class="ug-tips-icon">
-      <img src="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=download&fnno=60&ceid=2053595125" />
+      <img src="../images/icon-book.png" />
     </div>
     <p class="ug-tips-label recommend">Likely to recommend…</p>
     <p class="ug-tips-label list">The List</p>
@@ -21,7 +21,7 @@
   <h3 class="standalone">Likely</h3>
   <div class="col-md-1">
     <div class="ug-tips-icon">
-      <img src="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=download&fnno=60&ceid=416091291" />
+      <img src="../images/icon-book.png" />
     </div>
     <p class="ug-tips-label recommend">Likely to recommend…</p>
     <p class="ug-tips-label list">The List</p>
@@ -46,7 +46,7 @@
   <h3 class="standalone">List</h3>
   <div class="col-md-1">
     <div class="ug-tips-icon">
-      <img src="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=download&fnno=60&ceid=1039573205" />
+    <img src="../images/icon-book.png" />
     </div>
     <p class="ug-tips-label recommend">Likely to recommend…</p>
     <p class="ug-tips-label list">The List</p>
@@ -74,8 +74,13 @@
 <!-- rightColumn - aside -->
 <div id="rightColumn" class="col-md-3 col-md-height col-lg-height">
   <div class="inside inside-full-height">
-    @@include('./ug-sidebars/quotes/sidebar-quote.html')
-    @@include('./ug-sidebars/numbers/sidebar-numbers.html')
+    <div id="interior-wrapper-right" class="col-md-12">
+      @@include('./ug-sidebars/ug-lede-caption.html') 
+      <!-- build:rightcolumn -->
+      @@include('./ug-sidebars/quotes/sidebar-quote.html')
+      @@include('./ug-sidebars/numbers/sidebar-numbers.html')
+      <!-- endbuild -->
+    </div>
   </div>
 </div>
 </div>
