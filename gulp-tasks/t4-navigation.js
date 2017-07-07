@@ -30,7 +30,7 @@ gulp.task('t4_nav', function() {
 		'headernav': '<t4 type="navigation" id="674"/>',
 		'calltoaction': '<t4 type="navigation" id="675"/>',
 		'socialmedia': '<t4 type="navigation" id="677"/>',
-		'asides': '<t4 type="navigation" id="678"/>',
+		'aside': '<t4 type="navigation" id="678"/>',
 		}, {
 		keepUnassigned: false,
 		keepBlockTags: true,
