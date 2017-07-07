@@ -1,5 +1,12 @@
 #main-content.canvas { margin: 0; width: 100%; }
 
+.canvas-base.grid [class*="col-"],
+.canvas-base.grid [class*="col-"],
+.canvas-base.grid img {
+	margin: 0;
+	padding: 0;
+}
+
 .canvas-base a {
 	text-decoration: none;
 	-webkit-transition: color 0.2s ease;
@@ -284,7 +291,7 @@
 			margin: 0 0 5px 0;
 		}
 		a.cta {
-			color: $gold;
+			color: $patina;
 		}
 }
 
