@@ -166,5 +166,8 @@
 </script>
 <script>
 	$("document").ready(function() {	$('#navbar #nav li:nth-child(4) a').html('Other<span class="hidden-md"> applicants</span>');});
+	var el = document.getElementById("interior-wrapper-right");if(($(el).children('div.aside-caption').length > 0) || ($(el).children('div.aside-quote').length > 0) || ($(el).children('div.aside-number').length > 0)) {
+        console.log("Found");
+     }else {console.log("Not Found");$("#main-content").css('background-image', 'none');}
 	</script>
 <!-- endinject -->
