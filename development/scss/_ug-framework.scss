@@ -1,8 +1,6 @@
 /* UG FRAMEWORK */
 
-body { padding-top: 0; }
-
-body { background-color: $white; }
+body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .development-nav {
 	padding-top: 30px;
@@ -42,7 +40,13 @@ body { background-color: $white; }
 /* PAGE COLUMNS - WRAPPER ==============================
 =======================================================*/
 
-#wrapper { background: $white; } /* global wrapper */
+#wrapper {
+	background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} /* global wrapper */
 
 #interior-wrapper { padding: 0 15px; }
 
