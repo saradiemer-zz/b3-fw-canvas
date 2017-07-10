@@ -1,7 +1,12 @@
 #main-content.canvas { margin: 0; width: 100%; }
 
 .canvas-base.panel-dark {
+	color: $gray-light;
 	background:rgba(0,0,0,.35);
+}
+
+.canvas-base.panel-dark h1.display.number {
+	color: $gray-light;
 }
 
 .canvas-base.grid [class*="col-"],
