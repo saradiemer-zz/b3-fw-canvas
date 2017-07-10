@@ -68,6 +68,8 @@
 	border-radius: 50%;
 	background: darken($gold, 10%);
 	background-image: url('images/homepage/homepage-arrow.png');
+	background-position: 50% 50%;
+	background-size: 20%;
 	box-shadow: 0 0 60px $bg-overlay-dark;
 	opacity: .95;
 }
