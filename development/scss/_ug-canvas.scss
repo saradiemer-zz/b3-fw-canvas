@@ -187,7 +187,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
-	height: 450px;
+	height: 500px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
