@@ -247,6 +247,54 @@ input[type="file"] {
 .xl {font-size:12em !important; margin-bottom:-30px !important;}
 
 /* ===============================================
+BLOCKQUOTES ========================================== */
+
+blockquote, blockquote p, #page-content blockquote, #page-content blockquote p  {
+	display: inline-block;
+	margin: 20px 0 30px !important;
+	padding: 0 !important;
+	width: 100%;
+	max-width: 100%;
+	font-family: 'Antenna Bold', san-serif;
+	font-size: 1.35em;
+	font-weight: 700;
+	font-style: none;
+	letter-spacing: 0em;
+	line-height: 1.6;
+	color: $gray-extra-dark;
+	border-left: 0;
+	border-top: none 0;
+	border-bottom: none 0;
+}
+
+.quote {
+	background-color:#fff;
+}
+
+blockquote p, #page-content blockquote p { margin: 0 0 10px !important; padding: 0; }
+	@media (max-width: 414px) { blockquote, blockquote p { font-size: 1.05em; line-height: 1.85; } }
+
+blockquote cite {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Antenna', san-serif;
+	font-size: .7em;
+	font-weight: lighter;
+	font-weight: 100;
+	font-style: normal;
+	letter-spacing: 0;
+	line-height: 1.45;
+	text-transform: uppercase;
+}
+
+blockquote cite a {
+	font-family: 'Antenna Bold', san-serif;
+	font-weight: bold;
+	color: $patina-dark;
+}
+
+/* ===============================================
 CTAS ========================================== */
 
 p a.cta {
