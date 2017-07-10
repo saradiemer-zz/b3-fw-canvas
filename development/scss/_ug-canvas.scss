@@ -1,5 +1,9 @@
 #main-content.canvas { margin: 0; width: 100%; }
 
+.canvas-base.panel-dark {
+	background:rgba(0,0,0,.35);
+}
+
 .canvas-base.grid [class*="col-"],
 .canvas-base.grid [class*="col-"],
 .canvas-base.grid img {
