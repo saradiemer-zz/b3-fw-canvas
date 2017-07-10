@@ -27,11 +27,11 @@
 	top: 50%;
 	transform: translateY(-120%);
 	margin: auto auto;
-	padding: 30px 40px 40px;
+	padding: 30px 40px 35px;
 	width: 45%;
-	color: darken($gray-light, 5%);
+	color: $gray-extra-light;
 	text-align: center;
-	border: solid 15px darken($gray-light, 5%);
+	border: solid 12px $gray-extra-light;;
 	background: darken($gold, 10%);
 	box-shadow: 0 0 60px $bg-overlay-dark;
 	opacity: .95;
@@ -40,9 +40,9 @@
 #homepage-cta h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 7em;
+	font-size: 6vw;
 	text-align: center;
-	color: darken($gray-light, 5%);
+	color: $gray-extra-light;
 }
 
 #homepage-cta h5 {
@@ -50,7 +50,7 @@
 	padding: 0;
 	font-size: 1.75em;
 	text-align: center;
-	color: darken($gray-light, 5%) !important;
+	color: $gray-extra-light !important;
 	letter-spacing: .015em;
 }
 
@@ -62,16 +62,23 @@
 	padding: 0;
 	width: 120px;
 	height: 120px;
-	color: darken($gray-light, 5%);
+	color: $gray-extra-light;
 	text-align: center;
-	border: solid 15px darken($gray-light, 5%);
+	border: solid 12px $gray-extra-light;
 	border-radius: 50%;
 	background: darken($gold, 10%);
-	background-image: url('images/homepage/homepage-arrow.png');
-	background-position: 50% 50%;
-	background-size: 20%;
 	box-shadow: 0 0 60px $bg-overlay-dark;
 	opacity: .95;
+}
+
+#homepage-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
 }
 
 @media only screen and (max-width: 580px) {
