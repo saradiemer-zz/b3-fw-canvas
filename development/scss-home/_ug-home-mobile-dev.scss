@@ -6,6 +6,29 @@
 	right: 0;
 }
 
+#homepage-media-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#homepage-media-wrapper {
+	background: url('/images/homepage/homepage-campus-north-1600-900.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#homepage-cta {
+	position: absolute;
+	margin: auto auto;
+	padding: 40px;
+	border: solid 10px $gray-light;
+}
+
 @media only screen and (max-width: 580px) {
 
 body { background-color: white; }
