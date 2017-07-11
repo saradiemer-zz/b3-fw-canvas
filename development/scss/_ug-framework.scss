@@ -378,7 +378,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	}
 }
 
-#ug-nav ul li:hover,
+#ug-nav ul li:hover,#ug-nav ul li:active,
 #ug-cta ul li:hover,
 #ug-explore ul li:hover {
 	box-sizing: border-box;
@@ -388,7 +388,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background-color: darken($patina, 10%);
 }
 
-#ug-nav ul li a:hover,
+#ug-nav ul li a:hover,#ug-nav ul li a:active,
 #ug-cta ul li a:hover,
 #ug-explore ul li a:hover {
 	box-sizing: border-box;
