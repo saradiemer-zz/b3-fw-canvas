@@ -79,7 +79,7 @@ h1, h2, h3 {
 
 .canvas-content .bg-overlay h5.label { margin: 0 !important; }
 
-.canvas-content.blockquote-spacing { padding: 30px 0; }
+.canvas-content.blockquote-spacing { padding: 40px 0 30px; }
 
 li.bg-overlay-dark { margin: 4px 0;}
 
@@ -299,7 +299,7 @@ blockquote cite a {
 }
 
 .bigquote-right {
-	top: -2.5em;
+	top: -2em;
 	opacity:0.08;
 	@include media-breakpoint-down(md) {
 		display: none;
