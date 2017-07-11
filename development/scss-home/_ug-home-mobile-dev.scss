@@ -15,7 +15,7 @@
 }
 
 #homepage-media-wrapper {
-	background: url('/images/ambient-video-home/ug-homepage-video.mp4') no-repeat center center fixed;
+	background: url('/images/homepage/homepage-campus-north-1600-900.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -80,6 +80,17 @@
 	width: 75%;
 	height: 55%;
 }
+
+#homepage-left-rail,
+#homepage-right-rail {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background: $gray-extra-light;
+}
+
+#homepage-right-rail { right: -100% !important; }
 
 @media only screen and (max-width: 580px) {
 
