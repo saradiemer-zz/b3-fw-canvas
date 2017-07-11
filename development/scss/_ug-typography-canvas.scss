@@ -267,10 +267,6 @@ blockquote, blockquote p, #page-content blockquote, #page-content blockquote p  
 	border-bottom: none 0;
 }
 
-.quote {
-	background-color:#fff;
-}
-
 blockquote p, #page-content blockquote p { margin: 0 0 10px !important; padding: 0; }
 	@media (max-width: 414px) { blockquote, blockquote p { font-size: 1.05em; line-height: 1.85; } }
 
@@ -280,7 +276,6 @@ blockquote cite {
 	width: 100%;
 	font-family: 'Antenna', san-serif;
 	font-size: .7em;
-	font-weight: lighter;
 	font-weight: 100;
 	font-style: normal;
 	letter-spacing: 0;
