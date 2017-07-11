@@ -66,12 +66,18 @@ h1, h2, h3 {
 	font-family: "Antenna Black", sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 1.25;
+	line-height: 1.15;
 	letter-spacing: .015em;
 	text-transform: uppercase;
 }
 
-.canvas-content h5.label { font-size: 3em; }
+.canvas-content h5.label.display-large {
+	margin-bottom: 20px;
+	font-size: 3em;
+	line-height: 1.125;
+}
+
+.canvas-content .bg-overlay h5.label { margin: 0 !important; }
 
 .canvas-content.blockquote-spacing { padding: 30px 0; }
 
@@ -89,7 +95,7 @@ NUMBERS ===================================== */
 .number h1.display	{ margin: -12px 0 -10px 0; font-size: 600%; letter-spacing: -.02em; }
 	@media (max-width: 600px) { .number h1.display { font-size: 300% } .number.display h1.display { font-size: 200%; } }
 
-.number p.body	{ margin: 0 0 -2px 0; font-size: .925em; }
+.number p.body	{ margin: 0 0 -2px 0; font-size: .875em; }
 
 .number span.antenna-light { font-family: 'Antenna Light', sans-serif !important; }
 
@@ -161,16 +167,11 @@ button { margin: 0 0 10px 0; }
 	background-color: $maroon-dark;
 }
 
-p a.cta { font-size: .75em;
-	@include media-breakpoint-down(md) { font-size: .95em; }
-}
-
-p.small a.cta { font-size: .925em; }
+p a.cta { font-size: .75em; }
 
 .container.canvas-content p a.cta {
-	margin-left: 5px;
-	font-size: 1em;
-	@include media-breakpoint-down(md) { font-size: .95em; }
+	margin-left: 0;
+	font-size: .75em;
 }
 
 input[type="file"] {

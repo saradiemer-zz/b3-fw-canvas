@@ -1,12 +1,10 @@
 /* UG FRAMEWORK */
 
-body { padding-top: 0; }
-
-body { background-color: $white; }
+body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .development-nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin: 0;
+	padding: 30px;
 	width: 55%;
 	background: $white;
 }
@@ -42,7 +40,13 @@ body { background-color: $white; }
 /* PAGE COLUMNS - WRAPPER ==============================
 =======================================================*/
 
-#wrapper { background: $white; } /* global wrapper */
+#wrapper {
+	background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} /* global wrapper */
 
 #interior-wrapper { padding: 0 15px; }
 
@@ -55,15 +59,16 @@ body { background-color: $white; }
 =======================================================*/
 
 #main-content {
-    display: block !important;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    min-height: 300px;
-    height: 100%;
-	overflow: hidden;
-	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/texture-transparent.png');
+  display: block !important;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 300px;
+  height: 100%;
+	overflow: auto;
+	margin: 0 auto 100px auto;
+	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/site/texture-transparent.png');
 	@include media-breakpoint-down(md) {
 		background: none;
 	}
@@ -73,10 +78,10 @@ body { background-color: $white; }
 =======================================================*/
 
 #leftColumn, #centerColumn, #rightColumn { padding: 0;
-    @include media-breakpoint-down(md) {
-    	float: left;
-    	display: block;
-    }
+  @include media-breakpoint-down(md) {
+  	float: left;
+  	display: block;
+  }
 }
 
 #leftColumn { display: none; }
@@ -134,7 +139,7 @@ body { background-color: $white; }
 #rightColumn .aside-image-panel { /* aside image gold panel - extends off right edge */
 	right: -10000px;
 	width: 400%;
-	background: url('../images/texture-transparent.png') $gold; /* texture */
+	background: url('../images/site/texture-transparent.png') $gold; /* texture */
 }
 
 #rightColumn .aside-quote blockquote {

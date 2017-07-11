@@ -48,7 +48,7 @@ gulp.task('minify', function(){
 gulp.task('minify-css', function() {
     return gulp.src('./public/css/styles.css')
         .pipe(cssnano())
-        .pipe(gulp.dest('./public/css/min/'));
+        .pipe(gulp.dest('./public/css-min/'));
 });
 
 gulp.task('fileinclude', function() {

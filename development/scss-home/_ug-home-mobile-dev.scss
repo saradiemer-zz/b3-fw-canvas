@@ -1,3 +1,86 @@
+#main-content {
+	position: fixed;
+	top: 130px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#homepage-media-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#homepage-media-wrapper {
+	background: url('/images/homepage/homepage-campus-north-1600-900.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#homepage-cta {
+	position: relative;
+	top: 50%;
+	transform: translateY(-120%);
+	margin: auto auto;
+	padding: 30px 40px 35px;
+	width: 45%;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 12px $gray-extra-light;;
+	background: darken($gold, 10%);
+	box-shadow: 0 0 60px $bg-overlay-dark;
+	opacity: .95;
+}
+
+#homepage-cta h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 6vw;
+	text-align: center;
+	color: $gray-extra-light;
+}
+
+#homepage-cta h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.75em;
+	text-align: center;
+	color: $gray-extra-light !important;
+	letter-spacing: .015em;
+}
+
+#homepage-cta-button {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 120px;
+	height: 120px;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 12px $gray-extra-light;
+	border-radius: 50%;
+	background: darken($gold, 10%);
+	box-shadow: 0 0 60px $bg-overlay-dark;
+	opacity: .95;
+}
+
+#homepage-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
+}
+
 @media only screen and (max-width: 580px) {
 
 body { background-color: white; }

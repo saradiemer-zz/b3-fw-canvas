@@ -8,7 +8,7 @@ var config = {
 
 gulp.task('t4_css', function() {
 	//get styles.css in publicDir
-	gulp.src(config.publicDir + '/css/min/styles.css')
+	gulp.src(config.publicDir + '/css-min/styles.css')
 	//social-icons
 	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))
 	//background image
