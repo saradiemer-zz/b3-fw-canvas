@@ -290,6 +290,16 @@ blockquote cite a {
 	color: $patina-dark;
 }
 
+.blockquote-right {
+	top: -2.5em;
+	opacity:0.08;
+}
+
+div:nth-child(1) > img {
+	margin-top:3.5em;
+	opacity:0.1;
+}
+
 /* ===============================================
 CTAS ========================================== */
 
