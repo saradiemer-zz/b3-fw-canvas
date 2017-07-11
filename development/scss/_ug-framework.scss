@@ -3,8 +3,8 @@
 body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .development-nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin: 0;
+	padding: 30px;
 	width: 55%;
 	background: $white;
 }
@@ -41,7 +41,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 =======================================================*/
 
 #wrapper {
-	background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
+	background: url('/images/site/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -68,7 +68,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
   height: 100%;
 	overflow: auto;
 	margin: 0 auto 100px auto;
-	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/texture-transparent.png');
+	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/site/texture-transparent.png');
 	@include media-breakpoint-down(md) {
 		background: none;
 	}
@@ -139,7 +139,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 #rightColumn .aside-image-panel { /* aside image gold panel - extends off right edge */
 	right: -10000px;
 	width: 400%;
-	background: url('../images/texture-transparent.png') $gold; /* texture */
+	background: url('../images/site/texture-transparent.png') $gold; /* texture */
 }
 
 #rightColumn .aside-quote blockquote {
