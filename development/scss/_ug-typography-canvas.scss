@@ -13,7 +13,7 @@ a:link {
 a:visited, a:hover, a:focus {
 	outline: none;
 	outline-offset: 0;
-	color: $patina-dark;
+	color: darken($patina, 5%);
 	text-decoration: none;
 	cursor:pointer;
 }
