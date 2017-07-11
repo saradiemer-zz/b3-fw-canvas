@@ -290,14 +290,29 @@ blockquote cite a {
 	color: $patina-dark;
 }
 
-.blockquote-right {
-	top: -2.5em;
-	opacity:0.08;
-}
-
-div:nth-child(1) > img {
+.bigquote-left {
 	margin-top:3.5em;
 	opacity:0.1;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.bigquote-right {
+	top: -2.5em;
+	opacity:0.08;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.small-quote {
+	@include media-breakpoint-up(md) {
+		visibility: hidden;
+	}
+	@include media-breakpoint-up(md) {
+		visibility: visible;
+	}
 }
 
 /* ===============================================
