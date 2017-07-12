@@ -80,3 +80,88 @@
 }
 
 /* END - INTERIOR-TABS */
+
+/* NUMBER STYLING --SCHEMATIC */
+
+ .number-circle-small  {
+	display: block;
+	margin: 0;
+	padding: 12px;
+	width: 40px;
+	height: 40px;
+	font-family: 'Antenna Bold', sans-serif !important;
+	font-weight: bold;
+	font-weight: 700;
+	font-style: none;
+	font-size: 1.2em;
+	line-height: .9;
+	letter-spacing: 0em;
+	color: #FFF;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #272727;
+	box-shadow: 0px 0px 6px rgba(0,0,0,.5)
+}
+
+.number-circle-small.one-one,
+.number-circle-small.one-two,
+.number-circle-small.one-three,
+.number-circle-small.one-four,
+.number-circle-small.one-five,
+.number-circle-small.one-six,
+.number-circle-small.four-one,
+.number-circle-small.four-two,
+.number-circle-small.four-three,
+.number-circle-small.five-one,
+.number-circle-small.five-two,
+.number-circle-small.six-one,
+.number-circle-small.six-two,
+.number-circle-small.six-three,
+.number-circle-small.seven-one,
+.number-circle-small.seven-two,
+.number-circle-small.eight-one,
+.number-circle-small.eight-two,
+.number-circle-small.eight-three,
+.number-circle-small.nine-one,
+.number-circle-small.nine-two,
+.number-circle-small.ten-one,
+.number-circle-small.ten-two {
+	position: absolute;
+}
+
+.number-circle-small.one-one	{ top: 13%; left: 64%; }
+.number-circle-small.one-two	{ top: 26%; left: 60%; }
+.number-circle-small.one-three { top: 32%; left: 64%; }
+.number-circle-small.one-four	{ top: 40%; left: 69%; }
+.number-circle-small.one-five	{ top: 73%; left: 28%; }
+.number-circle-small.one-six	{ top: 88%; left: 24%; }
+.number-circle-small.two-two	{ top: 60%; left: 80%; }
+.number-circle-small.three-one	{ top: 39%; left: 18%; }
+.number-circle-small.three-two	{ top: 55%; left: 75%; }
+.number-circle-small.four-one	{ top: 26%; left: 30%; }
+.number-circle-small.four-two	{ top: 26%; left: 45%; }
+.number-circle-small.four-three { top: 60%; left: 55%; }
+
+
+ul.content-schematic { display: block; position: relative; padding-bottom: 10px; height: 600px; list-style: none; overflow: hidden; } /* ADJUSTS HEIGHT OF VIEWABLE SPACE */
+
+ul.content-schematic li { display: block; background-color: rgba(0,0,0,0); }
+
+.schematic-description-top { position: absolute; top: 5px; } /* ADJUSTS POSITION OF SCHEMATIC DESCRIPTION - POINT 1 */
+
+ul.content-schematic li.content-schematic-image { width: 100%; position: absolute; background-color: rgba(0,0,0,0); } /* ADJUSTS POSITION OF SCHEMATIC */
+
+.ug-map-key span.circle {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    font-family: 'Antenna Black', sans-serif;
+    text-align: center;
+    content: "";
+    color: #f1f1f1;
+    background: #000;
+    border-radius: 50%;
+}
