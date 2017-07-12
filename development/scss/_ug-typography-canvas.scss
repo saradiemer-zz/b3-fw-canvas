@@ -308,10 +308,10 @@ blockquote cite a {
 
 .small-quote {
 	@include media-breakpoint-up(md) {
-		visibility: hidden;
+		display:none;
 	}
-	@include media-breakpoint-up(md) {
-		visibility: visible;
+	@include media-breakpoint-down(md) {
+		display:inline-block;
 	}
 }
 
