@@ -108,7 +108,7 @@ h5.label.maroon {
 
 #ug-tips .ug-tips-icon img {
 	display: table-cell;
-	padding: 22% 20% 15%;
+	padding: 10% 10% 2%;
 	width: 100%;
 	vertical-align: middle;
 }
@@ -166,6 +166,10 @@ h5.label.maroon {
 	float: left !important;
 }
 
+.ug-tips-list p {
+	display: inline;
+}
+
 .ug-tips-list ul li {
 	margin: 5px 0 0;
 }
@@ -175,11 +179,18 @@ h5.label.maroon {
 }
 
 .ug-tips-list a.cta {
-	display: none;
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
 	background: $patina;
+}
+
+.ug-tips-list span {
+	position: relative;
+	top: 8.85%;
+	transform: translateY(-8.85%);
+	margin: auto auto;
+	padding: 0;
 }
 
 .ug-tips-list span:before {
@@ -248,7 +259,7 @@ h5.label.maroon {
 #ug-tips .ug-tips-label {
 	margin: 10px 0 0;
 	font-family: 'Antenna Black', sans-serif;
-	font-size: 0.65em;
+	font-size: 0.55em;
 	line-height: 1.45;
 	text-transform: uppercase;
 	text-align: center;
