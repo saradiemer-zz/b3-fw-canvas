@@ -165,7 +165,70 @@
 	});
 </script>
 <script>
-	$("document").ready(function() {	$('#navbar #nav li:nth-child(4) a').html('Other<span class="hidden-md"> applicants</span>');});
+	$("document").ready(function() {
+        $('#navbar #nav li:nth-child(4) a').html('Other<span class="hidden-md"> applicants</span>');
+        
+        if(!$('#splash-video').length)return;
+        var player = videojs('splash-video',{
+            autoplay: true,
+            volume: 0, 
+            muted: true,
+            fluid: true,
+            loadingSpinner: false
+        });
+        
+        player.playlist([
+            {
+                sources: [
+                  {
+                    src: '/videos/P2_GREEN_S1.mp4',
+                    type: 'video/mp4'
+                  }
+              ],
+                poster: '/videos/P2_GREEN_S1.png'
+            },
+            {
+                sources: [
+                  {
+                    src: '/videos/P2_GREEN_S2.mp4',
+                    type: 'video/mp4'
+                  }
+                ],
+                poster: '/videos/P2_GREEN_S2.png'
+            },
+            {
+                sources: [
+                  {
+                    src: '/videos/P2_GREEN_S3.mp4',
+                    type: 'video/mp4'
+                  }
+                ],
+                poster: '/videos/P2_GREEN_S3.png'
+            },
+            {
+                sources: [
+                  {
+                    src: '/videos/P2_GREEN_S4.mp4',
+                    type: 'video/mp4'
+                  }
+                ],
+                poster: '/videos/P2_GREEN_S4.png'
+            },
+            {
+                sources: [
+                  {
+                    src: '/videos/P2_GREEN_S5.mp4',
+                    type: 'video/mp4'
+                  }
+                ],
+                poster: '/videos/P2_GREEN_S5.png'
+            }
+        ]);
+
+        // Play through the playlist automatically.
+        player.playlist.autoadvance(0);                           
+        player.playlist.repeat(true);
+    });
 	var el = document.getElementById("interior-wrapper-right");if(($(el).children('div.aside-caption').length > 0) || ($(el).children('div.aside-quote').length > 0) || ($(el).children('div.aside-number').length > 0)) {
         console.log("Found");
      }else {console.log("Not Found");$("#main-content").css('background-image', 'none');}
