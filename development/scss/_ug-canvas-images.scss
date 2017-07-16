@@ -10,6 +10,10 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 /*================================================
 ================================================*/
 
+#splash-video, .splash-video-dimensions.vjs-fluid { margin: 0; padding: 0; }
+
+.vjs-big-play-button, .vjs-control-bar, .vjs-modal-dialog { display: none; }
+
 /* .partial-overlay surrounds the .bg-overlay that only covers part of the fullbleed image */
 
 .fullbleed .partial-overlay {
