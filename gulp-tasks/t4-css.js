@@ -18,7 +18,7 @@ gulp.task('t4_css', function() {
 	//texture-transparent-pixel
 	.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	//social ICONS
-	.pipe(replace('(../images/ug-social-icons-patina@2X.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
+	.pipe(replace('(../images/site/ug-social-icons-patina@2X.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
 	//ANTENNA FONTS
 	//antenna regular
 	.pipe(replace('(../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg)', '("<t4 type="media" id="309115" formatter="path/*"/>")'))
