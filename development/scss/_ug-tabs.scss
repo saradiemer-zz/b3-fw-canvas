@@ -109,23 +109,29 @@
 .number-circle-small.one-four,
 .number-circle-small.one-five,
 .number-circle-small.one-six,
+.number-circle-small.two-one,
+.number-circle-small.two-two,
+.number-circle-small.three-one,
+.number-circle-small.three-two,
+.number-circle-small.three-three,
 .number-circle-small.four-one,
 .number-circle-small.four-two,
 .number-circle-small.four-three,
+.number-circle-small.four-four,
+.number-circle-small.four-five,
 .number-circle-small.five-one,
 .number-circle-small.five-two,
+.number-circle-small.five-three,
+.number-circle-small.five-four,
 .number-circle-small.six-one,
 .number-circle-small.six-two,
 .number-circle-small.six-three,
+.number-circle-small.six-four,
+.number-circle-small.six-five,
 .number-circle-small.seven-one,
 .number-circle-small.seven-two,
-.number-circle-small.eight-one,
-.number-circle-small.eight-two,
-.number-circle-small.eight-three,
-.number-circle-small.nine-one,
-.number-circle-small.nine-two,
-.number-circle-small.ten-one,
-.number-circle-small.ten-two {
+.number-circle-small.seven-three,
+ {
 	position: absolute;
 }
 
@@ -135,12 +141,25 @@
 .number-circle-small.one-four	{ top: 40%; left: 69%; }
 .number-circle-small.one-five	{ top: 73%; left: 28%; }
 .number-circle-small.one-six	{ top: 88%; left: 24%; }
-.number-circle-small.two-two	{ top: 60%; left: 80%; }
-.number-circle-small.three-one	{ top: 39%; left: 18%; }
-.number-circle-small.three-two	{ top: 55%; left: 75%; }
-.number-circle-small.four-one	{ top: 26%; left: 30%; }
-.number-circle-small.four-two	{ top: 26%; left: 45%; }
-.number-circle-small.four-three { top: 60%; left: 55%; }
+.number-circle-small.two-one	{ top: 40%; left: 68%; }
+.number-circle-small.two-two	{ top: 65%; left: 80%; }
+.number-circle-small.three-one	{ top: 55%; left: 75%; }
+.number-circle-small.two-one	{ top: 60%; left: 80%; }
+.number-circle-small.two-two	{ top: 39%; left: 18%; }
+.number-circle-small.three-one	{ top: 55%; left: 75%; }
+.number-circle-small.four-one	{ top: 89%; left: 37%; }
+.number-circle-small.four-two	{ top: 69%; left: 56%; }
+.number-circle-small.four-three { top: 52%; left: 58%; }
+.number-circle-small.four-four { top: 42%; left: 59%; }
+.number-circle-small.four-five { top: 32%; left: 56%; }
+.number-circle-small.six-one	{ top: 68%; left: 14%; }
+.number-circle-small.six-two	{ top: 73%; left: 28%; }
+.number-circle-small.six-three { top: 90%; left: 34%; }
+.number-circle-small.six-four	{ top: 17%; left: 60%; }
+.number-circle-small.six-five	{ top: 41%; left: 88%; }
+.number-circle-small.seven-one	{ top: 68%; left: 14%; }
+.number-circle-small.seven-two	{ top: 17%; left: 60%; }
+.number-circle-small.seven-three { top: 38%; left: 72%; }
 
 
 ul.content-schematic { display: block; position: relative; padding-bottom: 10px; height: 600px; list-style: none; overflow: hidden; } /* ADJUSTS HEIGHT OF VIEWABLE SPACE */
