@@ -1,4 +1,6 @@
-#main-content.canvas { margin: 0; width: 100%; }
+#main-content-canvas { margin: 0; width: 100%; background: url(../images/backgrounds/bg-shield-dark.jpg) no-repeat center center fixed;}
+
+.container-fluid {padding:0px;}
 
 .canvas-base.panel-dark {
 	color: $gray-light;
@@ -334,33 +336,15 @@
 
 .bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
-		font-size: 2em !important;
+		font-size: 5em !important;
 	}
 }
 
 .bg-overlay-dark h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
-		font-size: 2em !important;
+		font-size: 5em !important;
 	}
 }
-
-.icon { width: 70px; margin-bottom:10px; height: 70px; border-radius: 100%; background-color: #C1C1C1;}
-
-.icon-number { width: 20px; margin-bottom:10px; height: 20px; border-radius: 100%; font-size: 1.25em;}
-
-ul.res-life {font-size: .825em; text-transform: none; list-style: square; margin-bottom: 0px; }
-
-li.res-life {list-style: square; margin: 7px 12px;}
-
-/* ADDS PHOTO BACKGROUND */
-#main-content-canvas {
-	background: $bg-overlay;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	overflow:hidden;
-}
-.container-fluid {padding: 0;}
 
 /*VIDEO EMBED */
 
