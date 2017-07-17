@@ -1,4 +1,6 @@
-#main-content.canvas { margin: 0; width: 100%; background: url(images/backgrounds/bg-shield-dark.jpg) no-repeat center center fixed;}
+#main-content-canvas { margin: 0; width: 100%; background: url(../images/backgrounds/bg-shield-dark.jpg) no-repeat center center fixed;}
+
+.container-fluid {padding:0px;}
 
 .canvas-base.panel-dark {
 	color: $gray-light;
@@ -334,19 +336,15 @@
 
 .bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
-		font-size: 2em !important;
+		font-size: 5em !important;
 	}
 }
 
 .bg-overlay-dark h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
-		font-size: 2em !important;
+		font-size: 5em !important;
 	}
 }
-
-.container-fluid {padding: 0px;}
-
-#main-content-canvas.container-fluid {padding: 10px;}
 
 /*VIDEO EMBED */
 
