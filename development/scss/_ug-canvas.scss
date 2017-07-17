@@ -189,7 +189,7 @@
 	background-size: cover;
 	background-position: 50% 0;
 	overflow: hidden;
-	height: 500px;
+	height: 700px;
 	@include media-breakpoint-down(md) { background-size: 100%; }
 	@include media-breakpoint-down(xs) { background-size: 200%; }
 }
@@ -215,7 +215,7 @@
 
 .fullbleed .partial-overlay .container {
 	position: relative;
-	height: 600px;
+	height: 700px;
 	@include media-breakpoint-down(sm) {
 		padding: 0;
 		width: 100%;
