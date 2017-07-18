@@ -4,7 +4,7 @@
 .btn:active,
 .btn.active,
 .btn.disabled,
-.btn[disabled] { background-color: $maroon-dark; color: $white; }
+.btn[disabled] { color: $white; }
 
 .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover, .cta {
 	font-size: .825em;
@@ -13,14 +13,12 @@
 .cta, a.btn.cta {
 	margin: 0 0 0 10px;
 	font-family: "Antenna Bold", "museo-sans", "Arial", sans-serif !important;
-	color: $white;
+	color: $patina;
 	text-align: left;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: $gray-extra-light;
 	text-decoration: none;
 	text-shadow: none;
-	background-color: $maroon-dark;
 	background-image: none;
 	border-bottom-color: $gray-dark;
 	-moz-transition: all 0.2s ease-in;
@@ -31,8 +29,7 @@
 .cta:hover, .btn-group .cta:hover,
 .cta:active, .btn-group .cta:active,
 .cta:visited, .btn-group .cta:visited {
-	color: $white;
-	background-color: $maroon;
+	color: $patina;
 }
 
 p a.cta { background: none; color: $maroon-dark; }
