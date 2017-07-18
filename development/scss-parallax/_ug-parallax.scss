@@ -13,6 +13,7 @@ header {
 
 article {
   background: #fff;
+  background: #fff;
   -moz-box-shadow: 0 0 12px #666;
   -webkit-box-shadow: 0 0 12px #666;
   z-index:99999;
@@ -20,7 +21,9 @@ article {
   background-color: $gray-extra-light;
 }
 
-article#explore-intro #explore-cta-button img { background-image: none; }
+#explore-intro { background:url("../images/explore/explore-intro-2400-2400.jpg"); }
+#explore-social-juctice { background:url("../images/explore/explore-intro-2000-1300.jpg"); }
+#explore-intro .explore-cta-button img { background-image: none; }
 
 article figure {
 	background: transparent;
