@@ -1,0 +1,57 @@
+#parallax-cta {
+	margin: auto auto;
+	padding: 30px 30px;
+	width: auto;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 12px $gray-extra-light;
+	background: $gold;
+	box-shadow: 0 0 60px $bg-overlay-dark;
+	opacity: .95;
+}
+
+#parallax-cta h1 {
+	margin: 0;
+	padding: 0;
+  font-family: 'Antenna Black', sans-serif !important;
+	font-size: 12vh;
+  line-height: 1;
+  letter-spacing: -0em;
+	text-align: center;
+	color: $gray-extra-light !important;
+}
+
+#parallax-cta h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.75em;
+	text-align: center;
+	color: $gray-extra-light !important;
+	letter-spacing: .015em;
+}
+
+#parallax-cta-button {
+	position: relative;
+	margin: 50px auto 0 !important;
+	padding: 0;
+	width: 120px;
+	height: 120px;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 12px $gray-extra-light;
+	border-radius: 50%;
+	background: darken($gold, 10%);
+	box-shadow: 0 0 60px $bg-overlay-dark;
+	opacity: .95;
+}
+
+#parallax-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
+  background-image: none;
+}
