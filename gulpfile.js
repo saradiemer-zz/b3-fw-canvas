@@ -74,7 +74,7 @@ gulp.task('sass-home', function() {
 });
 
 gulp.task('sass-parallax', function() {
-    return gulp.src(config.devDir + '/scss-quiz/**/*.scss')
+    return gulp.src(config.devDir + '/scss-parallax/**/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
 		.pipe(sourcemaps.write()) // Add the map to modified source.
