@@ -1,7 +1,9 @@
+#header.ug-header, .ug-global-nav-wrapper, .sb-controls  { position: fixed; }
+
 #header, footer  { z-index: 10000; }
 
 div#wrapper {
-  height: 900px;
+  min-height: 1000px;
   width: 100%;
   margin: 0;
   padding: 0 0 50px 0;
@@ -12,30 +14,25 @@ header {
 }
 
 article {
-  background: #fff;
-  background: #fff;
+  position: fixed;
+  top: 0 ;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
   -moz-box-shadow: 0 0 12px #666;
   -webkit-box-shadow: 0 0 12px #666;
   z-index:99999;
-  overflow: hidden;
-  background-color: $gray-extra-light;
 }
-
-#explore-intro { background:url("../images/explore/explore-intro-2400-2400.jpg"); }
-#explore-social-juctice { background:url("../images/explore/explore-intro-2000-1300.jpg"); }
-#explore-intro .explore-cta-button img { background-image: none; }
 
 article figure {
 	background: transparent;
 	position: fixed;
-	top: 300px;
+	top: 250px;
 	min-height: 400px;
 	left: 400px;
 	margin: 0;
 	padding: 0;
 }
-
-article figure img { height: auto !important; }
 
 ._mobile article { position: relative }
 
@@ -49,7 +46,7 @@ article header {
   overflow: hidden;
   top: 0;
   padding: 0 0 0 10px;
-}
+  }
 
 article h1 {
   width: 200px;
@@ -59,7 +56,7 @@ article h1 {
 	text-transform: uppercase;
 	font-size: 40px;
 	line-height: 40px;
-}
+  }
 
 article p {
 	font-family: 'Arial', sans-serif;
