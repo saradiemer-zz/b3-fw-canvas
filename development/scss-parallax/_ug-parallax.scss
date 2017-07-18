@@ -13,40 +13,26 @@ header {
 
 article {
   background: #fff;
-  position: fixed;
-  top: 0 ;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
   -moz-box-shadow: 0 0 12px #666;
   -webkit-box-shadow: 0 0 12px #666;
   z-index:99999;
   overflow: hidden;
+  background-color: $gray-extra-light;
 }
 
-article img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-article#parallax-opener img { background-image: url("../images/explore/homepage-campus-north-1600-900.jpg"); }
-article#parallax-opener #parallax-cta-button img { background-image: none; }
+article#explore-intro #explore-cta-button img { background-image: none; }
 
 article figure {
 	background: transparent;
 	position: fixed;
-	top: 250px;
+	top: 300px;
 	min-height: 400px;
 	left: 400px;
 	margin: 0;
 	padding: 0;
 }
+
+article figure img { height: auto !important; }
 
 ._mobile article { position: relative }
 
@@ -60,7 +46,7 @@ article header {
   overflow: hidden;
   top: 0;
   padding: 0 0 0 10px;
-  }
+}
 
 article h1 {
   width: 200px;
@@ -70,7 +56,7 @@ article h1 {
 	text-transform: uppercase;
 	font-size: 40px;
 	line-height: 40px;
-  }
+}
 
 article p {
 	font-family: 'Arial', sans-serif;

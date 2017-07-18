@@ -1,27 +1,35 @@
-#parallax-cta {
-	margin: auto auto;
-	padding: 30px 30px;
-	width: auto;
+header.explore-cta-wrapper {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  height: 300px;
+}
+
+.explore-cta {
+	margin: 200px auto 0;
+	padding: 20px 20px;
+	width: 100%;
+  height: auto;
 	color: $gray-extra-light;
 	text-align: center;
-	border: solid 12px $gray-extra-light;
-	background: $gold;
-	box-shadow: 0 0 60px $bg-overlay-dark;
+	border: solid 0 $gray-extra-light;
+	background: none;
+	text-shadow: 0 0 30px $bg-overlay-dark;
 	opacity: .95;
 }
 
-#parallax-cta h1 {
+.explore-cta h1 {
 	margin: 0;
 	padding: 0;
   font-family: 'Antenna Black', sans-serif !important;
-	font-size: 12vh;
+	font-size: 7vh;
   line-height: 1;
   letter-spacing: -0em;
 	text-align: center;
 	color: $gray-extra-light !important;
 }
 
-#parallax-cta h5 {
+.explore-cta h5 {
 	margin: 0;
 	padding: 0;
 	font-size: 1.75em;
@@ -30,22 +38,22 @@
 	letter-spacing: .015em;
 }
 
-#parallax-cta-button {
+.explore-cta-button {
 	position: relative;
-	margin: 50px auto 0 !important;
+	margin: 0 auto 0 !important;
 	padding: 0;
-	width: 120px;
-	height: 120px;
+	width: 80px;
+	height: 80px;
 	color: $gray-extra-light;
 	text-align: center;
-	border: solid 12px $gray-extra-light;
+	border: solid 6px $gray-extra-light;
 	border-radius: 50%;
 	background: darken($gold, 10%);
 	box-shadow: 0 0 60px $bg-overlay-dark;
 	opacity: .95;
 }
 
-#parallax-cta-button img {
+.explore-cta-button img {
 	position: relative;
 	top: 55%;
 	transform: translateY(-50%);
@@ -53,5 +61,4 @@
 	padding: 0;
 	width: 75%;
 	height: 55%;
-  background-image: none;
 }
