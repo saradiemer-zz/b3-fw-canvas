@@ -33,6 +33,7 @@ article {
   -moz-box-shadow: 0 0 12px #666;
   -webkit-box-shadow: 0 0 12px #666;
   z-index:99999;
+  background: #ffffff;
 }
 
 article figure {
@@ -40,7 +41,7 @@ article figure {
 	position: fixed;
 	top: 250px;
 	min-height: 400px;
-	left: 400px;
+	left: 35%;
 	margin: 0;
 	padding: 0;
 }
@@ -98,7 +99,9 @@ article p {
 }
 
 .text p {
-	width: 200px;
+  font-size: 1.15em;
+  margin: 10px 0;
+	width: 350px;
 }
 
 .extras {
@@ -218,6 +221,15 @@ figure img {
 	letter-spacing: 8px;
 	line-height: 1;
 	margin: 0 0 20px 0;
+}
+
+#explore-intro header h1 { font-size: 12vh; }
+
+article h1.display.location {
+  margin: 0;
+  font-family: 'Antenna Black', sans-serif !important;
+  font-size: 6vh !important;
+  line-height: 1.15;
 }
 
 .credits header {
