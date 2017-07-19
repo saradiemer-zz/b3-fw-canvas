@@ -86,7 +86,7 @@
  .number-circle-small  {
 	display: block;
 	margin: 0;
-	padding: 12px;
+	padding: 10px;
 	width: 40px;
 	height: 40px;
 	font-family: 'Antenna Bold', sans-serif !important;
@@ -99,6 +99,9 @@
 	color: #FFF;
 	text-align: center;
 	border-radius: 20px;
+	border: 2px;
+	border-color: $white;
+	border-style: solid;
 	background-color: #272727;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.5)
 }
@@ -125,6 +128,11 @@
 .number-circle-small.five-four,
 .number-circle-small.five-five,
 .number-circle-small.five-six,
+.number-circle-small.five-six-2,
+.number-circle-small.five-six-3,
+.number-circle-small.five-six-4,
+.number-circle-small.five-six-5,
+.number-circle-small.five-six-6,
 .number-circle-small.five-seven,
 .number-circle-small.five-eight,
 .number-circle-small.five-nine,
@@ -134,8 +142,23 @@
 .number-circle-small.six-four,
 .number-circle-small.six-five,
 .number-circle-small.seven-one,
+.number-circle-small.seven-one-2,
+.number-circle-small.seven-one-3,
 .number-circle-small.seven-two,
 .number-circle-small.seven-three,
+.number-circle-small.seven-three-2,
+.number-circle-small.seven-four,
+.number-circle-small.eight-one,
+.number-circle-small.eight-two,
+.number-circle-small.eight-two-2,
+.number-circle-small.eight-two-3,
+.number-circle-small.eight-three,
+.number-circle-small.eight-three-2,
+.number-circle-small.eight-four,
+.number-circle-small.eight-four-2,
+.number-circle-small.nine-one,
+.number-circle-small.nine-two,
+.number-circle-small.nine-three,
  {
 	position: absolute;
 }
@@ -153,13 +176,18 @@
 .number-circle-small.four-two	{ top: 69%; left: 56%; }
 .number-circle-small.four-three { top: 52%; left: 58%; }
 .number-circle-small.four-four { top: 42%; left: 59%; }
-.number-circle-small.four-five { top: 32%; left: 56%; }
+.number-circle-small.four-five { top: 41%; left: 47%; }
 .number-circle-small.five-one	{ top: 49%; left: 2%; }
 .number-circle-small.five-two { top: 53%; left: 30%; }
 .number-circle-small.five-three { top: 45%; left: 39%; }
 .number-circle-small.five-four	{ top: 22%; left: 47%; }
 .number-circle-small.five-five { top: 59%; left: 21%; }
 .number-circle-small.five-six { top: 64%; left: 35%; }
+.number-circle-small.five-six-2 { top: 35%; left: 22%; }
+.number-circle-small.five-six-3 { top: 45%; left: 39%; }
+.number-circle-small.five-six-4 { top: 58%; left: 46%; }
+.number-circle-small.five-six-5 { top: 26%; left: 61%; }
+.number-circle-small.five-six-6 { top: 22%; left: 56%; }
 .number-circle-small.five-seven { top: 44%; left: 49%; }
 .number-circle-small.five-eight { top: 63%; left: 56%; }
 .number-circle-small.five-nine { top: 18%; left: 59%; }
@@ -168,9 +196,24 @@
 .number-circle-small.six-three { top: 90%; left: 34%; }
 .number-circle-small.six-four	{ top: 17%; left: 60%; }
 .number-circle-small.six-five	{ top: 41%; left: 88%; }
-.number-circle-small.seven-one	{ top: 68%; left: 14%; }
-.number-circle-small.seven-two	{ top: 17%; left: 60%; }
-.number-circle-small.seven-three { top: 38%; left: 72%; }
+.number-circle-small.seven-one	{ top: 90%; left: 35%; }
+.number-circle-small.seven-one-2	{ top: 37%; left: 28%; }
+.number-circle-small.seven-one-3	{ top: 22%; left: 59%; }
+.number-circle-small.seven-two	{ top: 61%; left: 19%; }
+.number-circle-small.seven-three { top: 48%; left: 42%; }
+.number-circle-small.seven-three-2 { top: 28%; left: 62%; }
+.number-circle-small.seven-four { top: 18%; left: 29%; }
+.number-circle-small.eight-one	{ top: 37%; left: 13%; }
+.number-circle-small.eight-two	{ top: 67%; left: 38%; }
+.number-circle-small.eight-two-2	{ top: 26%; left: 42%; }
+.number-circle-small.eight-two-3	{ top: 22%; left: 59%; }
+.number-circle-small.eight-three { top: 33%; left: 22%; }
+.number-circle-small.eight-three-2 { top: 7%; left: 41%; }
+.number-circle-small.eight-four { top: 20%; left: 32%; }
+.number-circle-small.eight-four-2 { top: 19%; left: 65%; }
+.number-circle-small.nine-one { top: 69%; left: 15%; }
+.number-circle-small.nine-two { top: 20%; left: 57%; }
+.number-circle-small.nine-three { top: 29%; left: 67%; }
 
 
 ul.content-schematic { display: block; position: relative; padding-bottom: 10px; height: 600px; list-style: none; overflow: hidden; } /* ADJUSTS HEIGHT OF VIEWABLE SPACE */
