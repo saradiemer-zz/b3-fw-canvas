@@ -1,0 +1,125 @@
+.desaturate{
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+#explore-intro              { top: 0px; }
+#explore-why-loyola         { top: 0px; }
+#explore-service-grid       { top: 0px; }
+#explore-social-justice     { top: 10px; }
+#explore-academics-chicago  { top: 10px; }
+#explore-study-abroad       { top: 10px; }
+#explore-life-grid          { top: 10px; }
+#explore-residential-life   { top: 10px; }
+#explore-cost-value         { top: 10px; }
+#explore-apply-visit-info   { top: 10px; }
+
+#explore-intro .explore-cta-button img { background-image: none; }
+
+#explore-intro              { background-image:url("../images/explore/explore-intro-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-why-loyola         { background-image:url("../images/explore/explore-why-loyola-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-social-justice     { background-image:url("../images/explore/explore-social-justice-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-academics-chicago  { background-image:url("../images/explore/explore-academics-chicago-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-study-abroad       { background-image:url("../images/explore/explore-study-abroad-gray-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+
+#explore-intro:after,
+#explore-why-loyola:after,
+#explore-social-justice:after,
+#explore-academics-chicago:after,
+#explore-study-abroad:after {
+    content: "";
+    background: url(../images/explore/explore-grid-dark-small.png) repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: .75;
+}
+
+header.explore-cta-wrapper {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  height: 300px;
+}
+
+#explore-why-loyola-wrapper { width: 100%; }
+
+.explore-cta {
+	margin: 0 auto;
+	padding: 20px 20px;
+	width: 100%;
+  height: auto;
+	border: solid 0 $gray-extra-light;
+	background: none;
+	opacity: .95;
+}
+
+.explore-cta h1, .explore-cta h5, .explore-cta p, .explore-cta p a {
+  color: $gray-extra-light !important;
+  text-align: center;
+  text-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.explore-cta h1 {
+	margin: 0;
+	padding: 0;
+  font-family: 'Antenna Black', sans-serif !important;
+	font-size: 12vh;
+  line-height: 1;
+  letter-spacing: -0em;
+}
+
+.explore-cta h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.75em;
+	letter-spacing: .015em;
+}
+
+.explore-cta p { letter-spacing: .025em; }
+
+.explore-cta p a.cta {
+  color: lighten($patina, 5%) !important;
+  text-transform: uppercase;
+  font-size: 85%;
+  letter-spacing: .015em;
+}
+
+.explore-cta-button {
+	position: relative;
+	margin: 0 auto 0 !important;
+	padding: 0;
+	width: 80px;
+	height: 80px;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 6px $gray-extra-light;
+	border-radius: 50%;
+	background: darken($gold, 10%);
+	box-shadow: 0 0 60px $bg-overlay-dark;
+	opacity: .95;
+}
+
+.explore-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
+}
+
+/* ===============================================
+NUMBERS ===================================== */
+
+.number.display {
+  font-family: 'Antenna Comp';
+  font-size: 12em;
+}
