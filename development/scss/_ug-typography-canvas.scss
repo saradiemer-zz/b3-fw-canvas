@@ -92,7 +92,7 @@ NUMBERS ===================================== */
 
 .number.display p.body { margin: 0 0 20px 0; line-height: 1; }
 
-.number h1.display	{ margin: -12px 0 -10px 0; font-size: 650%; letter-spacing: -.02em; }
+.number h1.display	{ margin: -12px 0 -10px 0; font-size: 650%; letter-spacing: 0em; }
 	@media (max-width: 600px) { .number h1.display { font-size: 300% } .number.display h1.display { font-size: 200%; } }
 
 .number p.body	{ margin: 0 0 -2px 0; font-size: .875em; }
