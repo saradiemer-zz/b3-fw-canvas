@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-=======
 #main-content-canvas { margin: 0; width: 100%; background: url(../images/backgrounds/bg-shield-dark.jpg) no-repeat center center fixed;}
 
-body {line-height:0;}
-
->>>>>>> 223c446f21532100ca44ee356a6c88daf7381e82
 .container-fluid {padding:0px;}
 
 .canvas-base.panel-dark {
@@ -18,7 +13,7 @@ body {line-height:0;}
 
 .canvas-base.grid [class*="col-"],
 .canvas-base.grid [class*="col-"],
-.canvas-base.grid img {
+.canvas-base.grid img, {
 	margin: 0;
 	padding: 0;
 }
