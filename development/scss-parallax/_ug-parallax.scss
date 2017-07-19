@@ -1,3 +1,10 @@
+article .grid [class*="col-"],
+article .grid [class*="col-"],
+article .grid img, {
+	margin: 0;
+	padding: 0;
+}
+
 #header.ug-header, #ug-nav.container-fluid { position: fixed; width: 100%; }
 
 #header.ug-header { top: 0; }
