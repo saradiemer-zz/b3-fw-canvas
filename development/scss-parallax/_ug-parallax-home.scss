@@ -11,8 +11,17 @@
 
 #explore-intro .explore-cta-button img { background-image: none; }
 
-#explore-intro              { background-image:url("../images/explore/explore-intro-2400-2400.jpg"); background-size: 100% auto; }
-#explore-why-loyola         { background:url("../images/explore/explore-why-loyola-2400-2400.jpg"); background-size: 100% auto; }
+.multi_bg_example {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png), url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+}
+
+#explore-intro              { background-image:url(../images/explore/explore-intro-2400-2400.jpg), url(../images/explore/explore-overlay-tone.png); background-size: 100% auto; background-repeat: no-repeat, repeat; }
+#explore-why-loyola         { background-image:url(../images/explore/explore-why-loyola-2400-2400.jpg), url(../images/explore/explore-overlay-tone.png); background-size: 100% auto; background-repeat: no-repeat, repeat; }
+
 
 header.explore-cta-wrapper {
   position: relative;
@@ -21,17 +30,22 @@ header.explore-cta-wrapper {
   height: 300px;
 }
 
+#explore-why-loyola-wrapper { width: 100%; }
+
 .explore-cta {
 	margin: 0 auto;
 	padding: 20px 20px;
 	width: 100%;
   height: auto;
-	color: $gray-extra-light;
-	text-align: center;
 	border: solid 0 $gray-extra-light;
 	background: none;
-	text-shadow: 0 0 30px $bg-overlay-dark;
 	opacity: .95;
+}
+
+.explore-cta h1, .explore-cta h5, .explore-cta p, .explore-cta p a {
+  color: $gray-extra-light !important;
+  text-align: center;
+  text-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 .explore-cta h1 {
@@ -41,17 +55,22 @@ header.explore-cta-wrapper {
 	font-size: 7vh;
   line-height: 1;
   letter-spacing: -0em;
-	text-align: center;
-	color: $gray-extra-light !important;
 }
 
 .explore-cta h5 {
 	margin: 0;
 	padding: 0;
 	font-size: 1.75em;
-	text-align: center;
-	color: $gray-extra-light !important;
 	letter-spacing: .015em;
+}
+
+.explore-cta p { letter-spacing: .025em; }
+
+.explore-cta p a.cta {
+  color: lighten($patina, 5%) !important;
+  text-transform: uppercase;
+  font-size: 85%;
+  letter-spacing: .015em;
 }
 
 .explore-cta-button {
