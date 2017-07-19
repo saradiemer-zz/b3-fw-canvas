@@ -11,17 +11,20 @@
 
 #explore-intro .explore-cta-button img { background-image: none; }
 
-.multi_bg_example {
-  width: 100%;
-  height: 400px;
-  background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png), url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom right, left, right;
+#explore-intro              { background-image:url(../images/explore/explore-intro-2400-2400.jpg); background-repeat: no-repeat; }
+#explore-why-loyola         { background-image:url(../images/explore/explore-why-loyola-2400-2400.jpg); background-repeat: no-repeat; }
+
+#explore-intro:after,
+#explore-why-loyola:after {
+    content: "";
+    background: url(../images/explore/explore-overlay-tone.png) repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
-
-#explore-intro              { background-image:url(../images/explore/explore-intro-2400-2400.jpg), url(../images/explore/explore-overlay-tone.png); background-size: 100% auto; background-repeat: no-repeat, repeat; }
-#explore-why-loyola         { background-image:url(../images/explore/explore-why-loyola-2400-2400.jpg), url(../images/explore/explore-overlay-tone.png); background-size: 100% auto; background-repeat: no-repeat, repeat; }
-
 
 header.explore-cta-wrapper {
   position: relative;
