@@ -232,7 +232,9 @@ figure img {
 	margin: 0 0 20px 0;
 }
 
-#explore-intro header h1 { font-size: 12vh; }
+#explore-intro header h1 { font-size: 12vh; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
+
+#explore-intro header h5 { font-size: 4vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
 
 article h1.display.location {
   margin: 0;
