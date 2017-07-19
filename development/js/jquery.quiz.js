@@ -224,7 +224,9 @@ $(function(){
         setColleges = function(){
           var colleges = $('.colleges li'),
               cCount = colleges.length,
+
               collegeId ='',college,aTmp;
+              console.log(cCount);
             for(var i = 0; i < cCount; i++){
                 college = colleges.eq(i);
                 college.append('<span>&bullet;</span>');

@@ -73,6 +73,14 @@ gulp.task('sass-home', function() {
     .pipe(gulp.dest(config.publicDir + '/css-home'));
 });
 
+gulp.task('sass-parallax', function() {
+    return gulp.src(config.devDir + '/scss-parallax/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css-parallax'));
+});
+
 gulp.task('sass-quiz', function() {
     return gulp.src(config.devDir + '/scss-quiz/**/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
@@ -96,7 +104,7 @@ gulp.task('useref', function() {
 
 gulp.task('index', ['useref'], function () {
   var target = gulp.src('./development/*.html');
-  var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
+  var sources = gulp.src(['./public/js/**/all.min.js', './public/css/**/*.css'], {read: false});
  	return target.pipe(inject(sources, {ignorePath: 'public'}))
  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
@@ -111,11 +119,12 @@ gulp.task('images', function(){
 gulp.task('html-watch', ['index'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('sass-home-watch', ['sass-home'], browserSync.reload);
+gulp.task('sass-parallax-watch', ['sass-parallax'], browserSync.reload);
 gulp.task('sass-quiz-watch', ['sass-quiz'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
-gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-quiz', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -127,6 +136,7 @@ gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-quiz', 'index', 'minify']
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
 		gulp.watch(config.devDir + '/scss-home/**/*.scss', ['sass-home-watch']);
+    gulp.watch(config.devDir + '/scss-parallax/**/*.scss', ['sass-parallax-watch']);
     gulp.watch(config.devDir + '/scss-quiz/**/*.scss', ['sass-quiz-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
