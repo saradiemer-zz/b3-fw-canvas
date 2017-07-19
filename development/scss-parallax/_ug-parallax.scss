@@ -1,4 +1,8 @@
-#header.ug-header, .ug-global-nav-wrapper, .sb-controls  { position: fixed; }
+#header.ug-header, #ug-nav.container-fluid { position: fixed; width: 100%; }
+
+#header.ug-header { top: 0; }
+
+#ug-nav.container-fluid { top: 115px; }
 
 #header, footer  { z-index: 10000; }
 
