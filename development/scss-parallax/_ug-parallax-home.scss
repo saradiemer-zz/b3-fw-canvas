@@ -9,13 +9,13 @@
 #explore-intro              { top: 0px; }
 #explore-why-loyola         { top: 0px; }
 #explore-service-grid       { top: 0px; }
-#explore-social-justice     { top: 10px; }
-#explore-academics-chicago  { top: 10px; }
-#explore-study-abroad       { top: 10px; }
-#explore-life-grid          { top: 10px; }
-#explore-residential-life   { top: 10px; }
-#explore-cost-value         { top: 10px; }
-#explore-apply-visit-info   { top: 10px; }
+#explore-social-justice     { top: 0px; }
+#explore-academics-chicago  { top: 0px; }
+#explore-study-abroad       { top: 0px; }
+#explore-life-grid          { top: 0px; }
+#explore-residential-life   { top: 0px; }
+#explore-cost-value         { top: 0px; }
+#explore-apply-visit-info   { top: 0px; }
 
 #explore-intro .explore-cta-button img { background-image: none; }
 
@@ -23,13 +23,19 @@
 #explore-why-loyola         { background-image:url("../images/explore/explore-why-loyola-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-social-justice     { background-image:url("../images/explore/explore-social-justice-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-academics-chicago  { background-image:url("../images/explore/explore-academics-chicago-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
-#explore-study-abroad       { background-image:url("../images/explore/explore-study-abroad-gray-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-study-abroad       { background-image:url("../images/explore/explore-study-abroad-gray-2400-deep.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-cost-value         { background-image:url("../images/explore/explore-cost-value-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-residential-life   { background-image:url("../images/explore/explore-residential-life-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
+#explore-apply-visit-info   { background-image:url("../images/explore/explore-apply-visit-info-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 
 #explore-intro:after,
 #explore-why-loyola:after,
 #explore-social-justice:after,
 #explore-academics-chicago:after,
-#explore-study-abroad:after {
+#explore-study-abroad:after,
+#explore-residential-life:after,
+#explore-cost-value:after,
+#explore-apply-visit-info:after {
     content: "";
     background: url(../images/explore/explore-grid-dark-small.png) repeat;
     top: 0;
@@ -38,8 +44,10 @@
     right: 0;
     position: absolute;
     z-index: -1;
-    opacity: .75;
+    opacity: 1;
 }
+
+#explore-study-abroad figure { min-height: 1500px; height: 1500px; }
 
 header.explore-cta-wrapper {
   position: relative;
@@ -120,6 +128,6 @@ header.explore-cta-wrapper {
 NUMBERS ===================================== */
 
 .number.display {
-  font-family: 'Antenna Comp';
+  font-family: 'Antenna Comp' !important;
   font-size: 12em;
 }
