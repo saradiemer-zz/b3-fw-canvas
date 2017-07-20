@@ -348,4 +348,34 @@ ADJUSTMENT ==================================== */
 .col-lg-12.padding-left-right-0 { padding-left: 0 !important; padding-right: 0 !important; }
 
 /* ===============================================
+EQUATION ======================================== */
+
+.equation { color: $gray;
+	  font-size: .95em;
+		font-family: "Antenna Bold";
+    display: table-cell;
+    vertical-align: bottom;
+		width: 100%;
+		height:100px;
+		margin-top:10px;
+		margin-bottom: -20px;
+}
+
+.award { font-size: 8.5em; color: $white; font-family: "AntennaComp"; font-weight: 600; text-align: right; }
+
+.average { font-size: 1.25em; color: $white; font-family: "Antenna Bold"; font-weight: 400; text-transform: uppercase; margin-top:-10px; text-align: right; margin-bottom: 30px; }
+
+.large { font-size: 5em; font-family: "AntennaComp"; vertical-align: text-bottom;}
+
+.right { text-align: right; }
+
+.bottom-line.vertical-rule-right { border-color: $gray; margin-top: 20px; }
+
+.horizontal-rule { border-bottom: solid 1px $gray; height: 40px; }
+
+p.body.footnote { color: $gray; font-size: .9em;}
+
+#cost-tuition h5 {padding-bottom: 20px;}
+
+/* ===============================================
 CSS END ======================================= */
