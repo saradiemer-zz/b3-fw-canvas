@@ -41,15 +41,6 @@ body { background: $gray-light; }
 /* ===============================================
 COL - ADJUSMENTS - BS ========================= */
 
-.col-sm-12, .col-sm-4, #numbers .col-sm-4 {
-	position: relative;
-	padding: 25px 25px;
-	width: 33%;
-	min-height: 1px;
-	box-sizing: border-box;
-}
-
-@media (max-width: 768px) { .number.col-sm-4 { width: 100%; } .number.col-sm-4.rule-left { border-left: 0 none; } }
 
 #numbers .col-sm-4 { display: inline-block; }
 
@@ -978,7 +969,7 @@ td, #page-content td, #page-content td {
 
 .st-key { width: 19%; text-align: left; padding-right: 1%; }
 
-.st-val { width: 79%; padding-left: 1%; }  
+.st-val { width: 79%; padding-left: 1%; }
 
 /* DESKTOP */
 
