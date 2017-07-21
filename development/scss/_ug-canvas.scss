@@ -1,7 +1,5 @@
 #main-content-canvas { margin: 0; width: 100%; background: url(../images/backgrounds/bg-shield-dark.jpg) no-repeat center center fixed;}
 
-.container-fluid {padding:0px;}
-
 .canvas-base.panel-dark {
 	color: $gray-light;
 	background:rgba(0,0,0,.35);
@@ -336,13 +334,7 @@
 
 .bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
 	@include media-breakpoint-down(lg) {
-		font-size: 5em !important;
-	}
-}
-
-.bg-overlay-dark h1.display, .canvas-panel h1.display, .canvas-content h1.display {
-	@include media-breakpoint-down(lg) {
-		font-size: 5em !important;
+		font-size: 5em;
 	}
 }
 

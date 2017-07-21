@@ -238,7 +238,6 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 =======================================================*/
 
 footer {
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
@@ -344,12 +343,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	width: auto;
 	font-family: 'Antenna Bold', sans-serif;
 	font-size: 1.125em;
-	color: $gray;
+	color: $gray-extra-light;
 	text-transform: uppercase;
 	border-left: 2px solid darken($gray, 50%);
 	transition: all .25s;
 	@include media-breakpoint-down(lg) { font-size: 1em; }
-	@include media-breakpoint-down(sm) { font-size: 1em; }
 }
 
 #ug-nav ul li, #ug-cta ul li, #ug-explore ul li { float: left; margin: 0; width: auto; }
@@ -367,6 +365,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	span {
 		@include media-breakpoint-down(md) { display: none; }
 	}
+		@include media-breakpoint-down(sm) { padding: 10px 5px; font-size: .9em; }
 }
 
 #ug-nav ul li:first-child,
@@ -404,7 +403,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 .ug-global-nav-wrapper.affix {
 	@include media-breakpoint-down(sm) {
-		position: fixed;
     	right: 0;
     	top: 0;
     	z-index: 10500;

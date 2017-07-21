@@ -1,0 +1,74 @@
+#splash-video_html5_api {
+	@include media-breakpoint-down(sm) { display:none; }
+}
+
+p.body {
+	@include media-breakpoint-down(md) {
+	font-size: 1.1em;
+	}
+}
+
+////* NUMBERS */////
+
+.number.col-sm-2,
+.number.col-sm-3,
+.number.col-sm-4,
+.number.col-sm-5,
+.number.col-sm-6 {
+		@include media-breakpoint-down(md) {
+		h1.display.number {
+			font-size: 6em;
+		}
+		p.body.small {
+			font-size: 100% !important;
+		}
+		.vertical-rule-right,
+		.vertical-rule-left {
+			display:inline-block;
+		}
+	}
+		@include media-breakpoint-down(sm) {
+		margin: 0;
+		padding: 0 15px;
+		h1.display.number {
+			padding-top: 15px;
+			margin-top: 20px;
+			border-top: solid 1px $gray-light;
+		}
+	}
+}
+
+///////* CAROUSEL FIX *///////
+
+.container-fluid.carousel {
+			@include media-breakpoint-down(md){
+				padding-right: 0px;
+				padding-left: 0px;
+				p.body {
+					font-size: .9em;
+				}
+			}
+}
+
+///////* CAROUSEL FIX *///////
+
+ul.content-schematic {
+	@include media-breakpoint-down(md){
+		height: 400px;
+	}
+}
+
+.canvas-content img {
+	@include media-breakpoint-down(md){ margin-top: 0px;}
+}
+
+.number-circle-small {
+	@include media-breakpoint-down(md){
+		padding: 7px;
+		width: 30px;
+		height: 30px;
+		border: 1px;
+	}
+}
+
+/* END - CANVAS-NUMBERS */
