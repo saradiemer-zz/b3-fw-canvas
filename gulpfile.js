@@ -47,7 +47,7 @@ gulp.task('minify', function(){
 
 gulp.task('minify-css', function() {
     return gulp.src('./public/css/styles.css')
-        .pipe(cssnano())
+        .pipe(cssnano({ zindex: false }))
         .pipe(gulp.dest('./public/css-min/'));
 });
 
@@ -141,6 +141,6 @@ gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', '
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-gulp.task('default', gulpSequence(['serve', 'fonts', 'minify-css', 'images'], 't4_media', 't4_css', 't4_nav'));
+gulp.task('default', gulpSequence(['serve', 'fonts', 'minify-css'], 't4_media', 't4_css', 't4_css_parallax', 't4_nav'));
 
 //END GULP.JS
