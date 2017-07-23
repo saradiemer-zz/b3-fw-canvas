@@ -2,9 +2,15 @@
 	@include media-breakpoint-down(sm) { display:none; }
 }
 
-p.body {
-	@include media-breakpoint-down(md) {
-	font-size: 1.1em;
+.vertical-rule-right,
+.vertical-rule-left {
+	@include media-breakpoint-up(md){
+		display:inline-block;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 15px;
+		margin-top: 20px;
+		border: solid 1px #e1e1e1;
 	}
 }
 
@@ -22,10 +28,6 @@ p.body {
 		p.body.small {
 			font-size: 100% !important;
 		}
-		.vertical-rule-right,
-		.vertical-rule-left {
-			display:inline-block;
-		}
 	}
 		@include media-breakpoint-down(sm) {
 		margin: 0;
@@ -35,8 +37,33 @@ p.body {
 			margin-top: 20px;
 			border-top: solid 1px $gray-light;
 		}
+		h1.display.first-number {
+    margin-top: 0 !important;
+    padding-top: 0;
+    border-top: 0 none !important;
+		}
 	}
 }
+
+///////* IMGS *////////
+
+.col-sm-4
+	img {
+	@include media-breakpoint-down(sm) {
+	padding-top: 40px;
+	margin-top: 30px;
+	border-top: solid 1px $gray-light;
+	}
+}
+
+.col-sm-4.first-column.table-content{
+ 	@include media-breakpoint-down(sm) {
+ 	margin-top: 0 !important;
+ 	padding-top: 0;
+ 	border-top: 0 none !important;
+	}
+ }
+
 
 ///////* CAROUSEL FIX *///////
 
@@ -46,20 +73,17 @@ p.body {
 				padding-left: 0px;
 				p.body {
 					font-size: .9em;
+					line-height: 1.25;
 				}
 			}
 }
 
-///////* CAROUSEL FIX *///////
+///////* MAP *///////
 
 ul.content-schematic {
 	@include media-breakpoint-down(md){
 		height: 400px;
 	}
-}
-
-.canvas-content img {
-	@include media-breakpoint-down(md){ margin-top: 0px;}
 }
 
 .number-circle-small {
@@ -68,6 +92,21 @@ ul.content-schematic {
 		width: 30px;
 		height: 30px;
 		border: 1px;
+	}
+}
+
+////////* GRID *////////
+
+.grid .col-xs-3 {
+	@include media-breakpoint-down(md){
+		width: 33.33333%;
+	}
+	@include media-breakpoint-down(sm){
+		width:50%;
+	}
+	@include media-breakpoint-down(xs){
+		width:100%;
+		.hide {display:none;}
 	}
 }
 
