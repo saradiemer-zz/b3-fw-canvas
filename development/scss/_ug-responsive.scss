@@ -56,7 +56,8 @@
 	}
 }
 
-.col-sm-4.first-column.table-content{
+.col-sm-4.first-column
+	img {
  	@include media-breakpoint-down(sm) {
  	margin-top: 0 !important;
  	padding-top: 0;
@@ -110,4 +111,48 @@ ul.content-schematic {
 	}
 }
 
+@include media-breakpoint-up(sm){
+	.hide { display:inline-block !important;}
+}
+
+////////* COST *////////
+
+.bottom-line.vertical-rule-right {
+	@include media-breakpoint-down(md){
+		display:none !important;
+	}
+}
+
+.col-md-5.table-content {
+	@include media-breakpoint-down(md){
+		margin-bottom:40px;
+	}
+}
+
+.col-md-6 {
+	@include media-breakpoint-up(md){
+	width:100% !important;
+}
+	@include media-breakpoint-down(md){
+		h1, h4 {float:left;}
+	}
+}
+
+.large {
+	@include media-breakpoint-down (lg) {
+		font-size: 3.5em;
+	}
+	@include media-breakpoint-down (md) {
+		font-size: 4.5em;
+	}
+}
+
+.award {
+	@include media-breakpoint-down (lg) {
+		font-size: 6.5em;
+	}
+	@include media-breakpoint-down (md) {
+		font-size: 8.5em;
+	}
+}
 /* END - CANVAS-NUMBERS */
