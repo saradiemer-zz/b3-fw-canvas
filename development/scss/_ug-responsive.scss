@@ -17,8 +17,8 @@
 .vertical-rule-right,
 .vertical-rule-left {
 	@include media-breakpoint-down(md) {
-	display:inline-block;
-}
+	display: none !important;
+	}
 }
 
 ////* NUMBERS */////
@@ -130,18 +130,24 @@ ul.content-schematic {
 	}
 }
 
+.mobile-rule {
+	@include media-breakpoint-up(lg){
+		display: none;
+	}
+	@include media-breakpoint-down(md){
+		display: inline-block;
+	}
+}
+
 .col-md-5.table-content {
 	@include media-breakpoint-down(md){
 		margin-bottom:40px;
 	}
 }
 
-.col-md-6 {
-	@include media-breakpoint-up(md){
-	width:100% !important;
-}
-	@include media-breakpoint-down(md){
-		h1, h4 {float:left;}
+.average, .award {
+ 	@include media-breakpoint-down(md){
+		text-align:left;
 	}
 }
 
