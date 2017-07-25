@@ -51,5 +51,19 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff)', '("<t4 type="media" id="435720" formatter="path/*"/>")'))
 	.pipe(replace('(../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf)', '("<t4 type="media" id="435718" formatter="path/*"/>")'))
 	//send to /css/styles.css in T4Dir
+});
+gulp.task('t4_css_parallax', function() {
+	//get styles.css in public parallax Dir
+
+	gulp.src(config.publicDir + '/css-parallax/styles-parallax.css')
+	.pipe(replace('("../images/explore/explore-residential-life-2400-2400.jpg")', '("<t4 type="media" id="470719" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-intro-2400-2400.jpg")', '("<t4 type="media" id="470738" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-why-loyola-2400-2400.jpg")', '("<t4 type="media" id="470709" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-social-justice-2400-2400.jpg")', '("<t4 type="media" id="470720" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-academics-chicago-2400-2400.jpg")', '("<t4 type="media" id="470735" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-study-abroad-gray-2400-deep.jpg")', '("<t4 type="media" id="470708" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-cost-value-2400-2400.jpg")', '("<t4 type="media" id="470736" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-apply-visit-info-2400-2400.jpg")', '("<t4 type="media" id="470718" formatter="path/*"/>")'))
+	.pipe(replace('(../images/explore/explore-grid-dark-small.png)', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
 	.pipe(gulp.dest(config.T4Dir + '/css'));
 });

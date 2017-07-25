@@ -41,15 +41,6 @@ body { background: $gray-light; }
 /* ===============================================
 COL - ADJUSMENTS - BS ========================= */
 
-.col-sm-12, .col-sm-4, #numbers .col-sm-4 {
-	position: relative;
-	padding: 25px 25px;
-	width: 33%;
-	min-height: 1px;
-	box-sizing: border-box;
-}
-
-@media (max-width: 768px) { .number.col-sm-4 { width: 100%; } .number.col-sm-4.rule-left { border-left: 0 none; } }
 
 #numbers .col-sm-4 { display: inline-block; }
 
@@ -929,7 +920,7 @@ input:focus::placeholder-shown { color: $white; } /* Standard */
 
 
 /* ===============================================
-TABLES ======================================== */
+TABLES ======================================== *
 
 table, th, tr, td,
 #page-content table, #page-content th, #page-content tr, #page-content td,
