@@ -4,8 +4,15 @@
 
 p.body {
 	@include media-breakpoint-down(md) {
-	font-size: 1.1em;
+
 	}
+}
+
+.vertical-rule-right,
+.vertical-rule-left {
+	@include media-breakpoint-down(md) {
+	display:inline-block;
+}
 }
 
 ////* NUMBERS */////
@@ -21,10 +28,6 @@ p.body {
 		}
 		p.body.small {
 			font-size: 100% !important;
-		}
-		.vertical-rule-right,
-		.vertical-rule-left {
-			display:inline-block;
 		}
 	}
 		@include media-breakpoint-down(sm) {
@@ -69,6 +72,14 @@ ul.content-schematic {
 		height: 30px;
 		border: 1px;
 	}
+}
+
+//////* IMAGE GRID */////
+
+.grid .col-xs-3 {
+		@include media-breakpoint-down(md){
+			width: 33.33333%;
+		}
 }
 
 /* END - CANVAS-NUMBERS */
