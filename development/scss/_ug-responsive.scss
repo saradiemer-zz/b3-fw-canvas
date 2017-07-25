@@ -14,6 +14,13 @@
 	}
 }
 
+.vertical-rule-right,
+.vertical-rule-left {
+	@include media-breakpoint-down(md) {
+	display:inline-block;
+}
+}
+
 ////* NUMBERS */////
 
 .number.col-sm-2,
@@ -69,14 +76,14 @@
 ///////* CAROUSEL FIX *///////
 
 .container-fluid.carousel {
-			@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md){
 				padding-right: 0px;
 				padding-left: 0px;
 				p.body {
 					font-size: .9em;
 					line-height: 1.25;
-				}
 			}
+		}
 }
 
 ///////* MAP *///////
@@ -112,7 +119,7 @@ ul.content-schematic {
 }
 
 @include media-breakpoint-up(sm){
-	.hide { display:inline-block !important;}
+	.hide { display:inline-block !important; }
 }
 
 ////////* COST *////////
@@ -155,4 +162,5 @@ ul.content-schematic {
 		font-size: 8.5em;
 	}
 }
+
 /* END - CANVAS-NUMBERS */
