@@ -89,6 +89,9 @@
 ///////* MAP *///////
 
 ul.content-schematic {
+	@include media-breakpoint-down(lg){
+		height: 500px;
+	}
 	@include media-breakpoint-down(md){
 		height: 400px;
 	}
@@ -100,6 +103,34 @@ ul.content-schematic {
 		width: 30px;
 		height: 30px;
 		border: 1px;
+	}
+}
+
+.ug-map-key {
+	@include media-breakpoint-down (lg) {
+		display: none;
+	}
+}
+
+#mobile {
+	@include media-breakpoint-up (xl) {
+		display: none;
+	}
+	#accordion span.circle {
+		@include media-breakpoint-down (lg){
+	  display: table-cell;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    font-family: 'Antenna Black', sans-serif;
+    text-align: center;
+    content: "";
+    color: #f1f1f1;
+    background: #000;
+    border-radius: 50%;
+		}
 	}
 }
 
@@ -168,5 +199,6 @@ ul.content-schematic {
 		font-size: 8.5em;
 	}
 }
+
 
 /* END - CANVAS-NUMBERS */
