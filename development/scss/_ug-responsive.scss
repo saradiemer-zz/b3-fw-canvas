@@ -2,6 +2,9 @@
 	@include media-breakpoint-down(sm) { display:none; }
 }
 
+p.body {
+	@include media-breakpoint-down(md) {
+
 .vertical-rule-right,
 .vertical-rule-left {
 	@include media-breakpoint-up(md){
@@ -12,6 +15,13 @@
 		margin-top: 20px;
 		border: solid 1px #e1e1e1;
 	}
+}
+
+.vertical-rule-right,
+.vertical-rule-left {
+	@include media-breakpoint-down(md) {
+	display:inline-block;
+}
 }
 
 ////* NUMBERS */////
@@ -155,4 +165,5 @@ ul.content-schematic {
 		font-size: 8.5em;
 	}
 }
+    
 /* END - CANVAS-NUMBERS */
