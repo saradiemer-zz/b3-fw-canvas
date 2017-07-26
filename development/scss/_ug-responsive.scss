@@ -21,6 +21,12 @@
 	}
 }
 
+.canvas-content {
+	@include media-breakpoint-down (sm) {
+    padding: 20px 0;
+	}
+}
+
 ////* NUMBERS */////
 
 .number.col-sm-2,
@@ -95,6 +101,9 @@ ul.content-schematic {
 	@include media-breakpoint-down(md){
 		height: 400px;
 	}
+	@include media-breakpoint-down(sm){
+		height: 330px;
+	}
 }
 
 .number-circle-small {
@@ -119,17 +128,18 @@ ul.content-schematic {
 	#accordion span.circle {
 		@include media-breakpoint-down (lg){
 	  display: table-cell;
-    margin: 0;
-    padding: 0;
-    width: 20px;
-    height: 20px;
+    margin: -5px 10px;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
+		font-size: 1em;
     font-family: 'Antenna Black', sans-serif;
     text-align: center;
     content: "";
-    color: #f1f1f1;
+    color: $gray-extra-light;
     background: #000;
-    border-radius: 50%;
+		border:$white;
 		}
 	}
 }
