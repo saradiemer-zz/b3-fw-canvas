@@ -1,5 +1,7 @@
 /* UG FRAMEWORK */
 
+hr { color: darken($gray, 10%); border-color: darken($gray, 10%); }
+
 body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .development-nav {
@@ -40,7 +42,11 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 /* PAGE COLUMNS - WRAPPER ==============================
 =======================================================*/
 
-body.canvas #wrapper {
+body #wrapper {
+	background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(179, 179, 179, 0.5) 50%, rgba(179, 179, 179, 0.5) 100%), url('images/site/texture-transparent.png');
+}
+
+body.canvas #wrapper{
 	background: url('images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -105,7 +111,8 @@ body.canvas #wrapper {
 
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
-#rightColumn .aside-number {
+#rightColumn .aside-number,
+#rightColumn .aside-content {
 	box-sizing: border-box;
 	padding: 30px;
 	max-width: 100%;
@@ -146,7 +153,7 @@ body.canvas #wrapper {
 	margin: 0 0 5px 0 !important;
 	line-height: 1.65;
 	letter-spacing: -.015em;
-	text-transform: uppercase;
+	text-transform: none;
 	@include media-breakpoint-down(md) {
 		margin-top: 30px !important;
 		padding-top: 30px !important;
