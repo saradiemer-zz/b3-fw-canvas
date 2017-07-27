@@ -93,7 +93,6 @@
 .canvas-content img {
 	margin-top: 0;
 	@include media-breakpoint-down(md) {
-		margin-top: 25px;
 	}
 	@include media-breakpoint-down(xs) {
 		margin-top: 5px;
@@ -134,8 +133,6 @@
 .canvas-base .col-md-4,
 .canvas-base .col-md-3,
 .canvas-base .col-md-2 {
-	padding-left: 30px;
-	padding-right: 30px;
 	@include media-breakpoint-down(md) {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -306,7 +303,7 @@
 
 .bg-overlay-dark {
 	@include media-breakpoint-up(lg) { display: block; }
-	@include media-breakpoint-down(lg) { display: none; }
+	@include media-breakpoint-down(lg) {  }
 	color: $gray-light;
 		h1 {
 			margin: 0 0 5px 0;
@@ -348,6 +345,7 @@
 
 .canvas-base.grid {
 	background:none;
+	padding: 0px;
 }
 
 /* END - CANVAS */
