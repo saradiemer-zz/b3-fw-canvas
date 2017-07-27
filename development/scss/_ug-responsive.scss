@@ -24,13 +24,27 @@
 .canvas-content {
 	@include media-breakpoint-down (sm) {
     padding: 20px 0;
-	}
+		}
 	h1.display {
 		@include media-breakpoint-down (sm) {
 	    font-size: 4em;
 		}
+		@include media-breakpoint-down (xs) {
+				font-size: 3em;
+			}
+		}
+	h5.label.display-large {
+		@include media-breakpoint-down (xs) {
+				font-size: 1.5em;
+			}
+		}
+	h5.label.display-large {
+	@include media-breakpoint-down (xs) {
+			font-size: 1.25em;
+		}
 	}
 }
+
 
 .canvas-content
 
