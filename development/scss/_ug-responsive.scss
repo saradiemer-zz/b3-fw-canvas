@@ -16,8 +16,8 @@
 
 .vertical-rule-right,
 .vertical-rule-left {
-	@include media-breakpoint-down(md) {
-	display: none !important;
+	@include media-breakpoint-down(sm) {
+	display: none;
 	}
 }
 
@@ -25,7 +25,14 @@
 	@include media-breakpoint-down (sm) {
     padding: 20px 0;
 	}
+	h1.display {
+		@include media-breakpoint-down (sm) {
+	    font-size: 4em;
+		}
+	}
 }
+
+.canvas-content
 
 ////* NUMBERS */////
 
@@ -104,6 +111,9 @@ ul.content-schematic {
 	@include media-breakpoint-down(sm){
 		height: 330px;
 	}
+	@include media-breakpoint-down(xs){
+		height: 230px;
+	}
 }
 
 .number-circle-small {
@@ -112,6 +122,31 @@ ul.content-schematic {
 		width: 30px;
 		height: 30px;
 		border: 1px;
+	}
+	@include media-breakpoint-down(sm){
+		padding: 6px;
+		width: 25px;
+		height: 25px;
+		border: 1px;
+		font-size: .925em;
+	}
+}
+
+#tabs > li a {
+	@include media-breakpoint-down (sm){
+		font-size: .75em;
+	}
+}
+
+ul#tabs.nav.nav-pills {
+		@include media-breakpoint-down (sm){
+			margin: 30px 0 0 0;
+		}
+}
+
+.nav-pills>li+li {
+  @include media-breakpoint-down (sm){
+		margin-bottom: 20px;
 	}
 }
 
@@ -210,5 +245,16 @@ ul.content-schematic {
 	}
 }
 
+.table {
+	@include media-breakpoint-down (sm) {
+		margin: 0px;
+	}
+}
+
+.horizontal-rule {
+	@include media-breakpoint-down (sm) {
+		margin-bottom: 40px;
+	}
+}
 
 /* END - CANVAS-NUMBERS */
