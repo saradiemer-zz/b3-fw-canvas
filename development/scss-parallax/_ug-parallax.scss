@@ -57,7 +57,7 @@ article header {
   margin: 50px 0 0 0;
   width: 300px;
   height: 200px;
-  overflow: hidden;
+
   top: 0;
   padding: 0 0 0 10px;
   }
@@ -235,6 +235,8 @@ figure img {
 #explore-intro header h1 { font-size: 12vh; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
 
 #explore-intro header h5 { font-size: 4vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
+#explore-intro #homepage-cta h5 { font-size: 2vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
+#homepage-cta h1{  font-family: 'Antenna Black', sans-serif !important;}
 
 article h1.display.location {
   margin: 0;
