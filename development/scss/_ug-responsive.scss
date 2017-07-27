@@ -1,6 +1,14 @@
-#splash-video_html5_api {
+#res-life-video {
 	@include media-breakpoint-down(sm) { display:none; }
 }
+
+#top-panel-mobile {
+	@include media-breakpoint-up (md) {display: none;}
+	@include media-breakpoint-down (sm) {display: block;}
+	.fluid { padding: 0px !important;}
+	img {margin: 0px;}
+ }
+
 
 .vertical-rule-right,
 .vertical-rule-left {
@@ -12,10 +20,6 @@
 		margin-top: 20px;
 		border: solid 1px #e1e1e1;
 	}
-}
-
-.vertical-rule-right,
-.vertical-rule-left {
 	@include media-breakpoint-down(sm) {
 	display: none;
 	}
@@ -24,15 +28,26 @@
 .canvas-content {
 	@include media-breakpoint-down (sm) {
     padding: 20px 0;
-	}
+		}
 	h1.display {
 		@include media-breakpoint-down (sm) {
 	    font-size: 4em;
 		}
+		@include media-breakpoint-down (xs) {
+				font-size: 3em;
+			}
+		}
+	h5.label.display-large {
+		@include media-breakpoint-down (xs) {
+				font-size: 2em;
+			}
+		}
+	p.body.intro {
+	@include media-breakpoint-down (sm) {
+			font-size: 1.25em;
+		}
 	}
 }
-
-.canvas-content
 
 ////* NUMBERS */////
 
@@ -85,6 +100,11 @@
 	}
  }
 
+ .light-rule {
+	 @include media-breakpoint-down (sm) {
+		 display: none;
+	 }
+ }
 
 ///////* CAROUSEL FIX *///////
 
