@@ -40,7 +40,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 /* PAGE COLUMNS - WRAPPER ==============================
 =======================================================*/
 
-#wrapper {
+body.canvas #wrapper {
 	background: url('images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -241,6 +241,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
+body.parallax footer{position: fixed;}
 
 footer .container-fluid {
   padding-right: 0;

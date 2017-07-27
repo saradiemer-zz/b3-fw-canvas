@@ -19,6 +19,8 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	//social ICONS
 	.pipe(replace('(../images/site/ug-social-icons-patina@2X.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
+	.pipe(replace('(../images/backgrounds/bg-shield-dark.jpg)', '("<t4 type="media" id="471277" formatter="path/*"/>")'))
+	.pipe(replace('(images/backgrounds/bg-shield-dark.jpg)', '("<t4 type="media" id="471277" formatter="path/*"/>")'))
 	//ANTENNA FONTS
 	//antenna regular
 	.pipe(replace('(../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg)', '("<t4 type="media" id="309115" formatter="path/*"/>")'))
@@ -51,6 +53,7 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff)', '("<t4 type="media" id="435720" formatter="path/*"/>")'))
 	.pipe(replace('(../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf)', '("<t4 type="media" id="435718" formatter="path/*"/>")'))
 	//send to /css/styles.css in T4Dir
+		.pipe(gulp.dest(config.T4Dir + '/css'));
 });
 gulp.task('t4_css_parallax', function() {
 	//get styles.css in public parallax Dir
