@@ -43,14 +43,14 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 =======================================================*/
 
 body #wrapper {
-	background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(179, 179, 179, 0.5) 50%, rgba(179, 179, 179, 0.5) 100%), url('images/site/texture-transparent.png');
+	background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(179, 179, 179, 0.5) 50%, rgba(179, 179, 179, 0.5) 100%), url('/images/site/texture-transparent.png');
 }
 
 body.canvas #wrapper{
-	background: url('images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
 	background-size: cover;
 } /* global wrapper */
 
