@@ -30,7 +30,7 @@
     box-shadow: none;
     padding: 10px;
     border-radius: 0px 30px 30px 0px;
-    background: rgb(254, 191, 29);
+    background: $gold;
 }
 
 #main-content #interior-wrapper .panel-group { margin: 0; }
@@ -107,3 +107,16 @@
 }
 
 /* END - INTERIOR-ACCORDION */
+
+/* GENERAL ACCORDION */
+
+#main-content #interior-wrapper .accordion-stack #accordion .panel-heading.parent {
+    display: block;
+    margin: 20px 0;
+    width: auto;
+    box-shadow: none;
+    padding: 10px 0;
+    border-radius: 0px;
+		border-bottom: solid 1px $gray-light;
+    background: $white;
+}
