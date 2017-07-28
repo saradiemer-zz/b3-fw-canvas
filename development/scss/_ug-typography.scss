@@ -269,11 +269,23 @@ h5.label.maroon {
 	width: 80%;
 }
 
-a {
-	color:$patina !important;
+ul li a, p a {
+	color:darken($patina, 8%) !important;
 	background:none;
 }
 
-a:visited, a:hover, a:focus {
-	color:$patina-light !important;
+ul li a:hover, ul li a:focus, p a:hover, p a:focus {
+	color:$patina !important;
+}
+
+ul li a:visited, ul li a:visited, p a:visited, p a:visited {
+	color:darken($patina, 8%) !important;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color:$patina-dark !important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color:darken($patina, 5%) !important;
 }
