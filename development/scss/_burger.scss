@@ -76,6 +76,8 @@
 #main-sidebar .panel {
 	margin-left: 2em;
 	margin-right: 2em;
+	padding: 0.25em 0;
+  border-bottom: 1px solid rgba(254,188,24,0.9);
 }
 
 #overlay {
@@ -164,9 +166,9 @@
 #main-sidebar .panel-group img {
 	margin-left: 2em;
 }
-#internalmenu{	background-color: rgba(254,188,24,0.9);
+#internalmenu{
 	/* (#febc18) */
-	float: right;
+
 	font-family: "Antenna Bold", sans-serif;
 	font-size: 0.87em;
 	letter-spacing: 0.2px;
