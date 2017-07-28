@@ -368,6 +368,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-explore li a {
 	padding: 20px 25px;
 	border-left: solid 1px $gray-dark;
+	color:$gray-extra-light !important;
 	span {
 		@include media-breakpoint-down(md) { display: none; }
 	}
@@ -619,4 +620,4 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 /* ===============================================
 MEDIA ASSETS ================================== */
 
-section#video { margin: 30px 0; }
+section#video, .videoplayer { margin: 30px 0; }
