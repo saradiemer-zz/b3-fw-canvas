@@ -1,4 +1,4 @@
-#res-life-video {
+#res-life-video, #chicago-video, #cost-video, #outcomes-video, #green-video, #study-abroad-video {
 	@include media-breakpoint-down(sm) { display:none; }
 }
 
@@ -27,7 +27,7 @@
 
 .canvas-content {
 	@include media-breakpoint-down (sm) {
-    padding: 20px 0;
+    padding: 20px;
 		}
 	h1.display {
 		@include media-breakpoint-down (sm) {
@@ -49,6 +49,14 @@
 	}
 }
 
+.space {
+	@include media-breakpoint-up (lg) {
+		height: 30px;
+	}
+	@include media-breakpoint-down (md) {
+		display: none;
+	}
+}
 ////* NUMBERS */////
 
 .number.col-sm-2,
@@ -212,6 +220,14 @@ ul#tabs.nav.nav-pills {
 		width:100%;
 		.hide {display:none;}
 	}
+	h5.label {
+		@include media-breakpoint-up(xl){
+			font-size: 2em;
+		}
+		@include media-breakpoint-down(lg){
+			font-size: 1.5em;
+		}
+	}
 }
 
 @include media-breakpoint-up(sm){
@@ -219,6 +235,13 @@ ul#tabs.nav.nav-pills {
 }
 
 ////////* COST *////////
+
+#content-tabs ul {
+	@include media-breakpoint-up(sm) {
+		padding: 4px 0 25px 0;
+	}
+}
+
 
 .bottom-line.vertical-rule-right {
 	@include media-breakpoint-down(md){
