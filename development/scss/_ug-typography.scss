@@ -270,6 +270,10 @@ h5.label.maroon {
 }
 
 a {
-	color:$patina-dark !important;
+	color:$patina !important;
 	background:none;
+}
+
+a:visited, a:hover, a:focus {
+	color:$patina-light !important;
 }
