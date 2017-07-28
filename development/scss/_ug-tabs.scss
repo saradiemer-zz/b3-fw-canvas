@@ -82,10 +82,10 @@
 
 /* NUMBER STYLING --SCHEMATIC */
 
- .number-circle-small  {
+ .number-circle-small {
 	display: block;
 	margin: 0;
-	padding: 10px;
+	padding: 11px;
 	width: 40px;
 	height: 40px;
 	font-family: 'Antenna Bold', sans-serif !important;
@@ -98,12 +98,24 @@
 	color: #FFF;
 	text-align: center;
 	border-radius: 20px;
-	border: 2px;
+	border: 1px;
 	border-color: $white;
 	border-style: solid;
 	background-color: #272727;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.5)
 }
+
+.gray-extra-dark { background-color: $gray-extra-dark;}
+
+.gray-dark { background-color: $gray-dark; }
+
+.gray { background-color: $gray; }
+
+.gray-light { background-color: $gray-light; color: $gray-extra-dark; border-color: $gray-extra-dark; }
+
+.gray-extra-light { background-color: $gray-extra-light; color: $gray-extra-dark; border-color: $gray-extra-dark; }
+
+.white { background-color: $gray-extra-light; color: $gray-extra-dark; border-color: $gray-extra-dark; }
 
 .number-circle-small.one-one,
 .number-circle-small.one-two,

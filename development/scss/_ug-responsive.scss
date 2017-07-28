@@ -38,6 +38,9 @@
 			}
 		}
 	h5.label.display-large {
+		@include media-breakpoint-down (md) {
+				font-size: 2.5em;
+			}
 		@include media-breakpoint-down (xs) {
 				font-size: 2em;
 			}
@@ -60,16 +63,25 @@
 ////* NUMBERS */////
 
 .number.col-sm-2,
+.number.col-md-2,
 .number.col-sm-3,
 .number.col-sm-4,
 .number.col-sm-5,
 .number.col-sm-6 {
+		@include media-breakpoint-down(lg) {
+			h5.label-small{
+				font-size: 1.05vw;
+			}
+		}
 		@include media-breakpoint-down(md) {
 		h1.display.number {
 			font-size: 6em;
 		}
 		p.body.small {
 			font-size: 100% !important;
+		}
+		h5.label-small{
+			font-size: 1em;
 		}
 	}
 		@include media-breakpoint-down(sm) {
@@ -81,10 +93,25 @@
 			border-top: solid 1px $gray-light;
 		}
 		h1.display.first-number {
-    margin-top: 0 !important;
-    padding-top: 0;
-    border-top: 0 none !important;
+    	margin-top: 0 !important;
+    	padding-top: 0;
+    	border-top: 0 none !important;
 		}
+	}
+}
+
+.number.col-md-2 {
+	@include media-breakpoint-down (md) {
+		float:left;
+		width: 33.333%;
+	}
+		img {
+			width: 75%;
+			margin: 10px 0 5px;
+	}
+	@include media-breakpoint-down (sm) {
+		float:left;
+		width: 100%;
 	}
 }
 
@@ -160,9 +187,16 @@ ul.content-schematic {
 	}
 }
 
-#tabs > li a {
+#tabs > li {
+	@include media-breakpoint-down (sm) {
+    width: 100%;
+	}
+}
+#tabs > li  a {
 	@include media-breakpoint-down (sm){
 		font-size: .75em;
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -174,7 +208,7 @@ ul#tabs.nav.nav-pills {
 
 .nav-pills>li+li {
   @include media-breakpoint-down (sm){
-		margin-bottom: 20px;
+
 	}
 }
 
