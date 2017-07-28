@@ -368,6 +368,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-explore li a {
 	padding: 20px 25px;
 	border-left: solid 1px $gray-dark;
+	color:$gray-extra-light !important;
 	span {
 		@include media-breakpoint-down(md) { display: none; }
 	}
