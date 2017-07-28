@@ -268,3 +268,12 @@ h5.label.maroon {
 #ug-tips .ug-tips-q-and-a p {
 	width: 80%;
 }
+
+a {
+	color:$patina !important;
+	background:none;
+}
+
+a:visited, a:hover, a:focus {
+	color:$patina-light !important;
+}
