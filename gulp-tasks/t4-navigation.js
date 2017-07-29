@@ -31,6 +31,7 @@ gulp.task('t4_nav', function() {
 		'calltoaction': '<t4 type="navigation" id="675"/>',
 		'socialmedia': '<t4 type="navigation" id="677"/>',
 		'aside': '<t4 type="navigation" id="678"/>',
+		'body': '<body class="jd <t4 type="navigation" id="408"/>">  <div style="background-color:#cacaca;padding:5px;width:100%;"><p align="center">You are here: <t4 type="navigation" id="687"/> &nbsp; | &nbsp; <a href="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=content&fnno=30&sid=<t4 type="navigation" id="462"/>" target="_new">CLICK HERE TO EDIT THIS PAGE</a></p></div>',
 		}, {
 		keepUnassigned: false,
 		keepBlockTags: true,

@@ -1,0 +1,70 @@
+/*================================================
+MODULES - CARD
+================================================*/
+
+body.modules #wrapper {
+  background:url('/images/backgrounds/bg-grid-light-small.png')repeat top left, url('/images/backgrounds/bg-shield-gold-patina.jpg') no-repeat center center !important;
+  -webkit-background-size: auto, cover !important;
+  -moz-background-size: auto, cover !important;
+  -o-background-size: auto, cover !important;
+  background-size: auto, cover;
+} /* global wrapper */
+
+.card {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 0 0 0 26px;
+  background: $bg-overlay-dark;
+  img { margin: 0 0 5px 0; }
+}
+
+.card h6,
+.card .card-title,
+.card .card-text {
+  color: $gray-light;
+}
+
+.card .card-title {
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.card .card-text {
+  margin: 0 0 20px 0;
+  font-family: 'Antenna', sans-serif;
+  font-size: .85em;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+.card .btn-overlay.cta {
+	margin: 0;
+	padding: 4px 12px 4px 12px;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .75em;
+	font-weight: bold;
+	font-style: normal;
+	color: $patina;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+	background-color: lighten($bg-overlay, 20%);
+	background-image: none;
+	border: 1px $patina solid;
+	border-radius: 30px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+.card .btn-overlay.cta:hover,
+.card .btn-overlay.cta:active,
+.card .btn-overlay.cta:visited {
+	color: lighten($patina, 10%) ;
+	background-color: lighten($bg-overlay, 10%);
+	cursor: pointer;
+}

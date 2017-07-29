@@ -2,7 +2,7 @@
 /* ===============================================
 FONT-SIZE - RESET ============================= */
 
-a { color: $patina-dark; cursor:pointer;}
+a { color: $patina-dark; cursor:pointer !important; }
 
 a:link {
 	outline: none;
@@ -33,11 +33,11 @@ p a, article.content p a {
 
 p a { font-weight: bold; }
 
-a:hover, article.content p a:hover { color: $patina; cursor:pointer; }
+a:hover, article.content p a:hover { color: $patina; cursor: pointer !important; }
 
 p.body.intro { font-size: 1.5em }
 
-p.body.explainer { margin: 0 0 10px 0; }
+p.body.explainer { margin: -5px 0 10px 0; }
 
 .nav a:visited,
 .nav a:hover,
@@ -57,8 +57,10 @@ h1.display {
 	font-size: 5em;
 }
 
-h1.pagelayout { font-size: 2.25em;
-text-transform:uppercase; }
+h1.pagelayout {
+	font-size: 2.25em;
+	text-transform:uppercase;
+}
 
 h1, h2, h3 {
 	margin: 10px 0;
@@ -79,9 +81,13 @@ h1, h2, h3 {
 
 .canvas-content .bg-overlay h5.label { margin: 0 !important; }
 
-.canvas-content.blockquote-spacing { padding: 40px 0 30px; }
-
 li.bg-overlay-dark { margin: 4px 0;}
+
+h5.light { margin-top: -4px; margin-bottom: 8px; font-size: .925em;}
+
+p.explainer {line-height: 1.45;}
+
+p.intro span.leadin { display: inline-block; margin-top: 60px; font-size: 3em; line-height: 0; }
 
 /* ===============================================
 NUMBERS ===================================== */
@@ -105,7 +111,7 @@ span.drop-cap { font-family: 'Antenna Comp'; text-transform: uppercase; font-siz
 TABS ========================================= */
 
 ul#tabs.nav.nav-pills {
-	margin: 40px 0 20px 0;
+	margin: 40px 0 10px 0;
 }
 
 #tabs > li { list-style-image: none !important; }
@@ -114,41 +120,48 @@ ul#tabs.nav.nav-pills {
 #tabs > li a {
 	top: 1px;
 	display: inline;
-	font-family: 'Antenna Bold', sans-serif !important;
-	font-weight: 200;
-	font-size: .925em !important;
-	font-weight: normal;
-	color: $patina-dark;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .75em;
+	font-weight: bold;
+	font-style: normal;
+	color: $patina;
+	text-align: left;
+	letter-spacing: 1px;
 	text-transform: uppercase;
-	line-height: 1;
-	border-radius: 100px;
-	list-style-type: none !important;
-	list-style-image: none !important;
-	background: $white;
+	text-shadow: none;
+	background-color: white;
+	background-image: none;
+	border: 1px $patina solid;
+	border-radius: 30px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	cursor: pointer;
 	margin-right: 10px;
-	border-style: solid;
-	border-width: 3px;
-	border-color:$patina-dark;
 }
 
 #tabs > li.active a {
 	color: $white;
 	background: $patina-dark;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-color:$patina-dark;
 }
 
-ul#tabs.nav.nav-pills {
-	margin: 40px 0 30px 0;
+#tabs > li a:active {
+	color: $patina ;
+	background-color: lighten($bg-overlay, 10%);
+	cursor: pointer;
 }
+
 
 #tabs.reverse > li a {
 	top: 1px;
 	display: inline;
 	font-family: 'Antenna Bold', sans-serif !important;
 	font-weight: 200;
-	font-size: 1.1em !important;
+	font-size: 1.1em;
 	font-weight: normal;
 	color: $white;
 	text-transform: uppercase;
@@ -159,7 +172,7 @@ ul#tabs.nav.nav-pills {
 	background: $bg-overlay;
 	margin-right: 20px;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-color:$patina-dark;
 }
 
@@ -167,12 +180,12 @@ ul#tabs.nav.nav-pills {
 	color: $white;
 	background: $patina-dark;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-color:$patina-dark;
 }
 
 
-.icon { width: 70px; margin-bottom:10px; height: 70px; border-radius: 100%; background-color: #C1C1C1;}
+.icon { width: 60%; margin-bottom:10px; border-radius: 100%; }
 
 .icon-number { width: 20px; margin-bottom:10px; height: 20px; border-radius: 100%; font-size: 1.25em;}
 
@@ -330,6 +343,8 @@ blockquote cite a {
 	color: $patina-dark;
 }
 
+blockquote .cta { margin: 0px; }
+
 .bigquote-left {
 	margin-top:1.7em;
 	opacity:0.1;
@@ -395,7 +410,7 @@ EQUATION ======================================== */
 		margin-bottom: -20px;
 }
 
-.award { font-size: 8.5em; color: $white; font-family: 'Antenna Comp', sans-serif;; font-weight: 600; text-align: right; }
+.award { font-size: 8.5em; color: $white; font-family: 'Antenna Comp', sans-serif; font-weight: 600; text-align: right; }
 
 .average { font-size: 1.25em; color: $white; font-family: "Antenna Bold"; font-weight: 400; text-transform: uppercase; margin-top:-10px; text-align: right; margin-bottom: 30px; }
 
@@ -407,7 +422,9 @@ EQUATION ======================================== */
 
 .equation-rule { border-bottom: solid 1px $gray; height: 40px; }
 
-.horizontal-rule { border-bottom: solid 2px $gray-extra-light; height: 40px; }
+.horizontal-rule { border-bottom: solid 2px $gray-extra-light; height: 40px; margin-bottom: 10px;}
+
+.light-rule { border-bottom: solid 1px $gray-extra-light; margin-bottom: 10px;}
 
 .mobile-rule { border-bottom: solid 2px $gray-extra-light; height: 40px; margin-bottom:30px; }
 
@@ -426,7 +443,7 @@ p.body.footnote { color: $gray; font-size: .9em;}
 /* ===============================================
 TABLES ======================================== */
 
-table, th, tr, td,
+#cost-tuition table, th, tr, td,
 #page-content table, #page-content th, #page-content tr, #page-content td,
 #page-content table th, #page-content table tr, #page-content table td {
 	padding: 8px 6px 7px;
@@ -437,16 +454,16 @@ table, th, tr, td,
 	padding: 20px 20px 20px 0px;
 }
 
-table, #page-content table,  {
-	margin: 20px;
+#cost-tuition table, #page-content table,  {
+	margin: 0px;
 	border-collapse: collapse;
 	border-spacing: 0;
 	width:100%;
 }
 
-tr, #page-content tr, #page-content table tr { border:none; }
+#cost-tuition tr, #page-content tr, #page-content table tr { border:none; }
 
-tr th, #page-content tr th {
+#cost-tuition tr th, #page-content tr th {
 	font-weight: bold;
 	letter-spacing: .5px;
 	color: $gray-extra-light;
@@ -455,16 +472,59 @@ tr th, #page-content tr th {
 	border-right: none;
 	border-left: none;
 	font-size: 1.2em;
+	background: none;
+}
+
+#cost-tuition td, #page-content td, #page-content td {
+	vertical-align: top;
+	width: auto;
+	border:none;
+	color: $gray-extra-light;
+	font-family: 'arial', sans-serif;
+	border-bottom: solid .5px $gray;
+	padding-bottom: 15px;
+}
+
+#cost-tuition .table > tbody > tr > th {
+	border-top: solid .5px #272727;
+}
+
+table, th, tr, td,
+#page-content table, #page-content th, #page-content tr, #page-content td,
+#page-content table th, #page-content table tr, #page-content table td {
+	padding: 8px 6px 7px;
+	font-family: 'Antenna', san-serif;
+	font-size: .925em;
+	font-weight: 100;
+	line-height: 1.35;
+	letter-spacing: .015em;
+}
+
+#cost-tuition .table > tbody > tr > th,
+
+table, #page-content table,  {
+	margin: 20px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tr, #page-content tr, #page-content table tr { border-left: solid 1px #cccccc; border-right: solid 1px #cccccc; }
+
+tr th, #page-content tr th {
+	font-weight: bold;
+	letter-spacing: .5px;
+	color: #eeeeee;
+	text-transform: uppercase;
+	border-right: solid 1px #cccccc;
+	background: #888888;
 }
 
 td, #page-content td, #page-content td {
 	vertical-align: top;
-	border:none;
-	color: $gray-extra-light;
-	font-family: 'arial', sans-serif;
-	border-bottom: solid .5px $gray-dark;
+	width: 100px;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
 }
-
 
 /* ===============================================
 CSS END ======================================= */

@@ -1,5 +1,7 @@
 /* UG FRAMEWORK */
 
+hr { color: darken($gray, 10%); border-color: darken($gray, 10%); }
+
 body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .development-nav {
@@ -40,11 +42,15 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 /* PAGE COLUMNS - WRAPPER ==============================
 =======================================================*/
 
-#wrapper {
-	background: url('images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+body #wrapper {
+	background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(179, 179, 179, 0.5) 50%, rgba(179, 179, 179, 0.5) 100%), url('/images/site/texture-transparent.png');
+}
+
+body.canvas #wrapper {
+	background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
 	background-size: cover;
 } /* global wrapper */
 
@@ -68,7 +74,6 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
   height: 100%;
 	overflow: auto;
 	margin: 0 auto 100px auto;
-	background: linear-gradient(to right, $white 0%, $white 50%, lighten($bg-overlay,70%) 50%, lighten($bg-overlay,70%) 100%), url('../images/site/texture-transparent.png');
 	@include media-breakpoint-down(md) {
 		background: none;
 	}
@@ -105,7 +110,8 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
-#rightColumn .aside-number {
+#rightColumn .aside-number,
+#rightColumn .aside-content {
 	box-sizing: border-box;
 	padding: 30px;
 	max-width: 100%;
@@ -146,7 +152,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 	margin: 0 0 5px 0 !important;
 	line-height: 1.65;
 	letter-spacing: -.015em;
-	text-transform: uppercase;
+	text-transform: none;
 	@include media-breakpoint-down(md) {
 		margin-top: 30px !important;
 		padding-top: 30px !important;
@@ -233,7 +239,6 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
     width: auto !important;
 }
 
-
 /* FOOTER ===============================================
 =======================================================*/
 
@@ -241,6 +246,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
+body.parallax footer{position: fixed;}
 
 footer .container-fluid {
   padding-right: 0;
@@ -362,6 +368,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-explore li a {
 	padding: 20px 25px;
 	border-left: solid 1px $gray-dark;
+	color:$gray-extra-light !important;
 	span {
 		@include media-breakpoint-down(md) { display: none; }
 	}
@@ -609,3 +616,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 .col-lg-middle { vertical-align: middle; }
 .col-lg-bottom { vertical-align: bottom; }
 }
+
+/* ===============================================
+MEDIA ASSETS ================================== */
+
+section#video, .videoplayer { margin: 30px 0; }

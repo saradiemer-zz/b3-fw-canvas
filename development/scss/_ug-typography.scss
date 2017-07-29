@@ -268,3 +268,37 @@ h5.label.maroon {
 #ug-tips .ug-tips-q-and-a p {
 	width: 80%;
 }
+
+ul li a, p a {
+	color:darken($patina, 8%) !important;
+	background:none !important;
+}
+
+ul li a:hover, ul li a:focus, p a:hover, p a:focus {
+	color:$patina !important;
+}
+
+ul li a:visited, ul li a:visited, p a:visited, p a:visited {
+	color:darken($patina, 8%) !important;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color:$patina-dark !important;
+	background:none !important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color:darken($patina, 5%) !important;
+}
+
+table {
+	width:100%;
+}
+
+td {
+	color:black !important;
+}
+
+#highlight-1 > div > table.stacktable.large-only > tbody > tr > td {
+	color:$gray-extra-light !important;
+}
