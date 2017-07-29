@@ -244,6 +244,18 @@ ul#tabs.nav.nav-pills {
 	}
 }
 
+.small-circle, .square, .triangle, .hexagon, .diamond,  {
+	@include media-breakpoint-down(md){
+		float:left; margin-right: 10px;
+	}
+}
+
+.green-map.col-sm-2 {
+	@include media-breakpoint-down(md){
+		width:100%;
+	}
+}
+
 ////////* GRID *////////
 
 .grid .col-xs-3 {
