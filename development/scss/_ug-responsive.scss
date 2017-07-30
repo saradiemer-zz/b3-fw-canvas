@@ -262,6 +262,23 @@ span.hexagon {
 		 }
 }
 
+.col-md-3 .ug-ies-key {
+	@include media-breakpoint-down (md){
+		margin-top: -100px;
+	}
+}
+
+.green-map {
+ 	.vertical-rule-right {
+		@include media-breakpoint-down (md){
+			display:none;
+		}
+	}
+	@include media-breakpoint-down (md) {
+		margin-top: 0px;
+	}
+}
+
 ////////* GRID *////////
 
 .grid .col-xs-3 {

@@ -333,6 +333,23 @@
 	}
 }
 
+.ug-ies-key span.circle {
+	display: block;
+	margin: 0;
+	padding: 6px;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	font-family: 'Antenna Black', sans-serif;
+	text-align: center;
+	content: "";
+	color: #f1f1f1;
+	background: #000;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+
 /*VIDEO EMBED */
 
 .embed-responsive-4by1 {
