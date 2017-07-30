@@ -256,6 +256,12 @@ ul#tabs.nav.nav-pills {
 	}
 }
 
+span.hexagon {
+    @include media-breakpoint-down(md) {
+			 margin-top: 5px;
+		 }
+}
+
 ////////* GRID *////////
 
 .grid .col-xs-3 {
