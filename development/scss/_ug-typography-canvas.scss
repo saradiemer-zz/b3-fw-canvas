@@ -73,10 +73,17 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-.canvas-content h5.label.display-large {
+.canvas-content h5.label.display-large, .grid .col-xs-3 h5.label.display-large.reverse {
 	margin-bottom: 20px;
 	font-size: 3em;
 	line-height: 1.125;
+}
+
+.grid .col-xs-3 h5.label.display-large.reverse {
+	margin-bottom: 5px;
+	@media (max-width: 1400px) {
+		font-size: 1.5em;
+	}
 }
 
 .canvas-content .bg-overlay h5.label { margin: 0 !important; }
@@ -98,13 +105,21 @@ NUMBERS ===================================== */
 
 .number.display p.body { margin: 0 0 20px 0; line-height: 1; }
 
-.number h1.display	{ margin: -12px 0 -10px 0; font-size: 12em; letter-spacing: 0em; }
+.number h1.display	{ margin: -12px 0 -10px 0; font-size: 12em; line-height: .95; letter-spacing: 0em; }
 	@media (max-width: 600px) { .number h1.display { font-size: 7em } .number.display h1.display { font-size: 4em; } }
 
 #green-numbers .number h1.display	{ margin: -12px 0 -10px 0; font-size: 8em; letter-spacing: 0em; }
 #green-numbers .glyphs { font-size: 0.6em; }
 
 .number p.body	{ margin: 0 0 -2px 0; font-size: .875em; }
+
+.canvas-content .number h1.display {
+	@include media-breakpoint-down(lg) {
+		font-size: 8.5em;
+	}
+}
+
+.number p.body	{ display: block; margin: 15px 0 -2px 0; font-family: 'Antenna', sans-serif; font-size: .875em; }
 
 span.drop-cap { font-family: 'Antenna Comp'; text-transform: uppercase; font-size: 4.5em; line-height:1;}
 
@@ -380,7 +395,7 @@ EQUATION ======================================== */
 
 .horizontal-rule { border-bottom: solid 2px $gray-extra-light; height: 40px; margin-bottom: 10px;}
 
-.light-rule { border-bottom: solid 1px $gray-extra-light; margin-bottom: 10px;}
+.light-rule { margin: 30px 0 35px; border-bottom: solid 1px $gray-extra-light; }
 
 .mobile-rule { border-bottom: solid 2px $gray-extra-light; height: 40px; margin-bottom:30px; }
 

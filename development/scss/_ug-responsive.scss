@@ -2,6 +2,13 @@
 	@include media-breakpoint-down(sm) { display:none; }
 }
 
+.carousel-caption { @include media-breakpoint-down(xs) { display: none; } }
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev { @include media-breakpoint-down(xs) { top: 35%; } }
+
 #top-panel-mobile {
 	@include media-breakpoint-up (md) {display: none;}
 	@include media-breakpoint-down (sm) {display: block;}
@@ -13,7 +20,7 @@
 .vertical-rule-right,
 .vertical-rule-left {
 	@include media-breakpoint-up(md){
-		display:inline-block;
+		display: inline-block;
 	}
 	@include media-breakpoint-down(sm) {
 		padding-top: 15px;
@@ -86,7 +93,8 @@
 	}
 		@include media-breakpoint-down(sm) {
 		margin: 0;
-		padding: 0 15px;
+		padding: 0;
+		width: 100%;
 		h1.display.number {
 			padding-top: 15px;
 			margin-top: 20px;
@@ -149,7 +157,7 @@
 				padding-left: 0px;
 				p.body {
 					font-size: .9em;
-					line-height: 1.25;
+					line-height: 1.65;
 			}
 		}
 }
