@@ -275,7 +275,7 @@ h5.label.maroon {
 
 ul li a, p a {
 	color:darken($patina, 8%) !important;
-	background:none !important;
+	background:none;
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
@@ -283,7 +283,7 @@ ul li a:hover, ul li a:focus, p a:hover, p a:focus {
 }
 
 ul li a:visited, ul li a:visited, p a:visited, p a:visited {
-	color:darken($patina, 8%) !important;
+	color:darken($patina, 8%);
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
