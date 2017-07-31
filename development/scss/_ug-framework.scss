@@ -58,7 +58,7 @@ body.canvas #wrapper {
 
 #interior-wrapper-left, #interior-wrapper-right { padding: 30px; }
 
-#interior-wrapper-center { padding: 30px 30px 60px; }
+#interior-wrapper-center { padding: 60px 60px 60px 30px; }
 
 
 /* MAIN-CONTENT =========================================
@@ -119,6 +119,7 @@ body.canvas #wrapper {
 }
 
 #rightColumn .aside-caption {
+	padding-top:70px;
 	@include media-breakpoint-down(md) {
 		display: none;
 	}
@@ -183,6 +184,10 @@ body.canvas #wrapper {
 
 #rightColumn .aside-number { margin: 0; }
 
+#interior-wrapper-right div.aside-quote blockquote {
+	font-family: 'Antenna Light', san-serif;
+	font-size:1.25em;
+}
 
 /* HEADER ===============================================
 =======================================================*/

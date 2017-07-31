@@ -8,7 +8,7 @@ h1 {
 	line-height:1.3;
 }
 
-#ug-body h1 {
+#ug-body h1.basic {
 	font-size:2.15em;
 	letter-spacing: -0.01em;
 	line-height:1.3;
@@ -17,6 +17,7 @@ h1 {
 #ug-body h1.label {
 	font-size:1em;
 	font-family: "Antenna", sans-serif;
+	padding-bottom: 10px;
 }
 
 /* INTERIOR TYPOGRAPHY */
@@ -204,6 +205,7 @@ h5.label.maroon {
 	height: 20px;
 	border-radius: 50%;
 	background: $patina;
+	display:inline-block;
 }
 
 .ug-tips-list span {
@@ -215,7 +217,7 @@ h5.label.maroon {
 }
 
 .ug-tips-list span:before {
-	padding: 0 0 0 20%;
+	padding: 0 0 0 25%;
 	font-family: 'Glyphicons Halflings';
 	font-size: 0.85em;
 	content: "\e080";
@@ -322,4 +324,15 @@ td {
 
 #highlight-1 > div > table.stacktable.large-only > tbody > tr > td {
 	color:$gray-extra-light !important;
+}
+
+#interior-wrapper-right div.aside-number.number.table-content h1 {
+	font-size:5em;
+  padding-top: 20%;
+	padding-bottom: 8%;
+	border-top: solid 1px #5f5f5f;
+}
+
+#interior-wrapper-right > div:nth-child(2) > p {
+
 }
