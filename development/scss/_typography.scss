@@ -173,6 +173,11 @@ h4, h5, h6 {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: $gray-extra-dark; }
 
+#inset-nav ul li h5 a {
+  font-family: "Antenna", sans-serif;
+}
+
+
 h1.primary,
 h2.secondary-explainer,
 h3.standalone, .accordion h3.standalone,
@@ -1234,7 +1239,7 @@ ul.inline > li, ol.inline > li {
     outline: none;
     outline-offset: 0;
     text-decoration: none;
-	color: $maroon-dark;
+	 	color: $maroon-dark;
 }
 
 .navbar-nav>li>a {
