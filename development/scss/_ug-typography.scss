@@ -337,6 +337,6 @@ a:link {
 	border-top: solid 1px #5f5f5f;
 }
 
-#interior-wrapper-right > div:nth-child(2) > p {
-
+.nav a:visited, .nav a:hover, .nav a:focus {
+  color:darken($patina, 5%);
 }
