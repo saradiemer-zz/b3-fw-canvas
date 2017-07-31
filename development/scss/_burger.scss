@@ -24,15 +24,7 @@
 
 /* MAIN-SIDEBAR */
 
-#main-sidebar {
-	position: fixed;
-	top: 117px !important;
-	bottom: 0px !important;
-	width: 400px !important;
-	z-index: 30001 !important;
-	right: 0px !important;
-	background: $gray-extra-dark;
-}
+#main-sidebar { background: $gray-extra-dark; }
 
 #main-sidebar h5.label { color: $patina-dark; }
 
