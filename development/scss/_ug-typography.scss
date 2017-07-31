@@ -2,6 +2,23 @@ h1, h2, h3 { word-spacing: .2em; }
 
 h4, h5, h6 { word-spacing: .15em; }
 
+h1 {
+	font-size:2.15em;
+	letter-spacing: -0.01em;
+	line-height:1.3;
+}
+
+#ug-body h1 {
+	font-size:2.15em;
+	letter-spacing: -0.01em;
+	line-height:1.3;
+}
+
+#ug-body h1.label {
+	font-size:1em;
+	font-family: "Antenna", sans-serif;
+}
+
 /* INTERIOR TYPOGRAPHY */
 span.leadin {
 	display: inline;

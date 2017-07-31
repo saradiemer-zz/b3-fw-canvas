@@ -407,10 +407,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #inset-nav {
 	float: left;
 	display: inline block;
-	margin: 30px 0 0;
+	margin: 30px 0 30px;
 	padding:20px;
 	width: 100%;
-	background: $gray-extra-light;
+	border-top: solid 1px $gray-light;
+	border-bottom: solid 1px $gray-light;
 	h5.label, ul {
 		margin: 0;
 	}
