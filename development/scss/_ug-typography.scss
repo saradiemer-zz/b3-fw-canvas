@@ -340,3 +340,8 @@ div > table.stacktable.large-only > tbody > tr > td {
 #interior-wrapper-right > div:nth-child(2) > p {
 
 }
+
+#inset-nav ul li h5 a, #inset-nav ul li h5 a:visited {
+  font-family: "Antenna", sans-serif;
+	    color:darken($patina, 8%);
+}
