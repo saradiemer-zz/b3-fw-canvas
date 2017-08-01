@@ -2,7 +2,7 @@
 	@include media-breakpoint-down(sm) { display:none; }
 }
 
-.carousel-caption { @include media-breakpoint-down(xs) { display: none; } }
+.carousel-caption { @include media-breakpoint-down(sm) { display: none; } }
 
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
@@ -16,6 +16,9 @@
 	img {margin: 0px;}
  }
 
+.blog-hide {
+	@include media-breakpoint-down (lg) {display: none;}
+}
 
 .vertical-rule-right,
 .vertical-rule-left {
@@ -142,6 +145,13 @@
  	border-top: 0 none !important;
 	}
  }
+
+.third-column .vertical-rule-right,
+.third-column .vertical-rule-left {
+  	@include media-breakpoint-down(lg) {
+  	border: 0 none !important;
+ 		}
+  }
 
  .light-rule {
 	 @include media-breakpoint-down (sm) {
@@ -274,7 +284,12 @@ span.hexagon {
 	@include media-breakpoint-down (md){
 		margin-top: -100px;
 	}
+	@include media-breakpoint-down (sm){
+    margin-top: -30px;
+		margin-left: 0px;
+	}
 }
+
 
 .green-map {
  	.vertical-rule-right {
@@ -283,7 +298,13 @@ span.hexagon {
 		}
 	}
 	@include media-breakpoint-down (md) {
-		margin-top: 0px;
+		margin-top: 4px;
+	}
+}
+
+.first {
+@include media-breakpoint-down (lg) {
+	margin-top: 20px;
 	}
 }
 
@@ -318,7 +339,7 @@ span.hexagon {
 
 #content-tabs ul {
 	@include media-breakpoint-up(sm) {
-		padding: 4px 0 25px 0;
+		padding: 4px 0 10px 0;
 	}
 }
 
