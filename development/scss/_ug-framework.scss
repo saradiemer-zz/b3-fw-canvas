@@ -58,7 +58,7 @@ body.canvas #wrapper {
 
 #interior-wrapper-left, #interior-wrapper-right { padding: 30px; }
 
-#interior-wrapper-center { padding: 60px 60px 60px 30px; }
+#interior-wrapper-center { padding: 60px 90px 60px 30px; }
 
 
 /* MAIN-CONTENT =========================================
@@ -104,7 +104,7 @@ body.canvas #wrapper {
 /* ASIDE - QUOTES - NUMBERS - ICONS =====================
 =======================================================*/
 
-#rightColumn #interior-wrapper-right { padding:  0; }
+#rightColumn #interior-wrapper-right { padding:  0 0 0 10%; }
 
 #rightColumn[class*="col-"] { padding: 0; }
 
@@ -138,6 +138,7 @@ body.canvas #wrapper {
 	margin: 0;
 	position: relative;
 	overflow: visible;
+	margin-left:-11%;
     @include media-breakpoint-down(md) {
     	display: none;
     }
@@ -186,7 +187,7 @@ body.canvas #wrapper {
 
 #interior-wrapper-right div.aside-quote blockquote {
 	font-family: 'Antenna Light', san-serif;
-	font-size:1.25em;
+	font-size:1.2em;
 }
 
 /* HEADER ===============================================
