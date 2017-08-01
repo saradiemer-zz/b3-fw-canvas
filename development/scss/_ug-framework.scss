@@ -491,6 +491,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	height: 50% !important;
 }
 
+.ug-global-search { display: none; }
+
 .ug-global-nav-wrapper-desktop {
 	@include media-breakpoint-down(md) { display: none; }
 }
