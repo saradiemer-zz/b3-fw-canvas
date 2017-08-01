@@ -478,7 +478,13 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	display: block;
 	left: -233%;
 	background: darken($patina, 5%);
-	color: darken($patina-dark, 4%);
+	background: none;
+	color: $patina-dark;
+	transition: all .2s;
+}
+
+.ug-global-close {
+	&:hover { color: lighten($patina-dark, 4%); background: none !important; }
 }
 
 .ug-global-search .glyphicon,
@@ -490,6 +496,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	width: 50% !important;
 	height: 50% !important;
 }
+
+.ug-global-search { display: none; }
 
 .ug-global-nav-wrapper-desktop {
 	@include media-breakpoint-down(md) { display: none; }

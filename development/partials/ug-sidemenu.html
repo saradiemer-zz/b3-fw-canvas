@@ -47,8 +47,18 @@
 -->
   <div class="panel-group accord-blk active" id="first-menu">
   <!-- build:sidemainnav -->
+    <div class="panel-group accord-blk active" id="search-input">
+      <form action="post.cfm">
+        <div class="input-group">
+          <input type="text" placeholder="Search here..." class="form-control" aria-label="..." />
+          <span class="input-group-btn">
+            <input type="submit" class="btn btn-default" type="button" value=">" />
+          </span>
+        </div>
+      </form>
+    </div>
     <ul>
-      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103617&amp;chid=30&amp;lang=en">I want to…</a></span>
+      <li><span><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103617&amp;chid=30&amp;lang=en">I want to…</a></span>
         <ul class="multilevel-linkul-0" id="want-to">
           <li><a href="">Apply for Admission</a>
             <ul class="sub-menu">
@@ -75,7 +85,7 @@
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103628&amp;chid=30&amp;lang=en">Freshman Class Profile</a></li>
         </ul>
       </li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103621&amp;chid=30&amp;lang=en">Campus Life</a>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103621&amp;chid=30&amp;lang=en">Campus Life</a></span>
         <ul class="multilevel-linkul-0">
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103629&amp;chid=30&amp;lang=en">Loyola Experience</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103630&amp;chid=30&amp;lang=en">Residential Life</a></li>
@@ -85,14 +95,14 @@
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103634&amp;chid=30&amp;lang=en">Athletics</a></li>
         </ul>
       </li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103622&amp;chid=30&amp;lang=en">Admission and Cost</a>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103622&amp;chid=30&amp;lang=en">Admission and Cost</a></span>
         <ul class="multilevel-linkul-0">
           <li><a href="adfasd">Cost (Tuition and Fees)</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103636&amp;chid=30&amp;lang=en">Counselors</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103637&amp;chid=30&amp;lang=en">Net Price Calculator</a></li>
         </ul>
       </li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103623&amp;chid=30&amp;lang=en">Apply</a>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103623&amp;chid=30&amp;lang=en">Apply</a></span>
         <ul class="multilevel-linkul-0">
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103638&amp;chid=30&amp;lang=en">Freshman</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103639&amp;chid=30&amp;lang=en">Transfer</a></li>
@@ -100,7 +110,7 @@
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103641&amp;chid=30&amp;lang=en">Other</a></li>
         </ul>
       </li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103341&amp;chid=30&amp;lang=en">Academics</a>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103341&amp;chid=30&amp;lang=en">Academics</a></span>
         <ul class="multilevel-linkul-0">
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103618&amp;chid=30&amp;lang=en">Majors</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103642&amp;chid=30&amp;lang=en">Major Quiz</a></li>
@@ -111,8 +121,8 @@
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103647&amp;chid=30&amp;lang=en">Scholars/Honors Programs</a></li>
         </ul>
       </li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103624&amp;chid=30&amp;lang=en">Value of a Jesuit Education</a></li>
-      <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103625&amp;chid=30&amp;lang=en">Financial Aid</a>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103624&amp;chid=30&amp;lang=en">Value of a Jesuit Education</a></li>
+      <li><span class="currentbranch0"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103625&amp;chid=30&amp;lang=en">Financial Aid</a></span>
         <ul class="multilevel-linkul-0">
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103648&amp;chid=30&amp;lang=en">Apply for Aid</a></li>
           <li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=103649&amp;chid=30&amp;lang=en">Scholarships</a></li>
@@ -127,11 +137,12 @@
 <!-- accordion close -->
 <div class="panel-group" id="sub-menu">
 <ul>
+  <h5 class="label"><a href="">Other links</a></h6>
   <li>Contact Us</li>
   <li>High School Admission Counselors</li>
   <li>Parents</li>
-  <li>Information in:</li>
-    <ul>
+  <li class="list-parent">Information in:</li>
+    <ul id="languages">
       <li>Spanish</li>
       <li>Polish</li>
       <li>Mandarin</li>
