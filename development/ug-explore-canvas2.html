@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('./partials/ug-head.html')<!-- header -->
+<!-- inject:css -->
+<!-- endinject -->
+<style>.subnave{display: none;}.homenav{display: block;}</style>
+</head>
+<body>
+<section id="wrapper">
+<!--	@@include('./partials/header.html') -->
+	@@include('./partials/ug-header.html') <!-- header -->
+	@@include('./partials/ug-nav-fixed.html') <!-- nav -->
+	@@include('./partials/ug-main-content-explore2.html')<!-- content -->
+	@@include('./partials/ug-footer.html') <!-- footer -->
+</section>
+@@include('./partials/ug-sidemenu.html') <!-- footer-close -->
+	@@include('./partials/ug-script.html') <!-- footer-close -->
+	<!-- inject:js -->
+	<!-- endinject -->
+<script type="text/javascript">
+        (function($){
+            // Init Skrollr
+            var s = skrollr.init({
+                render: function(data) {
+                    //Debugging - Log the current scroll position.
+                    //console.log(data.curTop);
+                },
+                constants: {
+                    //fill the box for a "duration" of 150% of the viewport (pause for 150%)
+                    //adjust for shorter/longer pause
+                    box: '150p'
+                }
+            }); 
+        })(jQuery);
+        
+    </script>
+<style>
+/* CSS */
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.hsContent {
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bcg {    
+    background-image: url(../images/explore/explore-intro-2400-2400.jpg);
+}
+#slide-2 .bcg {
+    background-image: url(../images/explore/explore-why-loyola-2400-2400.jpg);
+}
+#slide-3 .bcg {
+    background-image: url("../images/explore/explore-study-abroad-gray-2400-deep.jpg");
+}
+</style>
+</body>
+</html>
