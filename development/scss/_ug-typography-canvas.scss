@@ -98,9 +98,6 @@ NUMBERS ===================================== */
 .number h1.display	{ margin: -12px 0 -10px 0; font-size: 12em; line-height: .95; letter-spacing: 0em; }
 	@media (max-width: 600px) { .number h1.display { font-size: 7em } .number.display h1.display { font-size: 4em; } }
 
-#green-numbers .number h1.display	{ margin: -12px 0 -10px 0; font-size: 8em; letter-spacing: 0em; }
-#green-numbers .glyphs { font-size: 0.6em; }
-
 .number p.body	{ margin: 0 0 -2px 0; font-size: .875em; }
 
 .canvas-content .number h1.display {
