@@ -56,8 +56,6 @@ body.canvas #wrapper {
 
 #interior-wrapper { padding: 0 15px; }
 
-#interior-wrapper-left, #interior-wrapper-right { padding: 30px; }
-
 #interior-wrapper-center { padding: 60px 90px 60px 30px; }
 
 
@@ -104,8 +102,6 @@ body.canvas #wrapper {
 /* ASIDE - QUOTES - NUMBERS - ICONS =====================
 =======================================================*/
 
-#rightColumn #interior-wrapper-right { padding:  0 0 0 10%; }
-
 #rightColumn[class*="col-"] { padding: 0; }
 
 #rightColumn .aside-caption,
@@ -113,7 +109,7 @@ body.canvas #wrapper {
 #rightColumn .aside-number,
 #rightColumn .aside-content {
 	box-sizing: border-box;
-	padding: 30px;
+	padding: 30px 30px 30px 50px;
 	max-width: 100%;
 	width: 100%;
 }
@@ -138,10 +134,13 @@ body.canvas #wrapper {
 	margin: 0;
 	position: relative;
 	overflow: visible;
-	margin-left:-11%;
     @include media-breakpoint-down(md) {
     	display: none;
     }
+}
+
+#interior-wrapper-right {
+	padding-left:0;
 }
 
 #rightColumn .aside-image-panel { /* aside image gold panel - extends off right edge */
