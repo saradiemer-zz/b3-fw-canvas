@@ -28,32 +28,27 @@
 
 #main-sidebar h5.label { color: $patina-dark; }
 
-#main-sidebar ul { margin: 0; }
-
-#main-sidebar ul li {
-	margin: 0;
-	padding: 13px 0 12px;
-	list-style: none;
-	font-family: "Antenna", sans-serif !important;
-	font-size: 0.9em;
-	line-height: 1.5;
-	letter-spacing: 0.2px !important;
-	text-transform: uppercase;
-	border-bottom: 1px solid darken($gold-dark, 30%);
-}
+#main-sidebar ul { margin: 0 0 0 20px; }
 
 #main-sidebar ul li, #main-sidebar ul li a {
+	margin: 0;
+	padding: 5px 0 4px;
 	width: 100%;
-	font-family: 'Antenna', sans-serif ;
-	color: $gold-extra-dark !important;
+	list-style: none;
+	font-family: "Antenna", sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5;
+	letter-spacing: .015em;
+	color: $gray !important;
+	text-transform: uppercase;
 }
+
+#main-sidebar .panel-heading h4 span a { display: inline-block; width: 90% !important; }
 
 #main-sidebar ul li a:hover,
 #main-sidebar ul li a:visited,
 #main-sidebar ul li p a:hover,
 #main-sidebar ul li p a:visited { color: $patina; }
-
-#main-sidebar ul ul { margin: 0 0 0 20px !important; }
 
 #main-sidebar ul li ul li {
 	padding: 8px 0 7px;
@@ -64,11 +59,18 @@
 /* MAIN-SIDEBAR - ACCORDIONS */
 
 #main-sidebar div.panel-heading {
-	padding: 0;
 	margin: 0;
+	padding: 10px 0;
+	border-bottom: none;
 }
 
+#main-sidebar div.panel-heading .subhead { top: 4px; }
+
 #main-sidebar .panel-group { margin: 0 2em 0; }
+
+#main-sidebar .panel-group a { color: $patina; }
+
+#main-sidebar .panel-heading a i { padding: 5px; color: $patina; background: lighten($gray-extra-dark, 10%); }
 
 #main-sidebar .panel {
 	margin-left: 2em;
@@ -79,9 +81,9 @@
 	-webkit-box-shadow: none;
 }
 
-#main-sidebar #first-menu .panel { margin: 0; border-bottom: 1px solid darken($gold-dark, 30%) }
+#main-sidebar #first-menu { margin-top: 30px; }
 
-#main-sidebar #first-menu .panel-heading { margin: 0; padding: 15px 0; border-bottom: 1px solid darken($gray-dark, 10%); }
+#main-sidebar #first-menu .panel { margin: 0; }
 
 #main-sidebar .panel-body { padding: 0; }
 
@@ -89,15 +91,15 @@
 
 #main-sidebar .panel-group .panel-heading+.panel-collapse > .panel-body { border-top: none; }
 
-#main-sidebar .panel-group#search-input { margin-top: 35px; margin-bottom: 15px; }
+#main-sidebar .panel-group#search-input { margin: 35px 0 15px; }
 
 #main-sidebar .panel-group#sub-menu { margin-top: 20px; }
 
+#main-sidebar .panel-group#sub-menu ul { margin: 0; list-style-type: none; }
+
 #main-sidebar .panel-group#sub-menu li {
-	margin-left: 20px;
 	padding: 7px 0;
 	border: none;
-	list-style: square;
 }
 
 #compass {
@@ -173,7 +175,7 @@
 	margin-left: 2em;
 }
 
-#internalmenu{
+#internalmenu {
 	/* (#febc18) */
 	float: left;
 	font-family: "Antenna Bold", sans-serif;
@@ -182,7 +184,8 @@
 	color: black;
 	text-transform: uppercase;
 	margin: 0 0 0 -25px;
-	padding: 0 18px 19px 13px;}
+	padding: 0 18px 19px 13px;
+}
 
 #internalmenu ul{list-style: none;}
 
