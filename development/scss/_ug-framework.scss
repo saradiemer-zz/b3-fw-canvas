@@ -480,6 +480,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background: darken($patina, 5%);
 	background: none;
 	color: $patina-dark;
+	transition: all .2s;
+}
+
+.ug-global-close {
+	&:hover { color: lighten($patina-dark, 4%); background: none !important; }
 }
 
 .ug-global-search .glyphicon,

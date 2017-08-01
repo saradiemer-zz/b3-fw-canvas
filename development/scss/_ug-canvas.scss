@@ -60,6 +60,11 @@
 		@include media-breakpoint-down(md) { display: none; }
 }
 
+.panel-dark .vertical-rule-left,
+.panel-dark .vertical-rule-right { border-right-color: darken($gray, 10%); }
+
+.panel-dark .light-rule { border-bottom-color: darken($gray, 10%); }
+
 .vertical-rule-left {
 	right: -15px;
 	border: none;
