@@ -478,7 +478,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	display: block;
 	left: -233%;
 	background: darken($patina, 5%);
-	color: darken($patina-dark, 4%);
+	background: none;
+	color: $patina-dark;
 }
 
 .ug-global-search .glyphicon,
