@@ -16,7 +16,7 @@
 
 /* MAIN-SIDEBAR */
 
-#main-sidebar { background: $gray-extra-dark; }
+#main-sidebar { background: rgba(44,44,44,.7); }
 
 #main-sidebar h5.label { color: $patina-dark; }
 
@@ -51,7 +51,8 @@
 #main-sidebar .panel-heading h4 span a {
 	display: inline-block;
 	width: 90% !important;
-	padding: 5px 5px 5px 0; color: darken($patina, 8%);
+	padding: 5px 5px 5px 0;
+	color: darken($patina, 8%);
 	transition: color .25s;
 }
 
@@ -62,7 +63,20 @@
 #main-sidebar ul li p a:hover,
 #main-sidebar ul li p a:visited { color: $patina; }
 
-#main-sidebar ul.sub-menu { margin: 5px 0 0 40px; }
+#main-sidebar ul.sub-menu {
+	margin: 5px 0 0 40px;
+}
+
+#main-sidebar #sub-menu h5.label {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#sub-menu ul > h5 > a {
+	font-family: 'Antenna Bold', sans-serif;
+	font-size: 1.025em;
+	color: darken($patina, 8%) !important;
+}
 
 #main-sidebar ul.sub-menu li {
 	margin: 0;
@@ -83,11 +97,13 @@
 
 #main-sidebar .panel-group { margin: 0 2em 0; }
 
-#main-sidebar .panel-group a,
-#main-sidebar .panel-group ul li a { color: darken($patina, 15%); }
+#main-sidebar .panel-group a { color: darken($patina, 15%); }
+
+#main-sidebar .panel-group ul li, #main-sidebar .panel-group ul li a { color: darken($patina, 12%); }
 
 #main-sidebar .panel-heading a i {
 	padding: 5px; color: darken($patina, 8%);
+	border-radius: 2px;
 	background: lighten($gray-extra-dark, 10%);
 	transition: all .25s;
 }
@@ -128,16 +144,23 @@
 	font-size: .9em;
 	border-bottom: solid 1px $gray-dark;
 }
-#main-sidebar .panel-group#sub-menu ul#languages { margin: 5px 0 5px 30px; }
+
+#main-sidebar .panel-group#sub-menu ul.sub-menu > li:nth-child(4) { margin-bottom: 10px; }
+
+#main-sidebar .panel-group#sub-menu ul#languages {
+	margin: 5px 0 10px 0;
+	padding-bottom: 0px;
+	border-bottom: solid 1px $gray-dark;
+}
 
 #main-sidebar .panel-group#sub-menu ul#languages li {
-	margin: 0 0 5px 0;
+	margin: 0 0 5px 40px;
 	padding: 0 0 5px 0;
 	list-style-type: square;
 	border-bottom: none;
 }
 
-#main-sidebar .panel-group#sub-menu li.list-parent { margin: 0; }
+#main-sidebar .panel-group#sub-menu li.list-parent { margin: 0; border-bottom: none; }
 
 #compass {
 	width: 25%;
