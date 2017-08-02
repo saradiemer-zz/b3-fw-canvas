@@ -115,7 +115,6 @@ body.canvas #wrapper {
 }
 
 #rightColumn .aside-caption {
-	padding-top:70px;
 	@include media-breakpoint-down(md) {
 		display: none;
 	}
@@ -141,6 +140,7 @@ body.canvas #wrapper {
 
 #interior-wrapper-right {
 	padding-left:0;
+	padding-top:70px;
 }
 
 #rightColumn .aside-image-panel { /* aside image gold panel - extends off right edge */
