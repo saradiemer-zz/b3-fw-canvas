@@ -232,6 +232,7 @@ input[type="file"] {
 .btn-overlay.cta {
 	margin: 0;
 	width: inherit;
+	height: inherit;
 	padding: 4px 12px 4px 12px;
 	font-family: "Antenna Bold", "Arial", sans-serif;
 	font-size: .75em;
@@ -269,6 +270,8 @@ input[type="file"] {
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
+
+#accordion .number h1.display { font-size: 8em;}
 
 .xl {font-size:12em !important; margin-bottom:-30px !important;}
 
