@@ -12,7 +12,8 @@ gulp.task('t4_nav', function() {
 	return gulp.src(config.T4Dir + '/T4*.html')
 		.pipe(htmlreplace({
 		'customjs': '<t4 type="navigation" id="406"/>',
-		'navtitle': '<title><t4 type="navigation" id="630"/><t4 type="title" append-content="true" append-element="Title" separator=" | " /> | <t4 type="navigation" id="77"/>| Undergraduate Admission</title>',
+		'navtitle': '<cfset prefixtitle="<t4 type="navigation" id="630"/>"><cfif prefixtitle neq ""><title><cfoutput>#variables.prefixtitle#</cfoutput></title><cfelse><title>Undergraduate Admission | Loyola University Chicago | <t4 type="navigation" id="77"/></title></cfif>',
+		'description': '<meta name="Description" content="<t4 type="navigation" id="167"/>" />',
 		'pageid': '<meta name="PageID" content="<t4 type="navigation" id="462"/>" />',
 		'ogtitle': '<meta property="og:title" content="<t4 type="navigation" id="166"/> <t4 type="title" />: Loyola University Chicago" />',
 		'ogdescription': '<meta property="og:description" content="<t4 type="navigation" id="167"/>" />',
@@ -31,10 +32,10 @@ gulp.task('t4_nav', function() {
 		'calltoaction': '<t4 type="navigation" id="675"/>',
 		'socialmedia': '<t4 type="navigation" id="677"/>',
 		'aside': '<t4 type="navigation" id="678"/>',
-		'body': '<body class="jd <t4 type="navigation" id="408"/>">  <div style="background-color:#cacaca;padding:5px;width:100%;"><p align="center">You are here: <t4 type="navigation" id="687"/> &nbsp; | &nbsp; <a href="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=content&fnno=30&sid=<t4 type="navigation" id="462"/>" target="_new">CLICK HERE TO EDIT THIS PAGE</a></p></div>',
+		'body': '<body class="jd <t4 type="navigation" id="408"/>"> <cfif isdefined("url.debug")> <div style="background-color:#cacaca;padding:5px;width:100%;"><p align="center">You are here: <t4 type="navigation" id="687"/> &nbsp; | &nbsp; <a href="https://cms4.luc.edu/terminalfour/SiteManager?ctfn=content&fnno=30&sid=<t4 type="navigation" id="462"/>" target="_new">CLICK HERE TO EDIT THIS PAGE</a></p></div></cfif>',
 		}, {
 		keepUnassigned: false,
-		keepBlockTags: true,
+		keepBlockTags: false,
 		resolvePaths: false
 }))
 	.pipe(gulp.dest(config.T4Dir));
