@@ -1,13 +1,93 @@
-<!-- FULL IMAGE PAGE -->
-<article id="explore-intro" class="title-page chapter fullscreen" data-height="1000">
-	<header id="explore-intro-wrapper" class="explore-cta-wrapper" style="height: 450px !important;">
-		<div class="explore-cta">
-			<h1>Explore</h1>
-			<h5 class="label display reverse">Loyola University Chicago</h5>
-		</div>
-		<div class="explore-cta-button">
-			<img src="images/homepage/homepage-arrow.png">
-		</div>
-		<p class="body display black reverse m-t-20">SCROLL TO VIEW</p>
-	</header>
+<!-- panel - lede-video -->
+<article id="explore-intro-video" class="title-page chapter fullscreen" data-height="1000">
+	<div class="explore-video-container">
+		<video id="splash-video" class="video-js" muted></video>
+		<header id="explore-intro-wrapper-video" class="explore-cta-wrapper-video" style="height: 450px !important;">
+			<div class="explore-cta">
+				<h1>Explore</h1>
+				<h5 class="label display reverse">Loyola University Chicago</h5>
+			</div>
+			<div class="explore-cta-button">
+				<img src="images/homepage/homepage-arrow.png">
+			</div>
+			<p class="body display black reverse m-t-20">SCROLL TO VIEW</p>
+		</header>
+	</div>
+		<script>
+		$("document").ready(function() {
+	        $('#navbar #nav li:nth-child(4) a').html('Other<span class="hidden-md"> applicants</span>');
+
+	        if(!$('#splash-video').length)return;
+	        var player = videojs('splash-video',{
+	            autoplay: true,
+	            volume: 0,
+	            muted: true,
+	            fluid: true,
+	            loadingSpinner: false
+	        });
+
+	        player.playlist([
+	            {
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S1.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+							{
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S2.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+							{
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S3.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+							{
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S4.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+							{
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S5.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+							{
+	                sources: [
+	                  {
+	                    src: '/videos/EXPLORE_S6.mp4',
+	                    type: 'video/mp4'
+	                  }
+	              ],
+	                poster: '/videos/EXPLORE_Black.Still.jpg'
+	            },
+	        ]);
+	        // Play through the playlist automatically.
+	        player.playlist.autoadvance(0);
+	        player.playlist.repeat(true);
+	    	});
+				var el = document.getElementById("interior-wrapper-right");if(($(el).children('div.aside-caption').length > 0) || ($(el).children('div.aside-quote').length > 0) || ($(el).children('div.aside-number').length > 0)) {
+	        console.log("Found");
+	     	}else {console.log("Not Found");$("#main-content").css('background-image', 'none');}
+			 </script>
 </article>

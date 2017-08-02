@@ -3,13 +3,12 @@ article .grid [class*="col-"],
 article .grid img, {
 	margin: 0;
 	padding: 0;
+	background: none;
 }
 
 #header.ug-header, #ug-nav.container-fluid { position: fixed; width: 100%; }
 
 #header.ug-header { top: 0; }
-
-
 
 #header, footer  { z-index: 10000; }
 
@@ -57,7 +56,6 @@ article header {
   margin: 50px 0 0 0;
   width: 300px;
   height: 200px;
-
   top: 0;
   padding: 0 0 0 10px;
   }
@@ -210,6 +208,14 @@ figure img {
 	background: #f2f2f2;
 }
 
+#explore-service-grid.title-page {
+	background: none;
+}
+
+article .grid .col-xs-12 {
+  background: url(../images/site/texture-transparent.png) $gray !important;
+}
+
 .title-page h1, .title-page p {
 	text-align: center;
 }
@@ -232,11 +238,13 @@ figure img {
 	margin: 0 0 20px 0;
 }
 
-#explore-intro header h1 { font-size: 12vh; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
+#explore-intro header h1, #exlpore-intro-video header h1 { font-size: 12vh; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
 
-#explore-intro header h5 { font-size: 4vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
-#explore-intro #homepage-cta h5 { font-size: 2vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
-#homepage-cta h1{  font-family: 'Antenna Black', sans-serif !important;}
+#explore-intro header h5, #exlpore-intro-video header h5 { font-size: 4vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
+
+#explore-intro #homepage-cta h5, #exlpore-intro-video #homepage-cta h5 { font-size: 2vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
+
+#homepage-cta h1 { font-family: 'Antenna Black', sans-serif !important; }
 
 article h1.display.location {
   margin: 0;
