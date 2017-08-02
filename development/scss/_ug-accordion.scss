@@ -7,12 +7,13 @@
 }
 
 #main-content #interior-wrapper #accordion h4.subhead span.date {
-	margin: 0 0 0 10px;
-	font-family: 'Antenna', sans-serif !important;
-	font-size: 80%;
-	letter-spacing: .015em;
-	color: $white;
-	text-transform: uppercase;
+    margin: 4px 15px 0 10px;
+    font-family: Antenna,sans-serif!important;
+    font-size: 80%;
+    letter-spacing: .015em;
+    color: $gray-dark;
+    text-transform: uppercase;
+    float: right;
 }
 
 #main-content #interior-wrapper #accordion a,
