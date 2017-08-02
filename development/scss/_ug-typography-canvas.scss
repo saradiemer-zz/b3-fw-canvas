@@ -31,6 +31,10 @@ p a, article.content p a {
 	cursor:pointer;
 }
 
+#accordion p a, article.content p a {
+	background-image: none;
+}
+
 p a { font-weight: bold; }
 
 a:hover, article.content p a:hover { color: $patina; cursor: pointer !important; }
@@ -227,6 +231,8 @@ input[type="file"] {
 
 .btn-overlay.cta {
 	margin: 0;
+	width: inherit;
+	height: inherit;
 	padding: 4px 12px 4px 12px;
 	font-family: "Antenna Bold", "Arial", sans-serif;
 	font-size: .75em;
@@ -255,6 +261,17 @@ input[type="file"] {
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
+
+#accordion .btn-overlay.cta { background-color: white; }
+
+#accordion .btn-overlay.cta:active,
+.btn-overlay{
+	color: lighten($patina, 10%) ;
+	background-color: lighten($bg-overlay, 10%);
+	cursor: pointer;
+}
+
+#accordion .number h1.display { font-size: 8em;}
 
 .xl {font-size:12em !important; margin-bottom:-30px !important;}
 
