@@ -363,7 +363,20 @@
 	margin-right: 10px;
 }
 
-/*VIDEO EMBED */
+/* CAROUSEL ARROWS */
+
+.carousel-control { opacity: .85; }
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 80px;
+    height: 80px;
+    margin-top: -15px;
+    font-size: 60px;
+		color: $gray-light;
+		opacity: .9;
+}
+
+/* VIDEO EMBED */
 
 .embed-responsive-4by1 {
 	padding-bottom: 25%;
