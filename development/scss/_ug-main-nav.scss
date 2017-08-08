@@ -16,6 +16,15 @@
 
 /* MAIN-SIDEBAR */
 
+#main-sidebar #first-menu {
+	visibility: visible !important;
+	overflow: visible !important;
+	overflow: scroll !important;
+	margin: 30px 0 30px;
+	padding: 30px 30px 60px 30px;
+	height:100vh;
+}
+
 #main-sidebar { background: rgba(44,44,44,.7); }
 
 #main-sidebar h5.label { color: $patina-dark; }
@@ -28,11 +37,11 @@
 	width: 100%;
 	list-style: none;
 	font-family: "Antenna", sans-serif;
-	font-size: 0.9em;
+	font-size: 1em;
 	line-height: 1.5;
 	letter-spacing: .015em;
 	color: $gray;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 #main-sidebar ul li {
@@ -51,12 +60,12 @@
 #main-sidebar .panel-heading h4 span a {
 	display: inline-block;
 	width: 90% !important;
-	padding: 5px 5px 5px 0;
-	color: darken($patina, 8%);
+	padding: 3px 5px 3px 0;
+	color: darken($patina, 12%);
 	transition: color .25s;
 }
 
-#main-sidebar .panel-heading h4 span a:hover { color: darken($patina, 3%); }
+#main-sidebar .panel-heading h4 span a:hover { color: darken($patina, 5%); }
 
 #main-sidebar ul li a:hover,
 #main-sidebar ul li a:visited,
@@ -73,9 +82,9 @@
 }
 
 #sub-menu ul > h5 > a {
-	font-family: 'Antenna Bold', sans-serif;
+	font-family: 'Antenna', sans-serif;
 	font-size: 1.025em;
-	color: darken($patina, 8%) !important;
+	color: darken($patina, 12%) !important;
 }
 
 #main-sidebar ul.sub-menu li {
@@ -93,24 +102,32 @@
 	border-bottom: none;
 }
 
+#main-sidebar div.panel-heading h4.subhead { font-family: "Antenna", sans-serif;}
+
 #main-sidebar div.panel-heading .subhead { top: 4px; margin: 0; text-transform: uppercase; }
 
 #main-sidebar .panel-group { margin: 0 2em 0; }
 
-#main-sidebar .panel-group a { color: darken($patina, 15%); }
+#main-sidebar .panel-group a { color: darken($patina, 12%); }
 
 #main-sidebar .panel-group ul li, #main-sidebar .panel-group ul li a { color: darken($patina, 12%); }
 
 #main-sidebar .panel-heading a i {
-	padding: 5px; color: darken($patina, 8%);
+	padding: 5px; color: darken($patina, 15%);
+	width: 25px;
+	height: 25px;
 	border-radius: 2px;
-	background: lighten($gray-extra-dark, 10%);
+	background-image:url('/images/homepage/homepage-plus-patina.png') !important;
+	background-repeat: no-repeat;
+	background-size: 5%;
+	background-position: 95% 50%;
+	background-color: rgba(0,0,0,.15);
 	transition: all .25s;
 }
 
 #main-sidebar .panel-heading a:hover i {
 	color: darken($patina, 3%);
-	background: lighten($gray-extra-dark, 15%);
+	background-color: rgba(0,0,0,.15);
 }
 
 #main-sidebar .panel {
@@ -122,9 +139,11 @@
 	-webkit-box-shadow: none;
 }
 
-#main-sidebar #first-menu { margin-top: 100px; }
+#main-sidebar #first-menu { margin-top: 70px; }
 
-#main-sidebar #first-menu .panel { margin: 0; }
+#main-sidebar #first-menu .panel { margin: 0; display: block; }
+
+#main-sidebar #want-to { padding-bottom: 30px !important; border-bottom: solid 1px $gray; }
 
 #main-sidebar .panel-body { padding: 0; }
 
@@ -132,7 +151,7 @@
 
 #main-sidebar .panel-group .panel-heading+.panel-collapse > .panel-body { border-top: none; }
 
-#main-sidebar .panel-group#search-input { margin: 35px 0 15px; }
+#main-sidebar .panel-group#search-input { margin: 0 0 15px; }
 
 #main-sidebar .panel-group#sub-menu { margin-top: 20px; }
 
@@ -202,41 +221,45 @@
 #search-input input::placeholder,
 #search-input input:placeholder-shown,
 #search-input input[type="text"] {
-	color: darken($gray, 1%);
-	font-size: 1em;
+	color: darken($patina, 12%);
+	font-size: 1.075em;
 	text-transform: uppercase;
 }
 
 #search-input .btn {
-	background-color: darken($patina, 8%);
+	background-color: darken($patina, 12%);
 	color: $patina-dark;
 }
 
 #search-input input[type="text"] {
 	width: 100%;
 	padding: 21px 22px;
-	background-color: $gray-dark;
-	border: none;
-	color: lighten($gray, 5%);
 	font-family: "Antenna", sans-serif !important;
+	color: darken($patina, 8%);
 	border-radius: 3px 0 0 3px !important;
+	border-color: darken($patina, 25%);
+	background-color: rgba(0,0,0,.15);
 }
 
 #search-input input[type="submit"] {
-	padding: 0 12px 1px 9px;
-	width: 40px;
+	padding: 1px 12px 0 9px;
+	width: 50px;
 	border-radius: 0 3px 3px 0 !important;
-	border:0;
+	border-color: darken($patina, 25%);
 	font-family: 'Antenna Bold', sans-serif;
 	font-size: 32px;
 	line-height: 1.3;
-	content: "\e014" !important;
-	color: darken($patina-dark, 4%);
+	background-color: rgba(0,0,0,.35);
+	background-image:url('/images/homepage/homepage-arrow-left-patina.png') !important;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 95% 50%;
+	color: darken($patina, 12%);
 	transition: all .25s;
 }
 
 #search-input input[type="submit"]:hover {
-background-color: lighten($patina, 5%);
+background-color: darken($patina-dark, 5%);
 color: $patina-dark;
 }
 

@@ -99,7 +99,7 @@ body.canvas #wrapper {
 }
 
 /* UG-BUTTON */
-
+button.btn.btn-default.dropdown-toggle,
 button.btn.cta {
 	margin: 0;
   padding: 7px 12px 4px;
@@ -119,6 +119,31 @@ button.btn.cta {
   -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   cursor: pointer;
+}
+
+button.btn.btn-default.dropdown-toggle {
+	margin: 20px 0;
+	padding: 12px 20px 10px;
+	width: 100%;
+	font-family: 'Antenna', sans-serif !important;
+	font-size: 1.125em !important;
+	color: darken($patina, 12%);
+	border-color: darken($patina, 25%);
+	background: rgba(0,0,0,.15);
+	background-image:url('/images/homepage/homepage-arrow-patina.png') !important;
+	background-repeat: no-repeat;
+	background-size: 5%;
+	background-position: 95% 50%;
+}
+
+#first-menu ul.dropdown-menu {
+	padding: 20px;
+	max-width: 100%;
+	background-color: rgba(0,0,0,1)
+}
+
+button.btn.btn-default.dropdown-toggle span.caret {
+	border: none;
 }
 
 button.btn.cta:hover { background: rgba(0,0,0,.1); color: $patina; }
@@ -563,12 +588,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	width: 52%;
 	height: 100%;
 	font-size: 2rem;
-	color: $patina-dark;
-	background-color: $patina;
+	color: darken($patina-dark, 8%);
+	background-color: darken($patina, 8%);
 	transition: background-color .25s;
 	&:hover {
-		background-color: lighten($patina, 5%);
-		color: $patina-dark;
+		background-color: darken($patina, 5%);
+		color: darken($patina-dark, 5%);
 	}
 	@include media-breakpoint-down(md) {
 		font-size: 1.6em;
@@ -577,21 +602,21 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 .ug-global-search {
 	right: 52%;
-	background: darken($patina, 5%);
-	color: darken($patina-dark, 4%);
+	background: darken($patina, 8%);
+	color: darken($patina-dark, 12%);
 }
 
 .ug-global-close {
 	display: block;
 	left: -233%;
-	background: darken($patina, 5%);
+	background: darken($patina, 8%);
 	background: none;
 	color: $patina-dark;
 	transition: all .2s;
 }
 
 .ug-global-close {
-	&:hover { color: lighten($patina-dark, 4%); background: none !important; }
+	&:hover { color: darken($patina, 8%); background: none !important; }
 }
 
 .ug-global-search .glyphicon,
