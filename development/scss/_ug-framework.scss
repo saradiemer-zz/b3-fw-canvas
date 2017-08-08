@@ -257,7 +257,8 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
 #rightColumn .aside-number,
-#rightColumn .aside-content {
+#rightColumn .aside-content,
+#rightColumn .aside-icon {
 	box-sizing: border-box;
 	padding: 30px 30px 30px 50px;
 	max-width: 100%;
@@ -297,6 +298,10 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 	right: -10000px;
 	width: 400%;
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
+}
+
+.icon-image {
+	background-color: transparent !important;
 }
 
 #rightColumn .aside-quote blockquote {
