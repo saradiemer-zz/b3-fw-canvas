@@ -129,7 +129,7 @@ button.btn.btn-default.dropdown-toggle {
 	font-size: 1.125em !important;
 	color: darken($patina, 12%);
 	border-color: darken($patina, 25%);
-	background: rgba(0,0,0,.15);
+	background: rgba(0,0,0,.275);
 	background-image:url('/images/homepage/homepage-arrow-patina.png') !important;
 	background-repeat: no-repeat;
 	background-size: 5%;
@@ -138,17 +138,31 @@ button.btn.btn-default.dropdown-toggle {
 
 button.btn.btn-default.dropdown-toggle:hover {
 	background-image:url('/images/homepage/homepage-arrow-patina.png') !important;
-	background-repeat: no-repeat;
-	background-size: 5%;
-	background-position: 95% 50%;
-	background: rgba(0,0,0,.75);
+	background-repeat: no-repeat !important;
+	background-size: 5% !important;
+	background-position: 95% 50% !important;
+	background: rgba(0,0,0,.325);
 }
 
 #first-menu ul.dropdown-menu {
+	margin-top: -20px;
 	padding: 20px;
 	max-width: 100%;
-	background-color: rgba(0,0,0,1)
+	background-color: rgba(0,0,0,.85);
+	-moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
 }
+
+#first-menu ul.dropdown-menu li a,
+#first-menu > div.dropdown.open > ul.dropdown-menu > li > a {
+	white-space: wrap !important;
+}
+
+#first-menu ul.dropdown-menu li a:hover {
+	color: darken($patina, 8%);
+	background: none;
+}
+
 
 button.btn.btn-default.dropdown-toggle span.caret {
 	border: none;

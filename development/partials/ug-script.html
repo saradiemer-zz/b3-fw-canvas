@@ -114,7 +114,7 @@
 			panelTemplate = '<div class="panel">' +
 			'<div class="panel-heading">' +
 			'<h4 class="subhead">' +
-			'<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#first-menu" href=""><span></span><i class="indicator pull-right"></i></a>' +
+			'<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#first-menu" href=""><span></span><i class="indicator pull-right glyphicon glyphicon-plus"></i></a>' +
 			'</h4>' +
 			'</div>' +
 			'<div class="panel-collapse collapse">' +
@@ -140,7 +140,7 @@
 				$('.collapse').on('show.bs.collapse', function(e) {
 					// Get clicked element that initiated the collapse...
 					clicked = $(document).find("[href='#" + $(e.target).attr('id') + "']");
-					$(clicked.selector + ' i').removeClass('glyphicon-pull').addClass('glyphicon-minus');
+					$(clicked.selector + ' i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
 				});
 				$('.collapse').on('hide.bs.collapse', function(e) {
 					// Get clicked element that initiated the hide...
