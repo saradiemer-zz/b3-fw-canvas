@@ -1,0 +1,4 @@
+body.canvas #wrapper {
+    background: url(/images/backgrounds/bg-shield-dark.jpg) no-repeat 50% fixed!important;
+    background-size: cover;
+}
