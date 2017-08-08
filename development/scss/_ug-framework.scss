@@ -252,6 +252,10 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
 }
 
+#rightColumn .aside-image-panel .icon-image{ /* aside image gold panel - extends off right edge */
+	background: none !important;
+}
+
 #rightColumn .aside-quote blockquote {
 	margin: 0 0 5px 0 !important;
 	line-height: 1.65;
