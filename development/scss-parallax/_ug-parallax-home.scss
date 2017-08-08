@@ -88,6 +88,12 @@ header#explore-intro-wrapper-video[style] {
   height: 300px;
 }
 
+.chapter header#explore-intro-wrapper-video[style] {
+  position: absolute;
+  left: 0;
+  width: 150%;
+}
+
 #explore-why-loyola-wrapper { width: 100%; }
 
 .explore-cta {
@@ -96,8 +102,7 @@ header#explore-intro-wrapper-video[style] {
 	width: 100%;
   height: auto;
 	border: solid 0 $gray-extra-light;
-	background: none;
-	opacity: .95;
+	background: lighten($bg-overlay, 10%);
 }
 
 .explore-cta h1, .explore-cta h5, .explore-cta p, .explore-cta p a {
@@ -115,7 +120,7 @@ header#explore-intro-wrapper-video[style] {
   letter-spacing: -0em;
 }
 
-.explore-cta h5 {
+.explore-cta h5.label {
 	margin: 0;
 	padding: 0;
 	font-size: 1.75em;
