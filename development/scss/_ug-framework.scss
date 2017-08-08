@@ -210,7 +210,8 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
 #rightColumn .aside-number,
-#rightColumn .aside-content {
+#rightColumn .aside-content,
+#rightColumn .aside-icon {
 	box-sizing: border-box;
 	padding: 30px 30px 30px 50px;
 	max-width: 100%;
@@ -252,8 +253,12 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
 }
 
-#rightColumn .aside-image-panel .icon-image{ /* aside image gold panel - extends off right edge */
-	background: none !important;
+.icon-image {
+	background-color: transparent !important;
+}
+
+.icon-image img {
+	width: 50% !important;
 }
 
 #rightColumn .aside-quote blockquote {
