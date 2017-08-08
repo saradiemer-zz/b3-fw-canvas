@@ -136,6 +136,14 @@ button.btn.btn-default.dropdown-toggle {
 	background-position: 95% 50%;
 }
 
+button.btn.btn-default.dropdown-toggle:hover {
+	background-image:url('/images/homepage/homepage-arrow-patina.png') !important;
+	background-repeat: no-repeat;
+	background-size: 5%;
+	background-position: 95% 50%;
+	background: rgba(0,0,0,.75);
+}
+
 #first-menu ul.dropdown-menu {
 	padding: 20px;
 	max-width: 100%;

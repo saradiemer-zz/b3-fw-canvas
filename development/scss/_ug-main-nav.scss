@@ -233,9 +233,9 @@
 
 #search-input input[type="text"] {
 	width: 100%;
-	padding: 21px 22px;
+	padding: 21px 17px;
 	font-family: "Antenna", sans-serif !important;
-	color: darken($patina, 8%);
+	color: darken($patina, 12%);
 	border-radius: 3px 0 0 3px !important;
 	border-color: darken($patina, 25%);
 	background-color: rgba(0,0,0,.15);
@@ -249,11 +249,11 @@
 	font-family: 'Antenna Bold', sans-serif;
 	font-size: 32px;
 	line-height: 1.3;
-	background-color: rgba(0,0,0,.35);
+	background-color: rgba(0,0,0,.15);
 	background-image:url('/images/homepage/homepage-arrow-left-patina.png') !important;
 	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position: 95% 50%;
+	background-size: 25%;
+	background-position: 50% 50%;
 	color: darken($patina, 12%);
 	transition: all .25s;
 }
