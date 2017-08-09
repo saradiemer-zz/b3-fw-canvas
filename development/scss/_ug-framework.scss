@@ -382,16 +382,18 @@ ul.pagination>li a { background-color: $gray-light; }
 
 #header.ug-header.affix {
 @include media-breakpoint-down(sm) {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 10500;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10500;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
 	-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.35);
 	box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.35);
     }
 }
+
+#header.ug-header h5.label { font-family: 'Antenna Light', sans-serif; }
 
 
 /* WORDMARK */
