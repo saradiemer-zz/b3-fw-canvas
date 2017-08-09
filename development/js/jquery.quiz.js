@@ -229,7 +229,6 @@ $(function(){
               console.log(cCount);
             for(var i = 0; i < cCount; i++){
                 college = colleges.eq(i);
-                college.append('<span>&bullet;</span>');
                 aTmp = $(college).children('a');
                 aTmp.removeAttr('class');
                 aTmp.prop('class','selected-0');
