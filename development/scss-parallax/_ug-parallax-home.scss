@@ -55,9 +55,11 @@
 #explore-cost-value         { background-image:url("../images/explore/explore-cost-value-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-residential-life   { background-image:url("../images/explore/explore-residential-life-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-apply-visit-info   { background-image:url("../images/explore/explore-apply-visit-info-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
-#explore-life-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 20% !important; background-repeat: no-repeat; }
+#explore-life-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
+#explore-service-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
 
 #explore-life-grid .grid-title-box:after,
+#explore-service-grid .grid-title-box:after,
 #explore-why-loyola:after,
 #explore-social-justice:after,
 #explore-academics-chicago:after,
@@ -75,6 +77,22 @@
     position: absolute;
     z-index: -1;
     opacity: 1;
+}
+
+#explore-life-grid .grid-title-box:after,
+#explore-service-grid .grid-title-box:after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.grid-title-text-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
 }
 
 #explore-study-abroad figure { min-height: 1500px; height: 1500px; }
