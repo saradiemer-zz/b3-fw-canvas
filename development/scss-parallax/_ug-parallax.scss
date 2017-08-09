@@ -213,7 +213,7 @@ figure img {
 }
 
 article .grid .col-xs-12 {
-  background: url(../images/site/texture-transparent.png) $gray !important;
+  background: url('../images/site/texture-transparent.png') $gray !important, url('../images/site/explore-grid-small.png');
 }
 
 .title-page h1, .title-page p {
@@ -232,15 +232,16 @@ article .grid .col-xs-12 {
 
 .credits header h1,
 .chapter header h1 {
-	font-size: 8vh;
+	margin: 0 0 20px 0;
+	font-size: 4.5vw;
 	letter-spacing: .015em;
 	line-height: 1;
-	margin: 0 0 20px 0;
+	text-shadow: 0px 0px 20px rgba(0,0,0,.8);
 }
 
-#explore-intro header h1, #exlpore-intro-video header h1 { font-size: 12vh; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
+#explore-intro header h1, #exlpore-intro-video header h1 { font-size: 4.5vw; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
 
-#explore-intro header h5, #exlpore-intro-video header h5 { font-size: 4vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
+#explore-intro header h6, #exlpore-intro-video header h6 { font-size: 4.5vw; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
 
 #explore-intro #homepage-cta h5, #exlpore-intro-video #homepage-cta h5 { font-size: 2vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
 
