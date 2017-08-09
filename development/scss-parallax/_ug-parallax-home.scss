@@ -55,8 +55,6 @@
 #explore-cost-value         { background-image:url("../images/explore/explore-cost-value-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-residential-life   { background-image:url("../images/explore/explore-residential-life-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-apply-visit-info   { background-image:url("../images/explore/explore-apply-visit-info-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
-#explore-life-grid > div > div.col-xs-12 { background-image:url("/images/site/texture-transparent-grid.png')"); }
-#explore-life-grid .col-xs-12 { background-image:url("/images/site/texture-transparent-grid.png')"); }
 
 #explore-life-grid .col-xs-12:after,
 #explore-why-loyola:after,
@@ -77,6 +75,8 @@
     z-index: -1;
     opacity: 1;
 }
+
+#explore-life-grid .col-xs-12:after { background-color: red; }
 
 #explore-study-abroad figure { min-height: 1500px; height: 1500px; }
 
