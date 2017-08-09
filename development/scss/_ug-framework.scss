@@ -105,14 +105,14 @@ button.btn.cta {
   padding: 7px 12px 4px;
   font-family: 'Antenna Light', sans-serif !important;
   font-size: .8em !important;
-  color: $patina;
+  color: darken($patina, 8%);
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: none;
   background-color: $white;
   background-image: none;
-  border: 1px $patina solid;
+  border: solid 1px darken($patina, 8%);
   border-radius: 30px;
   outline: white;
   text-decoration: none;
@@ -172,7 +172,7 @@ button.btn.btn-default.dropdown-toggle span.caret {
 	border: none;
 }
 
-button.btn.cta:hover { background: rgba(0,0,0,.1); color: $patina; }
+button.btn.cta:hover { background: rgba(0,0,0,.1); color: darken($patina,8%); }
 
 .rule-bottom {
 	margin: 0 0 30px;
@@ -180,7 +180,7 @@ button.btn.cta:hover { background: rgba(0,0,0,.1); color: $patina; }
 	border-bottom: 1px solid $gray-light;
 }
 
-ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
+ul.pagination { border-right: solid 1px darken($patina,8%); border-radius: 0; }
 
 .pagination>li>a, .pagination>li>a>span {
 	margin: 0;
@@ -189,7 +189,7 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 	font-family: 'Antenna Light', sans-serif;
 	font-size: 16px;
 	line-height: 1.3;
-	color: $patina;
+	color: darken($patina,8%);
 	text-align: center;
 	border-radius: 0 !important;
 	transition: all .25s;
@@ -212,10 +212,12 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 }
 */
 
+ul.pagination>li a { background-color: $gray-light; }
+
 .pagination>li>a>span {
 	padding: 0;
 	font-family: 'Antenna Bold', sans-serif;
-	color: lighten($patina,2%);
+	color: darken($patina,8%);
 	border: none;
 	transition: all .15s;
 }
@@ -223,34 +225,46 @@ ul.pagination { border-right: solid 1px lighten($patina,2%); border-radius: 0; }
 .pagination>ul>li>a:focus,
 .pagination>ul>li>a:active,
 .pagination>ul>li>a>span:focus,
-.pagination>ul>li>a>span:active { color: $patina-dark; background: lighten($patina,5%); }
+.pagination>ul>li>a>span:active,
+.pagination>li>a:visited,
+.pagination>li>a>span:visited {
+	color: darken($patina,20%);
+	border-left: solid 1px darken($patina,15%);
+	border-top: solid 1px darken($patina,15%);
+	border-right: none;
+	border-bottom: solid 1px darken($patina,15%);
+	background: darken($patina,8%);
+}
 
 .pagination>li>a:visited,
-.pagination>li>a>span:visited { color: lighten($patina, 5%); background: $white; }
+.pagination>li>a>span:visited {
+	color: $gray;
+	background: $gray-light;
+}
 
 .pagination>li>a:hover {
 	color: $patina-dark;
-	background: lighten($patina,5%);
+	background: darken($patina,8%);
 	&:hover span { color: $patina-dark; }
 }
 
 .pagination>li>a, .pagination>li>a:hover, .pagination>li>a:focus {
-	border-left: solid 1px lighten($patina,2%);
-	border-top: solid 1px lighten($patina,2%);
+	border-left: solid 1px darken($patina,8%);
+	border-top: solid 1px darken($patina,8%);
 	border-right: none;
-	border-bottom: solid 1px lighten($patina,2%);
+	border-bottom: solid 1px darken($patina,8%);
 }
 
 .pagination>li>a:visited { border-right: none; }
 
 .pagination>li:first-of-type> a,
 .pagination>li:last-child> a {
-	background: lighten($patina,2%) !important;
+	background: darken($patina,10%) !important;
 }
 
 .pagination>li:first-of-type> a>span,
 .pagination>li:last-child> a>span {
-	color: $patina-light !important;
+	color: darken($patina,20%) !important;
 }
 
 /* ASIDE - QUOTES - NUMBERS - ICONS =====================
