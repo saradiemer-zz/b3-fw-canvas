@@ -45,7 +45,11 @@ hr.major-quiz-rule {
   margin-before: 0px;
   -webkit-margin-before: 0px;
   padding-start: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-padding-start: 0px;
+  -webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
 
 .colleges li {
   display: block;
@@ -57,18 +61,22 @@ hr.major-quiz-rule {
   padding: 0px 5px; }
 
 .colleges li a {
-  margin: 0;
-  padding: 5px;
+  margin: -3px;
   font-size: 1.2em;
+  font-style: italic;
   letter-spacing: .5px;
+  line-height: 1;
   text-decoration: none;
   transition: all .2s;
   color: #525252;
-  text-shadow: 0px -0.5px 0px black, 0px 0.5px 0px white;
-  background-color: rgba(0, 0, 0, 0.05); }
+  display: block;
+}
 
 .colleges li a:hover {
-  color: #790016; }
+  color: $patina !important; }
+
+.colleges li a:link, .colleges li a:visited, .colleges li a:active {
+  color: #525252; }
 
 a, a:visited, a:link, a:hover, a:active {
   color: inherit; }
@@ -368,6 +376,5 @@ label:nth-child(4) {
   font-size: 0.7em !important;
   padding-left: 4em;
   font-family: 'Antenna Light', sans-serif; }
-
 
 /* END */

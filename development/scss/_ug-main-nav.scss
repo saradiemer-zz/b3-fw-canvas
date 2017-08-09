@@ -58,7 +58,7 @@
 }
 
 #main-sidebar .panel-heading h4 span a {
-	display: inline-block;
+	display: block;
 	width: 90% !important;
 	padding: 3px 5px 3px 0;
 	color: darken($patina, 12%);
@@ -164,23 +164,6 @@
 	font-size: .9em;
 	border-bottom: solid 1px $gray-dark;
 }
-
-#main-sidebar .panel-group#sub-menu ul.sub-menu > li:nth-child(4) { margin-bottom: 10px; }
-
-#main-sidebar .panel-group#sub-menu ul#languages {
-	margin: 5px 0 10px 0;
-	padding-bottom: 0px;
-	border-bottom: solid 1px $gray-dark;
-}
-
-#main-sidebar .panel-group#sub-menu ul#languages li {
-	margin: 0 0 5px 40px;
-	padding: 0 0 5px 0;
-	list-style-type: square;
-	border-bottom: none;
-}
-
-#main-sidebar .panel-group#sub-menu li.list-parent { margin: 0; border-bottom: none; }
 
 #compass {
 	width: 25%;
