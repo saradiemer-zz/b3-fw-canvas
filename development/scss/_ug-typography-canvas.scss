@@ -528,6 +528,21 @@ td, #page-content td, #page-content td {
 	opacity: 0.8;
 }
 
+#cost-resources h5.label { margin-top: 0px;}
+
+span.inset  {
+	width: 28%;
+	float:left;
+	margin-right:5%;
+}
+
+#cost-resources .col-md-12 {
+	margin-bottom: 20px;
+}
+
+#resources {background-color: $gray-extra-light; }
+
+#resources .canvas-content {padding: 40px; }
 
 /* ===============================================
 CSS END ======================================= */
