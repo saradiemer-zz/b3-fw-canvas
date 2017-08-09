@@ -47,7 +47,7 @@
 	text-indent: -9999px;
 	border: none;
 	border-radius: 0;
-	background: url("../images/site/ug-social-icons-patina@2X.png") no-repeat scroll 0 0 darken($patina, 5%);
+	background: url("../images/site/ug-social-icons.png") no-repeat scroll 0 0 $gray-dark;
 	background-size: 100%;
 	opacity: 1;
 }
@@ -59,7 +59,7 @@
 	-ms-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s; /* IE10 is actually unprefixed */
 	-o-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
 	transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
-	background-color: lighten($patina, 5%);
+	background-color: darken($patina, 5%);
 	opacity: .8;
 }
 #social.social-gold li a.icon-fb {
