@@ -8,17 +8,6 @@
 
 /* VIDEO */
 
-.explore-video-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 .explore-video-container video {
   /* Make video to at least 100% wide and tall */
   min-width: 100%;
@@ -58,6 +47,7 @@
 #explore-life-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
 #explore-service-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
 
+/*
 #explore-life-grid .grid-title-box:after,
 #explore-service-grid .grid-title-box:after,
 #explore-why-loyola:after,
@@ -78,24 +68,8 @@
     z-index: -1;
     opacity: 1;
 }
+*/
 
-#explore-life-grid .grid-title-box:after,
-#explore-service-grid .grid-title-box:after {
-  padding-top: 56.25%;
-  display: block;
-  content: '';
-}
-
-.grid-title-text-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-}
-
-#explore-study-abroad figure { min-height: 1500px; height: 1500px; }
 
 /* CTA WRAPPER - TYPOGRAPHY */
 
@@ -112,39 +86,32 @@ header.explore-cta-wrapper {
 	padding: 20px 20px;
 	width: 100%;
   height: auto;
-	border: solid 0 $gray-extra-light;
+  border: solid 2px $patina;
+  border-radius: 5px;
+  background-color: $bg-overlay;
+  box-shadow: 0px 0px 15px $bg-overlay;
 }
 
 .explore-cta h1, .explore-cta h2, .explore-cta h6, .explore-cta h6 a {
-  color: $gray-extra-light !important;
-  text-align: center;
-  text-shadow: 0px 0px 15px rgba(0,0,0,.35);
-}
-
-#explore-intro-wrapper-video h6 { text-align: center; }
-
-.explore-cta h1 {
-	margin: 0;
-	padding: 0;
-  font-family: 'Antenna Black', sans-serif !important;
-	font-size: 3vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 3vw;
   line-height: 1;
   letter-spacing: -0em;
+  color: $gray-extra-light !important;
+  text-align: center;
+  text-shadow: none;
 }
-
-#explore-intro-wrapper-video > div.explore-cta > h1 { margin-bottom: 20px !important; }
 
 .explore-cta h2 {
 	margin: 0 0 5px;
-	padding: 0;
-  width: 100%;
-	font-size: 2vw;
+  font-family: 'Antenna Thin', sans-serif !important;
+	font-size: 2.85vw;
 	letter-spacing: .015em;
-  color: $gray-light !important;
+  color: $gray-extra-light;
 }
-
-.explore-cta h2 a { color: $white !important; }
-
 
 /* IMAGES GRIDS */
 
@@ -162,6 +129,29 @@ header.explore-cta-wrapper {
 }
 
 #explore-service-grid p.body a, #explore-life-grid p.body a { font-size: 1em; color: $gold !important; }
+
+#explore-life-grid .grid-title-box:after,
+#explore-service-grid .grid-title-box:after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+#explore-life-grid .grid-title-box:after,
+#explore-service-grid .grid-title-box:after {
+  content: "";
+  background: url(../images/explore/explore-grid-dark-small.png) repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  padding-top: 56.25%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#explore-study-abroad figure { min-height: 1500px; height: 1500px; }
 
 #explore-academics-chicago-wrapper h5 { text-align: center; }
 
@@ -181,7 +171,7 @@ header.explore-cta-wrapper {
 
 .explore-cta-button {
 	position: relative;
-	margin: 0 auto 0 !important;
+	margin: 15px auto 0 !important;
 	padding: 0;
 	width: 60px;
 	height: 60px;

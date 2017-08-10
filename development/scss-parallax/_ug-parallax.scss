@@ -208,14 +208,6 @@ figure img {
 	background: #f2f2f2;
 }
 
-#explore-service-grid.title-page {
-	background: none;
-}
-
-article .grid .col-xs-12 {
-  background: url('../images/site/texture-transparent.png') $gray !important, url('../images/site/explore-grid-small.png');
-}
-
 .title-page h1, .title-page p {
 	text-align: center;
 }
@@ -238,14 +230,6 @@ article .grid .col-xs-12 {
 	line-height: 1;
 	text-shadow: 0px 0px 20px rgba(0,0,0,.8);
 }
-
-#explore-intro header h1, #exlpore-intro-video header h1 { font-size: 4.5vw; text-shadow: 0px 0px 20px rgba(0,0,0,.8); }
-
-#explore-intro header h6, #exlpore-intro-video header h6 { font-size: 4.5vw; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
-
-#explore-intro #homepage-cta h5, #exlpore-intro-video #homepage-cta h5 { font-size: 2vh; text-shadow: 0px 0px 15px rgba(0,0,0,.8); }
-
-#homepage-cta h1 { font-family: 'Antenna Black', sans-serif !important; }
 
 article h1.display.location {
   margin: 0;
@@ -276,10 +260,10 @@ article h1.display.location {
 .chapter header {
 	position: absolute;
 	left: 50%;
-	top: 50%;
-	margin: -125px 0 0 -480px !important;
+	top: 100%;
+	margin: 0 0 0 -480px !important;
 	width: 960px;
-	height: 325px;
+	height: 20%;
 }
 
 .chapter header p {
