@@ -19,7 +19,8 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(/images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	//semi-transparent-pixel
 	.pipe(replace('("<t4 type="media" id="406288" formatter="path/*"/>")', '("<t4 type="media" id="406288" formatter="path/*"/>")'))
-
+	//search
+	.pipe(replace('../images/homepage/homepage-arrow-left-patina.png', '<t4 type="media" id="473040" formatter="path/*"/>'))
 	//social ICONS
 	.pipe(replace('(../images/site/ug-social-icons.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-shield-dark.jpg)', '("<t4 type="media" id="471277" formatter="path/*"/>")'))
