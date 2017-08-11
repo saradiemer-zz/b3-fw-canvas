@@ -345,7 +345,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #interior-wrapper-right div.number h1 {
 	font-size:5em;
-  padding-top: 20%;
+  padding-top: 15%;
 	padding-bottom: 8%;
 }
 
@@ -355,7 +355,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #interior-wrapper-right div.aside-icon .col-md-3 {
     border-top: solid 1px #5f5f5f;
-		padding-top: 8%;
+		padding-top: 5%;
 }
 
 
@@ -366,6 +366,11 @@ div > table.stacktable.large-only > tbody > tr > td {
 #inset-nav ul li h5 a, #inset-nav ul li h5 a:visited {
   font-family: "Antenna", sans-serif;
 	    color:darken($patina, 8%);
+}
+
+#interior-wrapper-right .number p .explainer {
+    margin-top: 10px;
+		font-size: 80%;
 }
 
 #interior-wrapper-right > div:nth-child(4) > p {margin-top: 5px !important;}

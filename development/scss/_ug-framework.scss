@@ -275,8 +275,7 @@ ul.pagination>li a { background-color: $gray-light; }
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
 #rightColumn .aside-number,
-#rightColumn .aside-content,
-#rightColumn .aside-icon {
+#rightColumn .aside-content, {
 	box-sizing: border-box;
 	padding: 30px 30px 30px 50px;
 	max-width: 100%;
@@ -361,6 +360,14 @@ ul.pagination>li a { background-color: $gray-light; }
 	font-family: 'Antenna Light', san-serif;
 	font-size:1.2em;
 }
+
+#rightColumn .aside-icon {
+	box-sizing: border-box;
+	padding: 30px 30px 0px 50px;
+	max-width: 100%;
+	width: 100%;
+}
+
 
 /* HEADER ===============================================
 =======================================================*/
