@@ -300,7 +300,8 @@ h5.label.maroon {
 
 ul li a, p a {
 	color:darken($patina, 8%);
-	background:none;
+	background: none;
+	background-image: none !important;
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
@@ -344,7 +345,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 }
 
 #interior-wrapper-right div.number h1 {
-	font-size:5em;
+	font-size:7em;
   padding-top: 15%;
 	padding-bottom: 8%;
 }
@@ -382,3 +383,5 @@ div > table.stacktable.large-only > tbody > tr > td {
 #interior-wrapper-right h1.number.display.large { font-size: 7em; }
 
 #interior-wrapper-right h1.number.display.small { font-size: 5em !important; }
+
+.ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
