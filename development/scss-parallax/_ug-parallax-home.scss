@@ -44,8 +44,6 @@
 #explore-cost-value         { background-image:url("../images/explore/explore-cost-value-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-residential-life   { background-image:url("../images/explore/explore-residential-life-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
 #explore-apply-visit-info   { background-image:url("../images/explore/explore-apply-visit-info-2400-2400.jpg"); background-size: 100% auto; background-repeat: no-repeat; }
-#explore-life-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
-#explore-service-grid .grid-title-box { background-image:url("../images/res-life/photo-grid/student-life-title-box.png"); background-size: 100% !important; background-repeat: no-repeat; }
 
 /*
 #explore-life-grid .grid-title-box:after,
@@ -115,11 +113,51 @@ header.explore-cta-wrapper {
 
 /* IMAGES GRIDS */
 
-#explore-service-grid .grid .col-xs-3 h5.label, #explore-life-grid .grid .col-xs-3 h5.label {
-  font-size: 2.25vw;
-  line-height: 1.15;
-  color: $gray-light !important;
+.grid {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: $gray-light;
+  background-color: $gray;
 }
+
+#explore-service-grid .grid-title-box {
+  background-image:url("../images/res-life/photo-grid/student-service-title-box.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#explore-life-grid .grid-title-box {
+  background-image:url("../images/res-life/photo-grid/student-life-title-box.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-title-box {
+  position: relative;
+}
+
+.grid-title-box:before {
+  display: block;
+  content: "";
+  width: auto;
+  padding-top: 56.25%;
+  background: url(../images/explore/explore-grid-dark-small.png) repeat;
+}
+
+.grid-title-box-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+#explore-service-grid h5.label, #explore-life-grid h5.label,
+#explore-service-grid p.body, #explore-life-grid p.body { margin: 0; padding: 0; }
+
+#explore-service-grid h5.label, #explore-life-grid h5.label { line-height: 1.25; }
 
 #explore-service-grid p.body, #explore-life-grid p.body {
   font-family: 'Antenna Bold', sans-serif;
@@ -129,27 +167,6 @@ header.explore-cta-wrapper {
 }
 
 #explore-service-grid p.body a, #explore-life-grid p.body a { font-size: 1em; color: $gold !important; }
-
-#explore-life-grid .grid-title-box:after,
-#explore-service-grid .grid-title-box:after {
-  padding-top: 56.25%;
-  display: block;
-  content: '';
-}
-
-#explore-life-grid .grid-title-box:after,
-#explore-service-grid .grid-title-box:after {
-  content: "";
-  background: url(../images/explore/explore-grid-dark-small.png) repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  padding-top: 56.25%;
-  z-index: -1;
-  opacity: 1;
-}
 
 #explore-study-abroad figure { min-height: 1500px; height: 1500px; }
 
