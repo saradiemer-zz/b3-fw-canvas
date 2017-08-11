@@ -317,6 +317,10 @@ ul.pagination>li a { background-color: $gray-light; }
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
 }
 
+#rightColumn .aside-image .aside-image-panel  { /* aside image gold panel - extends off right edge */
+	display: none;
+}
+
 .icon-image {
 	background-color: transparent !important;
 }
@@ -363,7 +367,7 @@ ul.pagination>li a { background-color: $gray-light; }
 
 #rightColumn .aside-icon {
 	box-sizing: border-box;
-	padding: 30px 30px 0px 50px;
+	padding: 0px 0px 0px 50px;
 	max-width: 100%;
 	width: 100%;
 }

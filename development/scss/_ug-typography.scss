@@ -368,8 +368,12 @@ div > table.stacktable.large-only > tbody > tr > td {
 	    color:darken($patina, 8%);
 }
 
-#interior-wrapper-right .number p .explainer {
-    margin-top: 10px;
+#interior-wrapper-right .aside-icon img{
+		width: 70%;
+}
+
+#interior-wrapper-right .number p.explainer {
+    margin-top: 5px;
 		font-size: 80%;
 }
 
