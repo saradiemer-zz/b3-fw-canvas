@@ -4,7 +4,6 @@ $enable-grid-classes:       true;
 @import '../scss/variables';
 @import '../scss/mixins';
 @import 'custom-variables';
-@import 'ug-parallax';
-@import 'ug-parallax-mobile-dev';
 @import 'ug-parallax-home';
+@import 'ug-parallax-mobile-dev';
 @import '../scss/mixins/breakpoints'

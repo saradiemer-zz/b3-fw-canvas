@@ -1,3 +1,115 @@
+/* PAGES */
+
+/* HEADER CUSTOM FOR PARALLAX */
+
+#header.ug-header, #ug-nav.container-fluid { position: fixed; width: 100%; }
+
+#header.ug-header { top: 0; }
+
+#header, footer  { z-index: 10000; }
+
+div#wrapper {
+  min-height: 1000px;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+
+/* GENERAL */
+
+header { margin: 0; }
+
+article .grid [class*="col-"],
+article .grid [class*="col-"],
+article .grid img, {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+article {
+  position: fixed;
+  top: 0 ;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  -moz-box-shadow: 0 0 12px #666;
+  -webkit-box-shadow: 0 0 12px #666;
+  z-index:99999;
+  background: #ffffff;
+}
+
+article.explore-study-abroad { min-height: 2500px; height: 2500px; }
+
+article figure {
+	background: transparent;
+	position: fixed;
+	top: 250px;
+	min-height: 400px;
+	left: 35%;
+	margin: 0;
+	padding: 0;
+}
+
+.column {
+	margin: 0 0 0 50px;
+	padding: 0 0 0 0;
+  width: 30%;
+	border: none;
+}
+
+/* IMAGES */
+
+figure img {
+	display: block;
+}
+
+.panoramic img {
+  display: block;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  border: 15px;
+  background: $gray-extra-light;
+  box-shadow: 0px 0px 25px rgba(0,0,0,.65);
+}
+
+/* GALLERY TEXT */
+
+.text {
+	margin: 250px 0 0 0;
+	padding: 0 0 0 100px;
+}
+
+.text p {
+  font-size: 1.15em;
+  margin: 10px 0;
+	width: 350px;
+}
+
+.chapter header {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin: 0 0 0 -480px !important;
+	width: 960px;
+	height: 20%;
+}
+
+.chapter header p {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* DESATURATE */
+
 .desaturate{
   -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
@@ -81,12 +193,12 @@ header.explore-cta-wrapper {
 
 .explore-cta {
 	margin: 0 auto;
-	padding: 20px 20px;
-	width: 100%;
+	padding: 30px;
+	width: 80%;
   height: auto;
   border: solid 2px $patina;
   border-radius: 5px;
-  background-color: $bg-overlay;
+  background-color: $bg-overlay-dark;
   box-shadow: 0px 0px 15px $bg-overlay;
 }
 
@@ -94,8 +206,8 @@ header.explore-cta-wrapper {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Antenna Black', sans-serif;
-  font-size: 3vw;
+  font-family: 'Antenna Black', sans-serif !important;
+  font-size: 3.5vw;
   line-height: 1;
   letter-spacing: -0em;
   color: $gray-extra-light !important;
@@ -103,75 +215,19 @@ header.explore-cta-wrapper {
   text-shadow: none;
 }
 
+.explore-cta h1 { margin: 0 0 5px !important; }
+
 .explore-cta h2 {
 	margin: 0 0 5px;
   font-family: 'Antenna Thin', sans-serif !important;
-	font-size: 2.85vw;
+	font-size: 2.75vw;
 	letter-spacing: .015em;
   color: $gray-extra-light;
 }
 
-/* IMAGES GRIDS */
+.explore-cta p.body.intro { font-size: 1.25em; line-height: 1.65; margin: 0 0 5px !important; }
 
-.grid {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: $gray-light;
-  background-color: $gray;
-}
-
-#explore-service-grid .grid-title-box {
-  background-image:url("../images/res-life/photo-grid/student-service-title-box.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#explore-life-grid .grid-title-box {
-  background-image:url("../images/res-life/photo-grid/student-life-title-box.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.grid-title-box {
-  position: relative;
-}
-
-.grid-title-box:before {
-  display: block;
-  content: "";
-  width: auto;
-  padding-top: 56.25%;
-  background: url(../images/explore/explore-grid-dark-small.png) repeat;
-}
-
-.grid-title-box-text {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-}
-
-#explore-service-grid h5.label, #explore-life-grid h5.label,
-#explore-service-grid p.body, #explore-life-grid p.body { margin: 0; padding: 0; }
-
-#explore-service-grid h5.label, #explore-life-grid h5.label { line-height: 1.25; }
-
-#explore-service-grid p.body, #explore-life-grid p.body {
-  font-family: 'Antenna Bold', sans-serif;
-  color: $gray-light !important;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-#explore-service-grid p.body a, #explore-life-grid p.body a { font-size: 1em; color: $gold !important; }
-
-#explore-study-abroad figure { min-height: 1500px; height: 1500px; }
-
-#explore-academics-chicago-wrapper h5 { text-align: center; }
-
+.explore-cta p.body a { font-size: 80% !important; }
 
 /* EXPLORE CTA */
 
@@ -219,9 +275,90 @@ header.explore-cta-wrapper {
 
 button h5.label { margin: 2px 0 0; text-align: center; }
 
+/* IMAGES GRIDS */
+
+.grid {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: $gray-light;
+  background-color: $gray-dark;
+}
+
+#explore-service-grid .grid-title-box {
+  background-image:url("../images/res-life/photo-grid/student-service-title-box.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#explore-life-grid .grid-title-box {
+  background-image:url("../images/res-life/photo-grid/student-life-title-box.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-title-box {
+  position: relative;
+}
+
+.grid-title-box:before {
+  display: block;
+  content: "";
+  width: auto;
+  padding-top: 56.25%;
+  background: url(../images/explore/explore-grid-dark-small.png) repeat;
+}
+
+.grid-title-box-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+
+#explore-service-grid h5.label, #explore-life-grid h5.label { line-height: 1.25; }
+
+#explore-service-grid h5.label, #explore-life-grid h5.label,
+#explore-service-grid p.body, #explore-life-grid p.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Antenna Bold', sans-serif;
+  color: lighten($gray, 20%) !important;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#explore-service-grid p.body a, #explore-life-grid p.body a { font-family: 'Antenna Bold', sans-serif; font-size: .85em; color: $gold !important; }
+
+#explore-study-abroad figure { min-height: 1500px; height: 1500px; }
+
+#explore-academics-chicago-wrapper h5 { text-align: center; }
+
+#explore-apply-visit-info-wrapper button {
+  padding: 5px 20px;
+  width: 100%;
+  border: solid 1px $patina;
+  border-radius: 20px;
+  background: rgba(0,0,0,.35);
+  h5 {
+    font-family: 'Antenna Bold', sans-serif;
+    color: $gray-light !important; }
+}
+
+#explore-intro-wrapper-video > div.explore-cta { margin: -300px auto 0 !important; }
+
+#explore-study-abroad-wrapper > div.explore-cta { width: 30% !important; margin: 0 !important; }
+
+#explore-academics-chicago-wrapper > div.explore-cta { margin: -300px auto 0 !important; width: 100% !important; }
+
+
 /* NUMBERS */
 
-.number.display {
-  font-family: 'Antenna Comp' !important;
-  font-size: 12em;
-}
+.number.display { font-family: 'Antenna Comp' !important; font-size: 8em; }
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:1350px) { .panoramic img { width: 900px; } }
