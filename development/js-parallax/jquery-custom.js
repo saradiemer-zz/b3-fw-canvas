@@ -1156,4 +1156,4 @@ jQuery(
       return this;
   }
 
-})(jQuery); 
+})(jQuery);
