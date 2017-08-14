@@ -14,14 +14,13 @@
 	padding: 20px 0 0 0;
 }
 
-#main-content #interior-wrapper #interior-body #content-tabs #tabs > li.active a {
+/* #main-content #interior-wrapper #interior-body #content-tabs #tabs > li.active a {
 	font-family: 'Antenna Black', sans-serif !important;
 	letter-spacing: .075em;
 	color: $gold-extra-dark;
 }
 
-#main-content #interior-wrapper #interior-body #content-tabs #tabs > li.active a,
-#main-content #interior-wrapper #interior-body #content-tabs #my-tab-content.tab-content.col-sm-12 {
+/* #main-content #interior-wrapper #interior-body #content-tabs #my-tab-content.tab-content.col-sm-12 {
 	background: $gold !important;
 }
 
@@ -29,13 +28,14 @@
 	padding: 60px;
 }
 
-#main-content #interior-wrapper #tabs > li a {
-	background: -moz-linear-gradient(top, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, $gray 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CE9501', endColorstr='#825E01',GradientType=0 ); /* IE6-9 */
-	border-bottom-color: $gold-extra-dark;
-}
+/* #main-content #interior-wrapper #tabs > li a {
+/* background: -moz-linear-gradient(top, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* FF3.6-15 */
+/*		background: -webkit-linear-gradient(top, $gray 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* Chrome10-25,Safari5.1-6 */
+/*		background: linear-gradient(to bottom, $gold-dark 90%, $gold-extra-dark 95%, $gold-extra-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CE9501', endColorstr='#825E01',GradientType=0 ); /* IE6-9 */
+/*	border-bottom-color: $gold-extra-dark; */
+/* } */
+
 
 #interior-wrapper ul > li.tab-list-item .body.endnote {
 	border-top: solid 1px darken($gold-dark, 3%);
@@ -76,6 +76,10 @@
 	height: auto;
 	vertical-align: middle;
 	text-align: center;
+}
+
+#main-content #interior-wrapper #interior-body #transfer #content-tabs ul {
+	margin: 0px 0 10px 0 !important;
 }
 
 /* END - INTERIOR-TABS */
