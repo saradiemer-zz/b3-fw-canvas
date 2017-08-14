@@ -13,6 +13,7 @@ gulp.task('t4_css', function() {
 	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))
 	//background image
 	.pipe(replace('(../images/bg-water.jpg)', '("<t4 type="media" id="372435" formatter="path/*"/>")'))
+	.pipe(replace('(../images/backgrounds/bg-lsc.jpg)', '("<t4 type="media" id="473135" formatter="path/*"/>")'))
 		//texture-transparent-pixel
 		.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(../images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
