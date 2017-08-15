@@ -371,7 +371,6 @@ div > table.stacktable.large-only > tbody > tr > td {
 		padding-top: 5%;
 }
 
-
 .nav a:visited, .nav a:hover, .nav a:focus {
   color:darken($patina, 5%);
 }
@@ -390,7 +389,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 		font-size: 80%;
 }
 
-#interior-wrapper-right > div:nth-child(4) > p {margin-top: 5px !important;}
+#interior-wrapper-right > div:nth-child(4) > p { margin-top: 5px !important; }
 
 #interior-wrapper-right h1.number.display.large { font-size: 7em; }
 
@@ -398,6 +397,6 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 .ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
 
-[style] p a, ul a, ol a {
-	font-weight:normal !important;
+#interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-center ul a[style], #interior-wrapper-center ul a, #interior-wrapper-center ol a[style], #interior-wrapper-center ol a  {
+	font-weight:100 !important;
 }
