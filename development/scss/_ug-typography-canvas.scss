@@ -35,8 +35,6 @@ p a, article.content p a {
 	background-image: none;
 }
 
-p a { font-weight: bold; }
-
 a:hover, article.content p a:hover { color: $patina; cursor: pointer !important; }
 
 p.body.intro { font-size: 1.5em }

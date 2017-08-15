@@ -398,6 +398,6 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 .ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
 
-p a[style], ul a[style], ol a[style] {
-	font-weight:normal !important;
+#interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-center ul a[style], #interior-wrapper-center ul a, #interior-wrapper-center ol a[style], #interior-wrapper-center ol a  {
+	font-weight:100 !important;
 }
