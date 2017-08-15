@@ -676,6 +676,10 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	}
 }
 
+[data-simplersidebar="closed"] .ug-global-close{
+	display:none;
+}
+
 .ug-global-search {
 	right: 44%;
 	background: darken($patina, 8%);
