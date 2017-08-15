@@ -24,6 +24,17 @@ h2 {
 	padding-bottom: 10px;
 }
 
+#ug-body h1.display {
+	font-family: "Antenna Black", sans-serif;
+	padding-bottom: 10px;
+	@include media-breakpoint-up (md) {
+		font-size:5em;
+	}
+	@include media-breakpoint-down (sm){
+		font-size: 3.5em;
+	}
+}
+
 #ug-body p.body.intro { font-size: 1.45em; line-height: 1.7em; }
 
 /* INTERIOR TYPOGRAPHY */
@@ -69,6 +80,11 @@ h5.label.maroon {
 	font-size: 6em;
 	line-height: 1;
 	text-transform: uppercase;
+}
+
+#ug-body h1.display {
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 5em;
 }
 
 #ug-body h2.display {
@@ -397,6 +413,14 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 .ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
 
-#interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-center ul a[style], #interior-wrapper-center ul a, #interior-wrapper-center ol a[style], #interior-wrapper-center ol a  {
+#interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-right p a[style], #interior-wrapper-right p a  {
+	font-weight:100 !important;
+}
+
+#interior-wrapper-center ul a[style], #interior-wrapper-center ul a, #interior-wrapper-right ul a[style], #interior-wrapper-right ul a  {
+	font-weight:100 !important;
+}
+
+#interior-wrapper-center ol a[style], #interior-wrapper-center ol a, #interior-wrapper-right ol a[style], #interior-wrapper-right ol a  {
 	font-weight:100 !important;
 }
