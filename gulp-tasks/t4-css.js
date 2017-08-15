@@ -71,5 +71,6 @@ gulp.task('t4_css_parallax', function() {
 	.pipe(replace('("../images/explore/explore-cost-value-2400-2400.jpg")', '("<t4 type="media" id="470736" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-apply-visit-info-2400-2400.jpg")', '("<t4 type="media" id="470718" formatter="path/*"/>")'))
 	.pipe(replace('(../images/explore/explore-grid-dark-small.png)', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
+	.pipe(replace('("../images/explore/title-box-campus.png")', '(<t4 type="media" id="473560" formatter="path/*"/>)'))
 	.pipe(gulp.dest(config.T4Dir + '/css'));
 });
