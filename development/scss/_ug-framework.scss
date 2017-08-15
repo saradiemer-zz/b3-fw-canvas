@@ -672,6 +672,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background: none;
 	color: $patina-dark;
 	transition: all .2s;
+
+}
+
+[data-simplersidebar="closed"] .ug-global-close{
+  /* Attribute has this exact value */
+	display:none;
 }
 
 .ug-global-close {
