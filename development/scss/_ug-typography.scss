@@ -24,6 +24,17 @@ h2 {
 	padding-bottom: 10px;
 }
 
+#ug-body h1.display {
+	font-family: "Antenna Black", sans-serif;
+	padding-bottom: 10px;
+	@include media-breakpoint-up (md) {
+		font-size:5em;
+	}
+	@include media-breakpoint-down (sm){
+		font-size: 3.5em;
+	}
+}
+
 #ug-body p.body.intro { font-size: 1.45em; line-height: 1.7em; }
 
 /* INTERIOR TYPOGRAPHY */
@@ -69,6 +80,11 @@ h5.label.maroon {
 	font-size: 6em;
 	line-height: 1;
 	text-transform: uppercase;
+}
+
+#ug-body h1.display {
+	font-family: 'Antenna Black', sans-serif !important;
+	font-size: 5em;
 }
 
 #ug-body h2.display {

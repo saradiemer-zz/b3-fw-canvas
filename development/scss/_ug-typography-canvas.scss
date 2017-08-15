@@ -58,7 +58,7 @@ h1.pagelayout {
 h1, h2, h3 {
 	margin: 10px 0;
 	padding: 0;
-	font-family: "Antenna Black", sans-serif;
+	font-family: "Antenna Black" !important, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.15;
