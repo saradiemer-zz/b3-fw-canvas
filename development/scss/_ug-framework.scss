@@ -847,8 +847,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     width: 100%;
 }
 .col-md-height {
-    display: table-cell;
-    float: none;
+  /*  display: table-cell;
+    float: none;*/
     height: 100%;
 }
 .col-md-top { vertical-align: top; }
