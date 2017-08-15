@@ -44,7 +44,7 @@ p.body.explainer { margin: -5px 0 10px 0; }
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
 
-h1.display {
+.canvas-content h1.display {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 5em;
   word-spacing: 0.1em;
@@ -66,7 +66,7 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-h5.label { font-family: "Antenna", sans-serif; }
+h5.label { font-family: "Antenna Black", sans-serif; }
 
 .canvas-content h5.label.display-large, .grid .col-xs-3 h5.label.display-large.reverse {
 	margin-bottom: 20px;
@@ -94,7 +94,7 @@ body.canvas p.intro span.leadin { display: inline-block; margin-top: 60px; font-
 /* ===============================================
 NUMBERS ===================================== */
 
-.number { font-family: 'Antenna Comp', sans-serif; margin: 20px 0; }
+.number { font-family: 'Antenna Comp', sans-serif !important; margin: 20px 0; }
 
 .number.display { font-family: 'Antenna Comp'; margin: 10px 0 0; }
 
@@ -275,7 +275,6 @@ input[type="file"] {
 
 #accordion .number h1.display { font-size: 8em; }
 
-
 #ug-body .btn-overlay.cta { background-color: white; padding: 10px;}
 
 #ug-body .btn-overlay.cta:active,
@@ -284,7 +283,6 @@ input[type="file"] {
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
-
 
 .xl {font-size:12em !important; margin-bottom:-30px !important;}
 
