@@ -268,15 +268,13 @@ input[type="file"] {
 
 #accordion .btn-overlay.cta { background-color: white; }
 
-#accordion .btn-overlay.cta:active,
-.btn-overlay{
+#accordion .btn-overlay.cta:active, .btn-overlay {
 	color: lighten($patina, 10%) ;
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
 
 #accordion .number h1.display { font-size: 8em; }
-
 
 #ug-body .btn-overlay.cta { background-color: white; padding: 10px;}
 
@@ -286,7 +284,6 @@ input[type="file"] {
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
-
 
 .xl {font-size:12em !important; margin-bottom:-30px !important;}
 
@@ -444,7 +441,7 @@ TABLES ======================================== */
 	padding: 20px 20px 20px 0px;
 }
 
-#cost-tuition table, #page-content table,  {
+#cost-tuition table, #page-content table {
 	margin: 0px;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -491,8 +488,7 @@ table, th, tr, td,
 }
 
 #cost-tuition .table > tbody > tr > th,
-
-table, #page-content table,  {
+table, #page-content table {
 	margin: 20px 0;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -529,11 +525,11 @@ td, #page-content td, #page-content td {
 	padding: 10px 20px 10px 0px;
 }
 
-#transfer th{
+#transfer th {
 	padding-bottom: 5px;
 }
 
-#transfer table, #page-content table,  {
+#transfer table, #page-content table  {
 	margin: 0px;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -583,7 +579,7 @@ td, #page-content td, #page-content td {
 		padding:5px;
 }
 
-#transfer td.last {border-bottom: solid .5px $gray-extra-light;}
+#transfer td.last { border-bottom: solid .5px $gray-extra-light; }
 
 #main-content #interior-wrapper #interior-body #accordion .panel-body ul li.transfer { margin: 5px 0px 5px 30px;}
 
