@@ -102,7 +102,6 @@ body.canvas #wrapper {
 #main-content #interior-wrapper #centerColumn.col-md-9 {
 	padding-right: 0;
 	background: $white;
-	vertical-align: top;
 }
 
 /* UG-BUTTON */
@@ -282,7 +281,8 @@ ul.pagination>li a { background-color: $gray-light; }
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
 #rightColumn .aside-number,
-#rightColumn .aside-content, {
+#rightColumn .aside-content,
+#rightColumn .aside-icon {
 	box-sizing: border-box;
 	padding: 30px 30px 30px 50px;
 	max-width: 100%;
@@ -322,10 +322,6 @@ ul.pagination>li a { background-color: $gray-light; }
 	right: -10000px;
 	width: 400%;
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
-}
-
-#rightColumn .aside-image .aside-image-panel  { /* aside image gold panel - extends off right edge */
-	display: none;
 }
 
 .icon-image {
@@ -372,14 +368,6 @@ ul.pagination>li a { background-color: $gray-light; }
 	font-size:1.2em;
 }
 
-#rightColumn .aside-icon {
-	box-sizing: border-box;
-	padding: 0px 0px 0px 50px;
-	max-width: 100%;
-	width: 100%;
-}
-
-
 /* HEADER ===============================================
 =======================================================*/
 
@@ -408,10 +396,14 @@ ul.pagination>li a { background-color: $gray-light; }
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
 	-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.35);
 	box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.35);
-    }
+  }
 }
 
-#header.ug-header h5.label { font-family: 'Antenna Light', sans-serif; }
+#header.ug-header h6.label {
+	display: inline;
+	width: auto;
+	font-family: 'Antenna Light', sans-serif;
+}
 
 
 /* WORDMARK */
@@ -424,9 +416,10 @@ ul.pagination>li a { background-color: $gray-light; }
     }
 }
 
-#header #wordmark-wrapper { padding-left: 0; }
+#header #wordmark-wrapper { position: relative; padding-left: 0; }
 
-#header #wordmark-wrapper {
+#header #wordmark-wrapper #wordmark {
+	float: left;
 	@include media-breakpoint-down(md) { max-width: 175px; }
 }
 
@@ -437,9 +430,31 @@ ul.pagination>li a { background-color: $gray-light; }
     width: auto !important;
 }
 
-#undergraduate-admissions { float: right; width: 50%; }
+#undergrad-admission h6, #undergrad-admission a h6 {
+	margin: 4px 0 0 15px;
+	padding: 0;
+	font-family: 'Antenna', sans-serif;
+	font-size: 1.35em;
+	color: $gray-extra-dark !important;
+	text-align: right;
+}
 
-#undergrad-admissions h5, #undergrad-admissions h5 a { color: darken($gold-dark, 10%); text-align: right; }
+.home-circle {
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	color: $gray-extra-light;
+	border: solid 1px darken($patina,8%);
+	background-color: none;
+	background-image: url("../images/homepage/home.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 50% 40%;
+}
+
 
 /* FOOTER ===============================================
 =======================================================*/
@@ -549,9 +564,9 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-explore ul li,
 #ug-explore ul li a {
 	width: auto;
-	font-family: 'Antenna Bold', sans-serif;
+	font-family: 'Antenna', sans-serif;
 	font-size: 1.125em;
-	color: $gray-extra-light;
+	color: $gray-light;
 	text-transform: uppercase;
 	border-left: 2px solid darken($gray, 50%);
 	transition: all .25s;
@@ -568,9 +583,9 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-nav ul li a,
 #ug-cta ul li a,
 #ug-explore li a {
-	padding: 20px 25px;
+	padding: 15px 20px;
 	border-left: solid 1px $gray-dark;
-	color:$gray-extra-light !important;
+	color:$gray;
 	span {
 		@include media-breakpoint-down(md) { display: none; }
 	}
@@ -607,7 +622,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 #inset-nav {
-
 	display: inline block;
 	margin: 30px 0 30px;
 	padding:20px;
@@ -642,6 +656,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	top: 0;
 	right: 0;
 	overflow: visible;
+	height: 50px;
 }
 
 .ug-global-nav, .ug-global-search, .ug-global-close {
@@ -649,10 +664,9 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	top: 0;
 	right: 0;
 	margin: 0;
-	padding: 25%;
-	width: 52%;
+	padding: 20%;
+	width: 44%;
 	height: 100%;
-	font-size: 2rem;
 	color: darken($patina-dark, 8%);
 	background-color: darken($patina, 8%);
 	transition: background-color .25s;
@@ -660,13 +674,10 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 		background-color: darken($patina, 5%);
 		color: darken($patina-dark, 5%);
 	}
-	@include media-breakpoint-down(md) {
-		font-size: 1.6em;
-	}
 }
 
 .ug-global-search {
-	right: 52%;
+	right: 44%;
 	background: darken($patina, 8%);
 	color: darken($patina-dark, 12%);
 }
@@ -678,12 +689,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background: none;
 	color: $patina-dark;
 	transition: all .2s;
-
-}
-
-[data-simplersidebar="closed"] .ug-global-close{
-  /* Attribute has this exact value */
-	display:none;
 }
 
 .ug-global-close {
@@ -695,12 +700,16 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 .ug-global-close .glyphicon {
 	position: absolute !important;
 	left: 25%;
-	top: 23%;
-	width: 50% !important;
-	height: 50% !important;
+	top: 25%;
+	font-size: 24px;
 }
 
-.ug-global-search { display: none; }
+.ug-global-search, .ug-global-close {
+	@include media-breakpoint-down(md) {
+		display: inline-block;
+		width: 50%;
+		}
+}
 
 .ug-global-nav-wrapper-desktop {
 	@include media-breakpoint-down(md) { display: none; }
@@ -729,6 +738,24 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 		}
 	}
 }
+
+.ug-global-nav-wrapper-mobile .ug-global-nav,
+#main-sidebar .ug-global-nav {
+	padding: 0;
+	width: 90%;
+}
+
+.ug-global-nav-wrapper-mobile .ug-global-nav .glyphicon,
+#main-sidebar .ug-global-nav .glyphicon {
+	width: auto;
+	height: auto;
+}
+
+.ug-global-nav-wrapper-mobile .ug-global-nav #search-icon,
+#main-sidebar .ug-global-nav #search-icon { left: 15%; }
+
+.ug-global-nav-wrapper-mobile .ug-global-nav #menu-icon,
+#main-sidebar .ug-global-nav #menu-icon { left: 60%; }
 
 #hidden-menu {
 	position: fixed;
