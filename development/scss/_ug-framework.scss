@@ -441,11 +441,12 @@ ul.pagination>li a { background-color: $gray-light; }
 	height: 30px;
 	border-radius: 50%;
 	color: $gray-extra-light;
-	background-color: darken($patina, 8%);
+	border: solid 1px darken($patina,8%);
+	background-color: none;
 	background-image: url("../images/homepage/home.png");
 	background-repeat: no-repeat;
-	background-size: 45%;
-	background-position: 50% 45%;
+	background-size: 80%;
+	background-position: 50% 40%;
 }
 
 
