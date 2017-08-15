@@ -518,7 +518,7 @@ td, #page-content td, #page-content td {
 #page-content table, #page-content th, #page-content tr, #page-content td,
 #page-content table th, #page-content table tr, #page-content table td {
 	padding: 8px 6px 7px;
-	font-family: 'Antenna', san-serif;
+	font-family: 'Antenna', sans-serif;
 	font-size: .95em;
 	line-height: 1.35;
 	letter-spacing: .015em;
@@ -581,7 +581,7 @@ td, #page-content td, #page-content td {
 
 #transfer td.last { border-bottom: solid .5px $gray-extra-light; }
 
-#main-content #interior-wrapper #interior-body #accordion .panel-body ul li.transfer { margin: 5px 0px 5px 30px;}
+#main-content #interior-wrapper #interior-body #accordion .panel-body ul li.transfer { margin: 5px 0px 5px 30px; }
 
 ul.transfer { padding-top:10px;}
 
@@ -616,9 +616,9 @@ span.inset  {
 
 #resources {background-color: $gray-extra-light; }
 
-#resources .canvas-content {padding: 40px; }
+#resources .canvas-content { padding: 40px; }
 
-#resources .number p.body {margin: 4px 0 10px; }
+#resources .number p.body { margin: 4px 0 10px; }
 
 /* ===============================================
 CSS END ======================================= */
