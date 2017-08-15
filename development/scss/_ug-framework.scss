@@ -56,7 +56,13 @@ body.canvas #wrapper {
 
 #interior-wrapper { padding: 0 15px; }
 
-#interior-wrapper-center { padding: 60px 90px 60px 30px; }
+#interior-wrapper-center {
+	padding: 60px 90px 60px 30px;
+@include media-breakpoint-down(md) {
+	padding: 60px 30px 60px 30px;
+}
+
+ }
 
 
 /* MAIN-CONTENT =========================================
@@ -82,7 +88,7 @@ body.canvas #wrapper {
 
 #leftColumn, #centerColumn, #rightColumn { padding: 0;
   @include media-breakpoint-down(md) {
-  	float: left;
+  	/* JMD taking this out to make content flow in responsive come see me before removing float: left;*/
   	display: block;
   }
 }
