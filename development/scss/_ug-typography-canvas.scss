@@ -35,8 +35,6 @@ p a, article.content p a {
 	background-image: none;
 }
 
-p a { font-weight: bold; }
-
 a:hover, article.content p a:hover { color: $patina; cursor: pointer !important; }
 
 p.body.intro { font-size: 1.5em }
@@ -46,7 +44,7 @@ p.body.explainer { margin: -5px 0 10px 0; }
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
 
-h1.display {
+.canvas-content h1.display {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 5em;
   word-spacing: 0.1em;
@@ -68,7 +66,7 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-h5.label { font-family: "Antenna", sans-serif; }
+h5.label { font-family: "Antenna Black", sans-serif; }
 
 .canvas-content h5.label.display-large, .grid .col-xs-3 h5.label.display-large.reverse {
 	margin-bottom: 20px;
@@ -96,7 +94,7 @@ body.canvas p.intro span.leadin { display: inline-block; margin-top: 60px; font-
 /* ===============================================
 NUMBERS ===================================== */
 
-.number { font-family: 'Antenna Comp', sans-serif; margin: 20px 0; }
+.number { font-family: 'Antenna Comp', sans-serif !important; margin: 20px 0; }
 
 .number.display { font-family: 'Antenna Comp'; margin: 10px 0 0; }
 
@@ -476,17 +474,6 @@ TABLES ======================================== */
 	border-top: solid .5px #272727;
 }
 
-table, th, tr, td,
-#page-content table, #page-content th, #page-content tr, #page-content td,
-#page-content table th, #page-content table tr, #page-content table td {
-	padding: 8px 6px 7px;
-	font-family: 'Antenna', san-serif;
-	font-size: .925em;
-	font-weight: 100;
-	line-height: 1.35;
-	letter-spacing: .015em;
-}
-
 #cost-tuition .table > tbody > tr > th,
 table, #page-content table {
 	margin: 20px 0;
@@ -519,6 +506,10 @@ td, #page-content td, #page-content td {
 #page-content table th, #page-content table tr, #page-content table td {
 	padding: 8px 6px 7px;
 	font-family: 'Antenna', sans-serif;
+}
+
+#transfer table, tr, td, th {
+	font-family: 'Antenna', san-serif;
 	font-size: .95em;
 	line-height: 1.35;
 	letter-spacing: .015em;
@@ -580,6 +571,19 @@ td, #page-content td, #page-content td {
 }
 
 #transfer td.last { border-bottom: solid .5px $gray-extra-light; }
+
+table, th, tr, td,
+#page-content table, #page-content th, #page-content tr, #page-content td,
+#page-content table th, #page-content table tr, #page-content table td {
+	padding: 8px 6px 7px;
+	font-family: 'Antenna', san-serif;
+	font-size: .925em;
+	font-weight: 100;
+	line-height: 1.35;
+	letter-spacing: .015em;
+}
+
+#transfer td.last {border-bottom: solid .5px $gray-extra-light;}
 
 #main-content #interior-wrapper #interior-body #accordion .panel-body ul li.transfer { margin: 5px 0px 5px 30px; }
 
