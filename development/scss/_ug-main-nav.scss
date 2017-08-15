@@ -25,7 +25,12 @@
 	height: 100vh;
 }
 
-#main-sidebar { background: rgba(0,0,0,.35); }
+#main-sidebar[style] {
+	background: rgba(0,0,0,.35);
+	@include media-breakpoint-down(sm) {
+		width: 320px !important;
+	}
+}
 
 #main-sidebar h5.label { color: $patina-dark; }
 
@@ -217,6 +222,7 @@
 
 #search-input input[type="text"] {
 	width: 100%;
+	margin: 0;
 	padding: 21px 17px;
 	font-family: "Antenna", sans-serif !important;
 	color: darken($patina, 12%);
@@ -269,6 +275,6 @@ color: $patina-dark;
 	padding: 0 18px 19px 13px;
 }
 
-#internalmenu ul{list-style: none;}
+#internalmenu ul{ list-style: none; }
 
 ul.sub-menu li { border: none !important; }

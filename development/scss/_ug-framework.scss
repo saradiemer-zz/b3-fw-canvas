@@ -109,7 +109,7 @@ button.btn.btn-default.dropdown-toggle,
 button.btn.cta {
 	margin: 0;
   padding: 7px 12px 4px;
-  font-family: 'Antenna Light', sans-serif !important;
+  font-family: 'Antenna', sans-serif !important;
   font-size: .8em !important;
   color: darken($patina, 8%);
   text-align: left;
@@ -421,6 +421,7 @@ ul.pagination>li a { background-color: $gray-light; }
 #header #wordmark-wrapper #wordmark {
 	float: left;
 	@include media-breakpoint-down(md) { max-width: 175px; }
+	@include media-breakpoint-down(sm) { padding-top: 0; border: 0; }
 }
 
 #header #wordmark, #footer-address #wordmark-tag {
@@ -431,17 +432,27 @@ ul.pagination>li a { background-color: $gray-light; }
 }
 
 #undergrad-admission h6, #undergrad-admission a h6 {
-	margin: 4px 0 0 15px;
+	margin: 4px 0 0 40px;
 	padding: 0;
 	font-family: 'Antenna', sans-serif;
-	font-size: 1.35em;
+	font-size: 1.15em;
 	color: $gray-extra-dark !important;
-	text-align: right;
+	text-align: left;
+	@include media-breakpoint-down(md) {
+		margin: 8px 0 0 35px;
+		font-size: 1em;
+	}
+	@include media-breakpoint-down(sm) {
+		margin: 8px 0 0 35px;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
 }
 
 .home-circle {
-	float: right;
-	margin: 0 0 0 5px;
+	float: left;
+	margin: 0;
 	padding: 0;
 	width:30px;
 	height: 30px;
@@ -453,6 +464,9 @@ ul.pagination>li a { background-color: $gray-light; }
 	background-repeat: no-repeat;
 	background-size: 80%;
 	background-position: 50% 40%;
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
 }
 
 
@@ -527,9 +541,16 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	display: none;
 }
 
-.navbar-nav {
+.navbar-nav .row {
 	@include media-breakpoint-down(sm) {
 		margin: 0;
+		padding: 0;
+	}
+}
+
+.navbar-nav {
+	@include media-breakpoint-down(sm) {
+		margin: 0 25px;
 		padding: 0;
 	}
 }
@@ -565,7 +586,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-explore ul li a {
 	width: auto;
 	font-family: 'Antenna', sans-serif;
-	font-size: 1.125em;
+	font-size: 1.05em;
 	color: $gray-light;
 	text-transform: uppercase;
 	border-left: 2px solid darken($gray, 50%);
@@ -682,6 +703,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	display:none;
 }
 
+.ug-global-nav {
+	background: darken($patina, 8%);
+	color: darken($patina-dark, 12%);
+}
+
 .ug-global-search {
 	right: 44%;
 	background: darken($patina, 8%);
@@ -695,6 +721,9 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background: none;
 	color: $patina-dark;
 	transition: all .2s;
+	@include media-breakpoint-down(md) {
+		left: -120%;
+	}
 }
 
 .ug-global-close {
