@@ -477,17 +477,6 @@ TABLES ======================================== */
 	border-top: solid .5px #272727;
 }
 
-table, th, tr, td,
-#page-content table, #page-content th, #page-content tr, #page-content td,
-#page-content table th, #page-content table tr, #page-content table td {
-	padding: 8px 6px 7px;
-	font-family: 'Antenna', san-serif;
-	font-size: .925em;
-	font-weight: 100;
-	line-height: 1.35;
-	letter-spacing: .015em;
-}
-
 #cost-tuition .table > tbody > tr > th,
 
 table, #page-content table,  {
@@ -576,6 +565,17 @@ td, #page-content td, #page-content td {
 		border-radius: 50%;
 		text-align: center;
 		padding:5px;
+}
+
+table, th, tr, td,
+#page-content table, #page-content th, #page-content tr, #page-content td,
+#page-content table th, #page-content table tr, #page-content table td {
+	padding: 8px 6px 7px;
+	font-family: 'Antenna', san-serif;
+	font-size: .925em;
+	font-weight: 100;
+	line-height: 1.35;
+	letter-spacing: .015em;
 }
 
 #transfer td.last {border-bottom: solid .5px $gray-extra-light;}
