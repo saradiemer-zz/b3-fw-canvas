@@ -92,6 +92,7 @@ h5.label.maroon {
 	line-height: 1.35;
 	text-transform: uppercase;
 }
+
 /* INTERIOR-IMAGES */
 #main-content #interior-wrapper #interior-pano-image {
 	float: left;
@@ -104,6 +105,17 @@ h5.label.maroon {
 	margin: 0;
 }
 /* END - INTERIOR-TYPOGRAPHY - INTERIOR-IMAGES */
+
+/* LISTS */
+ol li, ul li {
+	margin: 5px 0;
+	list-style: none;
+	list-style-type: none;
+}
+
+ol ol, ul ul { margin: 7px 7px 7px 21px; }
+
+
 /* TIPS - FAST FIVE */
 #ug-tips {
 	float: left;
