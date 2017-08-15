@@ -300,7 +300,8 @@ h5.label.maroon {
 
 ul li a, p a {
 	color:darken($patina, 8%);
-	background:none;
+	background: none;
+	background-image: none !important;
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
@@ -344,8 +345,8 @@ div > table.stacktable.large-only > tbody > tr > td {
 }
 
 #interior-wrapper-right div.number h1 {
-	font-size:5em;
-  padding-top: 20%;
+	font-size:7em;
+  padding-top: 15%;
 	padding-bottom: 8%;
 }
 
@@ -355,7 +356,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #interior-wrapper-right div.aside-icon .col-md-3 {
     border-top: solid 1px #5f5f5f;
-		padding-top: 8%;
+		padding-top: 5%;
 }
 
 
@@ -368,8 +369,19 @@ div > table.stacktable.large-only > tbody > tr > td {
 	    color:darken($patina, 8%);
 }
 
+#interior-wrapper-right .aside-icon img{
+		width: 70%;
+}
+
+#interior-wrapper-right .number p.explainer {
+    margin-top: 5px;
+		font-size: 80%;
+}
+
 #interior-wrapper-right > div:nth-child(4) > p {margin-top: 5px !important;}
 
 #interior-wrapper-right h1.number.display.large { font-size: 7em; }
 
 #interior-wrapper-right h1.number.display.small { font-size: 5em !important; }
+
+.ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}

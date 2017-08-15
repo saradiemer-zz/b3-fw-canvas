@@ -194,6 +194,7 @@ ul#tabs.nav.nav-pills {
 	border-color:$patina-dark;
 }
 
+li.transfer { list-style-type: square !important; }
 
 .icon { width: 60%; margin-bottom:10px; border-radius: 100%; }
 
@@ -515,11 +516,86 @@ td, #page-content td, #page-content td {
 	border-bottom: solid 1px #cccccc;
 }
 
+/* Let's get started */
+
+#transfer table, tr, td, th,
+#page-content table, #page-content th, #page-content tr, #page-content td,
+#page-content table th, #page-content table tr, #page-content table td {
+	padding: 8px 6px 7px;
+	font-family: 'Antenna', san-serif;
+	font-size: .95em;
+	line-height: 1.35;
+	letter-spacing: .015em;
+	padding: 10px 20px 10px 0px;
+}
+
+#transfer th{
+	padding-bottom: 5px;
+}
+
+#transfer table, #page-content table,  {
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+}
+
+#transfer tr, #page-content tr, #page-content table tr { border:none; }
+
+#transfer tr th, #page-content tr th {
+	font-weight: bold;
+	letter-spacing: .5px;
+	color: $gray-extra-dark;
+	text-transform: uppercase;
+  border-bottom: solid 1px $gray-extra-dark;
+	border-right: none;
+	border-left: none;
+	font-size: .8em;
+	background: none;
+}
+
+#transfer td, #page-content td, #page-content td {
+	vertical-align: top;
+	width: auto;
+	border:none;
+	color: $gray-extra-dark;
+	border-bottom: solid .5px $gray;
+}
+
+#transfer.table > tbody > tr > th {
+	border-top: solid .5px #272727;
+}
+
+#highlight-2 > div > h5 > span {
+    float: left;
+    margin-top: -8px;
+    margin-right: 6px;
+    font-family: 'Antenna Bold',sans-serif!important;
+    font-size: .725em;
+    background: $gray-extra-dark;
+    border: 3px solid $gold;
+		display: table;
+		width: 35px;
+		height: 35px;
+		color: $white;
+		border-radius: 50%;
+		text-align: center;
+		padding:5px;
+}
+
+#transfer td.last {border-bottom: solid .5px $gray-extra-light;}
+
+#main-content #interior-wrapper #interior-body #accordion .panel-body ul li.transfer { margin: 5px 0px 5px 30px;}
+
+ul.transfer { padding-top:10px;}
+
+li span.antenna {font-size: .875em;}
+
 .blog-hide { color:darken($gray-light, 8%); }
 
 #resources .icon img {
 	width: 100%;
-	margin-top:-10px;
+	margin-top:-30px;
 }
 
 #resources h5 {

@@ -150,6 +150,12 @@
 
 			}
 			$('.panel-heading .subhead', tmpPanel).append(item.html());
+            $('.panel-heading .subhead span a', tmpPanel).click(function(e) {
+                e.preventDefault();
+                e.target.parentNode.parentNode.childNodes[0].click();
+                return false;
+
+            });
 			item.hide();
 		});
 	});

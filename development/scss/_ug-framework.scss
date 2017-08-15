@@ -96,6 +96,7 @@ body.canvas #wrapper {
 #main-content #interior-wrapper #centerColumn.col-md-9 {
 	padding-right: 0;
 	background: $white;
+	vertical-align: top;
 }
 
 /* UG-BUTTON */
@@ -275,8 +276,7 @@ ul.pagination>li a { background-color: $gray-light; }
 #rightColumn .aside-caption,
 #rightColumn .aside-quote,
 #rightColumn .aside-number,
-#rightColumn .aside-content,
-#rightColumn .aside-icon {
+#rightColumn .aside-content, {
 	box-sizing: border-box;
 	padding: 30px 30px 30px 50px;
 	max-width: 100%;
@@ -316,6 +316,10 @@ ul.pagination>li a { background-color: $gray-light; }
 	right: -10000px;
 	width: 400%;
 	background: url('../images/site/texture-transparent.png') $gold; /* texture */
+}
+
+#rightColumn .aside-image .aside-image-panel  { /* aside image gold panel - extends off right edge */
+	display: none;
 }
 
 .icon-image {
@@ -361,6 +365,14 @@ ul.pagination>li a { background-color: $gray-light; }
 	font-family: 'Antenna Light', san-serif;
 	font-size:1.2em;
 }
+
+#rightColumn .aside-icon {
+	box-sizing: border-box;
+	padding: 0px 0px 0px 50px;
+	max-width: 100%;
+	width: 100%;
+}
+
 
 /* HEADER ===============================================
 =======================================================*/
@@ -659,6 +671,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	background: none;
 	color: $patina-dark;
 	transition: all .2s;
+
+}
+
+[data-simplersidebar="closed"] .ug-global-close{
+  /* Attribute has this exact value */
+	display:none;
 }
 
 .ug-global-close {
