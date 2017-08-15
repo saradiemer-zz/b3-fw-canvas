@@ -10,7 +10,7 @@ gulp.task('t4_media', function() {
 	console.log('[gulp]: T4 Media');
 	return gulp.src(config.publicDir + '/T4*.html')
 	//change references	in html
-	.pipe(replace('/css/styles.css', '<t4 type="media" id="465612" formatter="path/*"/>'))
+	.pipe(replace('/css/styles.css', '<t4 type="media" id="472265" formatter="path/*"/>'))
 	.pipe(replace('/js/all.min.js', '<t4 type="media" id="466247" formatter="path/*"/>'))
 	.pipe(replace('<script src="/js/all.js"></script>', ''))
 	//send to t4Dir
