@@ -223,3 +223,4 @@ function myFunction() {
   };
 
 }(jQuery));
+$( "#nav li:nth-child(4) a" ).html('Other <span class="hidden-md"> applicants</span>');
