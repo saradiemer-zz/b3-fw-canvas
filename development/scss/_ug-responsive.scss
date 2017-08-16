@@ -439,12 +439,16 @@ span.hexagon {
 			@include media-breakpoint-down (md){
 				width:50%;
 				float:left;
+				img.icon {
+					margin-top: 0;
+					width:35%;
+					}
+				}
 		}
 		@include media-breakpoint-down (xs){
-			width:100%;
+			width:50%;
 			float:left;
 		}
-}
 	.col-md-8 {
 		@include media-breakpoint-down (md){
 			width:100%;
