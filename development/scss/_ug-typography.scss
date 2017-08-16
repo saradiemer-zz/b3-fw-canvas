@@ -24,7 +24,7 @@ h2 {
 	padding-bottom: 10px;
 }
 
-#ug-body h1.display {
+#ug-body h1.display, #ug-body .number h1.display {
 	font-family: "Antenna Black", sans-serif;
 	padding-bottom: 10px;
 	@include media-breakpoint-up (md) {
@@ -33,6 +33,14 @@ h2 {
 	@include media-breakpoint-down (sm){
 		font-size: 3.5em;
 	}
+}
+
+#ug-body .number h1.display {
+	@include media-breakpoint-up (md) { font-size: 3em; }
+}
+
+#ug-body .number.display h1.display {
+	@include media-breakpoint-up (md) { margin: 10px 0 5px; }
 }
 
 #ug-body p.body.intro { font-size: 1.45em; line-height: 1.7em; }
@@ -46,6 +54,8 @@ span.leadin {
 	line-height: 2;
 	text-transform: uppercase;
 }
+
+span.body.leadin { font-size: 1em;  }
 
 .body {
 	margin: 0 0 15px;
@@ -122,6 +132,7 @@ ol li, ul li {
 	margin: 5px 0;
 	list-style: none;
 	list-style-type: none;
+	list-style-image: url('images/site/li.png');
 }
 
 ol ol, ul ul { margin: 7px 7px 7px 21px; }
