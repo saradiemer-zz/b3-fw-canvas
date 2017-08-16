@@ -44,7 +44,7 @@
 	    font-size: 4em;
 		}
 		@include media-breakpoint-down (xs) {
-				font-size: 3em;
+				font-size: 2.25em;
 			}
 		}
 	h5.label.display-large {
@@ -411,5 +411,52 @@ span.hexagon {
 	border-bottom: solid .5px #272727;
 	}
 }
+
+#cost-resources {
+	.col-md-3 {
+		@include media-breakpoint-down (md){
+			.vertical-rule-right {
+				display:none;
+			}
+			 padding-top: 15px;
+			 border-top: solid 1px $gray-light;
+			 span.inset {
+				 width:10%;
+				 margin-bottom: 10px;
+			 }
+		}
+	}
+	.first-column { border-top: none !important;}
+	.col-md-12 {
+		@include media-breakpoint-down (md){
+			margin-bottom: 0px;
+		}
+	}
+}
+
+#resources {
+	.col-md-2 {
+			@include media-breakpoint-down (md){
+				width:50%;
+				float:left;
+		}
+		@include media-breakpoint-down (xs){
+			width:100%;
+			float:left;
+		}
+}
+	.col-md-8 {
+		@include media-breakpoint-down (md){
+			width:100%;
+			float: left;
+			padding: 20px 0 0 0;
+			border-top: solid 1px $gray-light;
+			.vertical-rule-right {
+				display:none;
+			}
+		}
+	}
+}
+
 
 /* END - CANVAS-NUMBERS */
