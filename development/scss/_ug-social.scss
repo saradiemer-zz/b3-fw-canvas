@@ -28,13 +28,17 @@
 	margin: 0 0 0 10px;
 	@include media-breakpoint-down(sm) {margin: 0 5px 0 5px;}
 	padding: 0;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	list-style: outside none none;
 	border: none;
 	border-radius: 20px;
 	background-color: lighten($gray-dark, 5%);
 	overflow: hidden;
+	@include media-breakpoint-down(lg) {
+		width: 32px;
+		height: 32px;
+  }
 }
 
 #social.social-gold li a:hover { background-color: darken($patina, 2%); }
@@ -43,15 +47,19 @@
 	display: block;
 	margin: 0 !important;
 	padding: 0;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	text-indent: -9999px;
 	border: none;
 	border-radius: 0;
-	background: url("../images/site/ug-social-icons.png") no-repeat scroll 0 0 $gray-dark;
-	background-image: url("../images/site/ug-social-icons.png") no-repeat scroll 0 0 $gray-dark !important;
+	background: url("../images/site/ug-social-icons.png") no-repeat scroll 0 0 lighten($gray-dark, 5%);
+	background-image: url("../images/site/ug-social-icons.png") no-repeat !important;
 	background-size: 100%;
-	opacity: 1;
+	opacity: .8;
+	@include media-breakpoint-down(lg) {
+		width: 32px;
+		height: 32px;
+	}
 }
 
 #social.social-gold li a:hover {

@@ -50,6 +50,9 @@ article figure {
 	left: 35%;
 	margin: 0;
 	padding: 0;
+  @include media-breakpoint-down(lg) {
+    left: 45%;
+  }
 }
 
 .column {
@@ -57,6 +60,9 @@ article figure {
 	padding: 0 0 0 0;
   width: 30%;
 	border: none;
+  @include media-breakpoint-down(lg) {
+    width: 40%;
+  }
 }
 
 /* GALLERY IMAGES - LOCATION - BG - BASE */
@@ -74,6 +80,11 @@ figure img { display: block; }
   background: $gray-extra-light;
   box-shadow: 0px 0px 25px rgba(0,0,0,.65);
   @media screen and (min-width:1350px) { .panoramic img { width: 45vw; } }
+  @include media-breakpoint-down(lg) {
+    margin: 10px 15px;
+    padding: 15px;
+    width: 42vw;
+  }
 }
 
 /* HEADLINE BOXES - BASE */
@@ -136,6 +147,15 @@ header.explore-cta-wrapper {
     border-right: 0;
     border-radius: 0;
     padding: 20px 2%;
+  }
+}
+
+#explore-study-abroad-wrapper.explore-cta {
+  @include media-breakpoint-down(lg) {
+  padding: 30px 30px;
+  height: auto;
+  border: solid 2px $patina;
+  border-radius: 5px;
   }
 }
 
