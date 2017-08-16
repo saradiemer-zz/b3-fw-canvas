@@ -553,8 +553,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 		margin: 0 25px;
 		padding: 0;
 	}
-}
+	@include media-breakpoint-down(xs) {
 
+	}
+}
+@media (max-width: 320px) {.navbar-nav {margin: 0 5px;}}
 #ug-nav #navbar, #footer #ug-cta ul#nav {
 	float: left;
 	width: 80%;
