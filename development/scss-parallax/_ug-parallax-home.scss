@@ -272,7 +272,7 @@ article .grid .col-xs-12 .col-xs-3 {
   content: "";
   width: auto;
   padding-top: 56.25%;
-/*  background: url(../images/explore/explore-grid-dark-small.png) repeat; */
+  background: url(../images/explore/explore-grid-dark-small.png) repeat;
 }
 
 .grid-title-box-text {
@@ -375,6 +375,18 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-residential-life   { top: 0px; }
 #explore-cost-value         { top: 0px; }
 #explore-apply-visit-info   { top: 0px; }
+
+#explore-why-loyola:before,
+#explore-service-grid:before,
+#explore-social-justice:before,
+#explore-academics-chicago:before,
+#explore-study-abroad:before,
+#explore-life-grid:before,
+#explore-residential-life:before,
+#explore-cost-value:before,
+#explore-apply-visit-info:before {
+  background: url("../images/explore/explore-grid-dark-small.png") repeat;
+}
 
 #explore-intro .explore-cta-button img { background-image: none; cursor: pointer; }
 
