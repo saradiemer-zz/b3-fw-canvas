@@ -554,8 +554,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 		margin: 0 25px;
 		padding: 0;
 	}
-}
+	@include media-breakpoint-down(xs) {
 
+	}
+}
+@media (max-width: 320px) {.navbar-nav {margin: 0 5px;}}
 #ug-nav #navbar, #footer #ug-cta ul#nav {
 	float: left;
 	width: 80%;
@@ -603,6 +606,14 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	padding: 0;
 	list-style: none;
 }
+#ug-cta ul.nav,#ug-cta ul.social,#ug-social-wrapper {
+  @include media-breakpoint-down(sm) {  margin: 0 auto;
+    float: none!important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;}
+}
+
 
 #ug-nav ul li a,
 #ug-cta ul li a,

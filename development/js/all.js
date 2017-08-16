@@ -223,4 +223,8 @@ function myFunction() {
   };
 
 }(jQuery));
-$( "#nav li:nth-child(4) a" ).html('Other <span class="hidden-md"> applicants</span>');
+$( "#nav li:nth-child(4) a" ).html('Other <span class="hidden-md"> Applicants</span>');
+$( "#navbar-footer li:nth-child(1) a" ).html('<span class="hidden-md">Come </span>Visit');
+$( "#navbar-footer li:nth-child(2) a" ).html('Apply<span class="hidden-md"> Now</span>');
+$( "#navbar-footer li:nth-child(3) a" ).html('<span class="hidden-md">Get </span>Info</a>');
+$( "#navbar-footer li:nth-child(4) a" ).html('<span class="hidden-md">Check </span>Status</a>');

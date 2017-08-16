@@ -26,6 +26,7 @@
 #social.social-gold li {
 	float: left;
 	margin: 0 0 0 10px;
+	@include media-breakpoint-down(sm) {margin: 0 5px 0 5px;}
 	padding: 0;
 	width: 40px;
 	height: 40px;
