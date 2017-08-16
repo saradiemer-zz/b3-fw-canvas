@@ -128,14 +128,26 @@ h5.label.maroon {
 /* END - INTERIOR-TYPOGRAPHY - INTERIOR-IMAGES */
 
 /* LISTS */
+
+ul { margin-left: 35px; }
+
+ol, dl { margin-left: 25px; }
+
 ol li, ul li {
-	margin: 5px 0;
+	margin: 12px 0 10px;
 	list-style: none;
 	list-style-type: none;
-	list-style-image: url('images/site/li.png');
 }
 
-ol ol, ul ul { margin: 7px 7px 7px 21px; }
+ul li {
+list-style-image: url('../images/site/li.png');
+}
+
+ol ol, ul ul { margin: 7px 7px 18px 12px; }
+
+ul ul li:first-child { margin-top: 10px; }
+
+ul ul li { margin: 6px 0 6px; }
 
 
 /* TIPS - FAST FIVE */
@@ -429,4 +441,9 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #interior-wrapper-center ol a[style], #interior-wrapper-center ol a, #interior-wrapper-right ol a[style], #interior-wrapper-right ol a  {
 	font-weight:100 !important;
+}
+
+.spacer-section {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
 }
