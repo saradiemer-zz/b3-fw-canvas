@@ -96,6 +96,10 @@ figure img { display: block; }
 	margin: 0 0 0 -550px;
 	width: 1100px;
 	height: 20%;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    margin: 0 0 0 -50%;
+  }
 }
 
 .chapter header p {
@@ -127,6 +131,12 @@ header.explore-cta-wrapper {
   border-radius: 5px;
   background-color: rgba(0,0,0,.75);
   box-shadow: 0px 0px 15px $bg-overlay;
+  @include media-breakpoint-down(lg) {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 20px 2%;
+  }
 }
 
 .explore-cta h1, .explore-cta h2, .explore-cta h5 {
@@ -185,15 +195,16 @@ header.explore-cta-wrapper {
 	text-align: center;
 	border: solid 2px $patina;
 	border-radius: 50%;
-	background-color: rgba(0,0,0,.75);
+	background-color: rgba(0,0,0,.9);
 	opacity: .85;
   @include media-breakpoint-down(lg) {
+    margin: 5px auto 0 !important;
     width: 50px;
     height: 50px;
   }
 }
 
-.explore-cta-button:hover{cursor: pointer;}
+.explore-cta-button:hover{ cursor: pointer; }
 .explore-cta-button.apply {margin: 50px auto 0 !important;}
 
 .explore-cta-button img {
@@ -210,6 +221,18 @@ header.explore-cta-wrapper {
 button h5.label { margin: 2px 0 0; text-align: center; }
 
 /* IMAGE GRID - IMAGE GRID TITLE BOX */
+
+article .grid .col-xs-12 .col-xs-3:first-of-type {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+article .grid .col-xs-12 .col-xs-3 {
+  @include media-breakpoint-down(lg) {
+    width: 33.333%
+  }
+}
 
 .grid {
   display: block;
@@ -268,8 +291,8 @@ button h5.label { margin: 2px 0 0; text-align: center; }
 
 #explore-service-grid .grid-title-box h5.label a, #explore-life-grid .grid-title-box h5.label a {
   font-family: 'Antenna Black', sans-serif !important;
-  font-size: 2.15em !important;
-  color: darken($gray-light, 10%);
+  font-size: 2em !important;
+  color: darken($gray-light, 3%);
 }
 
 /* BUTTON - CUSTOM */
@@ -282,8 +305,23 @@ button h5.label { margin: 2px 0 0; text-align: center; }
   background: rgba(0,0,0,.35);
   h5 {
     font-family: 'Antenna Bold', sans-serif;
-    color: $gray-light !important; }
+    color: darken($gray-light,10%) !important; }
+  transition: all .2s;
 }
+
+#explore-apply-visit-info-wrapper button:hover {
+  background: darken($patina, 8%);
+  color: darken($gray-light,10%)
+}
+
+#explore-apply-visit-info-wrapper button:focus {
+  outline: none !important;
+  outline-offset: 0;
+}
+
+#explore-apply-visit-info-wrapper h5.label { color: darken($gray-light,10%); }
+
+#explore-apply-visit-info-wrapper h5.label:hover { color: darken($gray-light,10%); }
 
 /* NUMBERS */
 
@@ -342,31 +380,6 @@ button h5.label { margin: 2px 0 0; text-align: center; }
   background-size: cover;
   }
 }
-
-/* BACKGROUND IMAGE - IMAGE OVERLAY */
-
-/*
-#explore-life-grid .grid-title-box:after,
-#explore-service-grid .grid-title-box:after,
-#explore-why-loyola:after,
-#explore-social-justice:after,
-#explore-academics-chicago:after,
-#explore-study-abroad:after,
-#explore-residential-life:after,
-#explore-cost-value:after,
-#explore-apply-visit-info:after,
- {
-    content: "";
-    background: url(../images/explore/explore-grid-dark-small.png) repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    opacity: 1;
-}
-*/
 
 /* HEADLINE - READOUTS - MARGIN - WIDTH */
 
