@@ -2,8 +2,8 @@
 MODULES - CARD
 ================================================*/
 
-body.modules #wrapper, body.jd.canvas.touch #wrapper {
-  background: url('/images/backgrounds/bg-shield-gold-patina.jpg') no-repeat center center !important;
+body.modules #wrapper {
+  background:url('/images/backgrounds/bg-grid-light-small.png')repeat top left, url('/images/backgrounds/bg-shield-gold-patina.jpg') no-repeat center center !important;
   -webkit-background-size: auto, cover !important;
   -moz-background-size: auto, cover !important;
   -o-background-size: auto, cover !important;
@@ -14,14 +14,14 @@ body.modules #wrapper, body.jd.canvas.touch #wrapper {
   margin: 15px 0;
   padding: 20px;
   border-radius: 0 0 0 26px;
-  background: $bg-overlay-dark;
+  background: $gray-extra-light;
   img { margin: 0 0 5px 0; }
 }
 
 .card h6,
 .card .card-title,
 .card .card-text {
-  color: $gray-light;
+  color: $gray-extra-dark;
 }
 
 .card .card-title {
@@ -50,7 +50,7 @@ body.modules #wrapper, body.jd.canvas.touch #wrapper {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: none;
-	background-color: lighten($bg-overlay, 20%);
+	background-color: lighten($bg-overlay, 20%) !important;
 	background-image: none;
 	border: 1px $patina solid;
 	border-radius: 30px;
