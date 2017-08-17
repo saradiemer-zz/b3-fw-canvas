@@ -367,6 +367,9 @@ span.hexagon {
 	@include media-breakpoint-down(md){
 		margin-bottom:40px;
 	}
+	@include media-breakpoint-down(sm){
+		margin-left:-10px;
+	}
 }
 
 .average, .award {
@@ -428,6 +431,9 @@ span.hexagon {
 				 width:10%;
 				 margin-bottom: 10px;
 			 }
+		}
+		@include media-breakpoint-down (sm){
+			padding-left: 0;
 		}
 	}
 	.first-column { border-top: none !important;}
