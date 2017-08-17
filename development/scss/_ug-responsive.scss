@@ -367,6 +367,9 @@ span.hexagon {
 	@include media-breakpoint-down(md){
 		margin-bottom:40px;
 	}
+	@include media-breakpoint-down(sm){
+		margin-left:-10px;
+	}
 }
 
 .average, .award {
@@ -429,6 +432,9 @@ span.hexagon {
 				 margin-bottom: 10px;
 			 }
 		}
+		@include media-breakpoint-down (sm){
+			padding-left: 0;
+		}
 	}
 	.first-column { border-top: none !important;}
 	.col-md-12 {
@@ -443,9 +449,9 @@ span.hexagon {
 			@include media-breakpoint-down (md){
 				width:50%;
 				float:left;
-				img.icon {
+				.icon img {
 					margin-top: 0;
-					width:35%;
+					width: 75%;
 					}
 				}
 		@include media-breakpoint-down (xs){
