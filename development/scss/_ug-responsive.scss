@@ -439,9 +439,9 @@ span.hexagon {
 			@include media-breakpoint-down (md){
 				width:50%;
 				float:left;
-				img.icon {
+				.icon img {
 					margin-top: 0;
-					width:35%;
+					width: 75%;
 					}
 				}
 		@include media-breakpoint-down (xs){
