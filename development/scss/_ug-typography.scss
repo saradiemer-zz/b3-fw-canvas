@@ -347,7 +347,7 @@ ul ul li { margin: 6px 0 6px; }
 ul li a, p a {
 	color:darken($patina, 8%);
 	background: none;
-	background-image: none;
+	background-image: none !important;
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
