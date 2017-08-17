@@ -1,3 +1,7 @@
+.col-md-9 {
+	@include media-breakpoint-down(sm) { padding-left: 0; padding-right: 0; }
+}
+
 #res-life-video, #chicago-video, #cost-video, #outcomes-video, #green-video, #study-abroad-video {
 	@include media-breakpoint-down(sm) { display:none; }
 }
@@ -262,7 +266,7 @@ ul#tabs.nav.nav-pills {
 	}
 }
 
-.small-circle, .square, .triangle, .hexagon, .diamond,  {
+.small-circle, .square, .triangle, .hexagon, .diamond, .square-green {
 	@include media-breakpoint-down(md){
 		float:left; margin-right: 10px;
 	}
