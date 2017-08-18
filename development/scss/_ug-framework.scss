@@ -494,6 +494,7 @@ footer .col-sm-12 { padding: 0; } /* footer-address wrapper */
   background-color: $gold;
 	@include media-breakpoint-down(sm) {
 		padding: 10px 20px;
+		font-size: .85em;
 	}
 }
 
@@ -615,6 +616,13 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;}
+}
+
+#ug-social-wrapper {
+	  @include media-breakpoint-down(sm) {
+		padding: 4px 4px 40px 4px;
+		background-color: lighten($gray-dark, 5%);
+	}
 }
 
 
