@@ -613,11 +613,16 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 #ug-cta ul.nav,#ug-cta ul.social,#ug-social-wrapper {
   @include media-breakpoint-down(sm) {  margin: 0 auto;
     float: none!important;
-		padding: 4px 4px 40px 4px;
-		background-color: lighten($gray-dark, 5%);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;}
+}
+
+#ug-social-wrapper {
+	  @include media-breakpoint-down(sm) {
+		padding: 4px 4px 40px 4px;
+		background-color: lighten($gray-dark, 5%);
+	}
 }
 
 
