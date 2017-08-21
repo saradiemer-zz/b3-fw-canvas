@@ -68,3 +68,30 @@ body.modules #wrapper {
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
+
+/* GRID-LIGHT - CARD */
+
+.col-one-third { float: left; width: 31.25%; }
+
+.grid-light .card {
+  box-sizing: border-box;
+  margin: 10px 1%;
+  padding: 15px;
+  background: $gray-extra-light;
+}
+
+.grid-light .card h6,
+.grid-light .card .card-title,
+.grid-light .card .card-text { color: $gray-extra-dark; }
+
+.grid-light .card h6 {
+  margin: 5px 0 10px;
+  color: $gray-extra-dark;
+  font-size: .75em;
+}
+
+.grid-light .card .card-title { margin: 5px 0 0 0; font-size: 1.15em; text-transform: none; }
+
+.grid-light .card .card-text { margin: 0 0 15px 0; }
+
+.grid-light .card p.card-text { line-height: 1.5; }
