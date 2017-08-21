@@ -70,9 +70,8 @@ span.body.leadin { font-size: 1em;  }
 	margin-bottom: 0 !important;
 }
 
-#main-content #interior-wrapper #leftColumn h5.category,
-#main-content #interior-wrapper #rightColumn h5.category {
-	margin: 0;
+#main-content #interior-wrapper #rightColumn p.body.small {
+	line-height: 1.55;
 }
 
 h5.label.maroon {
@@ -97,9 +96,14 @@ h5.label.maroon {
 	font-size: 2.75em;
 }
 
+#ug-body h2.label-chapter-secondary {
+@include media-breakpoint-down (sm) { width:95% }
+
+}
 #ug-body h2.display.process-headline {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 6em;
+	@include media-breakpoint-down (sm) { font-size:3em; }
 	line-height: 1;
 	text-transform: uppercase;
 }
@@ -129,7 +133,13 @@ h5.label.maroon {
 
 /* LISTS */
 
-ul { margin-left: 35px; }
+ul {
+	margin-left: 35px;
+@include media-breakpoint-down(sm) {
+	margin-left: 10px;
+}
+
+ }
 
 ol, dl { margin-left: 25px; }
 
@@ -152,7 +162,7 @@ ul ul li { margin: 6px 0 6px; }
 
 /* TIPS - FAST FIVE */
 #ug-tips {
-	float: left;
+
 	margin: 30px 0 0;
 	padding: 30px 0 0;
 	width: 100%;
@@ -209,6 +219,10 @@ ul ul li { margin: 6px 0 6px; }
 	margin: 0 0 0 5px;
 	padding: 0;
 	list-style-type: none;
+	@include media-breakpoint-down (sm){
+		margin: 12px 0 0 -25px;
+
+	}
 }
 
 #ug-tips.list ul {
@@ -237,7 +251,7 @@ ul ul li { margin: 6px 0 6px; }
 
 .ug-tips-list {
 	display: block;
-	float: left !important;
+
 }
 
 .ug-tips-list p {
@@ -314,9 +328,15 @@ ul ul li { margin: 6px 0 6px; }
 	padding-left: 10px;
 	font-size: 0.75em;
 	line-height: 1.65;
-
 	text-align: left;
 	border-left: solid 1px $gray-light;
+@include media-breakpoint-down (sm){
+	display:block;
+	border:0;
+	margin:0 0 10px 0;
+
+}
+
 }
 #ug-tips.recommend .ug-tips-list > ul.ug-tips-columns li p{	text-transform: uppercase;	font-size: 1em;}
 
@@ -338,6 +358,9 @@ ul ul li { margin: 6px 0 6px; }
 	line-height: 1.45;
 	text-transform: uppercase;
 	text-align: center;
+	@include media-breakpoint-down (sm){
+		display:none;
+	}
 }
 
 #ug-tips .ug-tips-q-and-a p {
@@ -433,14 +456,16 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-right p a[style], #interior-wrapper-right p a  {
 	font-weight:100 !important;
+	text-decoration:none !important;
 }
 
 #interior-wrapper-center ul a[style], #interior-wrapper-center ul a, #interior-wrapper-right ul a[style], #interior-wrapper-right ul a  {
 	font-weight:100 !important;
+	text-decoration:none !important;
 }
 
-#interior-wrapper-center ol a[style], #interior-wrapper-center ol a, #interior-wrapper-right ol a[style], #interior-wrapper-right ol a  {
-	font-weight:100 !important;
+article.content p a, article.content a {
+	background-image :none !important;
 }
 
 .spacer-section {

@@ -126,7 +126,7 @@
 	}
 	@include media-breakpoint-down (sm) {
 		float:left;
-		width: 100%;
+		img { width: 50%; }
 	}
 }
 
@@ -312,6 +312,21 @@ span.hexagon {
 	}
 }
 
+#green-intro {
+	.number.col-md-2.fourth-column {
+		@include media-breakpoint-down (md) {
+		.vertical-rule-right {display:none !important;}
+		}
+	}
+	.number.col-md-2 {
+		@include media-breakpoint-down (sm) {
+			width:75%;
+			margin-right:10px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
 ////////* GRID *////////
 
 .grid .col-xs-3 {
@@ -366,6 +381,9 @@ span.hexagon {
 .col-md-5.table-content {
 	@include media-breakpoint-down(md){
 		margin-bottom:40px;
+	}
+	@include media-breakpoint-down(sm){
+		margin-left:-20px;
 	}
 }
 
@@ -429,6 +447,9 @@ span.hexagon {
 				 margin-bottom: 10px;
 			 }
 		}
+		@include media-breakpoint-down (sm){
+			padding-left: 0;
+		}
 	}
 	.first-column { border-top: none !important;}
 	.col-md-12 {
@@ -443,15 +464,11 @@ span.hexagon {
 			@include media-breakpoint-down (md){
 				width:50%;
 				float:left;
-				img.icon {
+				.icon img {
 					margin-top: 0;
-					width:35%;
+					width: 75%;
 					}
 				}
-		@include media-breakpoint-down (xs){
-			width:50%;
-			float:left;
-		}
 	}
 	.col-md-8 {
 		@include media-breakpoint-down (md){

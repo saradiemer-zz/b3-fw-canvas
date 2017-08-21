@@ -24,7 +24,6 @@ p a, article.content p a {
 	outline: none;
 	outline-offset: 0;
 	text-decoration: none;
-	background-image: url('<t4 type="media" id="406288" formatter="path/*"/>');
 	background-repeat: no-repeat;
 	background-repeat: repeat-x;
 	background-position: 0 100%;
@@ -422,6 +421,8 @@ p.body.footnote { color: $gray; font-size: .9em;}
 .light-gray {color:$gray;}
 
 #cost-tuition h5 {padding-bottom: 30px;}
+
+#cost_intro {font-size:1em;margin-top:-2em;padding:0 0 1em 0;display:none;}
 
 #cost-tuition h3 {font-size: 170%;}
 

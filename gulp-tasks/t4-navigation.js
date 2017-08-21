@@ -12,7 +12,7 @@ gulp.task('t4_nav', function() {
 	return gulp.src(config.T4Dir + '/T4*.html')
 		.pipe(htmlreplace({
 		'customjs': '<t4 type="navigation" id="406"/>',
-		'navtitle': '<cfset prefixtitle="<t4 type="navigation" id="630"/>"><cfif prefixtitle neq ""><title><cfoutput>#variables.prefixtitle#</cfoutput></title><cfelse><title>Undergraduate Admission | Loyola University Chicago | <t4 type="navigation" id="77"/></title></cfif>',
+		'navtitle': '<cfset prefixtitle="<t4 type="navigation" id="630"/>"><cfif prefixtitle neq ""><title><cfoutput>#variables.prefixtitle#</cfoutput></title><cfelse><title><t4 type="title" append-content="true" append-element="Title" separator="! " /> | Loyola University Chicago</title></cfif>',
 		'description': '<meta name="Description" content="<t4 type="navigation" id="167"/>" />',
 		'pageid': '<meta name="PageID" content="<t4 type="navigation" id="462"/>" />',
 		'ogtitle': '<meta property="og:title" content="<t4 type="navigation" id="166"/> <t4 type="title" />: Loyola University Chicago" />',
