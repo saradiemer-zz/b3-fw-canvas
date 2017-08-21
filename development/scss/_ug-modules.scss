@@ -80,6 +80,8 @@ body.modules #wrapper {
   background: $gray-extra-light;
 }
 
+.grid-light .card img { margin: 0; border-bottom-left-radius: 14px; }
+
 .grid-light .card h6,
 .grid-light .card .card-title,
 .grid-light .card .card-text { color: $gray-extra-dark; }
@@ -94,4 +96,6 @@ body.modules #wrapper {
 
 .grid-light .card .card-text { margin: 0 0 15px 0; }
 
-.grid-light .card p.card-text { line-height: 1.5; }
+.grid-light .card p.card-text { font-size: .95em; line-height: 1.5; }
+
+.grid-light .card p.card-text a.cta { font-size: 1em; line-height: 1.5; }
