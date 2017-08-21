@@ -81,11 +81,11 @@ hr.major-quiz-rule {
   line-height: 1;
   text-decoration: none;
   transition: all .2s;
-  color: #e1e1e1;
+  color: #696969;
   display: block; }
 
 .colleges li a:link, .colleges li a:visited, .colleges li a:active {
-  color: #e1e1e1; }
+  color: #696969; }
 
 a, a:visited, a:link, a:hover, a:active {
   color: inherit; }
@@ -94,46 +94,46 @@ a, a:visited, a:link, a:hover, a:active {
   transition: all .75s; }
 
 .colleges .selected-0 a {
-  color: #e1e1e1 !important; }
+  color: #808080 !important; }
 
-.colleges .selected-0 a:not(.selected-0) {
-  display: none !important; }
+// .colleges .selected-0 a:not(.selected-0) {
+//   display: none !important; }
 
 .colleges .selected-1 a {
-  color: #e1e1e1 !important; }
+  color: #989898 !important; }
 
-.colleges .selected-1 a:not(.selected-1) {
-  display: none !important; }
+// .colleges .selected-1 a:not(.selected-1) {
+//   display: none !important; }
 
 .colleges .selected-2 a {
-  color: #e1e1e1 !important; }
+  color: #a9a9a9 !important; }
 
-.colleges .selected-2 a:not(.selected-2) {
-  display: none !important; }
+// .colleges .selected-2 a:not(.selected-2) {
+//   display: none !important; }
 
 .colleges .selected-3 a {
-  color: #e1e1e1 !important; }
+  color: #bebebe !important; }
 
-.colleges .selected-3 a:not(.selected-3) {
-  display: none !important; }
+// .colleges .selected-3 a:not(.selected-3) {
+//   display: none !important; }
 
 .colleges .selected-4 a {
-  color: #e1e1e1 !important; }
+  color: #d0d0d0 !important; }
 
-.colleges .selected-4 a:not(.selected-4) {
-  display: none !important; }
+// .colleges .selected-4 a:not(.selected-4) {
+//   display: none !important; }
 
 .colleges .selected-5 a {
-  color: #e1e1e1 !important; }
+  color: #f0f0f0 !important; }
 
-.colleges .selected-5 a:not(.selected-5) {
-  display: none !important; }
+// .colleges .selected-5 a:not(.selected-5) {
+//   display: none !important; }
 
 .colleges .selected-6 a {
-  color: #eaaa00 !important; }
+  color: #ffffff !important; }
 
-.colleges .selected-6 a:not(.selected-6) {
-  display: none !important; }
+// .colleges .selected-6 a:not(.selected-6) {
+//   display: none !important; }
 
 #social-share-modal {
   width: 100%;
