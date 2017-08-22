@@ -263,7 +263,7 @@ input[type="file"] {
 	cursor: pointer;
 }
 
-#accordion .btn-overlay.cta { background-color: white; }
+#accordion .btn-overlay.cta { background-color: $white;}
 
 #accordion .btn-overlay.cta:active, .btn-overlay {
 	color: lighten($patina, 10%) ;

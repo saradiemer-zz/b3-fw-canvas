@@ -381,7 +381,7 @@ ul.pagination>li a { background-color: $gray-light; }
 	height: auto;
 	background: $gold;
 	@include media-breakpoint-down(md) {
-		padding: 10px 15px 5px;
+		padding: 10px 15px 3px;
 	}
 }
 
