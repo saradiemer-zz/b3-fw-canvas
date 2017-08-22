@@ -484,12 +484,15 @@ span.hexagon {
 }
 
 #social-share-content #quiz-results p a {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
   font-size: 3em !important;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
   font-size: 2em !important;
   }
+	@include media-breakpoint-down(sm) {
+	font-size: 1.5em !important;
+	}
 }
 
 
