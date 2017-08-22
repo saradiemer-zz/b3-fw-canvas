@@ -458,12 +458,6 @@ background-size: cover !important; }
 #quiz-results > p:nth-child(1) > a {
   font-size: 4em !important;
   text-transform: uppercase !important;
-  @include media-breakpoint-down (md) {
-    font-size: 3em !important;
-  }
-  @include media-breakpoint-down (sm) {
-    font-size: 2em !important;
-  }
 }
 
 #quiz-results > p:nth-child(2) {
