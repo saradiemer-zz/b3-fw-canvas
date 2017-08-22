@@ -150,13 +150,14 @@ a, a:visited, a:link, a:hover, a:active {
 
 #social-share-wrapper {
   z-index: 600;
+  overflow: hidden;
 }
 
 #social-share {
   position: relative;
   display: block;
   margin: 0;
-  padding: 0px 0 80px;
+  padding: 0px 0 20px;
   width: 100%;
   min-width: 300px;
   height: auto; }
@@ -289,8 +290,7 @@ a#twitter {
   clear: both;
   background: none;
   float: right;
-  margin-top: -580px;
-  margin-right: -100px;}
+  margin-right: -10px;}
 
 #results-close a {
   position: absolute;
@@ -444,7 +444,7 @@ background-size: cover !important; }
   font-style: italic; }
 
 #quiz-rfi {
-  margin-top:50px;
+  margin-top:20px;
 }
 
 #main-content {
