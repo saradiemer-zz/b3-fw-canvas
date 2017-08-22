@@ -499,10 +499,11 @@ span.hexagon {
 
 #social-share-modal {
 	@include media-breakpoint-down (sm) {
-		left: 4%;
-		right: 4%;
-		top: 100px;
-		padding: 10px;
+		left: 4% !important;
+		right: 4% !important;
+		top: 100px !important;
+		padding: 10px !important;
+		height: 450px !important;
 	}
 }
 
@@ -514,7 +515,20 @@ span.hexagon {
 
 #quiz-results p {
   @include media-breakpoint-down (sm){
-    font-size: .95em;
+    font-size: .95em !important;
+	}
+}
+
+#social-share-content #quiz-results ul li {
+	@include media-breakpoint-down (sm) {
+		font-size: .975em !important;
+	}
+}
+
+#social-share-content #quiz-results h4 {
+	@include media-breakpoint-down (sm) {
+		font-size: 1em !important;
+		margin: 20px 0 10px;
 	}
 }
 

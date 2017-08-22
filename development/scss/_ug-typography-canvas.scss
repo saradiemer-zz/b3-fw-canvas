@@ -110,6 +110,10 @@ NUMBERS ===================================== */
 	}
 }
 
+span.number.read-out { font-size: 2.5em; color: $patina;}
+
+#jesuit-intro hr { margin-top: 10px; margin-bottom: 10px; }
+
 .number p.body	{ display: block; margin: 15px 0 -2px 0; font-family: 'Antenna', sans-serif; font-size: .875em; }
 
 span.drop-cap { font-family: 'Antenna Comp'; text-transform: uppercase; font-size: 4.5em; line-height:1;}
@@ -273,9 +277,9 @@ input[type="file"] {
 
 #accordion .number h1.display { font-size: 8em; }
 
-#ug-body .btn-overlay.cta { background-color: white; }
+#ug-body .btn-overlay.cta, #social-share-modal .btn-overlay.cta { background-color: white; }
 
-#ug-body .btn-overlay.cta:active,
+#ug-body .btn-overlay.cta:active, #social-share-modal .btn-overlay.cta:active,
 .btn-overlay{
 	color: lighten($patina, 10%) ;
 	background-color: lighten($bg-overlay, 10%);
