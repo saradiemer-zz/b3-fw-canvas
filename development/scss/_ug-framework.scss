@@ -620,7 +620,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 #ug-social-wrapper {
 	  @include media-breakpoint-down(sm) {
-		padding: 4px 4px 40px 4px;
+		padding: 2px 20px 35px 0px !important;
 		background-color: lighten($gray-dark, 5%);
 	}
 }
@@ -635,7 +635,7 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	span {
 	@include media-breakpoint-down(md) { display: none; }
 	}
-	@include media-breakpoint-down(sm) { padding: 10px 5px; font-size: .9em; }
+	@include media-breakpoint-down(sm) { padding: 10px 5px; font-size: .875em; }
 }
 
 #ug-nav ul li:first-child,

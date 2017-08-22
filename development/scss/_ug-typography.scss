@@ -57,10 +57,9 @@ span.leadin {
 
 span.body.leadin { font-size: 1em;  }
 
-.body {
-	margin: 0 0 15px;
-	line-height: 1.85;
-}
+.body { margin: 0 0 15px; line-height: 1.65; }
+
+.body.reverse { margin-top: 5px; line-height: 1.5; }
 
 #main-content #interior-wrapper .reverse {
 	color: white !important;
@@ -71,7 +70,7 @@ span.body.leadin { font-size: 1em;  }
 }
 
 #main-content #interior-wrapper #rightColumn p.body.small {
-	line-height: 1.55;
+	line-height: 1.55 !important;
 }
 
 h5.label.maroon {
@@ -369,8 +368,6 @@ ul ul li { margin: 6px 0 6px; }
 
 ul li a, p a {
 	color:darken($patina, 8%);
-	background: none;
-	background-image: none;
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
