@@ -43,6 +43,8 @@
 
 #social.social-gold li a:hover { background-color: darken($patina, 2%); }
 
+ul#social.social-gold li a { background-image: url("../images/site/ug-social-icons.png") !important; }
+
 #social.social-gold li a {
 	display: block;
 	margin: 0 !important;
@@ -52,9 +54,7 @@
 	text-indent: -9999px;
 	border: none;
 	border-radius: 0;
-	background: url("../images/site/ug-social-icons.png") no-repeat scroll 0 0 lighten($gray-dark, 5%);
-	background-image: url("../images/site/ug-social-icons.png") no-repeat !important;
-	background-size: 100%;
+	background-size: 100% !important;
 	opacity: .8;
 	@include media-breakpoint-down(lg) {
 		width: 32px;
