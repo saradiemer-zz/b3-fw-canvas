@@ -483,6 +483,8 @@ span.hexagon {
 	}
 }
 
+/* MAJOR QUIZ */
+
 #social-share-content #quiz-results p a {
   @include media-breakpoint-down(lg) {
   font-size: 3em !important;
@@ -492,6 +494,27 @@ span.hexagon {
   }
 	@include media-breakpoint-down(sm) {
 	font-size: 1.5em !important;
+	}
+}
+
+#social-share-modal {
+	@include media-breakpoint-down (sm) {
+		left: 4%;
+		right: 4%;
+		top: 100px;
+		padding: 10px;
+	}
+}
+
+#majors-list {
+	@include media-breakpoint-down (sm){
+		display: none;
+	}
+}
+
+#quiz-results p {
+  @include media-breakpoint-down (sm){
+    font-size: .95em;
 	}
 }
 
