@@ -149,7 +149,6 @@ a, a:visited, a:link, a:hover, a:active {
 }
 
 #social-share-wrapper {
-  position: absolute;
   z-index: 600;
 }
 
@@ -289,12 +288,12 @@ a#twitter {
 #results-close {
   clear: both;
   background: none;
-  position: absolute;}
+  float: right;
+  margin-top: -580px;
+  margin-right: -100px;}
 
 #results-close a {
   position: absolute;
-  bottom: -44px;
-  right: -16px;
   margin: 0;
   padding: 6px 5px 6px 6px;
   width: 16px;
