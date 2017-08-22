@@ -40,8 +40,6 @@ article {
   background: #ffffff;
 }
 
-article.explore-study-abroad { min-height: 2500px; height: 2500px; }
-
 article figure {
 	background: transparent;
 	position: fixed;
@@ -135,19 +133,13 @@ header.explore-cta-wrapper {
 
 .explore-cta {
 	margin: 0 auto;
-	padding: 20px 30px;
+	padding: 0;
 	width: 100%;
   height: auto;
-  border: solid 2px $patina;
-  border-radius: 5px;
-  background-color: rgba(0,0,0,.75);
-  box-shadow: 0px 0px 15px $bg-overlay;
-  @include media-breakpoint-down(lg) {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    padding: 20px 2%;
-  }
+  border: none;
+  border-radius: 0;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
 }
 
 .explore-cta h1, .explore-cta h2, .explore-cta h5, .grid-title-box h1 {
@@ -155,7 +147,7 @@ header.explore-cta-wrapper {
   padding: 0;
   width: 100%;
   font-family: 'Antenna Black', sans-serif;
-  font-size: 4.25vw;
+  font-size: 4vw;
   line-height: 1.15;
   letter-spacing: -0em;
   color: $gray-extra-light;
@@ -169,33 +161,21 @@ header.explore-cta-wrapper {
 
 .explore-cta h1.display-small { font-size: 4vw; }
 
-#explore-intro-wrapper-video .explore-cta h1 { font-size: 2.125vw; text-align: center; margin: 0; }
-
-#explore-intro-wrapper-video .explore-cta .cta { font-family: 'Antenna Black', sans-serif !important; }
-
-#explore-intro-wrapper-video h6 { text-align: center; }
-
-#explore-study-abroad-wrapper.explore-cta h5,
-#explore-study-abroad-wrapper.explore-cta h1,
-#explore-study-abroad-wrapper.explore-cta p.body { text-align: left !important; }
-
-.explore-cta h5, .explore-cta h5.label { font-size: 1.1em; margin: 10px 0 0 0; }
+.explore-cta h5, .explore-cta h5.label {
+  margin: 10px 0 0 0;
+  font-size: 1.1em;
+  line-height: 1.45;
+}
 
 .explore-cta h5 a {
-  margin: 60px 0 0 0;
-  font-family: 'Antenna Black', sans-serif;
-  line-height: 1.45;
-  letter-spacing: .015em;
   color: $gray-extra-light;
   transition: all .2s;
   &:hover {
-    color: $gold;
+    color: $patina;
   }
 }
 
-#explore-study-abroad-wrapper.explore-cta p.body { margin-top: 10px; margin-bottom: 15px; }
-
-#explore-apply-visit-info-wrapper .explore-cta h1 { text-align: center; }
+/* IF BODY TEXT IS ADDED */
 
 .explore-cta p.body.intro { font-size: 1.15em; line-height: 1.65; width: 100%; }
 
@@ -210,7 +190,17 @@ header.explore-cta-wrapper {
   letter-spacing: .015em;
 }
 
-/* CTA BUTTON */
+/* STUDY ABROAD - UNIQUE STYLES */
+
+#explore-study-abroad-wrapper.explore-cta h5,
+#explore-study-abroad-wrapper.explore-cta h1,
+#explore-study-abroad-wrapper.explore-cta p.body { text-align: left !important; }
+
+#explore-study-abroad-wrapper.explore-cta p.body { margin-top: 10px; margin-bottom: 15px; }
+
+#explore-apply-visit-info-wrapper .explore-cta h1 { text-align: center; }
+
+/* CTA BUTTON - COVER */
 
 .explore-cta-button {
 	position: relative;
@@ -274,14 +264,6 @@ article .grid .col-xs-12 .col-xs-3 {
   position: relative;
 }
 
-.grid-title-box:before {
-    display: block;
-    content: "";
-    width: auto;
-    padding-top: 14.0625%;
-    background: url("../images/explore/explore-grid-dark-small.png") repeat;
-}
-
 .grid-title-box-text {
   position: absolute;
   top: 30px;
@@ -290,45 +272,45 @@ article .grid .col-xs-12 .col-xs-3 {
   bottom: 30px;
 }
 
-#explore-life-grid .grid-title-box { background-image:url("/images/explore-life-service/4000-560-grid-tour-overlay.png"); }
+#explore-life-grid .grid-title-box {
+  background-image:url("/images/explore-life-service/4000-560-grid-tour-overlay.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-title-box:before {
+    display: block;
+    content: "";
+    width: auto;
+    padding-top: 14.0625%;
+    background: url("../images/explore/explore-grid-dark-small.png") repeat;
+}
 
 .grid.parallax .footercard { color: $gray-extra-dark; }
 
 /* IMAGE GRID - TYPOGRAPHY */
 
-#explore-service-grid .grid-title-box, #explore-life-grid .grid-title-box {
-  background-image:url("../images/explore/title-box-campus.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#explore-life-grid .grid-title-box {
-  background-image:url("../images/explore/title-box-campus.png");
-}
-
-#explore-service-grid .grid-title-box h5.label, #explore-life-grid .grid-title-box h5.label {
+#explore-life-grid .grid-title-box h5.label {
   margin: 0;
   padding: 0;
-  font-size: 1em !important;
+  font-size: 1em;
   line-height: 1.15;
   color: darken($gray-light, 10%);
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
+}
+
+#explore-life-grid .grid-title-box h5.label a {
+  font-family: 'Antenna Black', sans-serif !important;
+  font-size: 2em;
+  color: darken($gray-light, 3%);
 }
 
 .grid-title-box-text h1 {
   margin: 10px 0 0 0;
   @include media-breakpoint-down(lg) {
   margin: -10px 0 0 0;
-}
-}
-
-.grid-title-box-text h5 { text-align: centered; }
-
-#explore-service-grid .grid-title-box h5.label a, #explore-life-grid .grid-title-box h5.label a {
-  font-family: 'Antenna Black', sans-serif !important;
-  font-size: 2em !important;
-  color: darken($gray-light, 3%);
+  }
 }
 
 /* IMAGE GRID - BUTTON */
@@ -337,32 +319,22 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-life-grid .grid-title-box-text .tour-button-right {
   margin: 10px 0 0 0;
   padding: 8px 20px 6px;
-  min-width: 50%;
   font-size: .95em;
   text-align: center;
+  background-color: rgba(0,0,0,.7);
 }
 
-#explore-life-grid .grid-title-box-text .tour-button-left { float: right; margin-right: 15px; width: 40% }
-#explore-life-grid .grid-title-box-text .tour-button-right { float: left; margin-left: 15px; width: 40% }
+#explore-life-grid .grid-title-box-text .tour-button-left { float: right; margin-right: 15px; width: 60%; }
+#explore-life-grid .grid-title-box-text .tour-button-right { float: left; margin-left: 15px; width: 60%; }
 
-.explore-cta {
-	margin: 0 auto;
-	padding: 0;
-	width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  background-color: rgba(0,0,0,0);
-  box-shadow: none;
-}
 
-/* BUTTON - CUSTOM */
+/* CTA BUTTON - CUSTOM */
 
 #explore-apply-visit-info-wrapper button {
   padding: 5px 20px;
   width: 100%;
   border: solid 1px $patina;
-  border-radius: 20px;
+  border-radius: 45px;
   background: rgba(0,0,0,.35);
   h5 {
     font-family: 'Antenna Bold', sans-serif;
@@ -380,23 +352,25 @@ article .grid .col-xs-12 .col-xs-3 {
   outline-offset: 0;
 }
 
-#explore-apply-visit-info-wrapper h5.label { color: darken($gray-light,10%); }
+#explore-apply-visit-info-wrapper h2 { width: 100%; text-align: center; }
 
-#explore-apply-visit-info-wrapper h5.label:hover { color: darken($gray-light,10%); }
+#explore-apply-visit-info-wrapper h5.label { text-align: center; }
 
-/* UNIQUE STYLING */
+#explore-apply-visit-info-wrapper h2.display-small {
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px $bg-overlay;
+}
 
-#explore-intro-wrapper-video .explore-cta h1 { font-size: 5.75vw; text-align: center; margin: 0; }
+#explore-apply-visit-info-wrapper h5.label,
+#explore-apply-visit-info-wrapper h5.label a {
+  letter-spacing: .015em;
+  color: $patina;
+  text-shadow: 0 0 10px $bg-overlay;
+  transition: all .2s;
+  &:hover { color: lighten($patina, 10%); }
+}
 
-#explore-intro-wrapper-video .explore-cta a.cta { margin: 0; color: white; }
-
-#explore-apply-visit-info .explore-cta h1 { font-size: 4vw; text-align: center; margin: 0; }
-
-#explore-apply-visit-info button h5 { font-size: 1em; }
-
-#explore-apply-visit-info-wrapper button { border-radius: 60px; }
-
-#explore-apply-visit-info-wrapper a button { color: red !important; }
+#explore-apply-visit-info-wrapper span.bullet { display: inline; margin: 0 5px; color: $gray-light; }
 
 /* NUMBERS */
 
@@ -514,7 +488,7 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-cost-value-wrapper[style] { top: 50vh !important; }
 #explore-residential-life-wrapper > div.explore-cta { width: 100% !important; }
 /* PAGE 09 */
-#explore-apply-visit-info-wrapper[style] { top: 30vh !important; }
+#explore-apply-visit-info-wrapper[style] { top: 20vh !important; }
 #explore-apply-visit-info-wrapper > div.explore-cta { width: 100% !important; }
 
 /* END CSS */
