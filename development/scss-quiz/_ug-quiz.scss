@@ -148,7 +148,7 @@ a, a:visited, a:link, a:hover, a:active {
   top: 150px;
   width: 100%;
   z-index: 600;
-  background: $gold; }
+  background: rgba(0, 0, 0, 0.8); }
 
 #social-share {
   position: relative;
@@ -220,7 +220,6 @@ a#twitter {
   width: 50%;
   height: auto;
   background: none;
-  display: none;
 }
 
 #social-share-content #quiz-results-image img#major-image {
