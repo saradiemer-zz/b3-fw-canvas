@@ -150,15 +150,6 @@ header.explore-cta-wrapper {
   }
 }
 
-#explore-study-abroad-wrapper.explore-cta {
-  @include media-breakpoint-down(lg) {
-  padding: 30px 30px;
-  height: auto;
-  border: solid 2px $patina;
-  border-radius: 5px;
-  }
-}
-
 .explore-cta h1, .explore-cta h2, .explore-cta h5 {
   margin: 0;
   padding: 0;
@@ -178,7 +169,8 @@ header.explore-cta-wrapper {
 
 #explore-intro-wrapper-video .explore-cta .cta { font-family: 'Antenna Black', sans-serif !important; }
 
-#explore-intro-wrapper-video .explore-cta h5 { font-size: 2.25vw; margin: 0; a { margin: 0; } }
+
+#explore-intro-wrapper-video h6 { text-align: center; }
 
 #explore-study-abroad-wrapper.explore-cta h5,
 #explore-study-abroad-wrapper.explore-cta h1,
@@ -330,7 +322,7 @@ article .grid .col-xs-12 .col-xs-3 {
 }
 
 #explore-apply-visit-info-wrapper button:hover {
-  background: darken($patina, 8%);
+  background: rgba(0,0,0,.65);
   color: darken($gray-light,10%)
 }
 
