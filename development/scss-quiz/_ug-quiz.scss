@@ -207,7 +207,7 @@ a, a:visited, a:link, a:hover, a:active {
   border-radius: 4px; }
 
 a#facebook, a#twitter {
-  background: url('<t4 type="media" id="312120" formatter="path/*"/>') 0 0 no-repeat #EEB111;
+  background: url('<t4 type="media" id="312120" formatter="path/*"/>') 0 0 no-repeat;
   background-size: 25px 300px; }
 
 a#twitter {
@@ -258,6 +258,8 @@ a#twitter {
   text-transform: uppercase;
   color: black;
   display:block;
+  margin-bottom: -20px;
+  background: none;
 }
 
 #social-share-content #quiz-results ul {
@@ -439,7 +441,7 @@ background-size: cover !important; }
 
 #quiz-results p {
     font-family: "Antenna Light", sans-serif;
-    font-size: 1em;}
+    font-size: 1.25em;}
 
 #quiz-results > ul > li > a {
   color: #06969a !important;
