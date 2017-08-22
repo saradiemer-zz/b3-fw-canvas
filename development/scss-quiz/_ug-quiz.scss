@@ -290,15 +290,16 @@ a#twitter {
   clear: both;
   background: none;
   float: right;
-  margin-right: -10px;}
+  margin-right: 30px;
+  margin-bottom: 40px;}
 
 #results-close a {
   position: absolute;
   margin: 0;
-  padding: 6px 5px 6px 6px;
   width: 16px;
   height: 16px;
-  font-family: 'myriad-pro', 'arial', sans-serif;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: 1.75em;
   font-weight: bold;
   color: #FFF;
   text-align: center;
@@ -437,14 +438,15 @@ background-size: cover !important; }
   color: black; }
 
 #quiz-results p {
-    font-family: "Antenna Light", sans-serif; }
+    font-family: "Antenna Light", sans-serif;
+    font-size: 1em;}
 
 #quiz-results > ul > li > a {
   color: #06969a !important;
   font-style: italic; }
 
 #quiz-rfi {
-  margin-top:20px;
+  margin-top:30px;
 }
 
 #main-content {
