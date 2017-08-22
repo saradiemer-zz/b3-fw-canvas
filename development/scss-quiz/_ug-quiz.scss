@@ -245,7 +245,7 @@ a#twitter {
   line-height: 1.6; }
 
 #social-share-content #quiz-results h4 {
-  font-family: "Arial", "Helvetica", sans-serif !important;
+  font-family: "Antenna Bold", sans-serif !important;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0px;
@@ -304,8 +304,6 @@ a#twitter {
   color: #FFF;
   text-align: center;
   text-decoration: none;
-  background: #EEB111;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
   transition: all .5s; }
 
 #results-close a:hover {
@@ -438,6 +436,9 @@ background-size: cover !important; }
 
 #quiz-results, #quiz-results p a {
   color: black; }
+
+#quiz-results p {
+    font-family: "Antenna Light", sans-serif; }
 
 #quiz-results > ul > li > a {
   color: #06969a !important;
