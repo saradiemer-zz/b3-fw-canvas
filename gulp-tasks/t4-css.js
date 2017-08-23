@@ -25,7 +25,6 @@ gulp.task('t4_css', function() {
 	.pipe(replace('../images/homepage/homepage-arrow-left-patina.png', '<t4 type="media" id="473040" formatter="path/*"/>'))
 	//home
 	.pipe(replace('../images/homepage/home.png', '<t4 type="media" id="473662" formatter="path/*"/>'))
-	.pipe(replace('("images/homepage/homepage-arrow.png")', '("<t4 type="media" id="470744" formatter="path/*"/>")'))
 	//homepage mobile image
 	.pipe(replace('("/images/homepage/home-campus-aerial-500-500.jpg")', '("<t4 type="media" id="474881" formatter="path/*"/>")'))
 	//social ICONS
@@ -70,6 +69,8 @@ gulp.task('t4_css_parallax', function() {
 	//get styles.css in public parallax Dir
 
 	gulp.src(config.publicDir + '/css-parallax/styles-parallax.css')
+	//explore grid background image
+	.pipe(replace('("images/homepage/homepage-arrow.png")', '("<t4 type="media" id="468449" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-residential-life-2400-2400.jpg")', '("<t4 type="media" id="470719" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-intro-2400-2400.jpg")', '("<t4 type="media" id="470738" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-why-loyola-2400-2400.jpg")', '("<t4 type="media" id="470709" formatter="path/*"/>")'))
@@ -78,6 +79,7 @@ gulp.task('t4_css_parallax', function() {
 	.pipe(replace('("../images/explore/explore-study-abroad-gray-2400-deep.jpg")', '("<t4 type="media" id="470708" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-cost-value-2400-2400.jpg")', '("<t4 type="media" id="470736" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-apply-visit-info-2400-2400.jpg")', '("<t4 type="media" id="470718" formatter="path/*"/>")'))
+	.pipe(replace('("../images/explore/explore-grid-dark-small.png")', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
 	.pipe(replace('("../images/backgrounds/bg-grid-extra-dark-small.png")', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
 	.pipe(replace('("../images/explore-life-service/4000-560-grid-tour-overlay.png")', '(<t4 type="media" id="473560" formatter="path/*"/>)'))
 	//explore grid background image
