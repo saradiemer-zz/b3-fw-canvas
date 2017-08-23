@@ -110,9 +110,9 @@ NUMBERS ===================================== */
 	}
 }
 
-span.number.read-out { font-size: 2.5em; color: $patina;}
+span.number.read-out { font-size: 2.5em; color: darken($patina, 8%);}
 
-#jesuit-intro hr { margin-top: 10px; margin-bottom: 10px; }
+#jesuit-intro hr { margin-top: 10px; margin-bottom: -5px; border-color: $gray-light;}
 
 .number p.body	{ display: block; margin: 15px 0 -2px 0; font-family: 'Antenna', sans-serif; font-size: .875em; }
 
