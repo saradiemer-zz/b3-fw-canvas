@@ -15,7 +15,7 @@ CSS FOR MOBILE - 580PX
 	overflow: hidden;
 }
 
-#home-mobile-image img { margin: 2px 0 0px; }
+#home-mobile-image img { position: relative; margin: -50px 0 0px; }
 
 /* BACKGROUND */
 
@@ -111,8 +111,15 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 #ug-explore li {
 	float: left !important;
 	border-radius: 3px !important;
-	background-color: darken($patina, 12%) !important;
+	background-color: darken($patina, 20%) !important;
 	transition: all .2s;
+}
+
+#ug-nav ul li a:hover,
+#ug-nav ul li a:active,
+#ug-cta ul li a:hover,
+#ug-explore ul li a:hover {
+	background-color: darken($patina, 15%) !important;
 }
 
 #ug-cta #ug-social-wrapper ul li { background-color: darken($gray, 12%) !important; }
@@ -122,6 +129,7 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 #ug-explore li a {
 	padding: 60px 0 !important;
 	font-size: .95em !important;
+	color: $gray-light !important;
 	text-align: center !important;
 	border-left: none !important;
 }
@@ -160,7 +168,6 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 #ug-cta ul li a,
 #ug-explore ul li a {
 	padding: 10px 0 !important;
-	color: $gray-extra-light !important;
 }
 
 #ug-nav ul li:hover,
