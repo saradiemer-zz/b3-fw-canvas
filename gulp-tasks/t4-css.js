@@ -81,7 +81,6 @@ gulp.task('t4_css_parallax', function() {
 	.pipe(replace('("../images/explore/explore-apply-visit-info-2400-2400.jpg")', '("<t4 type="media" id="470718" formatter="path/*"/>")'))
 	.pipe(replace('("../images/explore/explore-grid-dark-small.png")', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
 	.pipe(replace('("../images/backgrounds/bg-grid-extra-dark-small.png")', '(<t4 type="media" id="470740" formatter="path/*"/>)'))
-	.pipe(replace('("../images/explore-life-service/4000-560-grid-tour-overlay.png")', '(<t4 type="media" id="473560" formatter="path/*"/>)'))
 	//explore grid background image
 	.pipe(replace('("../images/explore-life-service/2000-280-grid-tour-overlay.png")', '("<t4 type="media" id="474520" formatter="path/*"/>")'))
 	.pipe(gulp.dest(config.T4Dir + '/css'));
