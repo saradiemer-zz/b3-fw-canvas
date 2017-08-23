@@ -539,7 +539,7 @@ span.hexagon {
 	}
 }
 
-div.quesiton.active {
+div.question.active {
 	@include media-breakpoint-down (xs){
 		font-size: 1.15em !important;
 	}
