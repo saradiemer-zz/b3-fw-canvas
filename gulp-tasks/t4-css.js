@@ -15,8 +15,8 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(../images/bg-water.jpg)', '("<t4 type="media" id="372435" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-lsc.jpg)', '("<t4 type="media" id="473135" formatter="path/*"/>")'))
 	.pipe(replace('(/images/backgrounds/bg-shield-gold-patina.jpg)', '("<t4 type="media" id="471278" formatter="path/*"/>")'))
-		//texture-transparent-pixel
-		.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
+	//texture-transparent-pixel
+	.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(../images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(/images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	//semi-transparent-pixel
@@ -25,6 +25,11 @@ gulp.task('t4_css', function() {
 	.pipe(replace('../images/homepage/homepage-arrow-left-patina.png', '<t4 type="media" id="473040" formatter="path/*"/>'))
 	//home
 	.pipe(replace('../images/homepage/home.png', '<t4 type="media" id="473662" formatter="path/*"/>'))
+	.pipe(replace('("images/homepage/homepage-arrow.png")', '("<t4 type="media" id="470744" formatter="path/*"/>")'))
+	//homepage mobile image
+	.pipe(replace('("/images/homepage/home-campus-aerial-500-500.jpg")', '("<t4 type="media" id="474881" formatter="path/*"/>")'))
+	//explore grid background image
+	.pipe(replace('("/images/explore-life-service/4000-560-grid-tour-overlay.png")', '("<t4 type="media" id="474520" formatter="path/*"/>")'))
 	//social ICONS
 	.pipe(replace('(../images/site/ug-social-icons.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-shield-dark.jpg)', '("<t4 type="media" id="471277" formatter="path/*"/>")'))

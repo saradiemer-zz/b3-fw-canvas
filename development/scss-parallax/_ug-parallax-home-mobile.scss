@@ -1,0 +1,195 @@
+/* ====================
+CSS FOR MOBILE - 580PX
+=====================*/
+
+@media only screen and (max-width: 580px) {
+
+/* HOME IMAGE */
+
+#home-mobile-image {
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 0 5px;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+
+#home-mobile-image img { position: relative; margin: -50px 0 0px; }
+
+/* BACKGROUND */
+
+body,
+body #wrapper,
+#navbar ul,
+#ug-footer-cta-wrapper,
+#ug-nav.container-fluid,
+#ug-cta.container-fluid,
+#ug-explore.container-fluid,
+#navbar-footer,
+#ug-social-wrapper {
+	background: $gray-light !important;
+	background-color: $gray-light !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* POSITION */
+
+body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; max-height: 1px !important; }
+
+#content, #content article { display: none !important; height: 0 !important; position: relative !important; }
+
+#ug-footer-cta-wrapper {
+	position: relative;
+	bottom: 0 !important;
+	width: 100% !important;
+	z-index: 10000 !important;
+}
+
+#ug-footer-address-wrapper {
+	min-height: auto !important;
+	height: auto !important;
+}
+
+#ug-nav.container-fluid,
+#ug-cta.container-fluid,
+#ug-explore.container-fluid {
+	padding: 0;
+	width: 100%;
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#ug-cta.container-fluid,
+#ug-explore.container-fluid {
+	display: block !important;
+	margin: 0 1% 15px !important;
+	width: 98% !important;
+}
+
+#ug-nav.container-fluid .container,
+#ug-nav.container-fluid .row,
+#ug-cta.container-fluid .container,
+#ug-cta.container-fluid .row,
+#ug-explore.container-fluid .container,
+#ug-explore.container-fluid .row {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: transparent !important;
+}
+
+#ug-nav.container-fluid {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+#ug-nav.container-fluid {
+	top: 0 !important;
+	margin-top: 50px !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#ug-nav #navbar {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+#ug-nav #navbar, #footer #ug-cta ul#nav { width: 100% !important; }
+
+#ug-nav ul, #ug-cta ul, #ug-explore ul {
+	float: left !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+#ug-nav ul li,
+#ug-cta ul li,
+#ug-explore li {
+	float: left !important;
+	border-radius: 3px !important;
+	background-color: darken($patina, 20%) !important;
+	transition: all .2s;
+}
+
+#ug-nav ul li a:hover,
+#ug-nav ul li a:active,
+#ug-cta ul li a:hover,
+#ug-explore ul li a:hover {
+	background-color: darken($patina, 15%) !important;
+}
+
+#ug-cta #ug-social-wrapper ul li { background-color: darken($gray, 12%) !important; }
+
+#ug-nav ul li a,
+#ug-cta ul li a,
+#ug-explore li a {
+	padding: 60px 0 !important;
+	font-size: .95em !important;
+	color: $gray-light !important;
+	text-align: center !important;
+	border-left: none !important;
+}
+
+#ug-nav ul li,
+#ug-nav ul li a,
+#ug-cta ul li,
+#ug-cta ul li a,
+#ug-explore ul li,
+#ug-explore ul li a {
+	border-left: none !important;
+	border-bottom: none !important;
+}
+
+#ug-nav ul li a span { display: none !important; }
+
+#ug-nav ul li {
+	margin: 2% !important;
+	padding: 8px 2% !important;
+	width: 46% !important;
+}
+
+#ug-cta ul li {
+	margin: 1% !important;
+  padding: 6px 1.5% !important;
+	width: 23% !important;
+}
+
+#ug-explore ul li {
+	margin: 0 1% !important;
+	padding: 10px 2% !important;
+	width: 98% !important;
+}
+
+#ug-nav ul li a,
+#ug-cta ul li a,
+#ug-explore ul li a {
+	padding: 10px 0 !important;
+}
+
+#ug-nav ul li:hover,
+#ug-cta ul li:hover,
+#ug-explore ul li:hover {
+	box-shadow: 0px 0px 3px rgba(0,0,0,.5) !important;
+}
+
+#ug-cta ul.social { float: left !important; margin: 0 auto !important; }
+
+#ug-social-wrapper ul li { height: 45px !important; width: 45px !important; border-radius: 50% !important; }
+
+/* TYPOGRAPHY */
+
+#ug-nav ul li { font-size: 15px !important; }
+
+#ug-nav ul li a,
+#ug-cta ul li a,
+#ug-explore ul li a {
+	font-family: 'Antenna Bold', sans-serif !important;
+	font-size: 1em !important;
+	letter-spacing: .015em;
+}
+
+}
