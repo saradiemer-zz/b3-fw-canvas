@@ -11,12 +11,14 @@ gulp.task('t4_css', function() {
 	gulp.src(config.publicDir + '/css-min/styles.css')
 	//social-icons
 	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))
+	//homepage mobile image
+	.pipe(replace('("/images/homepage/home-campus-aerial-500-500.jpg")', '("<t4 type="media" id="474881" formatter="path/*"/>")'))
 	//background image
 	.pipe(replace('(../images/bg-water.jpg)', '("<t4 type="media" id="372435" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-lsc.jpg)', '("<t4 type="media" id="473135" formatter="path/*"/>")'))
 	.pipe(replace('(/images/backgrounds/bg-shield-gold-patina.jpg)', '("<t4 type="media" id="471278" formatter="path/*"/>")'))
-		//texture-transparent-pixel
-		.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
+	//texture-transparent-pixel
+	.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(../images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(/images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	//semi-transparent-pixel
