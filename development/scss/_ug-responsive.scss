@@ -532,5 +532,18 @@ span.hexagon {
 	}
 }
 
+#results-close {
+	@include media-breakpoint-down (xs){
+		margin-right: 50px !important;
+		margin-bottom: 50px !important;
+	}
+}
+
+div.quesiton.active {
+	@include media-breakpoint-down (xs){
+		font-size: 1.15em !important;
+	}
+}
+
 
 /* END - CANVAS-NUMBERS */
