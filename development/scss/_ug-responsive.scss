@@ -570,4 +570,10 @@ div.question.active {
 		border-bottom: 1px solid $gray-light !important;
 	}
 }
+
+.card {
+	@include media-breakpoint-down (md) {
+		min-height: 0px;
+	}
+}
 /* END - CANVAS-NUMBERS */

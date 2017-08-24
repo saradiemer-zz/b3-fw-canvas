@@ -12,6 +12,8 @@ h2 { width: 80%; }
 
 h3.standalone { text-transform: none; }
 
+h4 { padding-top: 10px !important; }
+
 #ug-body h1.basic {
 	font-size:2.15em;
 	letter-spacing: -0.01em;
@@ -149,7 +151,7 @@ ol li, ul li {
 }
 
 ul li {
-list-style-image: url('../images/site/li.png') !important;
+list-style-image: url('../images/site/li.png');
 }
 
 ol ol, ul ul { margin: 7px 7px 18px 12px; }
@@ -452,7 +454,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 .ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
 
 #interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-right p a[style], #interior-wrapper-right p a  {
-	font-weight:100 !important;
+	font-weight:400 !important;
 	text-decoration:none !important;
 }
 
@@ -473,3 +475,5 @@ div > table.stacktable.large-only > tbody > tr > td {
 #freshman .hr-fix hr {margin-top: 10px; margin-bottom: -5px;}
 
 #freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important; font-size: 875em;}
+
+.nav>li>a:focus, .nav>li>a:hover { background-color: $patina !important; color: white !important; }

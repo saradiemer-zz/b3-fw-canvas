@@ -125,7 +125,7 @@ p a, article.content p a {
 	outline: none;
 	outline-offset: 0;
 	text-decoration: none;
-	background-image: url('<t4 type="media" id="406288" formatter="path/*"/>');
+	/* background-image: url('<t4 type="media" id="406288" formatter="path/*"/>'); */
 	background-repeat: no-repeat;
 	background-repeat: repeat-x;
 	background-position: 0 100%;
@@ -294,7 +294,7 @@ LETTER SPACING ==================================== */
 PARAGRAPHS ==================================== */
 
 p {
-	margin: 0 0 10px;
+	margin: 0 0 15px;
 	padding: 0;
 	font-family: 'arial', san-serif;
 	font-size: .975em;
@@ -524,7 +524,7 @@ LISTS ========================================= */
 }
 
 ol, ul, #page-content article.content ol, #page-content article.content ul {
-	margin: 20px 0 0 20px;
+	margin: 20px 0 20px 20px;
 	padding: 0;
 	list-style-type: square;
 	list-style-position: inside;
