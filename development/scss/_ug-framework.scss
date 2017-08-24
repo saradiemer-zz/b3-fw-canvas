@@ -30,7 +30,7 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 	font-family: 'Antenna', sans-serif;
 	font-size: 1.25em;
 	text-transform: uppercase;
-	list-style-image: none;
+	list-style-image: none !important;
 }
 
 .development-nav ul li a,
