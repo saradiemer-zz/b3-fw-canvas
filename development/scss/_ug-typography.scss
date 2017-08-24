@@ -12,6 +12,8 @@ h2 { width: 80%; }
 
 h3.standalone { text-transform: none; }
 
+h4 { padding-top: 10px !important; }
+
 #ug-body h1.basic {
 	font-size:2.15em;
 	letter-spacing: -0.01em;
@@ -452,7 +454,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 .ug-tips-list ul.ug-tips-columns li.col-sm-2.circle-wrapper {display:none;}
 
 #interior-wrapper-center p a[style], #interior-wrapper-center p a, #interior-wrapper-right p a[style], #interior-wrapper-right p a  {
-	font-weight:100 !important;
+	font-weight:400 !important;
 	text-decoration:none !important;
 }
 
