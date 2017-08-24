@@ -15,6 +15,7 @@ gulp.task('t4_css', function() {
 	.pipe(replace('(../images/bg-water.jpg)', '("<t4 type="media" id="372435" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-lsc.jpg)', '("<t4 type="media" id="473135" formatter="path/*"/>")'))
 	.pipe(replace('(/images/backgrounds/bg-shield-gold-patina.jpg)', '("<t4 type="media" id="471278" formatter="path/*"/>")'))
+	.pipe(replace('..(/images/site/li.png)', '("<t4 type="media" id="474922" formatter="path/*"/>")'))
 	//texture-transparent-pixel
 	.pipe(replace('(../images/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
 	.pipe(replace('(../images/site/texture-transparent.png)', '("<t4 type="media" id="466248" formatter="path/*"/>")'))
