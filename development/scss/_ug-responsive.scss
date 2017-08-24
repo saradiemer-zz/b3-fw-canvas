@@ -557,7 +557,7 @@ div.question.active {
 	}
 }
 
-#freshman.mobile-rule {
+.mobile-rule.freshman {
 	@include media-breakpoint-down (md) {
 		display: block !important;
 		height: 20px !important;
