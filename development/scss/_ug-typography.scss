@@ -469,3 +469,9 @@ article.content p a, article.content a {
     border: 1px solid rgba(0, 0, 0, 0.15);
     margin: 20px 0;
 }
+
+#freshman hr {color: $gray-light;}
+
+#freshman .display.number.large {font-size: 7em;}
+
+#freshman .hr-fix hr {margin-top: 10px; margin-bottom: -5px;}
