@@ -557,6 +557,12 @@ div.question.active {
 	}
 }
 
+#freshman .col-xs-6.vertical-rule-right {
+	@include media-breakpoint-down (md) {
+		display: inline-block !important;
+	}
+}
+
 .mobile-rule.freshman {
 	@include media-breakpoint-down (md) {
 		display: block !important;
