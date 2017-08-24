@@ -470,8 +470,10 @@ article.content p a, article.content a {
     margin: 20px 0;
 }
 
-#freshman hr {color: $gray-light;}
+#freshman hr {color: $gray-light !important;}
 
-#freshman .display.number.large {font-size: 7em;}
+#freshman h1.display.number.large {font-size: 7em !important;}
 
 #freshman .hr-fix hr {margin-top: 10px; margin-bottom: -5px;}
+
+#freshman p.body.small {font-family: "Antenna", sans-serif; margin-top: -10px !important;}
