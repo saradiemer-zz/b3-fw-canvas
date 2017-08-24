@@ -559,8 +559,9 @@ div.question.active {
 
 #freshman.mobile-rule {
 	@include media-breakpoint-down (md) {
-		display:inline-block;
-		height:20px;
+		display: block !important;
+		height: 20px !important;
+		border-bottom: 1px !important;
 	}
 }
 /* END - CANVAS-NUMBERS */
