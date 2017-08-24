@@ -109,7 +109,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed,
 #chicago-story.fullbleed,
 #social-justice.fullbleed,
-#admission-graduate.fullbleed,
+#jesuit.fullbleed,
 #campus-experience.fullbleed,
 #campus-living.fullbleed,
 #campus-athletics.fullbleed {
@@ -134,7 +134,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed,
 #chicago-story.fullbleed,
 #social-justice.fullbleed,
-#admission-graduate.fullbleed,
+#jesuit.fullbleed,
 #campus-experience.fullbleed,
 #campus-living.fullbleed,
 #campus-athletics.fullbleed {
@@ -166,7 +166,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed,
 #chicago-story.fullbleed,
 #social-justice.fullbleed,
-#admission-graduate.fullbleed,
+#jesuit.fullbleed,
 #campus-experience.fullbleed,
 #campus-living.fullbleed,
 #campus-athletics.fullbleed {
@@ -185,7 +185,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed,
 #chicago-story.fullbleed,
 #social-justice.fullbleed,
-#admission-graduate.fullbleed,
+#jesuit.fullbleed,
 #campus-experience.fullbleed,
 #campus-living.fullbleed,
 #campus-athletics.fullbleed {
@@ -203,7 +203,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed:before,
 #chicago-story.fullbleed:before,
 #social-justice.fullbleed:before,
-#admission-graduate.fullbleed:before,
+#jesuit.fullbleed:before,
 #campus-experience.fullbleed:before,
 #campus-living.fullbleed:before,
 #campus-athletics.fullbleed:before {
@@ -225,7 +225,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed:before,
 #chicago-story.fullbleed:before,
 #social-justice.fullbleed:before,
-#admission-graduate.fullbleed:before,
+#jesuit.fullbleed:before,
 #campus-experience.fullbleed:before,
 #campus-living.fullbleed:before,
 #campus-athletics.fullbleed:before {
@@ -244,7 +244,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed:before,
 #chicago-story.fullbleed:before,
 #social-justice.fullbleed:before,
-#admission-graduate.fullbleed:before,
+#jesuit.fullbleed:before,
 #campus-experience.fullbleed:before,
 #campus-living.fullbleed:before,
 #campus-athletics.fullbleed:before {
@@ -263,7 +263,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed:before,
 #chicago-story.fullbleed:before,
 #social-justice.fullbleed:before,
-#admission-graduate.fullbleed:before,
+#jesuit.fullbleed:before,
 #campus-experience.fullbleed:before,
 #campus-living.fullbleed:before,
 #campus-athletics.fullbleed:before {
@@ -280,12 +280,12 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 #green-story.fullbleed { background: url('/images/green/green-9-b.jpg');}
 #chicago-story.fullbleed { background: url('/images/chicago/alumni-story-keller-d.jpg');}
 #social-justice.fullbleed { background: url('/media/lucedu/about/b3/1800x735-admission.jpg');}
-#admission-graduate.fullbleed { background: url('/media/lucedu/about/b3/admission-wtc.jpg');}
+#jesuit.fullbleed { background: url('/media/lucedu/about/b3/admission-wtc.jpg');}
 #campus-experience.fullbleed { background: url('/media/lucedu/about/b3/1800x735-campus.jpg');}
 #campus-living.fullbleed { background: url('/media/lucedu/about/b3/campus-reslife.jpg');}
 #campus-athletics.fullbleed { background: url('/media/lucedu/about/b3/campus-athletics.jpg');}
 
-#chicago-story.fullbleed {
+#chicago-story.fullbleed, #jesuit.fullbleed {
 	height:450px;
 	background-position-y:30% !important;
 }
