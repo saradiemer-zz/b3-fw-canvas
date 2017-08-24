@@ -561,7 +561,7 @@ div.question.active {
 	@include media-breakpoint-down (md) {
 		display: block !important;
 		height: 20px !important;
-		border-bottom: 1px !important;
+		border-bottom: 1px solid $gray-light !important;
 	}
 }
 /* END - CANVAS-NUMBERS */
