@@ -532,5 +532,42 @@ span.hexagon {
 	}
 }
 
+#results-close {
+	@include media-breakpoint-down (xs){
+		margin-right: 50px !important;
+		margin-bottom: 50px !important;
+	}
+}
 
+div.question.active {
+	@include media-breakpoint-down (xs){
+		font-size: 1.2em !important;
+	}
+}
+
+#freshman h1.display.number.large {
+	@include media-breakpoint-down (lg) {
+		font-size: 5em !important;
+	}
+}
+
+#freshman .vertical-rule-right {
+	@include media-breakpoint-down (md) {
+		display: none !important;
+	}
+}
+
+#freshman .col-xs-6.vertical-rule-right {
+	@include media-breakpoint-down (md) {
+		display: inline-block !important;
+	}
+}
+
+.mobile-rule.freshman {
+	@include media-breakpoint-down (md) {
+		display: block !important;
+		height: 20px !important;
+		border-bottom: 1px solid $gray-light !important;
+	}
+}
 /* END - CANVAS-NUMBERS */
