@@ -152,14 +152,14 @@ header.explore-cta-wrapper {
   font-size: 4vw;
   line-height: 1.15;
   letter-spacing: -0em;
-  color: $white;
+  color: $white !important;
   text-align: center;
-  text-shadow: 0 0 15px rgba(0,0,0,.75);
+  text-shadow: 0 0 15px rgba(0,0,0,.5);
 }
 
 .explore-cta h1 { margin: 0 0 5px; }
 
-.explore-cta h1.display-large { font-size: 5vw; }
+.explore-cta h1.display-large { font-size: 5.25vw; }
 
 .explore-cta h1.display-small { font-size: 4vw; }
 
