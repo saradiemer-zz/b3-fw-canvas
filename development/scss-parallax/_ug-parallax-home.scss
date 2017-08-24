@@ -1,5 +1,7 @@
 /* PAGES */
 
+#home-mobile-image { display: none; }
+
 /* HEADER CUSTOM FOR PARALLAX - OVERRIDE FOR PARALLAX */
 
 #header.ug-header, #ug-nav.container-fluid { width: 100%; }
@@ -273,7 +275,7 @@ article .grid .col-xs-12 .col-xs-3 {
 }
 
 #explore-life-grid .grid-title-box {
-  background-image:url("/images/explore-life-service/4000-560-grid-tour-overlay.png");
+  background-image:url("../images/explore-life-service/2000-280-grid-tour-overlay.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
