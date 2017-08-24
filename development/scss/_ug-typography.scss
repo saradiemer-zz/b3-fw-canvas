@@ -470,10 +470,10 @@ article.content p a, article.content a {
     margin: 20px 0;
 }
 
-#freshman hr {border-color: $gray !important;}
+#freshman hr {border-color: $gray-light !important;}
 
-#freshman h1.display.number.large {font-size: 8em !important;}
+#freshman h1.display.number.large {font-size: 7em !important;}
 
 #freshman .hr-fix hr {margin-top: 10px; margin-bottom: -5px;}
 
-#freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important;}
+#freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important; font-size: 875em;}

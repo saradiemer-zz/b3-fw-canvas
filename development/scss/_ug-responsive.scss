@@ -545,5 +545,16 @@ div.question.active {
 	}
 }
 
+#freshman h1.display.number.large {
+	@include media-breakpoint-down (lg) {
+		font-size: 5em !important;
+	}
+}
+
+#freshman .col-md-6.50 {
+	@include media-breakpoint-down (md){
+		width: 50% !important;
+	}
+}
 
 /* END - CANVAS-NUMBERS */
