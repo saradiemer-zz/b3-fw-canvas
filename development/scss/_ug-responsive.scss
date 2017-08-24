@@ -551,10 +551,16 @@ div.question.active {
 	}
 }
 
-#freshman .col-md-6.50 {
-	@include media-breakpoint-down (md){
-		width: 50% !important;
+#freshman .vertical-rule-right {
+	@include media-breakpoint-down (md) {
+		display: none !important;
 	}
 }
 
+#freshman.mobile-rule {
+	@include media-breakpoint-down (md) {
+		display:inline-block;
+		height:20px;
+	}
+}
 /* END - CANVAS-NUMBERS */
