@@ -14,6 +14,8 @@ h3.standalone { text-transform: none; }
 
 h4 { padding-top: 10px !important; }
 
+h6.category.bold {padding-top: 10px;}
+
 #ug-body h1.basic {
 	font-size:2.15em;
 	letter-spacing: -0.01em;
@@ -477,3 +479,5 @@ div > table.stacktable.large-only > tbody > tr > td {
 #freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important; font-size: 875em;}
 
 .nav>li>a:focus, .nav>li>a:hover { background-color: $patina !important; color: white !important; }
+
+p a button.btn-overlay.cta {padding: 10px 12px !important;}
