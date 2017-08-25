@@ -152,25 +152,25 @@ header.explore-cta-wrapper {
   font-size: 4vw;
   line-height: 1.15;
   letter-spacing: -0em;
-  color: $gray-extra-light;
+  color: $white !important;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0,0,0,.7);
+  text-shadow: 0 0 15px rgba(0,0,0,.5);
 }
 
 .explore-cta h1 { margin: 0 0 5px; }
 
-.explore-cta h1.display-large { font-size: 5vw; }
+.explore-cta h1.display-large { font-size: 5.25vw; }
 
 .explore-cta h1.display-small { font-size: 4vw; }
 
 .explore-cta h5, .explore-cta h5.label {
   margin: 10px 0 0 0;
-  font-size: 1.1em;
+  font-size: 1.45em;
   line-height: 1.45;
 }
 
 .explore-cta h5 a {
-  color: $gray-extra-light;
+  color: $white;
   transition: all .2s;
   &:hover {
     color: $patina;
