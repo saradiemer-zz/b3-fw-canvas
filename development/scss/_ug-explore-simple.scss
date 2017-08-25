@@ -1,6 +1,7 @@
 /* EXPLORE SIMPLE */
 
 #explore-simple {
+  box-sizing: border-box;
   margin: 70px auto 30px;
   width: 70%;
   @include media-breakpoint-down(md) {
@@ -9,28 +10,44 @@
 }
 
 .explore-simple-wrapper {
-  background: url("../images/backgrounds/bg-grid-light-small.png") repeat;
-  background-color: $gray-extra-light;
+  background: url("../images/backgrounds/bg-grid-dark-small.png") repeat !important;
 }
 
 .explore-simple-module {
   margin: 20px 0 30px;
   background: none;
   img {
-    margin: 0;
+    display: block;
+    padding: 15px;
+    height: auto;
+    border: 15px;
+    background: $gray-extra-light;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.65);
   }
   h1 {
     margin: 15px 0 5px 0;
-    font-size: 1.5em;
+    font-size: 2.5vw;
     line-height: 1.25;
+    color: $white;
     text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
   }
   h5.label {
     margin: 0;
+    font-size: 1vw;
+    color: $white;
     text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
   }
 }
 
 .explore-simple-module[class*='col-'] {
   padding: 0;
+}
+
+.explore-simple-module .btn-overlay.cta {
+  padding: 6px 15px;
+  width: 100%;
+  font-size: .95em;
+  text-align: center;
 }
