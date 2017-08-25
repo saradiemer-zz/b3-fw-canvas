@@ -60,50 +60,13 @@
 
 		var menuSearchToggleActive = false;
 
-		function toggleMenuSearch(isSearch) {
-			if (menuSearchToggleActive) return;
-			menuSearchToggleActive = true;
-			var tmpItems = isSearch ? [
-				$('#first-menu'),
-				$('#search-input'),
-				$('.sb-controls .search-open'),
-				$('.sb-controls .menu-open')
-			] : [
-				$('#search-input'),
-				$('#first-menu'),
-				$('.sb-controls .menu-open'),
-				$('.sb-controls .search-open')
-			];
-			if (tmpItems[2].hasClass('glyphicon-remove-circle')) {
-				$('.sb-controls .close-sb').click();
-				menuSearchToggleActive = false;
-				return;
-			}
-			tmpItems[0].removeClass('active');
-			tmpItems[1].addClass('active');
-			//        tmpItems[2].addClass('glyphicon-remove-circle');
-			//        tmpItems[3].removeClass('glyphicon-remove-circle');
-			//        if(isSearch){
-			//            tmpItems[2].removeClass('glyphicon-search');
-			//            tmpItems[3].addClass('glyphicon-menu-hamburger');
-			//        }
-			//        else {
-			//            tmpItems[2].removeClass('glyphicon-menu-hamburger');
-			//            tmpItems[3].addClass('glyphicon-search');
-			//        }
-			menuSearchToggleActive = false;
+		function closeSB() {
+            $('.close-sb').eq(0).click();
 		};
 
-		$('.side-menu-open').click(function() {
-			toggleMenuSearch(false);
+		$('.ug-global-nav div').click(function() {
+			closeSB();
 		});
-		$('.search-open').click(function() {
-			toggleMenuSearch(true);
-		});
-		$('.menu-open').click(function() {
-			toggleMenuSearch(false);
-		});
-
 		$('#first-menu .panel a span').click(function(e) {
 			e.preventDefault();
 			return false;
@@ -151,6 +114,12 @@
 			}
 			$('.panel-heading .subhead', tmpPanel).append(item.html());
             $('.panel-heading .subhead span a', tmpPanel).click(function(e) {
+                e.preventDefault();
+                e.target.parentNode.parentNode.childNodes[0].click();
+                return false;
+
+            });
+            $('.panel-heading .subhead span span a', tmpPanel).click(function(e) {
                 e.preventDefault();
                 e.target.parentNode.parentNode.childNodes[0].click();
                 return false;

@@ -1,0 +1,99 @@
+/* EXPLORE SIMPLE */
+
+#explore-simple {
+  box-sizing: border-box;
+  margin: 70px auto 30px;
+  width: 70%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.explore-simple-wrapper {
+  background: url("../images/backgrounds/bg-grid-dark-small.png") repeat !important;
+}
+
+.explore-simple-module {
+  margin: 20px 0 50px;
+  background: none;
+  @include media-breakpoint-down(sm) {
+    margin: 10px 0 30px;
+  }
+  img {
+    box-sizing: border-box;
+    display: block;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+    background: $gray-extra-light;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.65);
+    @include media-breakpoint-down(sm) {
+      padding: 12px;
+    }
+  }
+  h1 {
+    margin: 20px 0 5px 0;
+    font-size: 3.5vw;
+    line-height: 1.15;
+    color: $white;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+    @include media-breakpoint-down(lg) {
+      font-size: 5vw;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 7vw;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0 5px 0;
+      font-size: 8vw;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 9vw;
+    }
+  }
+  h1.display-large.display-mobile {
+    @include media-breakpoint-down(lg) {
+      font-size: 2vw;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 4vw;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 6vw;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 7vw;
+    }
+  }
+  h5.label {
+    margin: 0;
+    font-size: 1.5vw;
+    color: $white;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+    @include media-breakpoint-down(lg) {
+      font-size: 1.75vw;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 3vw;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 3vw;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 4vw;
+    }
+  }
+}
+
+.explore-simple-module[class*='col-'] {
+  padding: 0;
+}
+
+.explore-simple-module .btn-overlay.cta {
+  padding: 6px 15px;
+  width: 100%;
+  font-size: .95em;
+  text-align: center;
+}

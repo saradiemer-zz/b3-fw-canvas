@@ -16,6 +16,7 @@ body.modules #wrapper {
   border-radius: 0 0 0 26px;
   background: $gray-extra-light;
   img { margin: 0 0 5px 0; }
+  min-height: 220px;
 }
 
 .card h6,
@@ -36,37 +37,6 @@ body.modules #wrapper {
   font-size: .85em;
   line-height: 1.8;
   text-transform: none;
-}
-
-.card .btn-overlay.cta {
-	margin: 0;
-	padding: 4px 12px 4px 12px;
-	font-family: "Antenna Bold", "Arial", sans-serif;
-	font-size: .75em;
-	font-weight: bold;
-	font-style: normal;
-	color: $patina;
-	text-align: left;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-shadow: none;
-	background-color: lighten($bg-overlay, 20%) !important;
-	background-image: none;
-	border: 1px $patina solid;
-	border-radius: 30px;
-	outline: white;
-	text-decoration: none;
-	-moz-transition: all 0.2s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	cursor: pointer;
-}
-
-.card .btn-overlay.cta:hover,
-.card .btn-overlay.cta:active,
-.card .btn-overlay.cta:visited {
-	color: lighten($patina, 10%) ;
-	background-color: lighten($bg-overlay, 10%);
-	cursor: pointer;
 }
 
 /* GRID-LIGHT - CARD */
