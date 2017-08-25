@@ -11,11 +11,11 @@
 
 .explore-simple-wrapper {
   background: url("../images/backgrounds/bg-grid-dark-small.png") repeat !important;
-  background: url("../images/backgrounds/bg-campus-blurred.jpg") repeat !important;
+  background-color: rgba(0,0,0,.5) !important;
 }
 
 .explore-simple-module {
-  margin: 20px 0 50px;
+  margin: 20px 0 30px;
   background: none;
   @include media-breakpoint-down(sm) {
     margin: 10px 0 30px;
@@ -89,20 +89,51 @@ h5.label {
   }
 }
 
+.explore-cta-button {
+	position: relative;
+	margin: 15px auto 0 !important;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 2px $patina;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,.85);
+	opacity: .85;
+  @include media-breakpoint-down(lg) {
+    margin: 5px auto 0 !important;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#explore-simple .explore-cta-button img,
+#explore-simple .explore-simple-module .explore-cta-button img {
+  background: none rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0) !important;
+  box-shadow: none;
+}
+
+.explore-cta-button:hover{ cursor: pointer; }
+.explore-cta-button.apply {margin: 50px auto 0 !important;}
+
+.explore-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
+  opacity: .95;
+}
+
 .explore-simple-module[class*='col-'] {
   padding: 0;
 }
 
-.explore-simple-module .btn-overlay.cta {
-  margin: 20px 0 0 0;
-  padding: 6px 15px;
-  width: 100%;
-  font-size: .95em;
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
-}
-
-.explore-simple-module a.button {
+.explore-simple-module .btn-overlay.cta, #explore-simple  a button {
   margin: 20px 0 0 0;
   padding: 6px 15px;
   width: 100%;
