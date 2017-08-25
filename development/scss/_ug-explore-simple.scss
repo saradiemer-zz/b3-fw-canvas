@@ -11,19 +11,20 @@
 
 .explore-simple-wrapper {
   background: url("../images/backgrounds/bg-grid-dark-small.png") repeat !important;
+  background-color: rgba(0,0,0,.5) !important;
 }
 
 .explore-simple-module {
-  margin: 20px 0 50px;
+  margin: 20px 0 30px;
   background: none;
   @include media-breakpoint-down(sm) {
     margin: 10px 0 30px;
   }
   img {
-    box-sizing: border-box;
+    box-sizong: border-box;
     display: block;
+    margin: 0;
     padding: 15px;
-    max-width: 100%;
     height: auto;
     background: $gray-extra-light;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.65);
@@ -45,55 +46,98 @@
       font-size: 7vw;
     }
     @include media-breakpoint-down(sm) {
-      margin: 15px 0 5px 0;
       font-size: 8vw;
     }
     @include media-breakpoint-down(xs) {
       font-size: 9vw;
     }
   }
-  h1.display-large.display-mobile {
-    @include media-breakpoint-down(lg) {
-      font-size: 2vw;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 4vw;
-    }
-    @include media-breakpoint-down(sm) {
-      font-size: 6vw;
-    }
-    @include media-breakpoint-down(xs) {
-      font-size: 7vw;
-    }
+}
+
+h1.display-large.display-mobile {
+  @include media-breakpoint-down(lg) {
+    font-size: 3vw;
   }
-  h5.label {
-    margin: 0;
-    font-size: 1.5vw;
-    color: $white;
-    text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
-    @include media-breakpoint-down(lg) {
-      font-size: 1.75vw;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 3vw;
-    }
-    @include media-breakpoint-down(sm) {
-      font-size: 3vw;
-    }
-    @include media-breakpoint-down(xs) {
-      font-size: 4vw;
-    }
+  @include media-breakpoint-down(md) {
+    font-size: 4vw;
   }
+  @include media-breakpoint-down(sm) {
+    font-size: 6vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 6vw;
+  }
+}
+
+h5.label {
+  margin: 0;
+  font-size: 1.5vw;
+  color: $white;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+  @include media-breakpoint-down(lg) {
+    font-size: 1.75vw;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 2.25vw;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 3vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 3.5vw;
+  }
+}
+
+.explore-cta-button {
+	position: relative;
+	margin: 15px auto 0 !important;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 2px $patina;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,.85);
+	opacity: .85;
+  @include media-breakpoint-down(lg) {
+    margin: 5px auto 0 !important;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#explore-simple .explore-cta-button img,
+#explore-simple .explore-simple-module .explore-cta-button img {
+  background: none rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0) !important;
+  box-shadow: none;
+}
+
+.explore-cta-button:hover{ cursor: pointer; }
+.explore-cta-button.apply {margin: 50px auto 0 !important;}
+
+.explore-cta-button img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: auto auto;
+	padding: 0;
+	width: 75%;
+	height: 55%;
+  opacity: .95;
 }
 
 .explore-simple-module[class*='col-'] {
   padding: 0;
 }
 
-.explore-simple-module .btn-overlay.cta {
+.explore-simple-module .btn-overlay.cta, #explore-simple  a button {
+  margin: 20px 0 0 0;
   padding: 6px 15px;
   width: 100%;
   font-size: .95em;
   text-align: center;
+  background-color: rgba(0,0,0,.5);
 }
