@@ -10,34 +10,81 @@
 }
 
 .explore-simple-wrapper {
-  background: url("../images/backgrounds/bg-grid-dark-small.png") repeat !important;
+  background: url("../images/backgrounds/bg-campus-blurred.jpg") repeat !important;
 }
 
 .explore-simple-module {
-  margin: 20px 0 30px;
+  margin: 20px 0 50px;
   background: none;
+  @include media-breakpoint-down(sm) {
+    margin: 10px 0 30px;
+  }
   img {
+    box-sizong: border-box;
     display: block;
+    margin: 0;
     padding: 15px;
     height: auto;
-    border: 15px;
     background: $gray-extra-light;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.65);
+    @include media-breakpoint-down(sm) {
+      padding: 12px;
+    }
   }
   h1 {
-    margin: 15px 0 5px 0;
-    font-size: 2.5vw;
-    line-height: 1.25;
+    margin: 20px 0 5px 0;
+    font-size: 3.5vw;
+    line-height: 1.15;
     color: $white;
     text-align: center;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+    @include media-breakpoint-down(lg) {
+      font-size: 5vw;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 7vw;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 8vw;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 9vw;
+    }
   }
-  h5.label {
-    margin: 0;
-    font-size: 1vw;
-    color: $white;
-    text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+}
+
+h1.display-large.display-mobile {
+  @include media-breakpoint-down(lg) {
+    font-size: 3vw;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 4vw;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 6vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 6vw;
+  }
+}
+
+h5.label {
+  margin: 0;
+  font-size: 1.5vw;
+  color: $white;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+  @include media-breakpoint-down(lg) {
+    font-size: 1.75vw;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 2.25vw;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 3vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 3.5vw;
   }
 }
 
@@ -46,8 +93,19 @@
 }
 
 .explore-simple-module .btn-overlay.cta {
+  margin: 20px 0 0 0;
   padding: 6px 15px;
   width: 100%;
   font-size: .95em;
   text-align: center;
+  background-color: rgba(0,0,0,.5);
+}
+
+.explore-simple-module a.button {
+  margin: 20px 0 0 0;
+  padding: 6px 15px;
+  width: 100%;
+  font-size: .95em;
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
 }
