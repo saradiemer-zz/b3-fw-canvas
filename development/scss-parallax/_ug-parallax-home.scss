@@ -208,14 +208,14 @@ header.explore-cta-wrapper {
 	position: relative;
 	margin: 15px auto 0 !important;
 	padding: 0;
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	color: $gray-extra-light;
 	text-align: center;
-	border: solid 2px $patina;
+	border: solid 3px $gray-extra-light;
 	border-radius: 50%;
-	background-color: rgba(0,0,0,.9);
-	opacity: .85;
+	background-color: rgba(0,0,0,.35);
+	opacity: 1;
   @include media-breakpoint-down(lg) {
     margin: 5px auto 0 !important;
     width: 50px;
