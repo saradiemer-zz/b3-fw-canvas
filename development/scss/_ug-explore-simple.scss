@@ -15,11 +15,11 @@
 }
 
 .explore-simple-module {
-  margin: 20px 0 30px;
-  border-radius: 3px;
-  background: rgba(255,255,255,.65);
+  margin: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,1);
   @include media-breakpoint-down(sm) {
-    margin: 10px 0 20px;
+    margin: 0;
   }
   img {
     box-sizing: border-box;
@@ -74,7 +74,7 @@ h1.display-large.display-mobile {
 }
 
 #explore-simple h5.label {
-  margin: 0 15px 10px;
+  margin: 0 40px 10px;
   font-family: 'Antenna', sans-serif;
   font-size: 1.5vw;
   line-height: 1.35;
