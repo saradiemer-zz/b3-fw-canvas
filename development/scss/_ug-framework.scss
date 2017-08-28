@@ -832,6 +832,17 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	opacity: 1;
 }
 
+#ug-nav > div.ug-global-nav-wrapper.ug-global-nav-wrapper-desktop > h5 {
+	position: relative;
+	top: -1px;
+	right: 60px;
+	width: auto;
+	font-family: 'Antenna', sans-serif;
+	font-size: 1.1em;
+	color: darken($gray, 8%);
+	text-transform: uppercase;
+}
+
 
 /* END - UG FRAMEWORK */
 
