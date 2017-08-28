@@ -114,9 +114,11 @@
 
 					// Calculate sidebar width
 					if ( w < ( cfg.sidebar.width + cfg.gap ) ) {
-						return w - cfg.gap;
+                        var sWidth = w - cfg.gap;
+                        sWidth = sWidth < 320 ? 320 : sWidth;
+                        return sWidth;
 					} else {
-						return cfg.sidebar.width;
+                        return cfg.sidebar.width;
 					}
 				},
 				sidebarStatus = function() {
@@ -219,6 +221,7 @@
 						events.callbacks.animation.close();
 						events.callbacks.animation.both();
 					},
+                        sideBarWidth = $sidebar.width(),
                         durationClose = duration/2;
 
 					// Define the animation
