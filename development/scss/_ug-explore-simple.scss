@@ -16,29 +16,32 @@
 
 .explore-simple-module {
   margin: 20px 0 30px;
-  background: none;
+  border-radius: 3px;
+  background: rgba(255,255,255,.65);
   @include media-breakpoint-down(sm) {
-    margin: 10px 0 30px;
+    margin: 10px 0 20px;
   }
   img {
-    box-sizong: border-box;
+    box-sizing: border-box;
     display: block;
     margin: 0;
-    padding: 15px;
+    padding: 20px;
     height: auto;
-    background: $gray-extra-light;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.65);
+    background: none;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+    }
     @include media-breakpoint-down(sm) {
       padding: 12px;
     }
   }
   h1 {
-    margin: 20px 0 5px 0;
+    margin: 5px 15px;
     font-size: 3.5vw;
     line-height: 1.15;
-    color: $white;
+    color: $gray-extra-dark;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65); */
     @include media-breakpoint-down(lg) {
       font-size: 5vw;
     }
@@ -49,12 +52,13 @@
       font-size: 8vw;
     }
     @include media-breakpoint-down(xs) {
-      font-size: 9vw;
+      font-size: 8vw;
     }
   }
 }
 
 h1.display-large.display-mobile {
+  margin: 0 15px 10px;
   @include media-breakpoint-down(lg) {
     font-size: 3vw;
   }
@@ -69,12 +73,14 @@ h1.display-large.display-mobile {
   }
 }
 
-h5.label {
-  margin: 0;
+#explore-simple h5.label {
+  margin: 0 15px 10px;
+  font-family: 'Antenna', sans-serif;
   font-size: 1.5vw;
-  color: $white;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  color: $gray-extra-dark;
   text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
   @include media-breakpoint-down(lg) {
     font-size: 1.75vw;
   }
@@ -89,22 +95,29 @@ h5.label {
   }
 }
 
-.explore-cta-button {
+#explore-simple-tour .row { margin: 0; }
+
+#explore-simple .explore-cta-button {
 	position: relative;
-	margin: 15px auto 0 !important;
+	margin: 0 auto 0 !important;
 	padding: 0;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	color: $gray-extra-light;
 	text-align: center;
-	border: solid 2px $patina;
+	border: solid 2px darken($patina, 12%);
 	border-radius: 50%;
-	background-color: rgba(255,255,255,.85);
+	background-color: none;
 	opacity: .85;
   @include media-breakpoint-down(lg) {
     margin: 5px auto 0 !important;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  @include media-breakpoint-down(xs) {
+    margin: 0 auto 0 !important;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -115,10 +128,14 @@ h5.label {
   box-shadow: none;
 }
 
-.explore-cta-button:hover{ cursor: pointer; }
-.explore-cta-button.apply {margin: 50px auto 0 !important;}
+#explore-simple .explore-cta-button:hover{ cursor: pointer; }
+#explore-simple .explore-cta-button.apply {
+  margin: 50px auto 0 !important;
+}
 
-.explore-cta-button img {
+#explore-simple .explore-cta-button img,
+#explore-simple .explore-simple-module .explore-cta-button img,
+#explore-simple .explore-cta-button a img {
 	position: relative;
 	top: 55%;
 	transform: translateY(-50%);
@@ -130,7 +147,10 @@ h5.label {
 }
 
 .explore-simple-module[class*='col-'] {
-  padding: 0;
+  padding: 0 0 20px 0;
+  @include media-breakpoint-down(xs) {
+    padding: 0 0 15px 0;
+  }
 }
 
 .explore-simple-module .btn-overlay.cta, #explore-simple  a button {
@@ -140,4 +160,76 @@ h5.label {
   font-size: .95em;
   text-align: center;
   background-color: rgba(0,0,0,.5);
+  @include media-breakpoint-down(xs) {
+    margin: 15px 5% 0;
+    width: 90%;
+  }
 }
+
+/* CTA AND LINKS */
+
+#explore-simple-cta a button {
+  margin: 40px 0 20px 0;
+  padding: 8px 15px 6px;
+  width: 100%;
+  font-size: 1.25em;
+  @include media-breakpoint-down(md) {
+    margin: 20px 0 0 0;
+  }
+}
+
+#explore-simple-links {
+  margin: 20px 0;
+  @include media-breakpoint-down(xs) {
+    margin: 20px 0;
+  }
+}
+
+#explore-simple-links h5.label { text-align: center; }
+
+#explore-simple-links h2.display-small {
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.5em;
+  color: $gray-extra-dark;
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+  }
+}
+
+#explore-simple-links h5.label { margin: 15px 0; }
+
+#explore-simple-links h5.label,
+#explore-simple-links h5.label a {
+  font-size: 1.175em;
+  font-family: 'Antenna Black', sans-serif;
+  letter-spacing: .015em;
+  color: darken($patina, 12%);
+  text-shadow: none;
+  transition: all .2s;
+  &:hover { color: lighten($patina, 10%); }
+  @include media-breakpoint-down(xs) {
+    font-size: 1.015em;
+    margin: 0 15px;
+  }
+}
+
+#explore-simple-links h5.label a {
+  @include media-breakpoint-down(xs) {
+    float: left;
+    margin: 5px auto;
+    width: 100%;
+  }
+}
+
+#explore-simple-links span.bullet {
+  display: inline;
+  margin: 0 5px;
+  color: darken($gray, 10%);
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+/* CSS END */
