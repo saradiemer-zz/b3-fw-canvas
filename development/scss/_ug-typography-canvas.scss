@@ -161,7 +161,7 @@ ul#tabs.nav.nav-pills {
 }
 
 #tabs > li a:hover {
-	color: $patina !important ;
+	color: $patina;
 	background-color: lighten($bg-overlay, 80%);
 	cursor: pointer;
 }
