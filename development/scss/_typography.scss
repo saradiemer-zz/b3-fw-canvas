@@ -651,34 +651,6 @@ TABS ========================================= */
 #tabs > li { list-style-image: none !important; }
 
 
-#tabs > li a {
-	top: 1px;
-	display: inline;
-	padding: 8px 15px 6px;
-	font-family: 'Antenna Light', sans-serif !important;
-	font-size: .825em !important;
-	font-weight: normal;
-	color: $gray-extra-light;
-	text-transform: uppercase;
-	line-height: 1;
-	list-style-type: none !important;
-	list-style-image: none !important;
-	border-color: $gray-light;
-	border-bottom: $white;
-	background: $gray-light;
-	background: -moz-linear-gradient(top, $gray-light 90%, $gray 95%, $gray-dark 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, $gray-light 90%, $gray 95%, $gray-dark 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, $gray-light 90%, $gray 95%, $gray-dark 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#888888',GradientType=0 ); /* IE6-9 */
-}
-
-#tabs > li.active a {
-	color: $gray-dark;
-	border-bottom-color: $white;
-	background: $white;
-}
-
-
 /* ===============================================
 FORMS ========================================= */
 
