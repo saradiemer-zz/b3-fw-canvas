@@ -4,6 +4,7 @@
 	font-family: 'Antenna Black', sans-serif !important;
 	font-size: 1em;
 	text-transform: uppercase;
+	padding-top: 0px !important;
 }
 
 #main-content #interior-wrapper #accordion h4.subhead span.date {
@@ -62,7 +63,6 @@
 }
 
 #main-content #interior-wrapper #interior-body #accordion .panel-body ul {
-	margin: 0px;
 	list-style-position: inside;
 }
 

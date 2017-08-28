@@ -12,7 +12,7 @@ h2 { width: 80%; }
 
 h3.standalone { text-transform: none; }
 
-h4 { padding-top: 10px !important; }
+h4 { padding-top: 10px; }
 
 h6.category.bold {padding-top: 10px;}
 
@@ -480,4 +480,4 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 .nav>li>a:focus, .nav>li>a:hover { background-color: $patina !important; color: white !important; }
 
-p a button.btn-overlay.cta {padding: 10px 12px !important;}
+p a button.btn-overlay.cta {padding: 8px 12px !important;}

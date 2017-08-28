@@ -576,4 +576,14 @@ div.question.active {
 		min-height: 0px;
 	}
 }
+
+/* LET'S GET STARTED */
+
+#ug-body h2.display.process-headline {
+	@include media-breakpoint-down (md) {
+		font-size: 5em;
+	}
+}
+
+
 /* END - CANVAS-NUMBERS */
