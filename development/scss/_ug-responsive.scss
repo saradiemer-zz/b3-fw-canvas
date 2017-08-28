@@ -585,5 +585,17 @@ div.question.active {
 	}
 }
 
+/* JESUIT */
+#jesuit-intro .col-md-6.vertical-rule-right {
+	@media-breakpoint-down (md) {
+		display: none;
+	}
+}
+
+#myCarouselJesuit.carousel-caption {
+	@media-breakpoint-down (md) {
+		display: block !important;
+	}
+}
 
 /* END - CANVAS-NUMBERS */
