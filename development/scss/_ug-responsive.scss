@@ -586,15 +586,16 @@ div.question.active {
 }
 
 /* JESUIT */
-#jesuit .vertical-rule-right {
+#jesuit-intro .vertical-rule-right {
 	@media-breakpoint-down (md) {
 		display: none;
 	}
 }
 
-#jesuit .carousel-caption {
+
+#myCarouselJesuit.carousel-caption {
 	@media-breakpoint-down (md) {
-		display: block;
+		display: block !important;
 	}
 }
 
