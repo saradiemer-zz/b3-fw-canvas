@@ -27,7 +27,7 @@ gulp.task('t4_css', function() {
 	//home
 	.pipe(replace('../images/homepage/home.png', '<t4 type="media" id="473662" formatter="path/*"/>'))
 	//homepage mobile image
-	.pipe(replace('("/images/homepage/home-campus-aerial-500-500.jpg")', '("<t4 type="media" id="474881" formatter="path/*"/>")'))
+	.pipe(replace('("/images/homepage/home-campus-aerial-mobile.jpg")', '("<t4 type="media" id="474881" formatter="path/*"/>")'))
 	//social ICONS
 	.pipe(replace('(../images/site/ug-social-icons.png)', '("<t4 type="media" id="466249" formatter="path/*"/>")'))
 	.pipe(replace('(../images/backgrounds/bg-shield-dark.jpg)', '("<t4 type="media" id="471277" formatter="path/*"/>")'))
