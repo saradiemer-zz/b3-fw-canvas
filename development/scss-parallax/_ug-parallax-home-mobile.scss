@@ -5,38 +5,6 @@ CSS FOR MOBILE - 580PX
 @media only screen
 and (max-device-width : 1024px) {
 
-/* HOME IMAGE */
-
-#home-mobile-image {
-	display: block;
-	margin: 0 0 10px 0;
-	padding: 0 5px;
-	width: 100%;
-	overflow: hidden;
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
-	#home-mobile-image { height: 180px; }
-}
-
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
-	#home-mobile-image { height: 180px; }
-}
-
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : portrait) {
-	#home-mobile-image { height: 250px; }
-}
-
-#home-mobile-image img { position: relative; margin: -50px 0 0px; }
-
 /* BACKGROUND */
 
 body,
@@ -211,5 +179,65 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 	font-size: 1em !important;
 	letter-spacing: .015em;
 }
+
+/* HOME IMAGE */
+
+#home-mobile-image {
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 0 5px;
+	width: 100%;
+	overflow: hidden;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+	.container, .container-fluid { width: 100% !important; }
+	#header.ug-header { padding: 20px 0 15px 0; }
+	.ug-global-nav { display: none; }
+	.ug-global-nav-wrapper-mobile .ug-global-nav { display: block; }
+	.ug-global-nav-wrapper.ug-global-nav-wrapper-desktop { display: none; }
+	#ug-nav ul li { margin: 8px 2% !important;  }
+	#ug-nav.container-fluid { margin-top: 0 !important; }
+	#undergrad-admission { display: none; }
+	#home-mobile-image { height: 300px; }
+	#home-mobile-image img { position: relative; top: -120px; }
+	#footer-address .container .row { padding-left: 15px; padding-right: 15px; }
+	body.grid.parallax.touch[style] { height: 100% !important; }
+	#social.social-gold li { width: 42px !important; height: 42px !important; }
+	#social.social-gold li { width: 45px !important; height: 45px !important; }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	#home-mobile-image { height: 700px; }
+	#home-mobile-image img { position: relative; top: 0; }
+	#ug-social-wrapper { width: 100%; }
+	#social.social-gold li { width: 45px !important; height: 45px !important; }
+	#social.social-gold li a.icon-fb { background-position: -5px 0 !important; }
+	#social.social-gold li a.icon-fl { background-position: -5px 8.85% !important; }
+	#social.social-gold li a.icon-gg { background-position: -5px 18% !important; }
+	#social.social-gold li a.icon-ig { background-position: -5px 27% !important; }
+	#social.social-gold li a.icon-li{ background-position: -5px 36.15% !important; }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+	#home-mobile-image { height: 180px; }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+	#home-mobile-image { height: 250px; }
+}
+
+#home-mobile-image img { position: relative; margin: -50px 0 0px; }
 
 }

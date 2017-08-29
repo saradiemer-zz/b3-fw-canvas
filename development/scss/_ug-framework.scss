@@ -502,7 +502,7 @@ footer .col-sm-12 { padding: 0; } /* footer-address wrapper */
 
 #footer-address {
   padding: 10px 0;
-  background-color: $gold;
+  background-color: darken($gray-light, 10%);
 	@include media-breakpoint-down(sm) {
 		padding: 10px 20px;
 		font-size: .85em;
