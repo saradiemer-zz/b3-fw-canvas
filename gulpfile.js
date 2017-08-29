@@ -29,7 +29,7 @@ var config = {
 };
 
 gulp.task('lint', function() {
-  return gulp.src('./development/js/*.js')
+  return gulp.src(['./development/js/*.js','!./development/js/video*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
