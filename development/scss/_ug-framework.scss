@@ -387,6 +387,13 @@ ul.pagination>li a { background-color: $gray-light; }
 
 #header { width: 100%; }
 
+#header.ug-header .container {
+	@include media-breakpoint-down(xs) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 #header.ug-header.affix {
 @include media-breakpoint-down(sm) {
   position: fixed;
@@ -897,8 +904,9 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 .ug-global-nav-wrapper-mobile .ug-global-nav { width: 50%; }
 
 .ug-global-nav .glyphicon,
-#main-sidebar .ug-global-nav #menu-icon { top: 26%; left: 68%; }
+#main-sidebar .ug-global-nav #menu-icon { top: 26%; left: 68%; }s
 
+#header.ug-header .container #menu-icon,
 .ug-global-nav-wrapper-mobile .ug-global-nav #menu-icon { top: 28%; left: 30%; }
 
 .ug-global-nav h5 {

@@ -2,7 +2,8 @@
 CSS FOR MOBILE - 580PX
 =====================*/
 
-@media only screen and (max-width: 580px) {
+@media only screen
+and (max-device-width : 1024px) {
 
 /* HOME IMAGE */
 
@@ -11,8 +12,27 @@ CSS FOR MOBILE - 580PX
 	margin: 0 0 10px 0;
 	padding: 0 5px;
 	width: 100%;
-	height: 250px;
 	overflow: hidden;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+	#home-mobile-image { height: 180px; }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+	#home-mobile-image { height: 180px; }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+	#home-mobile-image { height: 250px; }
 }
 
 #home-mobile-image img { position: relative; margin: -50px 0 0px; }
