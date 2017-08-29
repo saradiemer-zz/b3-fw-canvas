@@ -106,9 +106,12 @@ h5.label.maroon {
 #ug-body h2.display.process-headline {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 6em;
+	@include media-breakpoint-down (lg) {
+		font-size: 5em;
+	}
 	@include media-breakpoint-down (sm) { font-size:3em; }
-	line-height: 1;
-	text-transform: uppercase;
+		line-height: 1;
+		text-transform: uppercase;
 }
 
 #accordion h2.display.process-headline-small {
