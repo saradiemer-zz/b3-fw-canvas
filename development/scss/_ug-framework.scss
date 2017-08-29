@@ -769,6 +769,8 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	font-size: 24px;
 }
 
+.ug-global-close .glyphicon { left: 50%; }
+
 .ug-global-search { width: 60%; }
 
 .ug-global-search .glyphicon { left: 24%; }
@@ -877,6 +879,57 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	font-size: 1.1em;
 	color: darken($gray, 8%);
 	text-transform: uppercase;
+}
+
+/* NEW MENU STYLE AND BUILD */
+
+.ug-global-search,
+#main-sidebar .ug-global-nav #search-icon,
+.ug-global-nav-wrapper-mobile .ug-global-nav #search-icon { display: none; }
+
+.ug-global-nav {
+	width: 100%;
+	@include media-breakpoint-down(xs) {
+	height: 103%;
+	}
+}
+
+.ug-global-nav-wrapper-mobile .ug-global-nav { width: 50%; }
+
+.ug-global-nav .glyphicon,
+#main-sidebar .ug-global-nav #menu-icon { top: 26%; left: 68%; }
+
+.ug-global-nav-wrapper-mobile .ug-global-nav #menu-icon { top: 28%; left: 30%; }
+
+.ug-global-nav h5 {
+	display: table-cell;
+	position: relative;
+	top: 2px;
+	left: -5px;
+	font-family: 'Antenna Bold', sans-serif;
+	font-size: .85em;
+	line-height: 0;
+	color: darken($patina-dark, 15%);
+	content: "MENU";
+	text-transform: uppercase;
+	@include media-breakpoint-down(xs) {
+		display: none;
+	}
+}
+
+#main-sidebar .ug-global-nav h5 {
+	top: 26px;
+	left: 15px;
+	font-size: 1em;
+}
+
+.ug-global-nav {
+	color: darken($patina-dark, 14%);
+	background-color: darken($patina, 8%);
+	&:hover {
+		color: darken($patina-dark, 14%);
+		background-color: darken($patina, 5%);
+	}
 }
 
 /* END - UG FRAMEWORK */
