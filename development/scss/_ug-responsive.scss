@@ -434,6 +434,11 @@ span.hexagon {
 	padding-right: 5px;
 }
 
+#cost-tuition .col-sm-12  {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 #cost-tuition td, #page-content td, #page-content td {
 	@include media-breakpoint-down (sm) {
 	border-bottom: solid .5px #272727;
