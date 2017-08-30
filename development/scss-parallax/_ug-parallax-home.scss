@@ -87,6 +87,12 @@ figure img { display: block; }
   }
 }
 
+#explore-study-abroad > div > figure > img:nth-child(5) {
+  @media screen and (min-width:1920px) {
+    display: none;
+  }
+}
+
 /* HEADLINE BOXES - BASE */
 
 .text {
@@ -160,6 +166,8 @@ header.explore-cta-wrapper {
 .explore-cta h1 { margin: 0 0 5px; }
 
 .explore-cta h1.display-large { font-size: 5.25vw; }
+
+.explore-cta h1.display-large { @include media-breakpoint-up(lg) { font-size: 4.25vw; } }
 
 .explore-cta h1.display-small { font-size: 4vw; }
 
