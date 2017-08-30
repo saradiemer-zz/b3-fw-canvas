@@ -101,9 +101,9 @@ h5.label.maroon {
 }
 
 #ug-body h2.label-chapter-secondary {
-@include media-breakpoint-down (sm) {
-	width:95%
-	font-size: 1.75em;
+ 		@include media-breakpoint-down (sm) {
+				width:95%;
+				font-size: 1.75em;
 	}
 }
 
