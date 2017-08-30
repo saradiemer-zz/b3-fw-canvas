@@ -11,7 +11,7 @@
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
-.carousel-control .icon-prev { @include media-breakpoint-down(xs) { top: 35%; } }
+.carousel-control .icon-prev { @include media-breakpoint-down(sm) { top: 45%; } }
 
 #top-panel-mobile {
 	@include media-breakpoint-up (md) {display: none;}
@@ -324,6 +324,12 @@ span.hexagon {
 			margin-right:10px;
 			margin-bottom: 20px;
 		}
+	}
+}
+
+#green-sustainability {
+	@include media-breakpoint-down (sm) {
+		display: none;
 	}
 }
 
