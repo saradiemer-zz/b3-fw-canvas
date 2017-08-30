@@ -435,10 +435,10 @@ span.hexagon {
 }
 
 #cost-tuition .col-sm-12  {
-	@include media-breakpoint-down (sm)
+	@include media-breakpoint-down (sm) {
 	padding-left: 0px;
 	padding-right: 0px;
-}
+ }
 }
 
 #cost-tuition td, #page-content td, #page-content td {
