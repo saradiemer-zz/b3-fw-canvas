@@ -30,7 +30,7 @@
 #main-sidebar[style] {
 	background: rgba(0,0,0,.35);
 	@include media-breakpoint-down(sm) {
-		width: 320px !important;
+		width: 300px !important;
 	}
 }
 
@@ -109,15 +109,25 @@
 	margin: 0;
 	padding: 10px 0;
 	border-bottom: none;
+	@include media-breakpoint-down(sm) {
+		padding: 5px 0;
+	}
 }
 
-#main-sidebar div.panel-heading h4.subhead { font-family: "Antenna Bold", sans-serif;}
+#main-sidebar div.panel-heading h4.subhead {
+	font-family: "Antenna Bold", sans-serif;
+	@include media-breakpoint-down(sm) {
+		font-size: 1em;
+	}
+}
 
 #main-sidebar div.panel-heading .subhead { top: 4px; margin: 0; text-transform: uppercase; }
 
 #main-sidebar .panel-group { margin: 0 2em 0; }
 
 #main-sidebar .panel-group a { color: darken($patina, 12%); }
+
+#main-sidebar .panel-group ul { margin-left: 20px; }
 
 #main-sidebar .panel-group ul li, #main-sidebar .panel-group ul li a { color: darken($patina, 12%); }
 
