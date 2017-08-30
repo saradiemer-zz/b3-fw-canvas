@@ -386,12 +386,13 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-apply-visit-info-wrapper .row h2.display-small {
   margin-bottom: 20px;
   font-size: 2.25em;
+  color: $gray-extra-light !important;
   text-shadow: 0 0 10px $bg-overlay;
 }
 
 #explore-apply-visit-info-wrapper .explore-cta h2.display-small { margin-bottom: 70px; }
 
-#explore-apply-visit-info-wrapper h5.label {   font-size: 1.5em; text-align: center; }
+#explore-apply-visit-info-wrapper h5.label { font-size: 1.5em; text-align: center; }
 
 #explore-apply-visit-info-wrapper h5.label,
 #explore-apply-visit-info-wrapper h5.label a {
@@ -439,6 +440,7 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-cost-value         { top: 0px; }
 #explore-apply-visit-info   { top: 0px; }
 
+/*
 #explore-why-loyola:after,
 #explore-social-justice:after,
 #explore-academics-chicago:after,
@@ -456,6 +458,7 @@ article .grid .col-xs-12 .col-xs-3 {
     z-index: -1;
     opacity: 1;
 }
+*/
 
 #explore-intro .explore-cta-button img { background-image: none; cursor: pointer; }
 
