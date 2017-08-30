@@ -4,7 +4,10 @@
 	font-family: 'Antenna Black', sans-serif !important;
 	font-size: 1em;
 	text-transform: uppercase;
-	padding-top: 0px !important;
+	padding-top: 5px !important;
+	@include media-breakpoint-down (sm) {
+		font-size: .875em;
+	}
 }
 
 #main-content #interior-wrapper #accordion h4.subhead span.date {

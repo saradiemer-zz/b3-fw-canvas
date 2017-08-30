@@ -275,7 +275,11 @@ input[type="file"] {
 	cursor: pointer;
 }
 
-#accordion .number h1.display { font-size: 8em; }
+#accordion .number h1.display { font-size: 8em;
+ @include media-breakpoint-down (lg) {
+	 font-size: 7em;
+ 	}
+ }
 
 #ug-body .btn-overlay.cta, #social-share-modal .btn-overlay.cta { background-color: white; }
 

@@ -11,7 +11,7 @@
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
-.carousel-control .icon-prev { @include media-breakpoint-down(xs) { top: 35%; } }
+.carousel-control .icon-prev { @include media-breakpoint-down(sm) { top: 45%; } }
 
 #top-panel-mobile {
 	@include media-breakpoint-up (md) {display: none;}
@@ -327,6 +327,12 @@ span.hexagon {
 	}
 }
 
+#green-sustainability {
+	@include media-breakpoint-down (sm) {
+		display: none;
+	}
+}
+
 ////////* GRID *////////
 
 .grid .col-xs-3 {
@@ -582,6 +588,9 @@ div.question.active {
 #ug-body h2.display.process-headline {
 	@include media-breakpoint-down (md) {
 		font-size: 5em;
+	}
+	@include media-breakpoint-down (sm) {
+		font-size: 3em;
 	}
 }
 
