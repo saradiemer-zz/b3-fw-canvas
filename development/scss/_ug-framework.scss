@@ -828,7 +828,7 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 
 .ug-global-nav-wrapper-mobile {
 	display: none;
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
 		display: block;
 		position: absolute;
 		top: 0;
@@ -836,9 +836,6 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 		margin: 0;
 		width: auto;
 		z-index: 10500;
-		@include media-breakpoint-down(sm) {
-			width: auto;
-		}
 		@include media-breakpoint-down(sm) {
 			right: 0;
 		}
