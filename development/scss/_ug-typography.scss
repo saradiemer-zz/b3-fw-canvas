@@ -31,6 +31,7 @@ h6.category.bold {padding-top: 10px;}
 #ug-body h1.display, #ug-body .number h1.display {
 	font-family: "Antenna Black", sans-serif;
 	padding-bottom: 10px;
+	line-height: 1;
 	@include media-breakpoint-up (md) {
 		font-size:5em;
 	}
@@ -100,9 +101,12 @@ h5.label.maroon {
 }
 
 #ug-body h2.label-chapter-secondary {
-@include media-breakpoint-down (sm) { width:95% }
-
+ 		@include media-breakpoint-down (sm) {
+				width:95%;
+				font-size: 1.75em;
+	}
 }
+
 #ug-body h2.display.process-headline {
 	font-family: 'Antenna Black', sans-serif;
 	font-size: 6em;
