@@ -195,6 +195,30 @@ ul#tabs.nav.nav-pills {
 	border-color:$patina-dark;
 }
 
+#main-content #tabs > li a {
+	top: 1px;
+	display: inline;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .75em;
+	font-weight: bold;
+	font-style: normal;
+	color: $patina;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+	background-color: white;
+	background-image: none;
+	border: 1px $patina solid;
+	border-radius: 30px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
 li.transfer { list-style-type: square !important; }
 
 .icon { width: 60%; margin-bottom:10px; border-radius: 100%; }
