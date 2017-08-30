@@ -221,13 +221,13 @@ ul#tabs.nav.nav-pills {
 
 #main-content  #tabs > li.active a {
 	color: $white !important;
-	background: $patina-dark;
+	background: $patina-dark !important;
 	border: 1px $patina solid;
 }
 
 #main-content #tabs > li a:hover {
 	color: $patina;
-	background-color: lighten($bg-overlay, 80%);
+	background-color: lighten($bg-overlay, 80%) !important;
 	cursor: pointer;
 }
 
