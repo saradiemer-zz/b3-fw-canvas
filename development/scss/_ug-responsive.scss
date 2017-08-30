@@ -583,6 +583,9 @@ div.question.active {
 	@include media-breakpoint-down (md) {
 		font-size: 5em;
 	}
+	@include media-breakpoint-down (sm) {
+		font-size: 3em;
+	}
 }
 
 /* JESUIT */
