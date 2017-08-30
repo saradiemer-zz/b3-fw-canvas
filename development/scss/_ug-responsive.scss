@@ -545,13 +545,6 @@ span.hexagon {
 	}
 }
 
-#results-close {
-	@include media-breakpoint-down (xs){
-		margin-right: 50px !important;
-		margin-bottom: 50px !important;
-	}
-}
-
 div.question.active {
 	@include media-breakpoint-down (xs){
 		font-size: 1.2em !important;
