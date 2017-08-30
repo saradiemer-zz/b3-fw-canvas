@@ -380,7 +380,13 @@ ul.pagination>li a { background-color: $gray-light; }
 	padding: 30px 0 20px;
 	height: auto;
 	background: $white;
+	@include media-breakpoint-down(lg) {
+		padding: 20px 0 15px;
+	}
 	@include media-breakpoint-down(md) {
+		padding: 10px 15px 6px;
+	}
+	@include media-breakpoint-down(sm) {
 		padding: 10px 15px 3px;
 	}
 }
@@ -714,9 +720,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	right: 0;
 	overflow: visible;
 	height: 50px;
-	@include media-breakpoint-down(sm) {
-		display: none;
-	}
 }
 
 .ug-global-nav, .ug-global-search, .ug-global-close {
@@ -776,7 +779,29 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	font-size: 24px;
 }
 
-.ug-global-close .glyphicon { left: 50%; }
+.ug-global-close .glyphicon {
+	left: 50%;
+	@include media-breakpoint-down(lg) { left: -180%; }
+	@include media-breakpoint-down(sm) { left: -10px; }
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (orientation : portrait) { .ug-global-close .glyphicon { left: 25px; }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) { .ug-global-close .glyphicon { left: -180px; }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
+}
 
 .ug-global-search { width: 60%; }
 
@@ -803,16 +828,14 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 .ug-global-nav-wrapper-mobile {
 	display: none;
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
 		display: block;
 		position: absolute;
 		top: 0;
 		right: 0;
 		margin: 0;
 		width: auto;
-		@include media-breakpoint-down(sm) {
-			width: auto;
-		}
+		z-index: 10500;
 		@include media-breakpoint-down(sm) {
 			right: 0;
 		}
@@ -901,6 +924,23 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	}
 }
 
+@media only screen and (max-device-width : 1366px) {
+	.ug-global-nav-wrapper-mobile {
+			display: block !important;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0;
+			width: auto;
+			z-index: 10500;
+	}
+	.ug-global-nav-wrapper.affix {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+}
+
 .ug-global-nav-wrapper-mobile .ug-global-nav { width: 50%; }
 
 .ug-global-nav .glyphicon,
@@ -920,9 +960,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 	color: darken($patina-dark, 15%);
 	content: "MENU";
 	text-transform: uppercase;
-	@include media-breakpoint-down(xs) {
-		display: none;
-	}
 }
 
 #main-sidebar .ug-global-nav h5 {
