@@ -87,6 +87,12 @@ figure img { display: block; }
   }
 }
 
+#explore-study-abroad > div > figure > img:nth-child(5) {
+  @media screen and (min-width:1920px) {
+    display: none;
+  }
+}
+
 /* HEADLINE BOXES - BASE */
 
 .text {
@@ -154,6 +160,12 @@ header.explore-cta-wrapper {
   letter-spacing: -0em;
   color: $white !important;
   text-align: center;
+  text-shadow: 0 0 15px rgba(0,0,0,.95);
+}
+
+#explore-intro-wrapper-video .explore-cta h1,
+#explore-intro-wrapper-video .explore-cta h2,
+#explore-intro-wrapper-video .explore-cta h5 {
   text-shadow: 0 0 15px rgba(0,0,0,.5);
 }
 
@@ -161,12 +173,17 @@ header.explore-cta-wrapper {
 
 .explore-cta h1.display-large { font-size: 5.25vw; }
 
+.explore-cta h1.display-large { @include media-breakpoint-up(lg) { font-size: 5vw; } }
+
 .explore-cta h1.display-small { font-size: 4vw; }
 
 .explore-cta h5, .explore-cta h5.label {
-  margin: 10px 0 0 0;
-  font-size: 1.45em;
+  margin: 10px auto 0;
+  width: 85%;
+  font-size: 1.65em;
+  letter-spacing: .015em;
   line-height: 1.45;
+  word-spacing: .25em;
 }
 
 .explore-cta h5 a, .explore-cta h1 a.cta {
@@ -195,8 +212,13 @@ header.explore-cta-wrapper {
 /* STUDY ABROAD - UNIQUE STYLES */
 
 #explore-study-abroad-wrapper.explore-cta h5,
+#explore-study-abroad-wrapper.explore-cta h5.label,
 #explore-study-abroad-wrapper.explore-cta h1,
 #explore-study-abroad-wrapper.explore-cta p.body { text-align: left !important; }
+
+#explore-study-abroad-wrapper.explore-cta h5,
+#explore-study-abroad-wrapper.explore-cta h5.label
+#explore-study-abroad-wrapper.explore-cta p.body { width: 100%; }
 
 #explore-study-abroad-wrapper.explore-cta p.body { margin-top: 10px; margin-bottom: 15px; }
 
@@ -354,25 +376,36 @@ article .grid .col-xs-12 .col-xs-3 {
   outline-offset: 0;
 }
 
-#explore-apply-visit-info-wrapper h2 { width: 100%; text-align: center; }
+#explore-apply-visit-info-wrapper h2 {
+  font-size: 3.75vw;
+  width: 100%;
+  text-align: center;
+}
 
-#explore-apply-visit-info-wrapper h5.label { text-align: center; }
-
-#explore-apply-visit-info-wrapper h2.display-small {
+#explore-apply-visit-info-wrapper .explore-cta h2.display-small,
+#explore-apply-visit-info-wrapper .row h2.display-small {
   margin-bottom: 20px;
+  font-size: 2.25em;
+  color: $gray-extra-light !important;
   text-shadow: 0 0 10px $bg-overlay;
 }
+
+#explore-apply-visit-info-wrapper .explore-cta h2.display-small { margin-bottom: 70px; }
+
+#explore-apply-visit-info-wrapper h5.label { font-size: 1.5em; text-align: center; }
 
 #explore-apply-visit-info-wrapper h5.label,
 #explore-apply-visit-info-wrapper h5.label a {
   letter-spacing: .015em;
-  color: $patina;
+  color: lighten($patina, 10%);
   text-shadow: 0 0 10px $bg-overlay;
   transition: all .2s;
-  &:hover { color: lighten($patina, 10%); }
+  &:hover { color: lighten($patina, 25%); }
 }
 
 #explore-apply-visit-info-wrapper span.bullet { display: inline; margin: 0 5px; color: $gray-light; }
+
+#explore-apply-visit-info-wrapper .explore-cta a button h2 { color: $patina !important; }
 
 /* NUMBERS */
 
@@ -407,6 +440,7 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-cost-value         { top: 0px; }
 #explore-apply-visit-info   { top: 0px; }
 
+/*
 #explore-why-loyola:after,
 #explore-social-justice:after,
 #explore-academics-chicago:after,
@@ -424,6 +458,7 @@ article .grid .col-xs-12 .col-xs-3 {
     z-index: -1;
     opacity: 1;
 }
+*/
 
 #explore-intro .explore-cta-button img { background-image: none; cursor: pointer; }
 
@@ -470,14 +505,14 @@ article .grid .col-xs-12 .col-xs-3 {
 #explore-intro-wrapper-video[style] { top: 50vh !important; }
 #explore-intro-wrapper-video > div.explore-cta { width: 100% !important; }
 /* PAGE 02 */
-#explore-why-loyola-wrapper[style] { top: 50vh !important; }
+#explore-why-loyola-wrapper[style] { top: 10vh !important; }
 #explore-why-loyola-wrapper > div.explore-cta { width: 100% !important; }
 /* PAGE 03 */
-#explore-social-justice-wrapper[style] { top: 50vh !important; }
+#explore-social-justice-wrapper[style] { top: 10vh !important; }
 #explore-social-justice-wrapper > div.explore-cta { width: 100% !important; }
 /* PAGE 04 - SOCIAL JUSTICE GRID */
 /* PAGE 05 */
-#explore-academics-chicago-wrapper[style] { top: 50vh !important; }
+#explore-academics-chicago-wrapper[style] { top: 10vh !important; }
 #explore-academics-chicago-wrapper > div.explore-cta { width: 100% !important; }
 /* PAGE 06 */
 #explore-study-abroad-wrapper[style] { top: 400px !important; margin-top: 20px !important; }
