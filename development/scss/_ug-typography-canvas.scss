@@ -213,7 +213,7 @@ ul#tabs.nav.nav-pills {
 	background-image: none;
 	border: 1px $patina solid;
 	border-radius: 30px;
-	border-bottom: none !important;
+	border-bottom: 1px $patina solid;
 	outline: white;
 	text-decoration: none;
 	-moz-transition: all 0.3s ease-in;
@@ -234,6 +234,9 @@ ul#tabs.nav.nav-pills {
 	cursor: pointer;
 }
 
+.nav-tabs {
+	border-bottom: none;
+}
 
 li.transfer { list-style-type: square !important; }
 

@@ -490,3 +490,13 @@ div > table.stacktable.large-only > tbody > tr > td {
 p a button.btn-overlay.cta {padding: 8px 12px !important;}
 
 #main-content .horizontal-rule {display: none;}
+
+#majors .nav>li>a {
+	padding: 3px 7px !important;
+}
+
+#majors #tabs > li a {
+	margin-right: 2px !important;
+}
+
+#majors a.inactive {color: $gray!important; border-color: $gray!important;}
