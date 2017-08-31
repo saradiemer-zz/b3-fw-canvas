@@ -267,9 +267,16 @@
 }
 
 #search-input input[type="submit"]:hover {
-background-color: rgba(0,0,0,.75);
-color: $patina-dark;
+	background-color: rgba(0,0,0,.75);
+	color: $patina-dark;
 }
+
+#search-input input:-ms-input-placeholder,
+#search-input input:-moz-placeholder { color: darken($patina, 12%); }
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* Firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }
 
 #main-sidebar .panel-group img {
 	margin-left: 2em;
