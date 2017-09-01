@@ -189,7 +189,7 @@ ul.content-schematic {
 		height: 330px;
 	}
 	@include media-breakpoint-down(xs){
-		height: 230px;
+		height: 185px;
 	}
 }
 
@@ -201,9 +201,9 @@ ul.content-schematic {
 		border: 1px;
 	}
 	@include media-breakpoint-down(sm){
-		padding: 6px;
-		width: 25px;
-		height: 25px;
+		padding: 4px 13px 14px 5px;
+		width: 13px;
+		height: 13px;
 		border: 1px;
 		font-size: .925em;
 	}
@@ -516,7 +516,7 @@ span.hexagon {
 		right: 4% !important;
 		top: 100px !important;
 		padding: 10px !important;
-		height: 450px !important;
+		min-height: 450px !important;
 	}
 }
 
