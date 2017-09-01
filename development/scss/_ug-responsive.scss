@@ -189,7 +189,7 @@ ul.content-schematic {
 		height: 330px;
 	}
 	@include media-breakpoint-down(xs){
-		height: 230px;
+		height: 185px;
 	}
 }
 
@@ -201,9 +201,9 @@ ul.content-schematic {
 		border: 1px;
 	}
 	@include media-breakpoint-down(sm){
-		padding: 6px;
-		width: 25px;
-		height: 25px;
+		padding: 4px 13px 14px 5px;
+		width: 13px;
+		height: 13px;
 		border: 1px;
 		font-size: .925em;
 	}
@@ -434,6 +434,13 @@ span.hexagon {
 	padding-right: 5px;
 }
 
+#cost-tuition .col-sm-12  {
+	@include media-breakpoint-down (sm) {
+	padding-left: 0px;
+	padding-right: 0px;
+ }
+}
+
 #cost-tuition td, #page-content td, #page-content td {
 	@include media-breakpoint-down (sm) {
 	border-bottom: solid .5px #272727;
@@ -509,13 +516,61 @@ span.hexagon {
 		right: 4% !important;
 		top: 100px !important;
 		padding: 10px !important;
-		height: 450px !important;
+		min-height: 450px !important;
 	}
 }
 
 #majors-list {
 	@include media-breakpoint-down (sm){
 		display: none;
+	}
+}
+
+#interior-intro > div:nth-child(5) > div > label:nth-child(2) {
+  @include media-breakpoint-down(md) {
+		padding-bottom: 40px;
+		padding-left: 30px;
+		line-height: 0.25;
+    font-size: 1.75em;
+  }
+}
+
+#yes {
+  @include media-breakpoint-down(md) {
+		transform: scale(2);
+  }
+}
+
+#yes:focus {
+  @include media-breakpoint-down(md) {
+		outline:none !important;
+  }
+}
+
+#interior-intro > div:nth-child(5) > div > label:nth-child(4) {
+  @include media-breakpoint-down(md) {
+		padding-bottom: 40px;
+		padding-left: 30px;
+		line-height: 0.5;
+    font-size: 1.75em;
+  }
+}
+
+#no {
+  @include media-breakpoint-down(md) {
+		transform: scale(2);
+  }
+}
+
+#no:focus {
+  @include media-breakpoint-down(md) {
+		outline:none !important;
+  }
+}
+
+#interior-intro > div:nth-child(5) {
+	@include media-breakpoint-down(md) {
+    padding-top: 15px;
 	}
 }
 
@@ -535,13 +590,6 @@ span.hexagon {
 	@include media-breakpoint-down (sm) {
 		font-size: 1em !important;
 		margin: 20px 0 10px;
-	}
-}
-
-#results-close {
-	@include media-breakpoint-down (xs){
-		margin-right: 50px !important;
-		margin-bottom: 50px !important;
 	}
 }
 
@@ -604,6 +652,17 @@ div.question.active {
 #myCarouselJesuit.carousel-caption {
 	@media-breakpoint-down (md) {
 		display: block !important;
+	}
+}
+
+////////* MOBILE SPACE SCHOLARSHIP AND TUITION //////*
+
+.mobile-space {
+	@include media-breakpoint-up (md) {
+		display:none;
+	}
+	@include media-breakpoint-down(sm){
+		padding-top: 60px !important;
 	}
 }
 
