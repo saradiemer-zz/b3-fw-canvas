@@ -622,6 +622,12 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 
 #ug-nav ul li, #ug-cta ul li, #ug-explore ul li { float: left; margin: 0; width: auto; }
 
+@media only screen
+and (min-width : 1024px)
+and (max-width : 1024px) {
+		#ug-nav ul li, #ug-cta ul li { padding: 0 2% !important; }
+}
+
 #ug-cta ul {
 	float: left;
 	margin: 0;

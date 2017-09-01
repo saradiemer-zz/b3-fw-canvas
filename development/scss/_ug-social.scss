@@ -41,6 +41,12 @@
   }
 }
 
+@media only screen
+and (min-width : 1024px)
+and (max-width : 1024px) {
+	#social.social-gold li { width: 38px !important; height: 38px !important; }
+}
+
 #social.social-gold li a:hover { background-color: darken($patina, 2%); }
 
 ul#social.social-gold li a { background-image: url("../images/site/ug-social-icons.png") !important; }
