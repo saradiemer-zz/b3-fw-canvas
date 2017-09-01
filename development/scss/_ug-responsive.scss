@@ -434,6 +434,13 @@ span.hexagon {
 	padding-right: 5px;
 }
 
+#cost-tuition .col-sm-12  {
+	@include media-breakpoint-down (sm) {
+	padding-left: 0px;
+	padding-right: 0px;
+ }
+}
+
 #cost-tuition td, #page-content td, #page-content td {
 	@include media-breakpoint-down (sm) {
 	border-bottom: solid .5px #272727;
@@ -535,13 +542,6 @@ span.hexagon {
 	@include media-breakpoint-down (sm) {
 		font-size: 1em !important;
 		margin: 20px 0 10px;
-	}
-}
-
-#results-close {
-	@include media-breakpoint-down (xs){
-		margin-right: 50px !important;
-		margin-bottom: 50px !important;
 	}
 }
 
