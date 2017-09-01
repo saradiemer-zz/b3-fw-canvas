@@ -519,6 +519,54 @@ span.hexagon {
 	}
 }
 
+#interior-intro > div:nth-child(5) > div > label:nth-child(2) {
+  @include media-breakpoint-down(md) {
+		padding-bottom: 40px;
+		padding-left: 30px;
+		line-height: 0.25;
+    font-size: 1.75em;
+  }
+}
+
+#yes {
+  @include media-breakpoint-down(md) {
+		transform: scale(2);
+  }
+}
+
+#yes:focus {
+  @include media-breakpoint-down(md) {
+		outline:none !important;
+  }
+}
+
+#interior-intro > div:nth-child(5) > div > label:nth-child(4) {
+  @include media-breakpoint-down(md) {
+		padding-bottom: 40px;
+		padding-left: 30px;
+		line-height: 0.5;
+    font-size: 1.75em;
+  }
+}
+
+#no {
+  @include media-breakpoint-down(md) {
+		transform: scale(2);
+  }
+}
+
+#no:focus {
+  @include media-breakpoint-down(md) {
+		outline:none !important;
+  }
+}
+
+#interior-intro > div:nth-child(5) {
+	@include media-breakpoint-down(md) {
+    padding-top: 15px;
+	}
+}
+
 #quiz-results p {
   @include media-breakpoint-down (sm){
     font-size: .95em !important;
