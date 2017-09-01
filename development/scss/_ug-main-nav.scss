@@ -222,9 +222,9 @@
 #search-input input::placeholder,
 #search-input input:placeholder-shown,
 #search-input input[type="text"] {
-	color: darken($patina, 12%);
-	font-size: .975em;
-	text-transform: uppercase;
+	color: darken($patina, 12%) !important;
+	font-size: .975em !important;
+	text-transform: uppercase !important;
 }
 
 #search-input .btn {
@@ -232,10 +232,16 @@
 	color: $patina-dark;
 }
 
-#search-input input[type="text"] {
+input[type="email"], input[type="password"], input[type="text"],
+#search-input input[type="text"],
+#search-input input[type="text"]::placeholder {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 100%;
+	height: 42px;
 	margin: 0;
-	padding: 21px 17px;
+	padding: 0 17px;
 	font-family: "Antenna", sans-serif !important;
 	color: darken($patina, 12%);
 	border-radius: 3px 0 0 3px !important;
@@ -243,9 +249,15 @@
 	background: rgba(0,0,0,.275);
 }
 
+#search-input input[type="text"]::placeholder { padding: 0; }
+
 #search-input input[type="submit"] {
-	padding: 1px 12px 0 9px;
-	width: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 12px 0 9px;
+	width: 50px !important;
+	height: 42px !important;
 	border-radius: 0 3px 3px 0 !important;
 	border-color: darken($patina, 25%);
 	font-family: 'Antenna Bold', sans-serif;
@@ -267,13 +279,35 @@
 }
 
 #search-input input[type="submit"]:hover {
-background-color: rgba(0,0,0,.75);
-color: $patina-dark;
+	background-color: rgba(0,0,0,.75);
+	color: $patina-dark;
 }
 
-#main-sidebar .panel-group img {
-	margin-left: 2em;
+::-webkit-input-placeholder { /* Chrome, Safari */
+   color: darken($patina, 12%) !important;
+	 text-overflow: ellipsis !important;
+   font-size: 32px;
 }
+
+:-moz-placeholder { /* Firefox 18- */
+   color: darken($patina, 12%) !important;
+	 text-overflow: ellipsis !important;
+   font-size: 32px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: darken($patina, 12%) !important;
+	text-overflow: ellipsis !important;
+  font-size: 32px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: darken($patina, 12%) !important;
+	text-overflow: ellipsis !important;
+  font-size: 32px;
+}
+
+#main-sidebar .panel-group img { margin-left: 2em; }
 
 #internalmenu {
 	/* (#febc18) */
