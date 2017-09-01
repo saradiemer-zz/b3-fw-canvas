@@ -29,6 +29,7 @@
 
 #main-sidebar[style] {
 	background: rgba(0,0,0,.35);
+	overflow: scroll !important;
 	@include media-breakpoint-down(sm) {
 		width: 300px !important;
 	}
@@ -293,6 +294,7 @@ input[type="email"], input[type="password"], input[type="text"],
    color: darken($patina, 12%) !important;
 	 text-overflow: ellipsis !important;
    font-size: 32px;
+	 height: 42px !important;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
@@ -301,10 +303,14 @@ input[type="email"], input[type="password"], input[type="text"],
   font-size: 32px;
 }
 
+#search-input input:-moz-placeholder,
 :-ms-input-placeholder { /* Internet Explorer */
   color: darken($patina, 12%) !important;
 	text-overflow: ellipsis !important;
   font-size: 32px;
+	height: 42px !important;
+	background: #000000;
+	background-color: #000000;
 }
 
 #main-sidebar .panel-group img { margin-left: 2em; }
