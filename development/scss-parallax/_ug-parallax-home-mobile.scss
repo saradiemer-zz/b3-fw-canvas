@@ -206,11 +206,11 @@ and (max-device-width : 1366px)  {
 	.ug-global-nav-wrapper-mobile { display: block !important; }
 	.ug-global-nav-wrapper-mobile .ug-global-nav { display: block; }
 	.ug-global-nav-wrapper.ug-global-nav-wrapper-desktop { display: none; }
-	#ug-nav ul li { margin: 8px 2% !important;  }
+	/* #ug-nav ul li { margin: 8px 2% !important;  } */
 	#ug-nav.container-fluid { margin-top: 0 !important; }
 	#home-mobile-image { height: 300px; }
 	#home-mobile-image img { position: relative; top: -120px; }
-	#footer-address .container .row { padding-left: 15px; padding-right: 15px; }
+	/*#footer-address .container .row { padding-left: 15px; padding-right: 15px; } */
 	body.grid.parallax.touch[style] { height: 100% !important; }
 	#social.social-gold li { width: 45px !important; height: 45px !important; }
 }
