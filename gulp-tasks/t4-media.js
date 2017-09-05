@@ -11,6 +11,7 @@ gulp.task('t4_media', function() {
 	return gulp.src(config.publicDir + '/T4*.html')
 	//change references	in html
 	.pipe(replace('/css/styles.css', '<t4 type="media" id="472265" formatter="path/*"/>'))
+  .pipe(replace('all-ie-only.css', '<t4 type="media" id="476101" formatter="path/*"/>'))
 	.pipe(replace('/js/all.min.js', '<t4 type="media" id="466247" formatter="path/*"/>'))
 	.pipe(replace('<script src="/js/all.js"></script>', ''))
   .pipe(replace('/images/homepage/home-campus-aerial-500-500.jpg', '<t4 type="media" id="474881" formatter="path/*"/>'))
