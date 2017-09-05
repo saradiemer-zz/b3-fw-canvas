@@ -387,7 +387,10 @@ ul.pagination>li a { background-color: $gray-light; }
 		padding: 10px 15px 6px;
 	}
 	@include media-breakpoint-down(sm) {
-		padding: 10px 15px 3px;
+		padding: 10px 15px 1px;
+	}
+	@include media-breakpoint-down(xs) {
+		padding: 10px 15px 2px;
 	}
 }
 

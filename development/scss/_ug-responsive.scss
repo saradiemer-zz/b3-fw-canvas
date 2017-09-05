@@ -666,4 +666,10 @@ div.question.active {
 	}
 }
 
+body #wrapper {
+	@include media-breakpoint-down (md) {
+		background: none;
+	}
+}
+
 /* END - CANVAS-NUMBERS */
