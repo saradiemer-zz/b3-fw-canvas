@@ -230,7 +230,7 @@ ul#tabs.nav.nav-pills {
 
 #main-content #tabs > li a:hover {
 	color: $patina;
-	background-color: lighten($bg-overlay, 80%) !important;
+	background-color: lighten($bg-overlay, 80%);
 	cursor: pointer;
 }
 
