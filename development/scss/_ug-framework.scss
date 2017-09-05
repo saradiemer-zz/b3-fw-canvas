@@ -954,7 +954,7 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 
 @media only screen and (max-device-width : 767px) {
 	.ug-global-nav-wrapper-mobile {
-			display: block !important;
+			display: block;
 			position: absolute;
 			top: 0;
 			right: 0;

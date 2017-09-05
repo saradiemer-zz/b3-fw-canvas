@@ -199,13 +199,13 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 
 @media only screen /* IPAD PRO - IPAD */
 and (min-device-width : 768px)
-and (max-device-width : 1366px)  {
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 2)  {
 	.container, .container-fluid { width: 100% !important; }
 	#header.ug-header { padding: 20px 0 15px 0; }
 	.ug-global-nav { display: block; }
 	.ug-global-nav-wrapper-mobile { display: block !important; }
 	.ug-global-nav-wrapper-mobile .ug-global-nav { display: block; }
-	.ug-global-nav-wrapper.ug-global-nav-wrapper-desktop { display: none; }
 	/* #ug-nav ul li { margin: 8px 2% !important;  } */
 	#ug-nav.container-fluid { margin-top: 0 !important; }
 	#home-mobile-image { height: 300px; }
@@ -348,3 +348,11 @@ and (orientation : landscape) {
 	#home-mobile-image { display: none; }
 	#ug-social-wrapper { display: none; }
 }
+
+#home-mobile-image { display: none; }
+
+body.parallax { background: url(/images/backgrounds/bg-shield-dark.jpg) no-repeat 50% fixed!important; }
+
+body, body #wrapper, #navbar ul, #ug-footer-cta-wrapper, #ug-nav.container-fluid, #ug-cta.container-fluid, #ug-explore.container-fluid, #navbar-footer, #ug-social-wrapper { background-color: rgba(0,0,0,0) !important; }
+
+/* CSS END */
