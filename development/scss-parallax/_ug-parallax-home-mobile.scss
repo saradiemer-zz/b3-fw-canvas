@@ -206,6 +206,9 @@ and (-webkit-min-device-pixel-ratio: 2)  {
 	.ug-global-nav { display: block; }
 	.ug-global-nav-wrapper-mobile { display: block !important; }
 	.ug-global-nav-wrapper-mobile .ug-global-nav { display: block; }
+	#ug-nav.container-fluid { margin-top: 0 !important; }
+	#home-mobile-image { height: 300px; }
+	#home-mobile-image img { position: relative; top: -120px; }
 	#ug-nav ul li { margin: 8px 2% !important;  }
 	#ug-nav.container-fluid { margin-top: 0 !important; }
 	#home-mobile-image { height: 300px; }
