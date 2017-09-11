@@ -443,6 +443,14 @@ ul.pagination>li a { background-color: $gray-light; }
 	@include media-breakpoint-down(sm) { padding-top: 0; border: 0; }
 }
 
+@media only screen
+and (max-width : 320px) {
+	#header #wordmark-wrapper #wordmark {
+		max-width: 162px;
+		height: 40px;
+	}
+}
+
 #header #wordmark, #footer-address #wordmark-tag {
     margin-top: 0;
     margin-bottom: 0;
@@ -510,6 +518,15 @@ ul.pagination>li a { background-color: $gray-light; }
 		width: 35px;
 		height: 35px;
 		background-position: 49% 40%;
+	}
+}
+
+@media only screen
+and (max-width : 320px) {
+	.home-circle {
+		margin: -2px 0 0 10px;
+		width: 30px;
+		height: 30px;
 	}
 }
 
