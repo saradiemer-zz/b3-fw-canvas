@@ -220,6 +220,22 @@
 	background-color: rgba(255,255,255,0.9);
 }
 
+#main-sidebar input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+#search-input input.form-control,
+#search-input textarea.form-control,
+#search-input select.form-control {
+	height: 42px;
+	font-size: 1em;
+	border-radius: 3px 0 0 3px;
+	border-color: darken($patina, 25%);
+	background: rgba(0,0,0,.275);
+}
+
 #search-input input::placeholder,
 #search-input input:placeholder-shown,
 #search-input input[type="text"] {
@@ -233,6 +249,9 @@
 	color: $patina-dark;
 }
 
+#search-input input.form-control,
+#search-input textarea.form-control,
+#search-input select.form-control,
 input[type="email"], input[type="password"], input[type="text"],
 #search-input input[type="text"],
 #search-input input[type="text"]::placeholder {
@@ -250,7 +269,7 @@ input[type="email"], input[type="password"], input[type="text"],
 	background: rgba(0,0,0,.275);
 }
 
-#search-input input[type="text"]::placeholder { padding: 0; }
+#search-input input[type="text"]::placeholder { padding: 0; background: rgba(0,0,0,.5) !important; }
 
 #search-input input[type="submit"] {
 	-webkit-box-sizing: border-box;
@@ -287,27 +306,23 @@ input[type="email"], input[type="password"], input[type="text"],
 ::-webkit-input-placeholder { /* Chrome, Safari */
    color: darken($patina, 12%) !important;
 	 text-overflow: ellipsis !important;
-   font-size: 32px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: darken($patina, 12%) !important;
 	 text-overflow: ellipsis !important;
-   font-size: 32px;
 	 height: 42px !important;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
   color: darken($patina, 12%) !important;
 	text-overflow: ellipsis !important;
-  font-size: 32px;
 }
 
 #search-input input:-moz-placeholder,
 :-ms-input-placeholder { /* Internet Explorer */
   color: darken($patina, 12%) !important;
 	text-overflow: ellipsis !important;
-  font-size: 32px;
 	height: 42px !important;
 	background: #000000;
 	background-color: #000000;

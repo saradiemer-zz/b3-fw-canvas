@@ -59,11 +59,13 @@ body.canvas #wrapper {
 
 #interior-wrapper-center {
 	padding: 60px 90px 60px 30px;
+	@include media-breakpoint-up (lg) {
+		min-height:1000px;
+	}
 @include media-breakpoint-down(md) {
-	padding: 60px 30px 60px 30px;
+		padding: 60px 30px 60px 30px;
+	}
 }
-
- }
 
 
 /* MAIN-CONTENT =========================================
@@ -387,7 +389,10 @@ ul.pagination>li a { background-color: $gray-light; }
 		padding: 10px 15px 6px;
 	}
 	@include media-breakpoint-down(sm) {
-		padding: 10px 15px 3px;
+		padding: 10px 15px 1px;
+	}
+	@include media-breakpoint-down(xs) {
+		padding: 10px 15px 2px;
 	}
 }
 
@@ -438,11 +443,30 @@ ul.pagination>li a { background-color: $gray-light; }
 	@include media-breakpoint-down(sm) { padding-top: 0; border: 0; }
 }
 
+@media only screen
+and (max-width : 320px) {
+	#header #wordmark-wrapper #wordmark {
+		max-width: 162px;
+		height: 40px;
+	}
+}
+
 #header #wordmark, #footer-address #wordmark-tag {
     margin-top: 0;
     margin-bottom: 0;
     height: auto;
     width: auto;
+}
+
+#undergrad-admission.col-lg-9 {
+	@include media-breakpoint-down(lg) {
+		margin: 20px 10px 0 0;
+		width: 70%;
+	}
+	@include media-breakpoint-down(md) {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 #undergrad-admission h6, #undergrad-admission a h6 {
@@ -454,9 +478,11 @@ ul.pagination>li a { background-color: $gray-light; }
 	letter-spacing: -.015em;
 	color: $gray-extra-dark !important;
 	text-align: right;
+	@include media-breakpoint-down(lg) {
+		margin: 0 10px 0 0;
+	}
 	@include media-breakpoint-down(md) {
-		margin: 8px 10px 0 0;
-		font-size: 1em;
+		display: none;
 	}
 	@include media-breakpoint-down(sm) {
 		display: none;
@@ -477,13 +503,30 @@ ul.pagination>li a { background-color: $gray-light; }
 	background-repeat: no-repeat;
 	background-size: 80%;
 	background-position: 50% 40%;
+	@include media-breakpoint-down(lg) {
+		margin: 0;
+	}
 	@include media-breakpoint-down(md) {
-		margin: 5px 0 0 0;
-		width: 25px;
-		height: 25px;
+		float: left;
+		margin: -2px 0 0 0;
+		width: 30px;
+		height: 30px;
+		background-position: 49% 40%;
 	}
 	@include media-breakpoint-down(sm) {
-		display: none;
+		margin: -2px 0 0 10px;
+		width: 35px;
+		height: 35px;
+		background-position: 49% 40%;
+	}
+}
+
+@media only screen
+and (max-width : 320px) {
+	.home-circle {
+		margin: -2px 0 0 10px;
+		width: 30px;
+		height: 30px;
 	}
 }
 
@@ -576,9 +619,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 		margin: 0px;
 		padding: 0;
 	}
-	@include media-breakpoint-down(xs) {
-
-	}
 }
 @media (max-width: 320px) { .navbar-nav { margin: 0 5px; } }
 #ug-nav #navbar, #footer #ug-cta ul#nav {
@@ -621,12 +661,6 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 #ug-nav ul li, #ug-cta ul li, #ug-explore ul li { float: left; margin: 0; width: auto; }
-
-@media only screen
-and (min-width : 1024px)
-and (max-width : 1024px) {
-		#ug-nav ul li, #ug-cta ul li { padding: 0 2% !important; }
-}
 
 #ug-cta ul {
 	float: left;
@@ -824,7 +858,7 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 }
 
 .ug-global-nav-wrapper-desktop {
-	@include media-breakpoint-down(sm) { display: none; }
+	@include media-breakpoint-down(md) { display: none; }
 }
 
 .ug-global-nav-wrapper-mobile:after {
@@ -835,7 +869,7 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 
 .ug-global-nav-wrapper-mobile {
 	display: none;
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(md) {
 		display: block;
 		position: absolute;
 		top: 0;
@@ -931,9 +965,9 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
 	}
 }
 
-@media only screen and (max-device-width : 1366px) {
+@media only screen and (max-device-width : 767px) {
 	.ug-global-nav-wrapper-mobile {
-			display: block !important;
+			display: block;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -945,7 +979,7 @@ and (orientation : landscape) { .ug-global-close .glyphicon { left: 50%; }
     position: fixed;
     right: 0;
     top: 0;
-}
+	}
 }
 
 .ug-global-nav-wrapper-mobile .ug-global-nav { width: 50%; }

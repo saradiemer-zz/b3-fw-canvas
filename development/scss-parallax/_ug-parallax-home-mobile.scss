@@ -3,7 +3,8 @@ CSS FOR MOBILE - 580PX
 =====================*/
 
 @media only screen
-and (max-device-width : 1024px) {
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
 
 /* BACKGROUND */
 
@@ -199,16 +200,18 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 
 @media only screen /* IPAD PRO - IPAD */
 and (min-device-width : 768px)
-and (max-device-width : 1366px)  {
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 2)  {
 	.container, .container-fluid { width: 100% !important; }
 	#header.ug-header { padding: 20px 0 15px 0; }
-	.ug-global-nav { display: none; }
+	.ug-global-nav { display: block; }
 	.ug-global-nav-wrapper-mobile { display: block !important; }
 	.ug-global-nav-wrapper-mobile .ug-global-nav { display: block; }
-	.ug-global-nav-wrapper.ug-global-nav-wrapper-desktop { display: none; }
+	#ug-nav.container-fluid { margin-top: 0 !important; }
+	#home-mobile-image { height: 300px; }
+	#home-mobile-image img { position: relative; top: -120px; }
 	#ug-nav ul li { margin: 8px 2% !important;  }
 	#ug-nav.container-fluid { margin-top: 0 !important; }
-	#undergrad-admission { display: none; }
 	#home-mobile-image { height: 300px; }
 	#home-mobile-image img { position: relative; top: -120px; }
 	#footer-address .container .row { padding-left: 15px; padding-right: 15px; }
@@ -216,10 +219,21 @@ and (max-device-width : 1366px)  {
 	#social.social-gold li { width: 45px !important; height: 45px !important; }
 }
 
+@media only screen /* IPAD PRO - IPAD */
+and (min-device-width : 768px)
+and (max-device-width : 1366px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2)  {
+	#ug-nav ul li { margin: 0 2% !important; }
+	#social.social-gold li { width: 35px !important; height: 35px !important; }
+}
+
+
 @media only screen /* IPAD - PORTRAIT */
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : portrait) {
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
 	#home-mobile-image { padding: 0 10px; height: 530px; }
 	#home-mobile-image img { position: relative; top: -95px; }
 	#ug-social-wrapper { width: 100%; }
@@ -244,9 +258,19 @@ and (orientation : portrait) {
 	#social.social-gold li a.icon-yt:hover { background-position: -5px 72.75% !important; }
 }
 
+@media only screen /* IPAD - PORTRAIT */
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+	#ug-nav ul li { margin: 8px 2% !important; }
+	#social.social-gold li { width: 45px !important; height: 45px !important; }
+}
+
+/* MOSTLY HOMEPAGE IMAGE */
+
 @media only screen /* IPAD PRO - PORTRAIT */
-and (min-device-width : 1024px)
-and (max-device-width : 1366px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 	#home-mobile-image { padding: 0 10px; height: 850px; }
 	#home-mobile-image img { position: relative; top: -40px; }
@@ -255,6 +279,7 @@ and (orientation : portrait) {
 }
 
 @media only screen /* IPAD PRO - LANDSCAPE */
+
 and (min-device-width : 1024px)
 and (max-device-width : 1366px)
 and (orientation : landscape) {
@@ -262,10 +287,11 @@ and (orientation : landscape) {
 	#home-mobile-image img { position: relative; top: -210px; }
 }
 
-@media only screen /* IPAD - PORTRAIT */
+@media only screen /* IPAD - LANDSCAPE */
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : landscape) {
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
 	#home-mobile-image { padding: 0 10px; height: 320px; }
 	#home-mobile-image img { position: relative; top: -150px; }
 }
@@ -349,3 +375,43 @@ and (orientation : landscape) {
 	#home-mobile-image { display: none; }
 	#ug-social-wrapper { display: none; }
 }
+
+/* NEW MOBILE WITH BACKGROUND IMAGE */
+
+@media only screen
+and (max-device-width : 736px) {
+
+#home-mobile-image { display: none; }
+
+body.parallax:before {
+	content: "";
+	background: url("../images/backgrounds/bg-grid-light-small.png") repeat;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	opacity: 1;
+}
+
+body.parallax { background: url('/images/backgrounds/bg-shield-dark.jpg') no-repeat center center fixed !important; }
+
+body,
+body #wrapper,
+#navbar ul,
+#ug-footer-cta-wrapper,
+#ug-nav.container-fluid,
+#ug-cta.container-fluid,
+#ug-explore.container-fluid,
+#navbar-footer,
+#ug-social-wrapper {
+	background: none !important;
+	background-color: none !important;
+}
+
+#ug-cta #ug-social-wrapper ul li { background-color: $gray-dark !important; }
+
+}
+
+/* CSS END */

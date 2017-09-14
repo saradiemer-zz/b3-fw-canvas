@@ -42,7 +42,6 @@ gulp.task('minify', function(){
     .pipe(rename('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.publicDir + '/js'));
-
 });
 
 gulp.task('minify-css', function() {
