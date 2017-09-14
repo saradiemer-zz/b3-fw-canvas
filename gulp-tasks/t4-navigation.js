@@ -26,7 +26,7 @@ gulp.task('t4_nav', function() {
 		'globalquicklinks': '<t4 type="media" id="77813" formatter="plain/text"/>',
 		'ledephoto': '<t4 type="navigation" id="667"/>',
 		'ledecaption': '<t4 type="navigation" id="668"/>',
-		'rightcolumn': '<t4 type="navigation" id="669"/>',
+		'rightcolumn': '<t4 type="navigation" id="700"/>',
 		'sidemainnav': '<t4 type="navigation" id="670"/>',
 		'headernav': '<t4 type="navigation" id="674"/>',
 		'calltoaction': '<t4 type="navigation" id="675"/>',
