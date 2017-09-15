@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   @@include('./partials/ug-head.html')
@@ -7,31 +6,17 @@
   <!-- inject:css -->
   <!-- endinject -->
 </head>
-<div id="loader-wrapper">
-
-<div id="loader">
-
-  <svg class="circular-loader"viewBox="25 25 50 50" >
-  <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="$gray-extra-dark" stroke-width="2" />
-</svg>
-
-<img src="images/icons/l.png">
-</div>
-
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-
-</div>
 
 <body class="grid parallax" data-issue="1">
   <section id="wrapper">
-
     @@include('./partials/ug-header.html')
     <!-- header -->
     @@include('./partials/ug-nav-fixed.html')
     <!-- nav -->
     @@include('./partials/ug-main-content-explore-new.html')
     <!-- content -->
+		@@include('./partials/ug-main-content-explore-mobile.html')
+		<!-- content -->
     @@include('./partials/ug-footer.html')
     <!-- footer -->
   </section>
@@ -43,7 +28,6 @@
 
   <script type='text/javascript' src='/js-parallax/jquery-custom.js'></script>
   <script type='text/javascript' src='/js-parallax/jquery-plugins.js'></script>
-  <script type='text/javascript' src='js/preloader.js'</script>
 </body>
 
 </html>
