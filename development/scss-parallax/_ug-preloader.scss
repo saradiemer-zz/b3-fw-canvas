@@ -52,7 +52,7 @@
   width: 50%;
 }
 
-#loader h5 { text-align: center;}
+#loader h5 { text-align: center; padding-top: 10%; color:$gray-extra-dark; padding-left: 7%;}
 
 #loader-wrapper .loader-section {
   position: fixed;
