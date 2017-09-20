@@ -519,6 +519,12 @@ and (max-width : 320px) {
 		height: 35px;
 		background-position: 49% 40%;
 	}
+	@include media-breakpoint-down(xs) {
+		margin: -2px 0 0 10px;
+		width: 26px !important;
+		height: 27px !important;
+		background-position: 49% 40%;
+	}
 }
 
 @media only screen
@@ -538,7 +544,12 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
-body.parallax footer{position: fixed;}
+
+body.parallax footer{
+	@media-breakpoint-up (md) {
+	position: fixed;;
+	}
+}
 
 footer .container-fluid {
   padding-right: 0;

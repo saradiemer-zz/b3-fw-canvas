@@ -400,8 +400,96 @@ body #wrapper,
 
 }
 
-#explore-simple body.parallax footer {
-	position: relative !important;
+#explore-simple h5.label {
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.5vw;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  color: $gray-extra-dark !important;
+	text-shadow: none;
+  text-align: center;
+	margin-top: 0px;
+  @include media-breakpoint-down(sm) {
+    font-size: 4.5vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 4.5vw;
+  }
+}
+
+#explore-simple h1 {
+	margin-top: 15px;
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 2.5vw;
+  line-height: 1.115;
+  letter-spacing: -.015em;
+  color: $gray-extra-dark !important;
+	text-shadow: none;
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    font-size: 8vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 7.5vw;
+  }
+}
+
+#explore-simple  div.explore-cta-button {
+	color: $gray-extra-light;
+	text-align: center;
+	border: solid 3px $patina-dark;
+	border-radius: 50%;
+	background-color: white !important;
+	opacity: 1;
+  margin-top: 10px !important;
+	margin-bottom: 20px !important;
+  @include media-breakpoint-down(sm) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#explore-simple .btn-overlay.cta {
+    margin: 4px;
+    width: 100%;
+    height: inherit;
+    padding: 4px 12px 4px 12px;
+    font-family: "Antenna Bold", "Arial", sans-serif;
+    font-size: .75em;
+    font-weight: bold;
+    font-style: normal;
+    color: #08bcc1;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: none;
+    background-color: white;
+    background-image: none;
+    border: 1px #08bcc1 solid;
+    border-radius: 30px;
+    outline: white;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+#explore-simple h2 {
+	width:100%;
+	color: $gray-extra-dark;
+}
+
+#explore-simple {
+	@include media-breakpoint-up (md) {
+		display: none;
+	}
+	@include media-breakpoint-down (md) {
+		display: block;
+	}
+}
+
+#explore-simple .col-md-4{
+	display: none;
 }
 
 /* CSS END */
