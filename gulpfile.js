@@ -88,6 +88,14 @@ gulp.task('sass-quiz', function() {
     .pipe(gulp.dest(config.publicDir + '/css-quiz'));
 });
 
+gulp.task('sass-search', function() {
+    return gulp.src(config.devDir + '/scss-search-landing-page/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css-search-landing'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
@@ -123,7 +131,7 @@ gulp.task('sass-quiz-watch', ['sass-quiz'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
-gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', 'sass-search', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -137,6 +145,7 @@ gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', '
 		gulp.watch(config.devDir + '/scss-home/**/*.scss', ['sass-home-watch']);
     gulp.watch(config.devDir + '/scss-parallax/**/*.scss', ['sass-parallax-watch']);
     gulp.watch(config.devDir + '/scss-quiz/**/*.scss', ['sass-quiz-watch']);
+    gulp.watch(config.devDir + '/scss-search/**/*.scss', ['sass-quiz-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
