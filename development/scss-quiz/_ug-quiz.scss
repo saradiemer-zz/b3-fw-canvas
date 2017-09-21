@@ -85,16 +85,17 @@ hr.major-quiz-rule {
   display: block; }
 
 .colleges li a:link, .colleges li a:visited, .colleges li a:active {
-  color: $gray-dark; }
+  color: $gray; }
 
 a, a:visited, a:link, a:hover, a:active {
   color: inherit; }
 
 .colleges .selected-0, .colleges .selected-1, .colleges .selected-2, .colleges .selected-3, .colleges .selected-4, .colleges .selected-5, .colleges .selected-6 {
-  transition: all .75s; }
+  transition: all .75s;
+  color: $gray; }
 
 .colleges .selected-0 a {
-  color: $gray-dark !important; }
+  color: $gray !important; }
 
 .colleges .selected-0 a:not(.selected-0) {
     color: $gray-dark !important; }
@@ -103,37 +104,37 @@ a, a:visited, a:link, a:hover, a:active {
   color: #e1e1e1 !important; }
 
 .colleges .selected-1 a:not(.selected-1) {
-  color: darken($gray, 5%) !important; }
+  color: $patina-dark !important; }
 
 .colleges .selected-2 a {
   color: #e1e1e1 !important; }
 
 .colleges .selected-2 a:not(.selected-2) {
-  color: darken($gold-dark, 10%) !important; }
+  color: darken($patina, 3%) !important; }
 
 .colleges .selected-3 a {
   color: #e1e1e1 !important; }
 
 .colleges .selected-3 a:not(.selected-3) {
-  color: darken($gold-dark, 5%) !important; }
+  color: $patina !important; }
 
 .colleges .selected-4 a {
   color: #e1e1e1 !important; }
 
 .colleges .selected-4 a:not(.selected-4) {
-  color: darken($gold, 5%)  !important; }
+  color: lighten($patina, 5%)  !important; }
 
 .colleges .selected-5 a {
   color: #e1e1e1 !important; }
 
 .colleges .selected-5 a:not(.selected-5) {
-  color: $gold !important; }
+  color: $patina-light !important; }
 
 .colleges .selected-6 a {
-  color: #eaaa00 !important; }
+  color: $patina-extra-light !important; }
 
 .colleges .selected-6 a:not(.selected-6) {
-  display: $gold-light !important; }
+  display: $patina-extra-light !important; }
 
 #social-share-modal {
   min-height:60vh;
