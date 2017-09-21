@@ -137,10 +137,11 @@ gulp.task('sass-home-watch', ['sass-home'], browserSync.reload);
 gulp.task('sass-parallax-watch', ['sass-parallax'], browserSync.reload);
 gulp.task('sass-quiz-watch', ['sass-quiz'], browserSync.reload);
 gulp.task('sass-search-watch', ['sass-search'], browserSync.reload);
+gulp.task('sass-print-watch', ['sass-print'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
-gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', 'sass-search', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-home', 'sass-parallax', 'sass-quiz', 'sass-search', 'sass-print', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
