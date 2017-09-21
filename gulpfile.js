@@ -128,6 +128,7 @@ gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('sass-home-watch', ['sass-home'], browserSync.reload);
 gulp.task('sass-parallax-watch', ['sass-parallax'], browserSync.reload);
 gulp.task('sass-quiz-watch', ['sass-quiz'], browserSync.reload);
+gulp.task('sass-search-watch', ['sass-search'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
