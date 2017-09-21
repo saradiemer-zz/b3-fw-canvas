@@ -96,6 +96,14 @@ gulp.task('sass-search', function() {
     .pipe(gulp.dest(config.publicDir + '/css-search-landing'));
 });
 
+gulp.task('sass-print', function() {
+    return gulp.src(config.devDir + '/scss-print/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
