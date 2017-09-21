@@ -167,7 +167,7 @@ body #wrapper { padding: 0; height: 1px !important; min-height: 1px !important; 
 
 #ug-cta ul.social { float: left !important; margin: 0 auto !important; }
 
-#ug-social-wrapper ul li { height: 45px !important; width: 45px !important; border-radius: 50% !important; }
+#ug-social-wrapper ul li { height: 32px !important; width: 32px !important; border-radius: 50% !important; }
 
 /* TYPOGRAPHY */
 
@@ -216,7 +216,6 @@ and (-webkit-min-device-pixel-ratio: 2)  {
 	#home-mobile-image img { position: relative; top: -120px; }
 	#footer-address .container .row { padding-left: 15px; padding-right: 15px; }
 	body.grid.parallax.touch[style] { height: 100% !important; }
-	#social.social-gold li { width: 45px !important; height: 45px !important; }
 }
 
 @media only screen /* IPAD PRO - IPAD */
@@ -225,7 +224,6 @@ and (max-device-width : 1366px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 2)  {
 	#ug-nav ul li { margin: 0 2% !important; }
-	#social.social-gold li { width: 35px !important; height: 35px !important; }
 }
 
 
@@ -237,25 +235,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	#home-mobile-image { padding: 0 10px; height: 530px; }
 	#home-mobile-image img { position: relative; top: -95px; }
 	#ug-social-wrapper { width: 100%; }
-	#social.social-gold li { width: 45px !important; height: 45px !important; }
-	#social.social-gold li a.icon-fb { background-position: -5px 0 !important; }
-	#social.social-gold li a.icon-fb:hover { background-position: -5px 0 !important; }
-	#social.social-gold li a.icon-fl { background-position: -5px 8.85% !important; }
-	#social.social-gold li a.icon-fl:hover { background-position: -5px 8.85% !important; }
-	#social.social-gold li a.icon-gg { background-position: -5px 18% !important; }
-	#social.social-gold li a.icon-gg:hover { background-position: -5px 18% !important; }
-	#social.social-gold li a.icon-ig { background-position: -5px 27% !important; }
-	#social.social-gold li a.icon-ig:hover { background-position: -5px 27% !important; }
-	#social.social-gold li a.icon-li { background-position: -5px 36.15% !important; }
-	#social.social-gold li a.icon-li:hover { background-position: -5px 36.15% !important; }
-	#social.social-gold li a.icon-pi { background-position: -5px 45.25% !important; }
-	#social.social-gold li a.icon-pi:hover { background-position: -5px 45.25% !important; }
-	#social.social-gold li a.icon-tw { background-position: -5px 54.25% !important; }
-	#social.social-gold li a.icon-tw:hover { background-position: -5px 54.25% !important; }
-	#social.social-gold li a.icon-wp { background-position: -5px 63.65% !important; }
-	#social.social-gold li a.icon-wp:hover { background-position: -5px 63.65% !important; }
-	#social.social-gold li a.icon-yt { background-position: -5px 72.75% !important; }
-	#social.social-gold li a.icon-yt:hover { background-position: -5px 72.75% !important; }
 }
 
 @media only screen /* IPAD - PORTRAIT */
@@ -264,7 +243,6 @@ and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
 	#ug-nav ul li { margin: 8px 2% !important; }
-	#social.social-gold li { width: 45px !important; height: 45px !important; }
 }
 
 /* MOSTLY HOMEPAGE IMAGE */
@@ -274,8 +252,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 	#home-mobile-image { padding: 0 10px; height: 850px; }
 	#home-mobile-image img { position: relative; top: -40px; }
-	#ug-cta #ug-social-wrapper ul li { width: 52px !important; height: 52px !important; }
-	#ug-cta #ug-social-wrapper ul li a { background-size: 120% !important; }
 }
 
 @media only screen /* IPAD PRO - LANDSCAPE */
@@ -396,7 +372,7 @@ body #wrapper,
 	background-color: none !important;
 }
 
-#ug-cta #ug-social-wrapper ul li { background-color: $gray-dark !important; }
+#ug-cta #ug-social-wrapper ul li { padding: 0 !important;background-color: $gray-dark !important; }
 
 }
 
