@@ -1,0 +1,94 @@
+@media print {
+
+html { font-size: 15px; }
+
+/* HIDING SELECTIVE DIVS AND IMAGES */
+
+.affix { position: relative !important; }
+
+#header [href]:after { content: "" !important; }
+
+#undergrad-admission,
+#ug-nav, .ug-global-nav,
+#main-content img, #main-content-canvas img,
+#ug-cta { display: none !important; }
+
+#main-content-canvas .embed-responsive.embed-responsive-4by1,
+#main-content-canvas .carousel { display: none !important; }
+
+.canvas-base.grid { display: none }
+
+.vertical-rule-left, .vertical-rule-right { display: none !important; }
+
+.content-schematic { display: none !important; }
+
+/* RESTYLING - SPACING - SCALE */
+
+#wordmark-wrapper [class*=col] { margin: 10px 0 !important; min-width: 100% !important; height: auto !important; }
+
+#wordmark-wrapper [class*=col] img { width: 35% !important; height: auto !important; }
+
+#main-content-canvas .canvas-content { margin: 0 auto !important; padding: 15px 0 !important; }
+
+#header [class*=container],
+#main-content-canvas [class*=container],
+#footer-address [class*=container] { margin: 0 5% !important; padding: 0 !important; width: 90% !important; }
+
+#main-content-canvas [class*=container] [class*=container],
+#main-content-canvas [class*=col]  { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+#main-content-canvas [class*=container] { padding: 20px 0 !important; }
+
+#study-abroad-story.fullbleed,
+#res-life-dining.fullbleed,
+#cost-difference.fullbleed,
+#res-life-clubs.fullbleed,
+#about-chicago.fullbleed,
+#outcomes-story-1.fullbleed,
+#outcomes-story-2.fullbleed,
+#green-story.fullbleed,
+#chicago-story.fullbleed,
+#social-justice.fullbleed,
+#jesuit.fullbleed,
+#campus-experience.fullbleed,
+#campus-living.fullbleed,
+#campus-athletics.fullbleed { margin: 0 5% !important; padding: 0 !important; width: 90% !important; height: auto !important; }
+
+.fullbleed:before { padding-top: 0 !important; }
+
+.fullbleed .partial-overlay .bg-overlay { height: auto !important; }
+
+/* RESTYLING - NUMBERS */
+
+#main-content-canvas .number[class*=col] { float: left !important; margin: 10px 0 !important; width: 100% !important; }
+
+.number[class*=col] h1 { float: left !important; margin: 0 !important; width: 10% !important; height: 40px !important; line-height: 0 !important; }
+
+.number[class*=col] p.body { float: left !important; margin: 0 0 0 5% !important; width: 82% !important; }
+
+.light-rule { border-bottom: none !important; }
+
+#footer-address [class*=container] { margin-bottom: 50px !important; }
+
+/* RESTYLING - TYPOGRAPHY */
+
+h5[class*=reverse],
+h5.label[class*=reverse],
+#chicago-numbers-facts h5 { color: #272727 !important; }
+
+h1, h2, h3, h4, h5, h6 { border: none !important; }
+
+#ug-body h1.display,
+.bg-overlay h1.display,
+.canvas-panel h1.display,
+.canvas-content h1.display { font-size: 1.75em !important; }
+
+h3.standalone,
+.canvas-content h5.label.display-large,
+.grid .col-xs-3 h5.label.display-large.reverse { font-size: 1.15em !important; }
+
+p.body, p.body.intro { font-size: .975em !important; }
+
+#tabs li, #tabs li.active, #tabs li a, #tabs li.active a { color: red !important; }
+
+}
