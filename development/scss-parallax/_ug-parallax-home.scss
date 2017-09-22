@@ -10,6 +10,8 @@
 
 #header, footer  { z-index: 10000; }
 
+footer { position: fixed; }
+
 div#wrapper {
   min-height: 1000px;
   width: 100%;
