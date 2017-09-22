@@ -4,6 +4,8 @@ hr { color: darken($gray, 10%); border-color: darken($gray, 10%); }
 
 body { padding-top: 0; background: rgba(0,0,0,0); }
 
+.d-inline { display: inline; }
+
 .development-nav {
 	margin: 0;
 	padding: 30px;
