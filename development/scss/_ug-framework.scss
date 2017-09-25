@@ -6,6 +6,13 @@ body { padding-top: 0; background: rgba(0,0,0,0); }
 
 .d-inline { display: inline; }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .development-nav {
 	margin: 0;
 	padding: 30px;
@@ -690,12 +697,11 @@ footer .col-sm-3 { padding-right: 0; } /* footer wordmark wrapper */
 }
 
 #ug-social-wrapper {
-	  @include media-breakpoint-down(sm) {
+	 @include media-breakpoint-down(sm) {
 		padding: 2px 20px 35px 0px !important;
 		background-color: lighten($gray-dark, 5%);
 	}
 }
-
 
 #ug-nav ul li a,
 #ug-cta ul li a,
