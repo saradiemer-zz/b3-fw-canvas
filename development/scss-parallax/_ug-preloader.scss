@@ -197,3 +197,9 @@
     stroke: $gray-extra-dark;
   }
 }
+
+#loader-wrapper {
+  @include media-breakpoint-down (md) {
+    display:none;
+  }
+}
