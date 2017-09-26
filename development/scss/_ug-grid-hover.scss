@@ -1,0 +1,58 @@
+.card-hover {
+  position: relative;
+  width: 31%;
+  float: left;
+  margin-left: 1.5%;
+  margin-bottom: 1.5%;
+  @include media-breakpoint-down(md) {
+    width: 48%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $bg-overlay;
+  display: block;
+  position: absolute;
+  top:0;
+  bottom:0;
+}
+
+.card-hover:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1em;
+  font-family: "Antenna Light", sans-serif;
+  letter-spacing: .015em;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  right:5%;
+  @include media-breakpoint-down (lg) {
+    font-size: .9em;
+  }
+}
+
+.text span.antenna {
+  font-family: "Antenna";
+  font-size: .85em;
+  margin-top: 10px;
+}
+
+.card-hover img {margin-bottom: 0 !important;}
