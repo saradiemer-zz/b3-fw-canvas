@@ -15,7 +15,7 @@ gulp.task('t4_media', function() {
 	.pipe(replace('/js/all.min.js', '<t4 type="media" id="466247" formatter="path/*"/>'))
 	.pipe(replace('<script src="/js/all.js"></script>', ''))
   .pipe(replace('/images/homepage/home-campus-aerial-500-500.jpg', '<t4 type="media" id="474881" formatter="path/*"/>'))
-.pipe(replace('images/site/luc-logo.svg', '<t4 type="media" id="475438" formatter="path/*"/>'))
+  .pipe(replace('images/site/luc-logo.svg', '<t4 type="media" id="475438" formatter="path/*"/>'))
 
   images/site/luc-logo.svg
 	//send to t4Dir
