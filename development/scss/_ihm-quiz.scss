@@ -1,0 +1,110 @@
+#quiz {
+  position: relative;
+  width: calc(100% - 100px);
+}
+
+#quiz h2 {
+	font-family: "Antenna Light", sans-serif;
+}
+
+#quiz button {
+	height: inherit;
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 4px 12px 4px 12px;
+	font-family: "Antenna Bold", "Arial", sans-serif;
+	font-size: .75em;
+	font-weight: bold;
+	font-style: normal;
+	color: $maroon;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+	background-color: white;
+	background-image: none;
+	border: 1px $maroon solid;
+	border-radius: 30px;
+	outline: white;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+#quiz button:hover {
+  background: $maroon;
+  color: #FFF;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: white;
+  color: $bg-overlay;
+  cursor: default;
+	border: $bg-overlay;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#question input[type=radio] {
+	display: none;
+}
+
+#question label {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  background: #e1e1e1;
+  color: black;
+  width: calc(100% - 8px);
+  min-width: 100px;
+  cursor: pointer;
+	font-size: .9em;
+	text-transform: none;
+}
+
+#question label:hover {
+  background: $bg-overlay-light;
+}
+
+#question input[type=radio]:checked + label {
+  background: $bg-overlay;
+  color: #fff;
+}
+
+#quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+		background: white;
+  top: -4px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 0px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: $bg-overlay-extra-dark;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: $bg-overlay-dark;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: $bg-overlay-extra-dark;
+  font-weight: 600;
+  font-size: 20px;
+}
