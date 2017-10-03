@@ -384,24 +384,24 @@ ul ul li { margin: 6px 0 6px; }
 }
 
 ul li a, p a {
-	color:darken($patina, 8%);
+	color:darken($maroon, 8%);
 }
 
 ul li a:hover, ul li a:focus, p a:hover, p a:focus {
-	color:$patina;
+	color:$maroon;
 }
 
 ul li a:visited, ul li a:visited, p a:visited, p a:visited {
-	color:darken($patina, 8%);
+	color:darken($maroon, 8%);
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color:$patina-dark;
+	color:$maroon-dark;
 	background:none;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-	color:darken($patina, 5%);
+	color:darken($maroon, 5%);
 }
 
 table {
@@ -413,7 +413,7 @@ td {
 }
 
 a:link {
-	color:darken($patina, 8%);
+	color:darken($maroon, 8%);
 }
 
 div > table.stacktable.large-only > tbody > tr > td {
@@ -443,12 +443,12 @@ div > table.stacktable.large-only > tbody > tr > td {
 }
 
 .nav a:visited, .nav a:hover, .nav a:focus {
-  color:darken($patina, 5%);
+  color:darken($maroon, 5%);
 }
 
 #inset-nav ul li h5 a, #inset-nav ul li h5 a:visited {
   font-family: "Antenna", sans-serif;
-	    color:darken($patina, 8%);
+	    color:darken($maroon, 8%);
 }
 
 #interior-wrapper-right .aside-icon img{
@@ -491,7 +491,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important; font-size: 875em;}
 
-.nav>li>a:focus, .nav>li>a:hover { background-color: $patina !important; color: white !important; }
+.nav>li>a:focus, .nav>li>a:hover { background-color: $maroon !important; color: white !important; }
 
 p a button.btn-overlay.cta {padding: 8px 12px !important;}
 

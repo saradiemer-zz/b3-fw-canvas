@@ -2,7 +2,7 @@
 /* ===============================================
 FONT-SIZE - RESET ============================= */
 
-a { color: $patina-dark; cursor:pointer !important; }
+a { color: $maroon-dark; cursor:pointer !important; }
 
 a:link {
 	outline: none;
@@ -13,14 +13,14 @@ a:link {
 a:visited, a:hover, a:focus {
 	outline: none;
 	outline-offset: 0;
-	color: darken($patina, 5%);
+	color: darken($maroon, 5%);
 	text-decoration: none;
 	cursor:pointer;
 }
 
 p a, article.content p a {
 	line-height: 1;
-	color: $patina-dark;
+	color: $maroon;
 	outline: none;
 	outline-offset: 0;
 	text-decoration: none;
@@ -34,7 +34,7 @@ p a, article.content p a {
 	background-image: none;
 }
 
-a:hover, article.content p a:hover { color: $patina; cursor: pointer !important; }
+a:hover, article.content p a:hover { color: $maroon; cursor: pointer !important; }
 
 p.body.intro { font-size: 1.5em }
 
@@ -110,7 +110,7 @@ NUMBERS ===================================== */
 	}
 }
 
-span.number.read-out { font-size: 2.5em; color: darken($patina, 8%);}
+span.number.read-out { font-size: 2.5em; color: darken($maroon, 8%);}
 
 #jesuit-intro hr { margin-top: 10px; margin-bottom: -5px; border-color: $gray-light;}
 
@@ -137,14 +137,14 @@ ul#tabs.nav.nav-pills {
 	font-size: .75em;
 	font-weight: bold;
 	font-style: normal;
-	color: $patina;
+	color: $maroon;
 	text-align: left;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: none;
 	background-color: white;
 	background-image: none;
-	border: 1px $patina solid;
+	border: 1px $maroon solid;
 	border-radius: 30px;
 	outline: white;
 	text-decoration: none;
@@ -156,12 +156,12 @@ ul#tabs.nav.nav-pills {
 
 #tabs > li.active a {
 	color: $white !important;
-	background: $patina-dark;
-	border: 1px $patina solid;
+	background: $maroon-dark;
+	border: 1px $maroon solid;
 }
 
 #tabs > li a:hover {
-	color: $patina;
+	color: $maroon;
 	background-color: lighten($bg-overlay, 80%);
 	cursor: pointer;
 }
@@ -184,15 +184,15 @@ ul#tabs.nav.nav-pills {
 	margin-right: 20px;
 	border-style: solid;
 	border-width: 2px;
-	border-color:$patina-dark;
+	border-color: $maroon-dark;
 }
 
 #tabs.reverse > li.active a {
 	color: $white;
-	background: $patina-dark;
+	background: $maroon-dark;
 	border-style: solid;
 	border-width: 2px;
-	border-color:$patina-dark;
+	border-color: $maroon-dark;
 }
 
 #main-content #tabs > li a {
@@ -202,7 +202,7 @@ ul#tabs.nav.nav-pills {
 	font-size: .75em;
 	font-weight: bold;
 	font-style: normal;
-	color: $patina;
+	color: $maroon;
 	text-align: left;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -211,9 +211,9 @@ ul#tabs.nav.nav-pills {
 	background: white !important;
 	background: none !important;
 	background-image: none;
-	border: 1px $patina solid;
+	border: 1px $maroon solid;
 	border-radius: 30px;
-	border-bottom: 1px $patina solid !important;
+	border-bottom: 1px $maroon solid !important;
 	outline: white;
 	text-decoration: none;
 	-moz-transition: all 0.3s ease-in;
@@ -224,12 +224,12 @@ ul#tabs.nav.nav-pills {
 
 #main-content  #tabs > li.active a {
 	color: $white !important;
-	background: $patina-dark !important;
-	border: 1px $patina solid;
+	background: $maroon-dark !important;
+	border: 1px $maroon solid;
 }
 
 #main-content #tabs > li a:hover {
-	color: $patina;
+	color: $maroon;
 	background-color: lighten($bg-overlay, 80%);
 	cursor: pointer;
 }
@@ -286,14 +286,14 @@ input[type="file"] {
 	font-size: .75em;
 	font-weight: bold;
 	font-style: normal;
-	color: $patina;
+	color: $maroon;
 	text-align: left;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: none;
 	background-color: lighten($bg-overlay, 20%);
 	background-image: none;
-	border: 1px $patina solid;
+	border: 1px $maroon solid;
 	border-radius: 30px;
 	outline: white;
 	text-decoration: none;
@@ -305,7 +305,7 @@ input[type="file"] {
 .btn-overlay.cta:hover,
 .btn-overlay.cta:active,
 .btn-overlay.cta:visited {
-	color: lighten($patina, 10%) ;
+	color: lighten($maroon, 10%) ;
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
@@ -313,7 +313,7 @@ input[type="file"] {
 #accordion .btn-overlay.cta { background-color: $white;}
 
 #accordion .btn-overlay.cta:active, .btn-overlay {
-	color: lighten($patina, 10%) ;
+	color: lighten($maroon, 10%) ;
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
@@ -328,7 +328,7 @@ input[type="file"] {
 
 #ug-body .btn-overlay.cta:active, #social-share-modal .btn-overlay.cta:active,
 .btn-overlay{
-	color: lighten($patina, 10%) ;
+	color: lighten($maroon, 10%) ;
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
@@ -375,7 +375,7 @@ blockquote cite {
 blockquote cite a {
 	font-family: 'Antenna Bold', san-serif;
 	font-weight: bold;
-	color: $patina-dark;
+	color: $maroon-dark;
 }
 
 blockquote .cta { margin: 0px; }
@@ -418,10 +418,10 @@ p a.cta {
 	background-color: none;
 	background-image: none !important;
 	cursor: pointer;
-	color: $patina-dark;
+	color: $maroon-dark;
 }
 
-.cta:hover { background: none; color: $patina;  }
+.cta:hover { background: none; color: $maroon;  }
 
 /* ===============================================
 ADJUSTMENT ==================================== */
