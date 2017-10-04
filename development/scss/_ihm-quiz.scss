@@ -34,8 +34,8 @@
 }
 
 #quiz button:hover {
-  background: $maroon;
-  color: #FFF;
+  color: lighten($maroon, 10%);
+  	border: 1px lighten($maroon, 10%) solid;
 }
 
 #quiz button:disabled {

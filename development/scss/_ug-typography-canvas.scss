@@ -286,14 +286,14 @@ input[type="file"] {
 	font-size: .75em;
 	font-weight: bold;
 	font-style: normal;
-	color: $maroon;
+	color: white !important;
 	text-align: left;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: none;
 	background-color: lighten($bg-overlay, 20%);
 	background-image: none;
-	border: 1px $maroon solid;
+	border: 1px white solid !important;
 	border-radius: 30px;
 	outline: white;
 	text-decoration: none;
@@ -305,7 +305,7 @@ input[type="file"] {
 .btn-overlay.cta:hover,
 .btn-overlay.cta:active,
 .btn-overlay.cta:visited {
-	color: lighten($maroon, 10%) ;
+	color: lighten($gray-light, 5%) !important;
 	background-color: lighten($bg-overlay, 10%);
 	cursor: pointer;
 }
