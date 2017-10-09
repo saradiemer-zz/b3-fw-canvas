@@ -1,6 +1,6 @@
 #quiz {
   position: relative;
-  width: calc(100% - 100px);
+  width: calc(100% - 50px);
 }
 
 #quiz h2 {
@@ -46,8 +46,11 @@
 	border: $bg-overlay;
 }
 
+#question { margin: 15px 0; width: 100%; }
+
 #question h2 {
-  margin-bottom: 16px;
+  display: block;
+  margin: 10px 0 25px;
   font-weight: 600;
   font-size: 20px;
 }
@@ -62,7 +65,7 @@
   padding: 8px;
   background: #e1e1e1;
   color: black;
-  width: calc(100% - 8px);
+  width: calc(25% - 8px);
   min-width: 100px;
   cursor: pointer;
 	font-size: .9em;
