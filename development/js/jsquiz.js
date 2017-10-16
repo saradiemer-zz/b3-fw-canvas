@@ -1,33 +1,62 @@
 var all_questions = [{
-  question_string: "What color is the sky?",
+  question_string: "What year was the Society of Jesus formed?",
   choices: {
-    correct: "Blue",
-    wrong: ["Pink", "Orange", "Green"]
+    correct: "1540",
+    wrong: ["1534", "1546", "1550"]
   }
 }, {
-  question_string: "Which season is the hottest?",
+  question_string: "What does cura personalis mean?",
   choices: {
-    correct: "Summer",
-    wrong: ["Winter", "Autumn", "Spring"]
+    correct: "Care for the entire person",
+    wrong: ["Care for all people", "Care for the poor", "Care for the world"]
   }
 }, {
-  question_string: "How many wheels are there on a tricycle?",
+  question_string: "When Loyola was founded, what was the official name of the University?",
   choices: {
-    correct: "Three",
-    wrong: ["One", "Two", "Four"]
-  }
-},
-{
-  question_string: "How many wheels are there on a tricycle?",
-  choices: {
-    correct: "Three",
-    wrong: ["One", "Two", "Four"]
+    correct: "St. Ignatius College",
+    wrong: ["The Jesuit University of Chicago", "St. Ignatius College", "Loyola Chicago Jesuit College"]
   }
 }, {
-  question_string: 'Who is the main character of Harry Potter?',
+  question_string: "How many Jesuit saints are there?",
   choices: {
-    correct: "Harry Potter",
-    wrong: ["Hermione Granger", "Ron Weasley", "Voldemort"]
+    correct: "53",
+    wrong: ["42", "68", "77"]
+  }
+}, {
+  question_string: 'What does magis mean?',
+  choices: {
+    correct: "More or better",
+    wrong: ["Magic or surprise", "Spirit or meaning", "Magnificent or large"]
+  }
+}, {
+  question_string: 'When was the tradition of holding the Convocation walk through the Cudahy Library’s Green Doors started?',
+  choices: {
+    correct: "2009",
+    wrong: ["1870", "1929", "1978"]
+  }
+}, {
+  question_string: 'How many Jesuit universities exist in the United States?',
+  choices: {
+    correct: "28",
+    wrong: ["17", "43", "60"]
+  }
+}, {
+  question_string: 'Along with educating the students of Loyola University Chicago, the Jesuits are responsible for the education of all but one of the following individuals:',
+  choices: {
+    correct: "Liam Neeson",
+    wrong: ["Amy Poehler", "Denzel Washington", "Chris Farley"]
+  }
+}, {
+  question_string: 'What of these inventions are the Jesuits credited with creating?',
+  choices: {
+    correct: "The trapdoor",
+    wrong: ["The barstool", "The kneeling pew", "The chalkboard"]
+  }
+}, {
+  question_string: 'What is Loyola’s motto?',
+  choices: {
+    correct: "Ad Majorem Dei Gloriam",
+    wrong: ["Cogito ergo sum", "Fortuna audaces iuvat", "Dormiens Nunquam Titillandus"]
   }
 }];
 
