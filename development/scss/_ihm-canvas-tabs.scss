@@ -1,0 +1,47 @@
+/*================================================
+B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
+================================================*/
+
+/* NAME: */
+/* LOCATION:  */
+/* PURPOSE: */
+/* EXAMPLE:*/
+
+/*================================================
+================================================*/
+
+/* .partial-overlay surrounds the .bg-overlay that only covers part of the fullbleed image */
+
+#tabs ul li a:visited, ul li a:visited, p a:visited, p a:visited, ul li a:hover, ul li a:hover, p a:hover, p a:hover, .nav a:visited, .nav a:hover, .nav a:focus{
+	background-color: #fff !important;
+}
+
+.nav > li > a:focus, .nav > li > a:hover { background-color: #fff !important;}
+
+#tabs\20 img > li > a { background-color: #fff !important; }
+
+#martyrs .nav-pills>li {
+	width: 10%;
+	float: left;
+}
+
+#martyrs .nav-pills>li{
+	filter: grayscale(80%)
+}
+
+#martyrs .nav-pills>li:hover {
+	filter: grayscale(0%)!important;
+}
+
+#martyrs .nav-pills>li:active {
+	opacity: 1 !important;
+}
+
+li.category.active { opacity: 1 !important; filter: grayscale(0%)!important;}
+
+#tabs\20 img > li:nth-child(7) > a {
+	width: 170%;
+}
+
+.wall img {
+}

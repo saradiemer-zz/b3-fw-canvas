@@ -442,13 +442,8 @@ div > table.stacktable.large-only > tbody > tr > td {
 		padding-top: 5%;
 }
 
-.nav a:visited, .nav a:hover, .nav a:focus {
-  color:darken($maroon, 5%);
-}
-
 #inset-nav ul li h5 a, #inset-nav ul li h5 a:visited {
   font-family: "Antenna", sans-serif;
-	    color:darken($maroon, 8%);
 }
 
 #interior-wrapper-right .aside-icon img{
@@ -491,7 +486,7 @@ div > table.stacktable.large-only > tbody > tr > td {
 
 #freshman p.body.small {font-family: "Antenna", sans-serif; text-transform: uppercase; margin-top: -15px !important; font-size: 875em;}
 
-.nav>li>a:focus, .nav>li>a:hover { background-color: $maroon !important; color: white !important; }
+.nav>li>a:focus, .nav>li>a:hover { background-color: $maroon; color: white !important; }
 
 p a button.btn-overlay.cta {padding: 8px 12px !important;}
 
