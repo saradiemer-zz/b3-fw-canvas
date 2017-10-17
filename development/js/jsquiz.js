@@ -17,10 +17,10 @@ var all_questions = [{
     wrong: ["The Jesuit University of Chicago", "St. Ignatius College", "Loyola Chicago Jesuit College"]
   }
 }, {
-  question_string: "Some of the central goals of Jesuit education are?",
+  question_string: "Some of the central goals of Jesuit education are to form:",
   choices: {
     correct: "All of the above",
-    wrong: ["To form men and women for and with others.", "To graduate students who are open to growth.", "To seek and find God in all things."]
+    wrong: ["men and women for and with others.", "graduates open to growth.", "students commited to justice."]
   }
 }, {
   question_string: "How many Jesuit saints are there?",
