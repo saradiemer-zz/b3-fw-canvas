@@ -1,12 +1,14 @@
 #quiz {
   position: relative;
-  margin: 50px 0;
+  margin: 30px 0 50px;
   width: calc(100% - 50px);
 }
 
 #quiz h2 {
-	font-family: "Antenna Black", sans-serif;
-  min-height: 80px;
+	font-family: "Antenna Bold", sans-serif;
+  line-height: 1.4;
+  min-height: 60px;
+  text-transform: none;
 }
 
 #quiz button {
