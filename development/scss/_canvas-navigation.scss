@@ -33,7 +33,7 @@
 }
 
 .container#canvas-navigation .navbar-nav li a {
-  padding: 12px 20px;
+  padding: 15px 20px;
   font-size: .95em;
   color: darken($gray-light,10%);
   background-color: darken($maroon, 8%);
@@ -43,9 +43,15 @@
 .container#canvas-navigation .navbar-nav li:first-child,
 .container#canvas-navigation .navbar-nav li:first-child a { border-radius: 0 0 0 4px; }
 
+.container#canvas-navigation .navbar-nav li a:visited,
+.container#canvas-navigation .navbar-nav li a:focus,
+.container#canvas-navigation .navbar-nav li a:active { background: darken($maroon, 8%) !important; }
+
 .container#canvas-navigation .navbar-nav li a:hover {
   color: $gray-extra-light;
   background: darken($maroon, 15%) !important;
 }
 
-.container#canvas-navigation .navbar-nav li a:visited { background: darken($maroon, 15%) ; }
+.container#canvas-navigation .navbar-nav li a:visited {
+  color: $gray-extra-light !important; 
+}
