@@ -14,7 +14,7 @@ var all_questions = [{
   question_string: "When Loyola was founded, what was the official name of the University?",
   choices: {
     correct: "St. Ignatius College",
-    wrong: ["The Jesuit University of Chicago", "St. Ignatius College", "Loyola Chicago Jesuit College"]
+    wrong: ["The Jesuit University of Chicago", "Loyola University Chicago", "Loyola Chicago Jesuit College"]
   }
 }, {
   question_string: "How many Jesuit saints are there?",

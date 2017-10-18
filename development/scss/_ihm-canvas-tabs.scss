@@ -12,13 +12,15 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 
 /* .partial-overlay surrounds the .bg-overlay that only covers part of the fullbleed image */
 
-#tabs ul li a:visited, ul li a:visited, p a:visited, p a:visited, ul li a:hover, ul li a:hover, p a:hover, p a:hover, .nav a:visited, .nav a:hover, .nav a:focus{
+#martyrs ul li a:visited, #martyrs ul li a:visited, #martyrs p a:visited, #martyrs p a:visited, #martyrs ul li a:hover, #martyrs ul li a:hover, #martyrs p a:hover, #martyrs p a:hover, #martyrs .nav a:visited, #martyrs .nav a:hover, #martyrs .nav a:focus{
 	background-color: #fff !important;
 }
 
-.nav > li > a:focus, .nav > li > a:hover { background-color: #fff !important;}
+#martyrs .nav > li > a:focus, .nav > li > a:hover { background-color: #fff !important;}
 
 #tabs\20 img > li > a { background-color: #fff !important; }
+
+#martyrs ul li a {padding-left: 0 !important;}
 
 #martyrs .nav-pills>li {
 	width: 10%;
@@ -26,7 +28,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 }
 
 #martyrs .nav-pills>li{
-	filter: grayscale(80%)
+	filter: grayscale(100%);
 }
 
 #martyrs .nav-pills>li:hover {
@@ -44,4 +46,11 @@ li.category.active { opacity: 1 !important; filter: grayscale(0%)!important;}
 }
 
 .wall img {
+	margin-top:-90px !important;
+	z-index: 10 !important;
+	position: relative;
+}
+
+.back img {
+	z-index: -100000;
 }
