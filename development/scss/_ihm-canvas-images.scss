@@ -101,7 +101,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 
 */
 
-#ihm-martyrs.fullbleed {
+#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed  {
   position: relative;
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 991px) {
-#ihm-martyrs.fullbleed {
+#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed  {
 	background-size: 150%;
 	height: 80%;
 }
@@ -130,18 +130,18 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 768px) {
-#ihm-martyrs.fullbleed {
+#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed {
 	background-size: 125%;
 	}
 }
 
 @media (max-width: 543px)	{
-#ihm-martyrs.fullbleed {
+#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed  {
 	background-size: 200%;
 	}
 }
 
-#ihm-martyrs.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before  {
   margin: 0;
   padding: 0;
   padding-top: 31.3888%;
@@ -150,28 +150,41 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 991px) {
-#ihm-martyrs.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
 	padding-top: 40.3888%;
 	}
 }
 
 @media (max-width: 768px) {
-#ihm-martyrs.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
 	padding-top: 50%;
 	}
 }
 
 @media (max-width: 543px) {
-#ihm-martyrs.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
 	padding-top: 80.6%;
 	}
 }
 
-#ihm-martyrs.fullbleed { background: url('/images/ihm/ihm-martyr-award-angel.jpg'); }
+#ihm-martyrs-award.fullbleed { background: url('/images/ihm/ihm-martyr-award-angel.jpg'); }
 
-#ihm-martyrs.fullbleed {
+#ihm-lede.fullbleed { background: url('/images/ihm/Ignatian-Heritage-Month-header.jpg'); }
+
+#ihm-martyrs-award.fullbleed {
 	height:620px;
 	background-position-y:60% !important;
 }
 
+#ihm-lede.fullbleed{
+	height: 420px;
+  background-position-y:60% !important;
+}
+
+#ihm-lede.fullbleed {
+	@include media-breakpoint-down(lg){
+	height: 300px;
+  background-position-y:60% !important;
+}
+}
 /* END */

@@ -54,3 +54,52 @@ li.category.active { opacity: 1 !important; filter: grayscale(0%)!important;}
 .back img {
 	z-index: -100000;
 }
+
+#accordion > div > div.panel-heading > h5 > a > i {color: $gray;}
+
+#collapseQuiz p.body {padding-bottom: 5px;}
+
+.rule-bottom-mobile {
+	@include media-breakpoint-down (md) {
+		display: block;
+		padding: 0 0 30px;
+    border-bottom: 1px solid #e1e1e1;
+	}
+	@include media-breakpoint-up (md){
+		display:none;
+	}
+}
+
+#canvas-navbar.navbar {
+	@include media-breakpoint-down (md){
+		display: none;
+	}
+}
+
+#ihm-calendar .panel-body .col-md-6 {
+	@include media-breakpoint-down (md) {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+.container#canvas-navigation .navbar-nav li a {
+	@include media-breakpoint-down (lg) {
+		padding: 15px 15px;
+		font-size: .85em;
+	}
+}
+
+#content-tabs {
+	@include media-breakpoint-down (md) {
+	display: none;
+	}
+}
+
+.inset-image {
+	width: 15%;
+	float: left;
+	margin-right: 2%;
+}
+
+hr { border-color:$gray-light !important; margin-top: 25px; margin-bottom: 25px;}
