@@ -113,7 +113,7 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 991px) {
-#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed  {
+#ihm-martyrs-award.fullbleed  {
 	background-size: 150%;
 	height: 80%;
 }
@@ -130,13 +130,14 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 768px) {
-#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed {
+#ihm-martyrs-award.fullbleed {
 	background-size: 125%;
 	}
 }
 
+
 @media (max-width: 543px)	{
-#ihm-martyrs-award.fullbleed, #ihm-lede.fullbleed  {
+#ihm-martyrs-award.fullbleed, {
 	background-size: 200%;
 	}
 }
@@ -150,19 +151,19 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 }
 
 @media (max-width: 991px) {
-#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before {
 	padding-top: 40.3888%;
 	}
 }
 
 @media (max-width: 768px) {
-#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before {
 	padding-top: 50%;
 	}
 }
 
 @media (max-width: 543px) {
-#ihm-martyrs-award.fullbleed:before, #ihm-lede.fullbleed:before {
+#ihm-martyrs-award.fullbleed:before {
 	padding-top: 80.6%;
 	}
 }
@@ -186,5 +187,14 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 	height: 300px;
   background-position-y:60% !important;
 }
+}
+
+#ihm-lede {
+	@include media-breakpoint-down (md) {display:none;}
+}
+
+#ihm-mobile {
+	@include media-breakpoint-up (md) { display:none; }
+	@include media-breakpoint-down (md) { display:block; }
 }
 /* END */

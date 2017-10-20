@@ -16,7 +16,7 @@ B3 - CANVAS - IMAGES - CUSTOM PER CANVAS - 062717
 	background-color: #fff !important;
 }
 
-#martyrs .nav > li > a:focus, .nav > li > a:hover { background-color: #fff !important;}
+#martyrs .nav > li > a:focus, #martyrs .nav > li > a:hover { background-color: #fff !important;}
 
 #tabs\20 img > li > a { background-color: #fff !important; }
 
@@ -103,3 +103,82 @@ li.category.active { opacity: 1 !important; filter: grayscale(0%)!important;}
 }
 
 hr { border-color:$gray-light !important; margin-top: 25px; margin-bottom: 25px;}
+
+.rule-bottom {
+	margin-bottom: -20px;
+	padding: 0;
+	border-bottom: 1px solid $gray-light;
+}
+
+nav#global.navbar.navbar-inverse {
+	margin-bottom: 20px;
+}
+
+button.accordion {font-family: "Antenna Bold", sans-serif; font-size: 1.2em;}
+
+.panel { border: none; }
+
+.panel {
+    transition: 0.2s ease-out;
+}
+
+button.accordion.small { background: #fff; border-bottom: 1px solid $gray-light;}
+
+.width10 {
+    float: left;
+    width: 9.5% !important;
+    margin: .25% .25% .25% .25%;
+    background-color: #eee;
+    height: 280px;
+    padding: 5px;
+		@include media-breakpoint-down (xl) {
+			width: 19% !important;
+	    margin: .25% .5% .5% .25%;
+	    background-color: #eee;
+	    height: 180px;
+	    padding: 10px;
+		}
+		@include media-breakpoint-down (md) {
+			height: 240px;
+		}
+		@include media-breakpoint-down (sm) {
+			width: 48% !important;
+			margin: 1% 1% 1% 1%;
+			background-color: #eee;
+			height: 180px;
+			padding: 10px;
+		}
+		@include media-breakpoint-down (xs) {
+			width: 98% !important;
+			margin: 2%;
+			background-color: #eee;
+			height: 180px;
+			padding: 10px;
+		}
+}
+
+.social-icons img {
+		width: 12%; padding-top: 10px;
+		@include media-breakpoint-down (lg) {
+			width: 14%;
+		}
+		@include media-breakpoint-down (md) {
+			width: 14%;
+		}
+		@include media-breakpoint-down (sm) {
+			width: 12%;
+		}
+		@include media-breakpoint-down (xs) {
+			width: 8%;
+		}
+}
+
+.social-icons img { opacity: 0.4;}
+
+.social-icons img:hover { opacity: 0.8;}
+
+.width10 h6 {margin-top: 10px; font-size: .875em; }
+
+h6 span.small {color: $gray-extra-dark;}
+
+p.explainer span.unital {font-style: normal!important;}

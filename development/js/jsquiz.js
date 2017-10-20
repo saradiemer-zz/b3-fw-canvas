@@ -148,13 +148,15 @@ Quiz.prototype.render = function(container) {
     console.log(percentage);
     var message;
     if (percentage === 1) {
-      message = 'Great job! Are you the Pope?'
-    } else if (percentage >= .75) {
-      message = 'You are a Jesuit ORDAINED. An ordained lorem ipsum dolor.'
-    } else if (percentage >= .5) {
-      message = 'You are a Jesuit REGENCY. A regency lorem ipsum dolor.'
+      message = 'You are 100% Jesuit!' 
+    } else if (percentage >= .8) {
+      message = 'You are 80% Jesuit.'
+    } else if (percentage >= .6) {
+      message = 'You are 60% Jesuit.'
+    } else if (percentage >= .3) {
+      message = 'You are 40% Jesuit.'
     } else {
-      message = 'You are a Jesuit NOVITIATE. A novitiate lorem ipsum dolor.'
+      message = 'You are 20% Jesuit.'
     }
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
