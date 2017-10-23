@@ -197,4 +197,14 @@ div.bg-overlay.col-lg-4.col-sm-6.offset-lg-4 {
 	@include media-breakpoint-up (md) { display:none; }
 	@include media-breakpoint-down (md) { display:block; }
 }
+
+#ihm-hunger-week {
+ background-size: cover !important;
+ a {
+	 color: $gold !important;
+ }
+ a:hover {
+	 color: $gold-light !important;
+ }
+}
 /* END */

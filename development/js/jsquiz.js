@@ -148,15 +148,15 @@ Quiz.prototype.render = function(container) {
     console.log(percentage);
     var message;
     if (percentage === 1) {
-      message = 'You are 100% Jesuit!' 
+      message = 'You are 100% Jesuit! Reward yourself with Agape Latte, or explore other traditions like Taize prayer: Madonna della Strada, Wednesday at 9:30 p.m. '
     } else if (percentage >= .8) {
-      message = 'You are 80% Jesuit.'
+      message = 'You are 80% Jesuit. You are part of the Jesuit family! Share your Jesuit prowess by leading a retreat or participating in an Alternative Break Immersion. '
     } else if (percentage >= .6) {
-      message = 'You are 60% Jesuit.'
+      message = 'You are 60% Jesuit. How can you increase your Jesuit? Take part in a retreat…the Jesuits are known for their awesome retreats. Go on one…you’ll see!'
     } else if (percentage >= .3) {
-      message = 'You are 40% Jesuit.'
+      message = 'You are 40% Jesuit. Explore Jesuit spirituality and follow some Jesuit influencers. Keep scrolling to see who is on the list. '
     } else {
-      message = 'You are 20% Jesuit.'
+      message = 'You are 20% Jesuit. To increase your Jesuitical know-how, contact campus ministry, and learn how you can get involved.'
     }
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');

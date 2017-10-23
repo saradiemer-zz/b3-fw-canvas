@@ -232,21 +232,21 @@ appearance: none;
 	height: 42px;
 	font-size: 1em;
 	border-radius: 3px 0 0 3px;
-	border-color: darken($patina, 25%);
+	border-color: darken($gray, 5%);
 	background: rgba(0,0,0,.275);
 }
 
 #search-input input::placeholder,
 #search-input input:placeholder-shown,
 #search-input input[type="text"] {
-	color: darken($patina, 12%) !important;
+	color: darken($maroon, 2%) !important;
 	font-size: .975em !important;
 	text-transform: uppercase !important;
 }
 
 #search-input .btn {
-	background-color: darken($patina, 12%);
-	color: $patina-dark;
+	background-color: darken($maroon, 12%);
+	color: $maroon;
 }
 
 #search-input input.form-control,
@@ -263,9 +263,9 @@ input[type="email"], input[type="password"], input[type="text"],
 	margin: 0;
 	padding: 0 17px;
 	font-family: "Antenna", sans-serif !important;
-	color: darken($patina, 12%);
+	color: darken($maroon, 2%);
 	border-radius: 3px 0 0 3px !important;
-	border-color: darken($patina, 25%);
+	border-color: darken($gray, 5%);
 	background: rgba(0,0,0,.275);
 }
 
