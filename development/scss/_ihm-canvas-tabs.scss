@@ -102,6 +102,9 @@ li.category.active { opacity: 1 !important; filter: grayscale(0%)!important;}
 	width: 15%;
 	float: left;
 	margin-right: 2%;
+	@include media-breakpoint-down (xs) {
+		width:30%;
+	}
 }
 
 hr { border-color:$gray-light !important; margin-top: 25px; margin-bottom: 25px;}
@@ -196,7 +199,7 @@ p.explainer span.unital {font-style: normal!important;}
 
 .card.hide {
 	@include media-breakpoint-down (md) {
-		display:none;
+		display:none !important;
 	}
 }
 
@@ -205,4 +208,8 @@ p.explainer span.unital {font-style: normal!important;}
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
+	@include media-breakpoint-down (xs)
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
