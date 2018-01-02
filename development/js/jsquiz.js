@@ -5,7 +5,7 @@ var all_questions = [{
     wrong: ["1534", "1546", "1550"]
   }
 }, {
-  question_string: "What does cura personalis mean?",
+  question_string: 'What does "cura personalis" mean?',
   choices: {
     correct: "Care for the entire person",
     wrong: ["Care for all people", "Care for the poor", "Care for the world"]
@@ -17,10 +17,10 @@ var all_questions = [{
     wrong: ["The Jesuit University of Chicago", "Loyola University Chicago", "Loyola Chicago Jesuit College"]
   }
 }, {
-  question_string: "Some of the central goals of Jesuit education are to form:",
+  question_string: "Which of these are a central goal of a Jesuit education?",
   choices: {
-    correct: "All of the above",
-    wrong: ["men and women for and with others.", "graduates open to growth.", "students commited to justice."]
+    correct: "All statements are true",
+    wrong: ["Form men and women for and with others", "Form graduates open to growth", "Form students commited to justice"]
   }
 }, {
   question_string: "How many Jesuit saints are there?",
@@ -29,13 +29,13 @@ var all_questions = [{
     wrong: ["42", "68", "77"]
   }
 }, {
-  question_string: 'What does magis mean?',
+  question_string: 'What does "magis" mean?',
   choices: {
     correct: "More or better",
     wrong: ["Magic or surprise", "Spirit or meaning", "Magnificent or large"]
   }
 }, {
-  question_string: 'When was the tradition of holding the Convocation walk through the Cudahy Library’s Green Doors started?',
+  question_string: 'When was the tradition of holding the Convocation walk through the Cudahy Library’s green doors started?',
   choices: {
     correct: "2009",
     wrong: ["1870", "1929", "1978"]
@@ -53,10 +53,10 @@ var all_questions = [{
     wrong: ["Amy Poehler", "Denzel Washington", "Chris Farley"]
   }
 }, {
-  question_string: 'What of these inventions are the Jesuits credited with creating?',
+  question_string: 'Which one of these inventions is the Society of Jesus credited with creating?',
   choices: {
-    correct: "The trapdoor",
-    wrong: ["The barstool", "The kneeling pew", "The chalkboard"]
+    correct: "Trapdoor",
+    wrong: ["Barstool", "Kneeling pew", "Chalkboard"]
   }
 }, {
   question_string: 'What is Loyola’s motto?',
@@ -148,15 +148,15 @@ Quiz.prototype.render = function(container) {
     console.log(percentage);
     var message;
     if (percentage === 1) {
-      message = 'You are 100% Jesuit! Reward yourself with Agape Latte, or explore other traditions like Taize prayer: Madonna della Strada, Wednesday at 9:30 p.m. '
+      message = 'You are 100% Jesuit! Explore your Jesuit prowess by reading the Spiritual Exercises of Ignatius of Loyola for insight into his faith journey, join a retreat, or research a “Retreat in Daily Life” program.'
     } else if (percentage >= .8) {
-      message = 'You are 80% Jesuit. You are part of the Jesuit family! Share your Jesuit prowess by leading a retreat or participating in an Alternative Break Immersion. '
+      message = 'You are 80% Jesuit. You are part of the Jesuit family! Reward yourself by embarking on traditions like Taize prayer. At Loyola’s Lake Shore Campus, Taize prayer is offered every Wednesday at 9:30 p.m. in Madonna della Strada. If you’re not near campus, find a daily dose of Ignatian spirituality at ignatianspirituality.com.'
     } else if (percentage >= .6) {
-      message = 'You are 60% Jesuit. How can you increase your Jesuit? Take part in a retreat…the Jesuits are known for their awesome retreats. Go on one…you’ll see!'
+      message = 'You are 60% Jesuit. Try attending some of Loyola’s November events listed above. If you’re not near Chicago though, check out your nearby Jesuit university or parish—or visit Ignatian Solidarity Network at ignatiansolidarity.net.'
     } else if (percentage >= .3) {
-      message = 'You are 40% Jesuit. Explore Jesuit spirituality and follow some Jesuit influencers. Keep scrolling to see who is on the list. '
+      message = 'You are 40% Jesuit. Pick up a copy of “The Jesuit Guide to (Almost) Everything” by James Martin, S.J. The book is a handy reference on how the life and teachings of St. Ignatius can impact your life.'
     } else {
-      message = 'You are 20% Jesuit. To increase your Jesuitical know-how, contact campus ministry, and learn how you can get involved.'
+      message = 'You are 20% Jesuit (or maybe less). To increase your Jesuitical know-how, check out our #FollowFriday recommendations. The list is filled with inspiring Jesuits and impactful organizations sharing Ignatian spirituality on social media.'
     }
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');

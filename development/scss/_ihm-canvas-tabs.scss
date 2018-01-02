@@ -213,3 +213,21 @@ p.explainer span.unital {font-style: normal!important;}
 	margin-right: auto;
 	width: 100%;
 }
+
+#sub-header #masthead h2.label-chapter.display {
+	@include media-breakpoint-down (sm) {
+		font-size: 2.5em;
+	}
+}
+
+#ihm-mobile img {
+	margin-left: 10%;
+	width: 80%;
+}
+
+#footer-content .row {
+	@include media-breakpoint-down (sm) {
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+}
