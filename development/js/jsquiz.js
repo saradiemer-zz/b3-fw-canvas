@@ -73,14 +73,14 @@ var Quiz = function(quiz_name) {
 
   // This one will contain an array of Question objects in the order that the questions will be presented.
   this.questions = [];
-}
+};
 
 // A function that you can enact on an instance of a quiz object. This function is called add_question() and takes in a Question object which it will add to the questions field.
 Quiz.prototype.add_question = function(question) {
   // Randomly choose where to add question
   var index_to_add_question = Math.floor(Math.random() * this.questions.length);
   this.questions.splice(index_to_add_question, 0, question);
-}
+};
 
 // A function that you can enact on an instance of a quiz object. This function is called render() and takes in a variable called the container, which is the <div> that I will render the quiz in.
 Quiz.prototype.render = function(container) {
@@ -148,15 +148,15 @@ Quiz.prototype.render = function(container) {
     console.log(percentage);
     var message;
     if (percentage === 1) {
-      message = 'You are 100% Jesuit! Explore your Jesuit prowess by reading the Spiritual Exercises of Ignatius of Loyola for insight into his faith journey, join a retreat, or research a “Retreat in Daily Life” program.'
+      message = 'You are 100% Jesuit! Explore your Jesuit prowess by reading the Spiritual Exercises of Ignatius of Loyola for insight into his faith journey, join a retreat, or research a “Retreat in Daily Life” program.';
     } else if (percentage >= .8) {
-      message = 'You are 80% Jesuit. You are part of the Jesuit family! Reward yourself by embarking on traditions like Taize prayer. At Loyola’s Lake Shore Campus, Taize prayer is offered every Wednesday at 9:30 p.m. in Madonna della Strada. If you’re not near campus, find a daily dose of Ignatian spirituality at ignatianspirituality.com.'
+      message = 'You are 80% Jesuit. You are part of the Jesuit family! Reward yourself by embarking on traditions like Taize prayer. At Loyola’s Lake Shore Campus, Taize prayer is offered every Wednesday at 9:30 p.m. in Madonna della Strada. If you’re not near campus, find a daily dose of Ignatian spirituality at ignatianspirituality.com.';
     } else if (percentage >= .6) {
-      message = 'You are 60% Jesuit. Try attending some of Loyola’s November events listed above. If you’re not near Chicago though, check out your nearby Jesuit university or parish—or visit Ignatian Solidarity Network at ignatiansolidarity.net.'
+      message = 'You are 60% Jesuit. Try attending some of Loyola’s November events listed above. If you’re not near Chicago though, check out your nearby Jesuit university or parish—or visit Ignatian Solidarity Network at ignatiansolidarity.net.';
     } else if (percentage >= .3) {
-      message = 'You are 40% Jesuit. Pick up a copy of “The Jesuit Guide to (Almost) Everything” by James Martin, S.J. The book is a handy reference on how the life and teachings of St. Ignatius can impact your life.'
+      message = 'You are 40% Jesuit. Pick up a copy of “The Jesuit Guide to (Almost) Everything” by James Martin, S.J. The book is a handy reference on how the life and teachings of St. Ignatius can impact your life.';
     } else {
-      message = 'You are 20% Jesuit (or maybe less). To increase your Jesuitical know-how, check out our #FollowFriday recommendations. The list is filled with inspiring Jesuits and impactful organizations sharing Ignatian spirituality on social media.'
+      message = 'You are 20% Jesuit (or maybe less). To increase your Jesuitical know-how, check out our #FollowFriday recommendations. The list is filled with inspiring Jesuits and impactful organizations sharing Ignatian spirituality on social media.';
     }
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
