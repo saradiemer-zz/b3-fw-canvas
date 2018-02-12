@@ -1,0 +1,44 @@
+.number.col-sm-2,
+.number.col-sm-3,
+.number.col-sm-4, 
+.number.col-sm-5, 
+.number.col-sm-6 {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	@include media-breakpoint-down(sm) { margin: 0; width: 100%; }
+	@include media-breakpoint-down(sm) { padding-left: 15px; padding-right: 15px; }
+}
+
+.canvas-content h1.display.number {
+	@include media-breakpoint-down(lg) { font-size: 3em !important; }
+	@include media-breakpoint-down(md) { font-size: 3.5em !important; }
+}
+
+.canvas-content .number.col-sm-2,
+.canvas-content .number.col-sm-3,
+.canvas-content .number.col-sm-4,
+.canvas-content .number.col-sm-5,
+.canvas-content .number.col-sm-6 {
+		margin: 0;
+		@include media-breakpoint-down(md) {
+		margin: 0;
+		padding: 0 15px;
+		width: 100%;
+		h1.display.number {
+			padding-top: 15px;
+			margin-top: 20px;
+			border-top: solid 1px $gray-light;
+		}
+	}
+}
+.canvas-content h1.display.first-number {
+	@include media-breakpoint-down(md) {
+	margin-top: 0 !important;
+	padding-top: 0;
+	border-top: 0 none !important;
+	}
+}
+
+/* END - CANVAS-NUMBERS */

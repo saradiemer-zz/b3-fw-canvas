@@ -1,0 +1,71 @@
+/*================================================
+MODULES - CARD
+================================================*/
+
+body.modules #wrapper {
+  background:url('/images/backgrounds/bg-grid-light-small.png')repeat top left, url('/images/backgrounds/bg-shield-gold-patina.jpg') no-repeat center center !important;
+  -webkit-background-size: auto, cover !important;
+  -moz-background-size: auto, cover !important;
+  -o-background-size: auto, cover !important;
+  background-size: auto, cover;
+} /* global wrapper */
+
+.card {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 0 0 0 26px;
+  background: $gray-extra-light;
+  img { margin: 0 0 5px 0; }
+  min-height: 220px;
+}
+
+.card h6,
+.card .card-title,
+.card .card-text {
+  color: $gray-extra-dark;
+}
+
+.card .card-title {
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.card .card-text {
+  margin: 0 0 20px 0;
+  font-family: 'Antenna', sans-serif;
+  font-size: .85em;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+/* GRID-LIGHT - CARD */
+
+.col-one-third { float: left; width: 31.25%; }
+
+.grid-light .card {
+  box-sizing: border-box;
+  margin: 10px 1%;
+  padding: 15px;
+  background: $gray-extra-light;
+}
+
+.grid-light .card img { margin: 0; border-bottom-left-radius: 14px; }
+
+.grid-light .card h6,
+.grid-light .card .card-title,
+.grid-light .card .card-text { color: $gray-extra-dark; }
+
+.grid-light .card h6 {
+  margin: 5px 0 10px;
+  color: $gray-extra-dark;
+  font-size: .75em;
+}
+
+.grid-light .card .card-title { margin: 5px 0 0 0; font-size: 1.15em; text-transform: none; }
+
+.grid-light .card .card-text { margin: 0 0 15px 0; }
+
+.grid-light .card p.card-text { font-size: .95em; line-height: 1.5; }
+
+.grid-light .card p.card-text a.cta { font-size: 1em; line-height: 1.5; }

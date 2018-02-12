@@ -1,0 +1,68 @@
+/*================================================
+B3 - FRAMEWORK - SLIDER - 053017
+================================================*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img { width: 120%; margin: auto; }
+
+/* this hides nav bullets and ol numbers */
+ol.carousel-indicators li { display:none !important; }
+
+/* this is the control arrows */
+.carousel a:link { color: $gray-extra-light; }
+
+/* carousel-caption */
+.carousel-caption {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+  color: #fff;
+	background-color: rgba(0,0,0,.6);
+	p.caption {
+		margin: 0;
+		color: $gray-extra-light;
+	}
+	p.caption a {
+		margin: 0 0 0 5px;
+		color: $patina;
+	}
+}
+
+/*fade effect on carousel*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.container-fluid.carousel.slide { padding: 0px; }

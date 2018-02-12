@@ -1,0 +1,131 @@
+<!-- Placed at the end for a faster -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+<!-- tour jscript added 2/6/15-->
+<script async="async" defer= "defer" src="https://www.youvisit.com/tour/Embed/js2"></script>
+
+
+<!-- JS Name:grid-->
+<script>
+	$(function() {
+		// See if this is a touch device
+		if ('ontouchstart' in window) {
+			// Set the correct [touchscreen] body class
+			$('body').removeClass('no-touch').addClass('touch');
+			// Add the touch toggle to show text when tapped
+			$('div.grid-image').click(function() {
+				$('div.grid-image').not(this).removeClass('touchFocus');
+				$(this).closest('.grid-image').addClass('selected').toggleClass('touchFocus');
+			});
+		}
+	});
+</script>
+<!-- Custom JS files-->
+<!-- build:customjs -->
+<!-- endbuild -->
+
+
+<script>
+	$("document").ready(function() {
+
+		_navOffSet = 175;
+		$(".ug-global-nav-wrapper a").click(function(e) {
+			var offSet = $(e.target).parent().parent().offset();
+			console.log(offSet.top, $(window).scrollTop());
+			_navOffSet = offSet.top - $(window).scrollTop();
+		});
+
+		$("#main-sidebar").simplerSidebar({
+			selectors: {
+				trigger: ".ug-global-nav-wrapper a",
+				quitter: ".close-sb"
+			},
+			animation: {
+				duration: 300
+			},
+			sidebar: {
+				width: 400,
+			},
+			mask: {
+				display: true,
+				css: {
+					backgroundColor: "black",
+					opacity: 0.85,
+					filter: "Alpha(opacity=85)"
+				}
+			},
+			zIndex: 30001
+		});
+
+		var menuSearchToggleActive = false;
+
+		function closeSB() {
+            $('.close-sb').eq(0).click();
+		};
+
+		$('.sb-controls .ug-global-nav').click(function() {
+			closeSB();
+		});
+		$('#first-menu .panel a span').click(function(e) {
+			e.preventDefault();
+			return false;
+
+		});
+
+		var t4Lists = $('#first-menu > ul > li'),
+			panelTemplate = '<div class="panel">' +
+			'<div class="panel-heading">' +
+			'<h4 class="subhead">' +
+			'<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#first-menu2" href=""><span></span><i class="indicator pull-right glyphicon glyphicon-plus"></i></a>' +
+			'</h4>' +
+			'</div>' +
+			'<div class="panel-collapse collapse">' +
+			'<div class="panel-body">' +
+			'</div>' +
+			'</div>' +
+			'</div>',
+			firstMenu = $('#first-menu2'),
+			tmpPanel;
+		t4Lists.each(function(i) {
+			var item = $(this),
+				subList = $('ul', item);
+			firstMenu.append(panelTemplate);
+			tmpPanel = $('div.panel:last', firstMenu).eq(0);
+			if (subList.length > 0) {
+				$('div .panel-body', tmpPanel).append(subList);
+				$('.panel-heading .accordion-toggle', tmpPanel).attr('href', '#collapse-' + i);
+				$('.panel-collapse', tmpPanel).attr('id', 'collapse-' + i);
+
+
+			} else {
+				$('.panel-heading .accordion-toggle i', tmpPanel).hide();
+				$('.collapse').on('show.bs.collapse', function(e) {
+					// Get clicked element that initiated the collapse...
+					clicked = $(document).find("[href='#" + $(e.target).attr('id') + "']");
+					$(clicked.selector + ' i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+				});
+				$('.collapse').on('hide.bs.collapse', function(e) {
+					// Get clicked element that initiated the hide...
+					clicked = $(document).find("[href='#" + $(e.target).attr('id') + "']");
+					$(clicked.selector + ' i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+				});
+
+			}
+			$('.panel-heading .subhead', tmpPanel).append(item.html());
+            $('.panel-heading .subhead span a', tmpPanel).click(function(e) {
+                e.preventDefault();
+                e.target.parentNode.parentNode.childNodes[0].click();
+                return false;
+
+            });
+            $('.panel-heading .subhead span span a', tmpPanel).click(function(e) {
+                e.preventDefault();
+                e.target.parentNode.parentNode.childNodes[0].click();
+                return false;
+
+            });
+			item.hide();
+		});
+	});
+</script>

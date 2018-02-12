@@ -1,0 +1,57 @@
+#canvas-navbar.navbar {
+  margin-bottom: 0px;
+  width: 100%;
+  background: white;
+  border: 0;
+  z-index: 10000;
+}
+
+#canvas-navbar.navbar.affix { background: none; }
+
+#canvas-navbar.navbar .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.container#canvas-navigation {
+  padding: 0;
+  border-radius: 0 0 4px 4px;
+  background-color: darken($maroon, 8%);
+}
+
+.container#canvas-navigation .navbar-nav {
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+
+.container#canvas-navigation .navbar-nav li {
+  font-family: 'Antenna', sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  /* border-right: solid 1px #cccccc; */
+}
+
+.container#canvas-navigation .navbar-nav li a {
+  padding: 15px 20px;
+  font-size: .95em;
+  color: darken($gray-light,10%);
+  background-color: darken($maroon, 8%);
+  transition: all .2s;
+}
+
+.container#canvas-navigation .navbar-nav li:first-child,
+.container#canvas-navigation .navbar-nav li:first-child a { border-radius: 0 0 0 4px; }
+
+.container#canvas-navigation .navbar-nav li a:visited,
+.container#canvas-navigation .navbar-nav li a:focus,
+.container#canvas-navigation .navbar-nav li a:active { background: darken($maroon, 8%) !important; }
+
+.container#canvas-navigation .navbar-nav li a:hover {
+  color: $gray-extra-light;
+  background: darken($maroon, 15%) !important;
+}
+
+.container#canvas-navigation .navbar-nav li a:visited {
+  color: $gray-extra-light !important; 
+}

@@ -1,0 +1,19 @@
+h3.standalone a {
+	color: $bg-overlay-extra-dark;
+}
+
+h3.standalone a:hover {
+	color: $bg-overlay-extra-dark;
+}
+
+h3.standalone {
+	font-size: 1.2em !important;
+}
+
+.overlay span.antenna a {
+	color:$gold;
+}
+
+.overlay span.antenna a:active, .overlay span.antenna a:hover {
+	color:$gold-light;
+}
