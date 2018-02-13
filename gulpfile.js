@@ -96,7 +96,7 @@ gulp.task('useref', function() {
 gulp.task('index', ['useref'], function () {
   var target = gulp.src('./development/*.html');
   var sources = gulp.src(['./public/js/**/all.min.js', './public/css/**/*.css'], {read: false});
- 	return target.pipe(inject(sources, {ignorePath: 'public'}))
+ 	return target.pipe(inject(sources, {ignorePath: 'public/', addRootSlash: false}))
  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
 });
